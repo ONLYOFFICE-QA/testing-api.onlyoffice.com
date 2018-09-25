@@ -1,17 +1,17 @@
 module TestingApiOnlyfficeCom
-# https://user-images.githubusercontent.com/18173785/37903128-7b1dcf28-30ff-11e8-828b-c3849e7a758c.png
-# /editors/basic
+  # https://user-images.githubusercontent.com/18173785/37903128-7b1dcf28-30ff-11e8-828b-c3849e7a758c.png
+  # /editors/basic
   class DocumentServerAPI
     include PageObject
 
     DOC_SERVER_EXAMPLES = %i[
-    c_sharp_mvc
-    c_sharp
-    java
-    node_js
-    php
-    ruby
-  ].freeze
+      c_sharp_mvc
+      c_sharp
+      java
+      node_js
+      php
+      ruby
+    ].freeze
 
     # download links
     link(:c_sharp_mvc, xpath: '//*[contains(@href, "MVC")]')
@@ -44,7 +44,7 @@ module TestingApiOnlyfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until {try_now_element.visible?}
+      @instance.webdriver.wait_until { try_now_element.visible? }
     end
 
     def try_now_works?
@@ -75,7 +75,7 @@ module TestingApiOnlyfficeCom
 
     def demo_editor_switch_seems_legit?(editor = :document)
       send("#{editor}_editor_demo_element").click
-      @instance.webdriver.wait_until {editor_seems_legit? editor}
+      @instance.webdriver.wait_until { editor_seems_legit? editor }
     end
 
     def check_download_links
@@ -90,7 +90,7 @@ module TestingApiOnlyfficeCom
 
     def download_links_ok?
       checked = check_download_links
-      failed = checked.find_all {|_key, value| value == false}
+      failed = checked.find_all { |_key, value| value == false }
       [failed.empty?, failed]
     end
   end

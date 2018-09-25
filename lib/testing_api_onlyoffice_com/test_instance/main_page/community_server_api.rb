@@ -1,85 +1,85 @@
 module TestingApiOnlyfficeCom
-# https://user-images.githubusercontent.com/18173785/37903128-7b1dcf28-30ff-11e8-828b-c3849e7a758c.png
-# http://api.onlyoffice.com/portals/basic http://api.teamlab.info/portals/basic
+  # https://user-images.githubusercontent.com/18173785/37903128-7b1dcf28-30ff-11e8-828b-c3849e7a758c.png
+  # http://api.onlyoffice.com/portals/basic http://api.teamlab.info/portals/basic
   class CommunityServerAPI
     include PageObject
 
     COMMUNITY_SERVER_API_LINKS = %i[
-    authentication
-    calendar
-    capabilities
-    community
-    community_birthday
-    community_blogs
-    community_bookmarks
-    community_events
-    community_forums
-    community_wiki
-    crm
-    crm_cases
-    crm_common
-    crm_contacts
-    crm_files
-    crm_history
-    crm_invoices
-    crm_opportunities
-    crm_organisation
-    crm_tags
-    crm_task_templates
-    crm_tasks
-    crm_user_fields
-    crm_voip
-    feed
-    files
-    files_file_creation
-    files_file_operations
-    files_files
-    files_folders
-    files_sharing
-    files_third_party_integration
-    files_uploads
-    group
-    mail
-    mail_accounts
-    mail_alerts
-    mail_contacts
-    mail_conversations
-    mail_folders
-    mail_helpcenter
-    mail_images
-    mail_messages
-    mail_settings
-    mail_tags
-    mailserver
-    mailserver_addressdata
-    mailserver_dnsrecords
-    mailserver_domains
-    mailserver_mailboxes
-    mailserver_mailgroup
-    mailserver_notifications
-    mailserver_servers
-    people
-    people_reassign_user_data
-    portal
-    portal_backup
-    portal_quota
-    portal_users
-    project
-    project_comments
-    project_contacts
-    project_discussions
-    project_files
-    project_import
-    project_milestones
-    project_projects
-    project_report
-    project_tags
-    project_tasks
-    project_team
-    project_template
-    project_time
-    settings
-  ].freeze
+      authentication
+      calendar
+      capabilities
+      community
+      community_birthday
+      community_blogs
+      community_bookmarks
+      community_events
+      community_forums
+      community_wiki
+      crm
+      crm_cases
+      crm_common
+      crm_contacts
+      crm_files
+      crm_history
+      crm_invoices
+      crm_opportunities
+      crm_organisation
+      crm_tags
+      crm_task_templates
+      crm_tasks
+      crm_user_fields
+      crm_voip
+      feed
+      files
+      files_file_creation
+      files_file_operations
+      files_files
+      files_folders
+      files_sharing
+      files_third_party_integration
+      files_uploads
+      group
+      mail
+      mail_accounts
+      mail_alerts
+      mail_contacts
+      mail_conversations
+      mail_folders
+      mail_helpcenter
+      mail_images
+      mail_messages
+      mail_settings
+      mail_tags
+      mailserver
+      mailserver_addressdata
+      mailserver_dnsrecords
+      mailserver_domains
+      mailserver_mailboxes
+      mailserver_mailgroup
+      mailserver_notifications
+      mailserver_servers
+      people
+      people_reassign_user_data
+      portal
+      portal_backup
+      portal_quota
+      portal_users
+      project
+      project_comments
+      project_contacts
+      project_discussions
+      project_files
+      project_import
+      project_milestones
+      project_projects
+      project_report
+      project_tags
+      project_tasks
+      project_team
+      project_template
+      project_time
+      settings
+    ].freeze
 
     link(:identification, xpath: '//*[contains(@class, "treeheader")][text()="Portal api methods"]')
 
@@ -168,7 +168,7 @@ module TestingApiOnlyfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until {identification_element.visible?}
+      @instance.webdriver.wait_until { identification_element.visible? }
     end
 
     def expand_every_expandable_area
@@ -191,9 +191,8 @@ module TestingApiOnlyfficeCom
 
     def community_server_links_ok?
       checked = check_community_server_api_links
-      failed = checked.find_all {|_key, value| value == false}
+      failed = checked.find_all { |_key, value| value == false }
       [failed.empty?, failed]
     end
   end
 end
-

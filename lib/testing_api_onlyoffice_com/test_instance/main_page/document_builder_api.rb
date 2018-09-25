@@ -1,20 +1,20 @@
 require 'httparty'
 require 'onlyoffice_file_helper'
 module TestingApiOnlyfficeCom
-# https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
-# /docbuilder/basic
+  # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
+  # /docbuilder/basic
   class DocumentBuilderAPI
     include PageObject
 
     DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'.freeze
 
     DOC_BUILDER_EXAMPLES = %i[
-    c_sharp_mvc
-    c_sharp
-    node_js
-    php
-    ruby
-  ].freeze
+      c_sharp_mvc
+      c_sharp
+      node_js
+      php
+      ruby
+    ].freeze
 
     # download links
     link(:c_sharp_mvc, xpath: '//*[contains(@href, "MVC")]')
@@ -34,7 +34,7 @@ module TestingApiOnlyfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until {generate_document_element.visible?}
+      @instance.webdriver.wait_until { generate_document_element.visible? }
     end
 
     def builder_works?
@@ -63,7 +63,7 @@ module TestingApiOnlyfficeCom
 
     def download_links_ok?
       checked = check_download_links
-      failed = checked.find_all {|_key, value| value == false}
+      failed = checked.find_all { |_key, value| value == false }
       [failed.empty?, failed]
     end
   end

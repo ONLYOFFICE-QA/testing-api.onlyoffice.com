@@ -9,7 +9,7 @@ describe 'site_api_tests' do
 
   context '#community_server' do
     it '[API][CommunityServer] every api item shown' do
-      api_community_server_page =  @api_page.go_to_community_server_api
+      api_community_server_page = @api_page.go_to_community_server_api
       api_community_server_page.expand_every_expandable_area
       result, failed = api_community_server_page.community_server_links_ok?
       expect(result).to be_truthy, "Page #{instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
