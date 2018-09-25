@@ -1,3 +1,4 @@
+require 'httparty'
 require 'onlyoffice_file_helper'
 module TestingApiOnlyfficeCom
 # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
