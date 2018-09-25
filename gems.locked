@@ -14,6 +14,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    ast (2.4.0)
     aws-sdk (2.11.135)
       aws-sdk-resources (= 2.11.135)
     aws-sdk-core (2.11.135)
@@ -35,6 +36,7 @@ GEM
     headless (2.3.1)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
+    jaro_winkler (1.5.1)
     jmespath (1.4.0)
     net-http-persistent (2.9.4)
     onlyoffice_file_helper (0.1.0)
@@ -51,6 +53,11 @@ GEM
       watir (~> 6.0)
     page_navigation (0.10)
       data_magic (>= 0.22)
+    parallel (1.12.1)
+    parser (2.5.1.2)
+      ast (~> 2.4.0)
+    powerpack (0.1.2)
+    rainbow (3.0.0)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -64,10 +71,20 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
+    rubocop (0.59.2)
+      jaro_winkler (~> 1.5.1)
+      parallel (~> 1.10)
+      parser (>= 2.5, != 2.5.1.1)
+      powerpack (~> 0.1)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
+    ruby-progressbar (1.10.0)
     rubyzip (1.2.2)
     selenium-webdriver (3.14.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
+    unicode-display_width (1.4.0)
     watir (6.7.3)
       selenium-webdriver (~> 3.4, >= 3.4.1)
     yml_reader (0.7)
@@ -80,6 +97,7 @@ DEPENDENCIES
   onlyoffice_webdriver_wrapper!
   page-object
   rspec
+  rubocop
 
 BUNDLED WITH
    1.16.3
