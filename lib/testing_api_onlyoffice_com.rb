@@ -1,0 +1,3 @@
+require 'onlyoffice_webdriver_wrapper'
+
+require_relative 'testing_api_onlyoffice_com/test_instance'
