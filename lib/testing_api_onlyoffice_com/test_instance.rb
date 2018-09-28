@@ -2,6 +2,7 @@ require_relative 'test_instance/main_page'
 module TestingApiOnlyfficeCom
   class TestInstance
     attr_reader :webdriver
+    alias selenium webdriver
 
     def initialize(browser = :chrome)
       @webdriver = OnlyofficeWebdriverWrapper::WebDriver.new(browser)

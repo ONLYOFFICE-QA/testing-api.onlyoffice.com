@@ -1,6 +1,15 @@
 GIT
+  remote: https://github.com/onlyoffice-testing-robot/onlyoffice_documentserver_testing_framework
+  revision: b1d785ee6f5eb0ca290040bfd85b9b6d0023ea4d
+  branch: feature/first-version
+  specs:
+    onlyoffice_documentserver_testing_framework (0.0.1)
+      onlyoffice_logger_helper (~> 1)
+      onlyoffice_webdriver_wrapper (~> 0)
+
+GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_webdriver_wrapper
-  revision: b38d9970e787b212737ade252f26bbe47282b2ae
+  revision: 4ebd583ee425015d55af2e5f3d1ab8ba0a1ebcb3
   specs:
     onlyoffice_webdriver_wrapper (0.0.1)
       headless (~> 2)
@@ -15,18 +24,18 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.0)
-    aws-sdk (2.11.135)
-      aws-sdk-resources (= 2.11.135)
-    aws-sdk-core (2.11.135)
+    aws-sdk (2.11.139)
+      aws-sdk-resources (= 2.11.139)
+    aws-sdk-core (2.11.139)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.135)
-      aws-sdk-core (= 2.11.135)
+    aws-sdk-resources (2.11.139)
+      aws-sdk-core (= 2.11.139)
     aws-sigv4 (1.0.3)
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     concurrent-ruby (1.0.5)
-    data_magic (1.1)
+    data_magic (1.2)
       faker (>= 1.1.2)
       yml_reader (>= 0.6)
     diff-lcs (1.3)
@@ -34,9 +43,9 @@ GEM
       i18n (>= 0.7)
     ffi (1.9.25)
     headless (2.3.1)
-    httparty (0.15.7)
+    httparty (0.16.2)
       multi_xml (>= 0.5.2)
-    i18n (1.0.1)
+    i18n (1.1.0)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.1)
     jmespath (1.4.0)
@@ -97,6 +106,7 @@ PLATFORMS
 
 DEPENDENCIES
   httparty
+  onlyoffice_documentserver_testing_framework!
   onlyoffice_file_helper
   onlyoffice_webdriver_wrapper!
   page-object

@@ -1,3 +1,5 @@
+require 'onlyoffice_documentserver_testing_framework'
+
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37903128-7b1dcf28-30ff-11e8-828b-c3849e7a758c.png
   # /editors/basic
@@ -52,9 +54,9 @@ module TestingApiOnlyfficeCom
       wait_to_load
       try_now_docx_editor_element.click
       @instance.webdriver.switch_to_popup
-      @instance.init_online_documents
-      @instance.doc_instance.management.wait_loading_present(40)
-      @instance.doc_instance.management.wait_for_operation_with_round_status_canvas
+      documents = OnlyofficeDocumentserverTestingFramework::TestInstanceDocs.new(webdriver: @instance.webdriver)
+      documents.management.wait_loading_present(40)
+      documents.management.wait_for_operation_with_round_status_canvas
     end
 
     def integration_example_work?(editor = :document)
