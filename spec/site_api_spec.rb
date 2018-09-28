@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-instance = TestingApiOnlyfficeCom::TestInstance.new
 
 describe 'site_api_tests' do
   before :each do
-    @api_page = instance.go_to_main_page
+    @instance = TestingApiOnlyfficeCom::TestInstance.new
+    @api_page = @instance.go_to_main_page
   end
 
   context '#community_server' do
@@ -12,7 +12,7 @@ describe 'site_api_tests' do
       api_community_server_page = @api_page.go_to_community_server_api
       api_community_server_page.expand_every_expandable_area
       result, failed = api_community_server_page.community_server_links_ok?
-      expect(result).to be_truthy, "Page #{instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
+      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
     end
   end
 
@@ -22,12 +22,12 @@ describe 'site_api_tests' do
 
     it '[API][DocumentBuilder] generate document works' do
       result, file_size = api_document_builder_page.builder_works?
-      expect(result).to be_truthy, "Page #{instance.webdriver.driver.current_url}\n\nFile size: #{file_size}"
+      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nFile size: #{file_size}"
     end
 
     it '[API][DocumentBuilder] Integrating Document Builder download links shown and alive' do
       result, failed = api_document_builder_page.download_links_ok?
-      expect(result).to be_truthy, "Page #{instance.webdriver.driver.current_url}\n\nBad mojo with document builder links:\n #{failed}"
+      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nBad mojo with document builder links:\n #{failed}"
     end
   end
 
@@ -42,7 +42,7 @@ describe 'site_api_tests' do
     it '[API][DocumentServer] integration examples download links shown and alive' do
       api_document_server_page.go_to_integration_examples
       result, failed = api_document_server_page.download_links_ok?
-      expect(result).to be_truthy, "Page #{instance.webdriver.driver.current_url}\n\nBad mojo with document server links:\n #{failed}"
+      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nBad mojo with document server links:\n #{failed}"
     end
 
     context '#demo_editors' do
@@ -61,6 +61,6 @@ describe 'site_api_tests' do
   end
 
   after :each do
-    instance.webdriver.quit
+    @instance.webdriver.quit
   end
 end
