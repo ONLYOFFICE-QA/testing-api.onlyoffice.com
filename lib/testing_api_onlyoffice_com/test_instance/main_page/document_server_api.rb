@@ -60,7 +60,6 @@ module TestingApiOnlyfficeCom
 
     def integration_example_work?(editor = :document)
       go_to_integration_examples
-      @instance.webdriver.scroll_to_bottom
       wait_to_load
       demo_editor_switch_seems_legit? editor
     end
