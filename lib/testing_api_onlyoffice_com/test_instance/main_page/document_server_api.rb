@@ -54,9 +54,8 @@ module TestingApiOnlyfficeCom
       wait_to_load
       try_now_docx_editor_element.click
       @instance.webdriver.switch_to_popup
-      documents = OnlyofficeDocumentserverTestingFramework::TestInstanceDocs.new(webdriver: @instance.webdriver)
-      documents.management.wait_loading_present(40)
-      documents.management.wait_for_operation_with_round_status_canvas
+      documents_framework.management.wait_loading_present(40)
+      documents_framework.management.wait_for_operation_with_round_status_canvas
     end
 
     def integration_example_work?(editor = :document)
@@ -72,7 +71,7 @@ module TestingApiOnlyfficeCom
     end
 
     def editor_seems_legit?(editor = :document)
-      send("#{editor}_editor_demo_element").visible? && send("editor_#{editor}_title_element").present?
+      send("#{editor}_editor_demo_element").visible? && send("editor_#{editor}_title_element").visible?
     end
 
     def demo_editor_switch_seems_legit?(editor = :document)
@@ -94,6 +93,13 @@ module TestingApiOnlyfficeCom
       checked = check_download_links
       failed = checked.find_all { |_key, value| value == false }
       [failed.empty?, failed]
+    end
+
+    private
+
+    # @return [OnlyofficeDocumentserverTestingFramework::TestInstanceDocs] framework of documents
+    def documents_framework
+      @documents_framework ||= OnlyofficeDocumentserverTestingFramework::TestInstanceDocs.new(webdriver: @instance.webdriver)
     end
   end
 end
