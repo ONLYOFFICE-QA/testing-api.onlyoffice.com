@@ -27,12 +27,6 @@ module TestingApiOnlyfficeCom
     link(:try_now_docx_editor, xpath: '//*[contains(@href, "editors/editor?method=docxEditor")]')
 
     link(:integration_examples, xpath: '//*[contains(@href, "editors/demopreview")]')
-    # demo editors
-    in_iframe(name: 'frameEditor') do |frame|
-      link(:editor_document_title, xpath: '//head/title[contains(text(),".docx")]', frame: frame)
-      link(:editor_spreadsheet_title, xpath: '//head/title[contains(text(),".xlsx")]', frame: frame)
-      link(:editor_presentation_title, xpath: '//head/title[contains(text(),".pptx")]', frame: frame)
-    end
 
     # switchers
     link(:document_editor_demo, xpath: '//*[contains(@class,"demo-tab-panel")]//a[contains(@href,"type=text")]')
@@ -70,7 +64,7 @@ module TestingApiOnlyfficeCom
     end
 
     def editor_seems_legit?(editor = :document)
-      send("#{editor}_editor_demo_element").visible? && send("editor_#{editor}_title_element").visible?
+      send("#{editor}_editor_demo_element").visible? && documents_framework.management.editor_type == editor
     end
 
     def demo_editor_switch_seems_legit?(editor = :document)
