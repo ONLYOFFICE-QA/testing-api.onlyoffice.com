@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_documentserver_testing_framework
-  revision: 96bb8a9bbb16f2866d34080be46f88c07c3c12fb
+  revision: e740c6c08c99d6fbd1db5083f4c5a0d8920b39f2
   specs:
     onlyoffice_documentserver_testing_framework (0.0.1)
       onlyoffice_logger_helper (~> 1)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_webdriver_wrapper
-  revision: 4ebd583ee425015d55af2e5f3d1ab8ba0a1ebcb3
+  revision: b07fcf04304c66419471b9711d3a02f432f6c5cc
   specs:
     onlyoffice_webdriver_wrapper (0.0.1)
       headless (~> 2)
@@ -16,20 +16,20 @@ GIT
       onlyoffice_logger_helper (~> 1)
       onlyoffice_s3_wrapper (~> 0.1)
       page-object (~> 2.0.0)
-      selenium-webdriver (= 3.14.0)
+      selenium-webdriver (= 3.14.1)
       watir (~> 6.7.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.0)
-    aws-sdk (2.11.139)
-      aws-sdk-resources (= 2.11.139)
-    aws-sdk-core (2.11.139)
+    aws-sdk (2.11.158)
+      aws-sdk-resources (= 2.11.158)
+    aws-sdk-core (2.11.158)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.139)
-      aws-sdk-core (= 2.11.139)
+    aws-sdk-resources (2.11.158)
+      aws-sdk-core (= 2.11.158)
     aws-sigv4 (1.0.3)
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
@@ -44,7 +44,7 @@ GEM
     headless (2.3.1)
     httparty (0.16.2)
       multi_xml (>= 0.5.2)
-    i18n (1.1.0)
+    i18n (1.1.1)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.1)
     jmespath (1.4.0)
@@ -75,7 +75,7 @@ GEM
       rspec-mocks (~> 3.8.0)
     rspec-core (3.8.0)
       rspec-support (~> 3.8.0)
-    rspec-expectations (3.8.1)
+    rspec-expectations (3.8.2)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-mocks (3.8.0)
@@ -92,9 +92,9 @@ GEM
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.10.0)
     rubyzip (1.2.2)
-    selenium-webdriver (3.14.0)
+    selenium-webdriver (3.14.1)
       childprocess (~> 0.5)
-      rubyzip (~> 1.2)
+      rubyzip (~> 1.2, >= 1.2.2)
     unicode-display_width (1.4.0)
     watir (6.7.3)
       selenium-webdriver (~> 3.4, >= 3.4.1)
@@ -113,4 +113,4 @@ DEPENDENCIES
   rubocop
 
 BUNDLED WITH
-   1.16.3
+   1.16.6
