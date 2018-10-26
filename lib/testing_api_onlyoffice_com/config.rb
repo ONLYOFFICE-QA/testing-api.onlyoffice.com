@@ -20,7 +20,10 @@ module TestingApiOnlyfficeCom
 
     # @return [String] version of server
     def server_version
-      "Unknown by #{Time.now.strftime('%d/%m/%Y %H:%M')}"
+      version = URI.parse("#{@server}/version.txt").open.read.chomp
+      return "Unknown by #{Time.now.strftime('%d/%m/%Y %H:%M')}" unless version =~ /^[[:xdigit:]]+$/
+
+      version
     end
   end
 end
