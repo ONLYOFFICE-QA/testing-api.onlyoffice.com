@@ -75,7 +75,7 @@ module TestingApiOnlyfficeCom
     def check_download_links
       checked = {}
       DOC_SERVER_EXAMPLES.each do |ex|
-        link = eval("#{ex}_element")
+        link = send("#{ex}_element")
         checked["#{ex}_visibility"] = link.visible?
         checked["#{ex}_downloadable"] = HTTParty.head(link.href).success? if link.visible?
       end

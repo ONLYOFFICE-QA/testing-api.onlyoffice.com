@@ -3,6 +3,8 @@ require_relative 'main_page/document_builder_api'
 require_relative 'main_page/document_server_api'
 
 module TestingApiOnlyfficeCom
+  # Main page of api.onlyoffice.com
+  # https://user-images.githubusercontent.com/668524/47566467-85232580-d934-11e8-9c93-1e2fce0b4bfd.png
   class MainPage
     include PageObject
 

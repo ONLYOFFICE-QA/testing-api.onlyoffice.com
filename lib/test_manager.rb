@@ -6,7 +6,7 @@ class TestManager
 
   def initialize(params = {})
     params[:suite_name] ||= File.basename(__FILE__)
-    params[:plan_name] ||= Time.now.strftime("%d/%m/%Y %H:%M")
+    params[:plan_name] ||= 'Unknown Plan Name'
     params[:product_name] ||= 'api.onlyoffice.com'
     @tcm_helper = OnlyofficeTcmHelper::TcmHelper.new(params)
     @palladium = init_palladium(@tcm_helper)

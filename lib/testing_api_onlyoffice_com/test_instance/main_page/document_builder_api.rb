@@ -54,7 +54,7 @@ module TestingApiOnlyfficeCom
       open_integrating_document_builder
       checked = {}
       DOC_BUILDER_EXAMPLES.each do |ex|
-        link = eval("#{ex}_element")
+        link = send("#{ex}_element")
         checked["#{ex}_visibility"] = link.visible?
         checked["#{ex}_downloadable"] = HTTParty.head(link.href).success? if link.visible?
       end
