@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-
+test_manager = TestManager.new(suite_name: 'Site Api')
 describe 'site_api_tests' do
   before :each do
     @instance = TestingApiOnlyfficeCom::TestInstance.new
@@ -60,7 +60,8 @@ describe 'site_api_tests' do
     end
   end
 
-  after :each do
+  after :each do |example|
+    test_manager.add_result(example)
     @instance.webdriver.quit
   end
 end
