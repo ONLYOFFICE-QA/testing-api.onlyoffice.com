@@ -37,14 +37,6 @@ Style/EvalWithLocation:
     - 'lib/testing_api_onlyoffice_com/test_instance/main_page/document_builder_api.rb'
     - 'lib/testing_api_onlyoffice_com/test_instance/main_page/document_server_api.rb'
 
-# Offense count: 1
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, ConsistentQuotesInMultiline.
-# SupportedStyles: single_quotes, double_quotes
-Style/StringLiterals:
-  Exclude:
-    - 'lib/test_manager.rb'
-
 # Offense count: 47
 # Configuration parameters: AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
 # URISchemes: http, https
