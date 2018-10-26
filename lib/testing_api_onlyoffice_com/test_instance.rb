@@ -6,12 +6,13 @@ module TestingApiOnlyfficeCom
     alias selenium webdriver
 
     def initialize(config)
-      @webdriver = OnlyofficeWebdriverWrapper::WebDriver.new(config.browser)
+      @config = config
+      @webdriver = OnlyofficeWebdriverWrapper::WebDriver.new(@config.browser)
     end
 
     # @return [MainPage] main page to operate
     def go_to_main_page
-      webdriver.open('https://api.teamlab.info') # TODO: Add support of api.onlyoffice.com
+      webdriver.open(@config.server)
       MainPage.new(self)
     end
   end
