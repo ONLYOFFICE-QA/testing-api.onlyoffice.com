@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'site_api_tests' do
   before :all do
-    @test_manager = TestManager.new(suite_name: 'Site Api', plan_name: @config.to_s)
+    @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Site Api', plan_name: @config.to_s)
   end
 
   before :each do
