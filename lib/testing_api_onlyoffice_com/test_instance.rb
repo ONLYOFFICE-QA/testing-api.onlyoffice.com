@@ -4,8 +4,8 @@ module TestingApiOnlyfficeCom
     attr_reader :webdriver
     alias selenium webdriver
 
-    def initialize(browser = :chrome)
-      @webdriver = OnlyofficeWebdriverWrapper::WebDriver.new(browser)
+    def initialize(config)
+      @webdriver = OnlyofficeWebdriverWrapper::WebDriver.new(config.browser)
     end
 
     def go_to_main_page
