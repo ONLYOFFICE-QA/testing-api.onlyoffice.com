@@ -7,7 +7,7 @@ module TestingApiOnlyfficeCom
     attr_reader :browser
 
     def initialize(params = {})
-      @server = params.fetch(:server, 'https://api.teamlab.info')
+      @server = params.fetch(:server, default_server)
       @browser = params.fetch(:browser, :chrome)
     end
 
@@ -24,6 +24,13 @@ module TestingApiOnlyfficeCom
       return "Unknown by #{Time.now.strftime('%d/%m/%Y %H:%M')}" unless version =~ /^[[:xdigit:]]+$/
 
       version
+    end
+
+    # @return [String] server on which test are performed
+    def default_server
+      return 'https://api.onlyoffice.com' if ENV['SPEC_REGION'] && ENV['SPEC_REGION'].include?('com')
+
+      'https://api.teamlab.info'
     end
   end
 end
