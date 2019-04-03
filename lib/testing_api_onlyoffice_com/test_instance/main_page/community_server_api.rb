@@ -25,7 +25,6 @@ module TestingApiOnlyfficeCom
       crm_opportunities
       crm_organisation
       crm_tags
-      crm_task_templates
       crm_tasks
       crm_user_fields
       crm_voip
@@ -103,7 +102,6 @@ module TestingApiOnlyfficeCom
     link(:crm_opportunities, xpath: '//*[contains(@href, "crm/opportunities")]')
     link(:crm_organisation, xpath: '//*[contains(@href, "crm/organisation")]')
     link(:crm_tags, xpath: '//*[contains(@href, "crm/tags")]')
-    link(:crm_task_templates, xpath: '//*[contains(@href, "crm/task%20templates")]')
     link(:crm_tasks, xpath: '//*[contains(@href, "crm/tasks")]')
     link(:crm_user_fields, xpath: '//*[contains(@href, "crm/user%20fields")]')
     link(:crm_voip, xpath: '//*[contains(@href, "crm/voip")]')
