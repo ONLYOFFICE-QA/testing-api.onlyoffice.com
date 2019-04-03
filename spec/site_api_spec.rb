@@ -20,16 +20,20 @@ describe 'site_api_tests' do
   end
 
   context '#document_builder' do
-    api_document_builder_page = nil
-    before { api_document_builder_page = @api_page.go_to_document_builder_api }
+    introduction_page = nil
+
+    before :each do
+      introduction_page = @api_page.go_to_document_builder_introduction
+    end
 
     it '[API][DocumentBuilder] generate document works' do
-      result, file_size = api_document_builder_page.builder_works?
+      result, file_size = introduction_page.builder_works?
       expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nFile size: #{file_size}"
     end
 
     it '[API][DocumentBuilder] Integrating Document Builder download links shown and alive' do
-      result, failed = api_document_builder_page.download_links_ok?
+      integraing_page = introduction_page.open_integrating_document_builder
+      result, failed = integraing_page.download_links_ok?
       expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nBad mojo with document builder links:\n #{failed}"
     end
   end

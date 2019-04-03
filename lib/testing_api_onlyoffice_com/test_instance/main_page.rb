@@ -1,5 +1,6 @@
 require_relative 'main_page/community_server_api'
-require_relative 'main_page/document_builder_api'
+require_relative 'main_page/document_builder_api/document_builder_introduction'
+require_relative 'main_page/document_builder_api/documen_builder_integrating'
 require_relative 'main_page/document_server_api'
 
 module TestingApiOnlyfficeCom
@@ -38,9 +39,9 @@ module TestingApiOnlyfficeCom
       CommunityServerAPI.new(@instance)
     end
 
-    def go_to_document_builder_api
+    def go_to_document_builder_introduction
       document_builder_element.click
-      DocumentBuilderAPI.new(@instance)
+      DocumentBuilderIntroduction.new(@instance)
     end
 
     def go_to_document_server_api

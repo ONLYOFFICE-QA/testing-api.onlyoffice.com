@@ -1,10 +1,12 @@
 require 'httparty'
 require 'onlyoffice_file_helper'
+require_relative 'left_side_navigation'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
   # /docbuilder/basic
-  class DocumentBuilderAPI
+  class DocumentBuilderIntegrating
     include PageObject
+    include LeftSideNavigation
 
     DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'.freeze
 
@@ -43,11 +45,6 @@ module TestingApiOnlyfficeCom
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_file)
       file_size = File.size(path_to_downloaded_file)
       [file_size > 10_000, file_size]
-    end
-
-    def open_integrating_document_builder
-      integrating_document_builder_element.click
-      wait_to_load
     end
 
     def check_download_links
