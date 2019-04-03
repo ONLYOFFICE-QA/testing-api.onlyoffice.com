@@ -1,12 +1,13 @@
-require 'httparty'
 require 'onlyoffice_file_helper'
-require_relative 'left_side_navigation'
+require_relative 'document_builder_api_common/left_side_navigation_builder'
+require_relative 'document_builder_api_common/document_builder'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
   # /docbuilder/basic
   class DocumentBuilderIntegrating
     include PageObject
-    include LeftSideNavigation
+    include LeftSideNavigationBuilder
+    include DocumentBuilder
 
     DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'.freeze
 
@@ -25,10 +26,6 @@ module TestingApiOnlyfficeCom
     link(:php, xpath: '//*[contains(@href, "PHP")]')
     link(:ruby, xpath: '//*[contains(@href, "Ruby")]')
 
-    # actions
-    link(:generate_document, xpath: '//*[@id="generateButton"]')
-    link(:integrating_document_builder, xpath: '//*[contains(@href, "/docbuilder/integratingdocumentbuilder")]')
-
     def initialize(instance)
       @instance = instance
       super(@instance.webdriver.driver)
@@ -37,14 +34,6 @@ module TestingApiOnlyfficeCom
 
     def wait_to_load
       @instance.webdriver.wait_until { generate_document_element.visible? }
-    end
-
-    def builder_works?
-      generate_document_element.click
-      path_to_downloaded_file = @instance.webdriver.download_directory + '/' + DEFAULT_BUILDER_FILE_NAME
-      OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_file)
-      file_size = File.size(path_to_downloaded_file)
-      [file_size > 10_000, file_size]
     end
 
     def check_download_links

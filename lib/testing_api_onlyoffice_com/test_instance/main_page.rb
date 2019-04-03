@@ -1,6 +1,5 @@
 require_relative 'main_page/community_server_api'
-require_relative 'main_page/document_builder_api/document_builder_introduction'
-require_relative 'main_page/document_builder_api/documen_builder_integrating'
+require_relative 'main_page/document_builder_api'
 require_relative 'main_page/document_server_api'
 
 module TestingApiOnlyfficeCom
