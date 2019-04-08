@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'document_builder_example' do
   before :all do
-    @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Site Api', plan_name: @config.to_s)
+    @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Document Builder Example', plan_name: @config.to_s)
   end
 
   before :each do
