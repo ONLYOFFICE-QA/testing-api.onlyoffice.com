@@ -26,7 +26,7 @@ describe 'document_builder_example' do
       sample_docx_file = @introduction_page.create_docx_from_sample_data
       expect(File.file?(sample_docx_file)).to be_truthy
       parsed_sample_docx_file = OoxmlParser::Parser.parse(sample_docx_file)
-     expect(parsed_sample_docx_file.elements[1]
+      expect(parsed_sample_docx_file.elements[1]
                  .character_style_array[0].text).to include(TestData::DEFAULT_NAME)
       expect(parsed_sample_docx_file.elements[2]
                  .character_style_array[0].text).to match(/^#{TestData::DEFAULT_COMPANY}.*#{TestData::DEFAULT_POSITION}.*/)
@@ -37,7 +37,8 @@ describe 'document_builder_example' do
       expect(File.file?(sample_xlsx_file)).to be_truthy
       parsed_sample_xlsx_file = OoxmlParser::Parser.parse(sample_xlsx_file)
       expect(parsed_sample_xlsx_file.worksheets[0]
-                 .rows[6].cells[0].raw_text).to match(/.*#{TestData::DEFAULT_COMPANY} #{TestData::DEFAULT_POSITION}.*#{TestData::DEFAULT_NAME}.*/)
+                 .rows[6].cells[0].raw_text)
+        .to match(/.*#{TestData::DEFAULT_COMPANY} #{TestData::DEFAULT_POSITION}.*#{TestData::DEFAULT_NAME}.*/)
     end
 
     it 'create document with custom data works' do
@@ -55,7 +56,8 @@ describe 'document_builder_example' do
       sample_xlsx_custom_file = @introduction_page.create_xlsx_from_sample_data
       parsed_sample_custom_xlsx_file = OoxmlParser::Parser.parse(sample_xlsx_custom_file)
       expect(parsed_sample_custom_xlsx_file.worksheets[0]
-                 .rows[6].cells[0].raw_text).to match(/.*#{TestData::CUSTOM_COMPANY} #{TestData::CUSTOM_POSITION}.*#{TestData::CUSTOM_NAME}.*/)
+                 .rows[6].cells[0].raw_text)
+        .to match(/.*#{TestData::CUSTOM_COMPANY} #{TestData::CUSTOM_POSITION}.*#{TestData::CUSTOM_NAME}.*/)
     end
   end
 
