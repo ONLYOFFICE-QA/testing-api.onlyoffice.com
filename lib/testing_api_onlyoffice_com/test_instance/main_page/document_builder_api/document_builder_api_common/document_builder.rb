@@ -4,12 +4,20 @@ require 'ooxml_parser'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
   # /docbuilder/basic
-  module DocumentBuilder
+  module DocumetBuilder
     include PageObject
 
     DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'.freeze
     DEFAULT_BUILDER_DOCX_FILE_NAME = 'Sample.docx'.freeze
     DEFAULT_BUILDER_XLSX_FILE_NAME = 'Sample.xlsx'.freeze
+
+    DEFAULT_NAME = 'John Smith'.freeze
+    DEFAULT_COMPANY = 'ONLYOFFICE'.freeze
+    DEFAULT_POSITION = 'Commercial director'.freeze
+
+    CUSTOM_NAME = 'Ivan Lebedev'.freeze
+    CUSTOM_COMPANY = 'Heartwell'.freeze
+    CUSTOM_POSITION = 'QA Engineer'.freeze
 
     # actions
     link(:generate_document, xpath: '//*[@id="generateButton"]')
@@ -50,10 +58,10 @@ module TestingApiOnlyfficeCom
       path_to_downloaded_xlsx_file
     end
 
-    def input_name_company_position(name = 'Ivan Petrov', company = 'Heartwell', position = 'QA Engineer')
-      self.name_field = name
-      self.company_field = company
-      self.position_field = position
+    def input_name_company_position(params = {})
+      self.name_field = params.fetch(:name, CUSTOM_NAME)
+      self.company_field = params.fetch(:company, CUSTOM_COMPANY)
+      self.position_field = params.fetch(:position, CUSTOM_POSITION)
     end
 
     def button_generate_document_visible?

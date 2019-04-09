@@ -5,6 +5,13 @@ describe 'document_builder_example' do
     @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Document Builder Example', plan_name: @config.to_s)
   end
 
+  default_name = TestingApiOnlyfficeCom::DocumetBuilder::DEFAULT_NAME
+  default_company = TestingApiOnlyfficeCom::DocumetBuilder::DEFAULT_COMPANY
+  default_position = TestingApiOnlyfficeCom::DocumetBuilder::DEFAULT_POSITION
+  custom_name = TestingApiOnlyfficeCom::DocumetBuilder::CUSTOM_NAME
+  custom_company = TestingApiOnlyfficeCom::DocumetBuilder::CUSTOM_COMPANY
+  custom_position = TestingApiOnlyfficeCom::DocumetBuilder::CUSTOM_POSITION
+
   before :each do
     @instance = TestingApiOnlyfficeCom::TestInstance.new(@config)
     @api_page = @instance.go_to_main_page
@@ -20,7 +27,7 @@ describe 'document_builder_example' do
       expect(File.file?(file_generated_from_script)).to be_truthy
       parsed_generated_file = OoxmlParser::Parser.parse(file_generated_from_script)
       expect(parsed_generated_file.elements[2]
-                 .character_style_array[0].text).to match(/^ONLYOFFICE.*Commercial director.*/)
+                 .character_style_array[0].text).to match(/^#{default_company}.*#{default_position}.*/)
     end
 
     it 'create document works' do
@@ -28,9 +35,9 @@ describe 'document_builder_example' do
       expect(File.file?(sample_docx_file)).to be_truthy
       parsed_sample_docx_file = OoxmlParser::Parser.parse(sample_docx_file)
       expect(parsed_sample_docx_file.elements[1]
-                 .character_style_array[0].text).to include('John Smith')
+                 .character_style_array[0].text).to include(default_name)
       expect(parsed_sample_docx_file.elements[2]
-                 .character_style_array[0].text).to match(/^ONLYOFFICE.*Commercial director.*/)
+                 .character_style_array[0].text).to match(/^#{default_company}.*#{default_position}.*/)
     end
 
     it 'create spreadsheet works' do
@@ -38,7 +45,7 @@ describe 'document_builder_example' do
       expect(File.file?(sample_xlsx_file)).to be_truthy
       parsed_sample_xlsx_file = OoxmlParser::Parser.parse(sample_xlsx_file)
       expect(parsed_sample_xlsx_file.worksheets[0]
-                 .rows[6].cells[0].raw_text).to match(/.*ONLYOFFICE Commercial director.*John Smith.*/)
+                 .rows[6].cells[0].raw_text).to match(/.*#{default_company} #{default_position}.*#{default_name}.*/)
     end
 
     it 'create document with custom data works' do
@@ -46,9 +53,9 @@ describe 'document_builder_example' do
       sample_docx_custom_file = @introduction_page.create_docx_from_sample_data
       parsed_sample_custom_docx_file = OoxmlParser::Parser.parse(sample_docx_custom_file)
       expect(parsed_sample_custom_docx_file.elements[1]
-                 .character_style_array[0].text).to include('Ivan Petrov')
+                 .character_style_array[0].text).to include(custom_name)
       expect(parsed_sample_custom_docx_file.elements[2]
-                 .character_style_array[0].text).to match(/^Heartwell.*QA Engineer.*/)
+                 .character_style_array[0].text).to match(/^#{custom_company}.*#{custom_position}.*/)
     end
 
     it 'create spreadsheet with custom data works' do
@@ -56,7 +63,7 @@ describe 'document_builder_example' do
       sample_xlsx_custom_file = @introduction_page.create_xlsx_from_sample_data
       parsed_sample_custom_xlsx_file = OoxmlParser::Parser.parse(sample_xlsx_custom_file)
       expect(parsed_sample_custom_xlsx_file.worksheets[0]
-                 .rows[6].cells[0].raw_text).to match(/.*Heartwell QA Engineer.*Ivan Petrov.*/)
+                 .rows[6].cells[0].raw_text).to match(/.*#{custom_company} #{custom_position}.*#{custom_name}.*/)
     end
   end
 
