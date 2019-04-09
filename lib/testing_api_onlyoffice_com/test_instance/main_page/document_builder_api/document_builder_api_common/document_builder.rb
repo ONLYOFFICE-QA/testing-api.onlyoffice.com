@@ -7,19 +7,19 @@ module TestingApiOnlyfficeCom
   module DocumentBuilder
     include PageObject
 
-    DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'.freeze
-    DEFAULT_BUILDER_DOCX_FILE_NAME = 'Sample.docx'.freeze
-    DEFAULT_BUILDER_XLSX_FILE_NAME = 'Sample.xlsx'.freeze
-
     # actions
     link(:generate_document, xpath: '//*[@id="generateButton"]')
     link(:create_document, xpath: '//*[@id="createDocx"]')
     link(:create_spreadsheet, xpath: '//*[@id="createXlsx"]')
 
+    text_field(:name_field, xpath: '//*[@name="name"]')
+    text_field(:company_field, xpath: '//*[@name="company"]')
+    text_field(:position_field, xpath: '//*[@name="title"]')
+
     # @return [String] path to generated file
     def generate_document_from_script
       generate_document_element.click
-      path_to_downloaded_file = @instance.webdriver.download_directory + '/' + DEFAULT_BUILDER_FILE_NAME
+      path_to_downloaded_file = @instance.webdriver.download_directory + '/' + TestData::DEFAULT_BUILDER_FILE_NAME
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_file)
       path_to_downloaded_file
     end
@@ -33,7 +33,7 @@ module TestingApiOnlyfficeCom
     # @return [String] path to docx file created from a sample data
     def create_docx_from_sample_data
       create_document_element.click
-      path_to_downloaded_docx_file = @instance.webdriver.download_directory + '/' + DEFAULT_BUILDER_DOCX_FILE_NAME
+      path_to_downloaded_docx_file = @instance.webdriver.download_directory + '/' + TestData::DEFAULT_BUILDER_DOCX_FILE_NAME
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_docx_file)
       path_to_downloaded_docx_file
     end
@@ -41,9 +41,15 @@ module TestingApiOnlyfficeCom
     # @return [String] path to xlsx file created from a sample data
     def create_xlsx_from_sample_data
       create_spreadsheet_element.click
-      path_to_downloaded_xlsx_file = @instance.webdriver.download_directory + '/' + DEFAULT_BUILDER_XLSX_FILE_NAME
+      path_to_downloaded_xlsx_file = @instance.webdriver.download_directory + '/' + TestData::DEFAULT_BUILDER_XLSX_FILE_NAME
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_xlsx_file)
       path_to_downloaded_xlsx_file
+    end
+
+    def input_name_company_position(params = {})
+      self.name_field = params.fetch(:name, TestData::CUSTOM_NAME)
+      self.company_field = params.fetch(:company, TestData::CUSTOM_COMPANY)
+      self.position_field = params.fetch(:position, TestData::CUSTOM_POSITION)
     end
 
     def button_generate_document_visible?
