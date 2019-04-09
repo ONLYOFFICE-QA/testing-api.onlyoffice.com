@@ -40,6 +40,24 @@ describe 'document_builder_example' do
       expect(parsed_sample_xlsx_file.worksheets[0]
                  .rows[6].cells[0].raw_text).to match(/.*ONLYOFFICE Commercial director.*John Smith.*/)
     end
+
+    it 'create document with custom data works' do
+      @introduction_page.input_name_company_position
+      sample_docx_custom_file = @introduction_page.create_docx_from_sample_data
+      parsed_sample_custom_docx_file = OoxmlParser::Parser.parse(sample_docx_custom_file)
+      expect(parsed_sample_custom_docx_file.elements[1]
+                 .character_style_array[0].text).to include('Ivan Petrov')
+      expect(parsed_sample_custom_docx_file.elements[2]
+                 .character_style_array[0].text).to match(/^Heartwell.*QA Engineer.*/)
+    end
+
+    it 'create spreadsheet with custom data works' do
+      @introduction_page.input_name_company_position
+      sample_xlsx_custom_file = @introduction_page.create_xlsx_from_sample_data
+      parsed_sample_custom_xlsx_file = OoxmlParser::Parser.parse(sample_xlsx_custom_file)
+      expect(parsed_sample_custom_xlsx_file.worksheets[0]
+                 .rows[6].cells[0].raw_text).to match(/.*Heartwell QA Engineer.*Ivan Petrov.*/)
+    end
   end
 
   after :each do |example|

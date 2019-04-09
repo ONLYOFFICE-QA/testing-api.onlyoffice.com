@@ -16,6 +16,10 @@ module TestingApiOnlyfficeCom
     link(:create_document, xpath: '//*[@id="createDocx"]')
     link(:create_spreadsheet, xpath: '//*[@id="createXlsx"]')
 
+    text_field(:name_field, xpath: '//*[@name="name"]')
+    text_field(:company_field, xpath: '//*[@name="company"]')
+    text_field(:position_field, xpath: '//*[@name="title"]')
+
     # @return [String] path to generated file
     def generate_document_from_script
       generate_document_element.click
@@ -44,6 +48,12 @@ module TestingApiOnlyfficeCom
       path_to_downloaded_xlsx_file = @instance.webdriver.download_directory + '/' + DEFAULT_BUILDER_XLSX_FILE_NAME
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_xlsx_file)
       path_to_downloaded_xlsx_file
+    end
+
+    def input_name_company_position(name = 'Ivan Petrov', company = 'Heartwell', position = 'QA Engineer')
+      self.name_field = name
+      self.company_field = company
+      self.position_field = position
     end
 
     def button_generate_document_visible?
