@@ -5,12 +5,12 @@ describe 'document_builder_example' do
     @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Document Builder Example', plan_name: @config.to_s)
   end
 
-  default_name = TestingApiOnlyfficeCom::DocumetBuilder::DEFAULT_NAME
-  default_company = TestingApiOnlyfficeCom::DocumetBuilder::DEFAULT_COMPANY
-  default_position = TestingApiOnlyfficeCom::DocumetBuilder::DEFAULT_POSITION
-  custom_name = TestingApiOnlyfficeCom::DocumetBuilder::CUSTOM_NAME
-  custom_company = TestingApiOnlyfficeCom::DocumetBuilder::CUSTOM_COMPANY
-  custom_position = TestingApiOnlyfficeCom::DocumetBuilder::CUSTOM_POSITION
+  default_name = TestingApiOnlyfficeCom::DocumentBuilder::DEFAULT_NAME
+  default_company = TestingApiOnlyfficeCom::DocumentBuilder::DEFAULT_COMPANY
+  default_position = TestingApiOnlyfficeCom::DocumentBuilder::DEFAULT_POSITION
+  custom_name = TestingApiOnlyfficeCom::DocumentBuilder::CUSTOM_NAME
+  custom_company = TestingApiOnlyfficeCom::DocumentBuilder::CUSTOM_COMPANY
+  custom_position = TestingApiOnlyfficeCom::DocumentBuilder::CUSTOM_POSITION
 
   before :each do
     @instance = TestingApiOnlyfficeCom::TestInstance.new(@config)

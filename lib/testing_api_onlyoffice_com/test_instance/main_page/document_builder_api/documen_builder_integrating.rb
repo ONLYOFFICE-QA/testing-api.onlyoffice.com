@@ -7,7 +7,7 @@ module TestingApiOnlyfficeCom
   class DocumentBuilderIntegrating
     include PageObject
     include LeftSideNavigationBuilder
-    include DocumetBuilder
+    include DocumentBuilder
 
     DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'.freeze
 

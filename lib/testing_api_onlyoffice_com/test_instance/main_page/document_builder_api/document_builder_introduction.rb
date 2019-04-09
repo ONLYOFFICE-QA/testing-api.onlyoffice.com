@@ -6,7 +6,7 @@ module TestingApiOnlyfficeCom
   # /docbuilder/basic
   class DocumentBuilderIntroduction
     include LeftSideNavigationBuilder
-    include DocumetBuilder
+    include DocumentBuilder
 
     def initialize(instance)
       @instance = instance
