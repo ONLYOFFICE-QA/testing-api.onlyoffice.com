@@ -1,16 +1,14 @@
 require 'spec_helper'
-
 describe 'document_builder_example' do
-  before :all do
-    @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Document Builder Example', plan_name: @config.to_s)
-  end
-
-  default_name = TestingApiOnlyfficeCom::DocumentBuilder::DEFAULT_NAME
-  default_company = TestingApiOnlyfficeCom::DocumentBuilder::DEFAULT_COMPANY
-  default_position = TestingApiOnlyfficeCom::DocumentBuilder::DEFAULT_POSITION
+  # default_name = TestingApiOnlyfficeCom::DocumentBuilder::DEFAULT_NAME
+  # default_company = TestingApiOnlyfficeCom::DocumentBuilder::DEFAULT_COMPANY
+  # default_position = TestingApiOnlyfficeCom::DocumentBuilder::DEFAULT_POSITION
   custom_name = TestingApiOnlyfficeCom::DocumentBuilder::CUSTOM_NAME
   custom_company = TestingApiOnlyfficeCom::DocumentBuilder::CUSTOM_COMPANY
   custom_position = TestingApiOnlyfficeCom::DocumentBuilder::CUSTOM_POSITION
+  before :all do
+    @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Document Builder Example', plan_name: @config.to_s)
+  end
 
   before :each do
     @instance = TestingApiOnlyfficeCom::TestInstance.new(@config)
@@ -27,17 +25,17 @@ describe 'document_builder_example' do
       expect(File.file?(file_generated_from_script)).to be_truthy
       parsed_generated_file = OoxmlParser::Parser.parse(file_generated_from_script)
       expect(parsed_generated_file.elements[2]
-                 .character_style_array[0].text).to match(/^#{default_company}.*#{default_position}.*/)
+                 .character_style_array[0].text).to match(/^#{TestingApiOnlyfficeCom::TestData::DEFAULT_COMPANY}.*#{TestingApiOnlyfficeCom::TestData::DEFAULT_POSITION}.*/)
     end
 
     it 'create document works' do
       sample_docx_file = @introduction_page.create_docx_from_sample_data
       expect(File.file?(sample_docx_file)).to be_truthy
       parsed_sample_docx_file = OoxmlParser::Parser.parse(sample_docx_file)
-      expect(parsed_sample_docx_file.elements[1]
-                 .character_style_array[0].text).to include(default_name)
+     expect(parsed_sample_docx_file.elements[1]
+                 .character_style_array[0].text).to include(TestingApiOnlyfficeCom::TestData::DEFAULT_NAME)
       expect(parsed_sample_docx_file.elements[2]
-                 .character_style_array[0].text).to match(/^#{default_company}.*#{default_position}.*/)
+                 .character_style_array[0].text).to match(/^#{TestingApiOnlyfficeCom::TestData::DEFAULT_COMPANY}.*#{TestingApiOnlyfficeCom::TestData::DEFAULT_POSITION}.*/)
     end
 
     it 'create spreadsheet works' do
@@ -45,7 +43,7 @@ describe 'document_builder_example' do
       expect(File.file?(sample_xlsx_file)).to be_truthy
       parsed_sample_xlsx_file = OoxmlParser::Parser.parse(sample_xlsx_file)
       expect(parsed_sample_xlsx_file.worksheets[0]
-                 .rows[6].cells[0].raw_text).to match(/.*#{default_company} #{default_position}.*#{default_name}.*/)
+                 .rows[6].cells[0].raw_text).to match(/.*#{TestingApiOnlyfficeCom::TestData::DEFAULT_COMPANY} #{TestingApiOnlyfficeCom::TestData::DEFAULT_POSITION}.*#{TestingApiOnlyfficeCom::TestData::DEFAULT_NAME}.*/)
     end
 
     it 'create document with custom data works' do

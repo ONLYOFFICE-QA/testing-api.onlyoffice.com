@@ -11,9 +11,9 @@ module TestingApiOnlyfficeCom
     DEFAULT_BUILDER_DOCX_FILE_NAME = 'Sample.docx'.freeze
     DEFAULT_BUILDER_XLSX_FILE_NAME = 'Sample.xlsx'.freeze
 
-    DEFAULT_NAME = 'John Smith'.freeze
-    DEFAULT_COMPANY = 'ONLYOFFICE'.freeze
-    DEFAULT_POSITION = 'Commercial director'.freeze
+    #DEFAULT_NAME = 'John Smith'.freeze
+    #DEFAULT_COMPANY = 'ONLYOFFICE'.freeze
+    #DEFAULT_POSITION = 'Commercial director'.freeze
 
     CUSTOM_NAME = 'Ivan Lebedev'.freeze
     CUSTOM_COMPANY = 'Heartwell'.freeze
