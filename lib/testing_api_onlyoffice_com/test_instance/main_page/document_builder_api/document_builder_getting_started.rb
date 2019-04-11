@@ -1,8 +1,8 @@
 require 'httparty'
 require 'onlyoffice_file_helper'
 module TestingApiOnlyfficeCom
-  # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
-  # /docbuilder/basic
+  # https://user-images.githubusercontent.com/40513035/55968227-48e64600-5c84-11e9-8ca6-90d1057918cd.png
+  # /docbuilder/gettingstarted
   class DocumentBuilderGettingStarted
     include PageObject
 
