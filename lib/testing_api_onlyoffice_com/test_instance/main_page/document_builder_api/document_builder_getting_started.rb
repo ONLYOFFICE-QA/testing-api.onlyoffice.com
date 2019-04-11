@@ -21,7 +21,6 @@ module TestingApiOnlyfficeCom
       @instance.webdriver.wait_until { windowsx86_element.visible? }
     end
 
-    # @return [String] path to downloaded library for LINUXx64
     def download_library_linuxx64_works?
       linuxx64_element.click
       path_to_downloaded_library_linuxx64 = @instance.webdriver.download_directory + '/' + TestData::DEFAULT_LIBRARY_LINUXX64_NAME
@@ -30,7 +29,6 @@ module TestingApiOnlyfficeCom
       [file_size_linuxx64 > 10_000, file_size_linuxx64]
     end
 
-    # @return [String] path to downloaded library for WINDOWSx64
     def download_library_windowsx64_works?
       windowsx64_element.click
       path_to_downloaded_library_windowsx64 = @instance.webdriver.download_directory + '/' + TestData::DEFAULT_LIBRARY_WINDOWSX64_NAME
@@ -39,7 +37,6 @@ module TestingApiOnlyfficeCom
       [file_size_windowsx64 > 10_000, file_size_windowsx64]
     end
 
-    # @return [String] path to downloaded library for WINDOWSx86
     def download_library_windowsx86_works?
       windowsx86_element.click
       path_to_downloaded_library_windowsx86 = @instance.webdriver.download_directory + '/' + TestData::DEFAULT_LIBRARY_WINDOWSX86_NAME
