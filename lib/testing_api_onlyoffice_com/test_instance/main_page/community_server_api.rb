@@ -43,6 +43,7 @@ module TestingApiOnlyfficeCom
       mail_alerts
       mail_contacts
       mail_conversations
+      mail_filters
       mail_folders
       mail_helpcenter
       mail_images
@@ -59,6 +60,7 @@ module TestingApiOnlyfficeCom
       mailserver_servers
       people
       people_reassign_user_data
+      people_remove_user_data
       portal
       portal_backup
       portal_quota
@@ -120,6 +122,7 @@ module TestingApiOnlyfficeCom
     link(:mail_alerts, xpath: '//*[contains(@href, "mail/alerts")]')
     link(:mail_contacts, xpath: '//*[contains(@href, "mail/contacts")]')
     link(:mail_conversations, xpath: '//*[contains(@href, "mail/conversations")]')
+    link(:mail_filters, xpath: '//*[contains(@href, "mail/filters")]')
     link(:mail_folders, xpath: '//*[contains(@href, "mail/folders")]')
     link(:mail_helpcenter, xpath: '//*[contains(@href, "mail/helpcenter")]')
     link(:mail_images, xpath: '//*[contains(@href, "mail/images")]')
@@ -136,6 +139,7 @@ module TestingApiOnlyfficeCom
     link(:mailserver_servers, xpath: '//*[contains(@href, "mailserver/servers")]')
     link(:people, xpath: '//*[contains(@href, "people")]')
     link(:people_reassign_user_data, xpath: '//*[contains(@href, "people/reassign%20user%20data")]')
+    link(:people_remove_user_data, xpath: '//*[contains(@href, "people/remove%20user%20data")]')
     link(:portal, xpath: '//*[contains(@href, "portal")]')
     link(:portal_backup, xpath: '//*[contains(@href, "portal/backup")]')
     link(:portal_quota, xpath: '//*[contains(@href, "portal/quota")]')
