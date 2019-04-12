@@ -7,9 +7,9 @@ module TestingApiOnlyfficeCom
     include PageObject
 
     # actions
-    link(:linux_x64, xpath: '//a[@href="http://download.onlyoffice.com/install/desktop/docbuilder/documentbuilder-x64.tar.gz"]')
-    link(:windows_x64, xpath: '//a[@href="http://download.onlyoffice.com/install/desktop/docbuilder/documentbuilder-x64.zip"]')
-    link(:windows_x86, xpath: '//a[@href="http://download.onlyoffice.com/install/desktop/docbuilder/documentbuilder-x86.zip"]')
+    link(:linux_x64, xpath: '//a[contains(@href, "documentbuilder-x64.tar.gz")]')
+    link(:windows_x64, xpath: '//a[contains(@href, "documentbuilder-x64.zip")]')
+    link(:windows_x86, xpath: '//a[contains(@href, "documentbuilder-x86.zip")]')
 
     def initialize(instance)
       @instance = instance
