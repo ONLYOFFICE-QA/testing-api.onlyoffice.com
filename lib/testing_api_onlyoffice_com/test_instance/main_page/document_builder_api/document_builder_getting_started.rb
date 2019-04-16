@@ -1,10 +1,10 @@
 require 'httparty'
 require 'onlyoffice_file_helper'
+require_relative 'document_builder_api_common/builder_page'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/40513035/55968227-48e64600-5c84-11e9-8ca6-90d1057918cd.png
   # /docbuilder/gettingstarted
-  class DocumentBuilderGettingStarted
-    include PageObject
+  class DocumentBuilderGettingStarted < BuilderPage
 
     # actions
     link(:linux_x64, xpath: '//a[contains(@href, "documentbuilder-x64.tar.gz")]')
@@ -13,7 +13,7 @@ module TestingApiOnlyfficeCom
 
     def initialize(instance)
       @instance = instance
-      super(@instance.webdriver.driver)
+      super
       wait_to_load
     end
 

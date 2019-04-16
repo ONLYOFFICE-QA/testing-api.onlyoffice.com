@@ -2,7 +2,7 @@ require 'onlyoffice_file_helper'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
   # /docbuilder/basic
-  module LeftSideNavigationBuilder
+  class BuilderPage
     include PageObject
 
     # actions
@@ -18,6 +18,16 @@ module TestingApiOnlyfficeCom
 
     link(:search_bar, xpath: '//div[@class="search-input"]')
     link(:search_button, xpath: '//div[@class="layout-side"]//a[@class="btn"]')
+
+    def initialize(instance)
+      @instance = instance
+      super(@instance.webdriver.driver)
+      wait_to_load
+    end
+
+    def wait_to_load
+      @instance.webdriver.wait_until { integrating_document_builder_element.visible? }
+    end
 
     def open_introduction
       introduction_element.click
