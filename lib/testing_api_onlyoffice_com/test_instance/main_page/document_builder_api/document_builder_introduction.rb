@@ -9,7 +9,7 @@ module TestingApiOnlyfficeCom
 
     def initialize(instance)
       @instance = instance
-      super(@instance)
+      super
       wait_to_load
     end
 
