@@ -2,7 +2,7 @@ require 'onlyoffice_file_helper'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
   # /docbuilder/basic
-  module LeftSideNavigationBuilder
+  class LeftSideNavigationBuilder
     include PageObject
 
     # actions
@@ -11,13 +11,18 @@ module TestingApiOnlyfficeCom
     link(:integrating_document_builder, xpath: '//*[contains(@href, "/docbuilder/integratingdocumentbuilder")]')
     link(:integrating_document_builder_menu, xpath: '//li[@class="collapsable lastCollapsable"]/div[@class="hitarea collapsable-hitarea lastCollapsable-hitarea"]')
 
-    link(:net_example, xpath: '//a[@href="/docbuilder/csharpexample"]')
-    link(:nodejs_example, xpath: '//a[@href="/docbuilder/nodejsexample"]')
-    link(:php_example, xpath: '//a[@href="/docbuilder/phpexample"]')
-    link(:ruby_example, xpath: '//a[@href="/docbuilder/rubyexample"]')
-
     link(:search_bar, xpath: '//div[@class="search-input"]')
     link(:search_button, xpath: '//div[@class="layout-side"]//a[@class="btn"]')
+
+    def initialize(instance)
+      @instance = instance
+      super(@instance.webdriver.driver)
+      wait_to_load
+    end
+
+    def wait_to_load
+      @instance.webdriver.wait_until { integrating_document_builder_element.visible? }
+    end
 
     def open_introduction
       introduction_element.click

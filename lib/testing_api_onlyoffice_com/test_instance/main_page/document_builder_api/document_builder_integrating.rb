@@ -4,9 +4,7 @@ require_relative 'document_builder_api_common/left_side_navigation_builder'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/40513035/55968370-8945c400-5c84-11e9-9dda-4e2402268a00.png
   # /docbuilder/integratingdocumentbuilder
-  class DocumentBuilderIntegrating
-    include PageObject
-    include LeftSideNavigationBuilder
+  class DocumentBuilderIntegrating < LeftSideNavigationBuilder
     include DocumentBuilder
 
     DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'.freeze
@@ -28,7 +26,7 @@ module TestingApiOnlyfficeCom
 
     def initialize(instance)
       @instance = instance
-      super(@instance.webdriver.driver)
+      super(@instance)
       wait_to_load
     end
 
