@@ -1,10 +1,10 @@
 require 'onlyoffice_file_helper'
 require_relative 'document_builder_api_common/document_builder'
-require_relative 'document_builder_api_common/left_side_navigation_builder'
+require_relative 'document_builder_api_common/builder_page'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/40513035/55968370-8945c400-5c84-11e9-9dda-4e2402268a00.png
   # /docbuilder/integratingdocumentbuilder
-  class DocumentBuilderIntegrating < LeftSideNavigationBuilder
+  class DocumentBuilderIntegrating < BuilderPage
     include DocumentBuilder
 
     DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'.freeze
