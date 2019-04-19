@@ -5,6 +5,8 @@ module TestingApiOnlyfficeCom
   class BuilderPage
     include PageObject
 
+    DOCUMENTATION = { 'Text document API': {}, 'Spreadsheet API': {}, 'Presentation API': {} }.freeze
+
     # actions
     link(:introduction, xpath: '//*[contains(@class, "side-nav")]//a[@href="/docbuilder/basic"]')
     link(:getting_started, xpath: '//*[contains(@href, "/docbuilder/gettingstarted")]')
@@ -23,6 +25,7 @@ module TestingApiOnlyfficeCom
       @instance = instance
       super(@instance.webdriver.driver)
       wait_to_load
+      @documentation_xpathes = init_navigation_methods
     end
 
     def wait_to_load
@@ -42,6 +45,31 @@ module TestingApiOnlyfficeCom
     def open_integrating_document_builder
       integrating_document_builder_element.click
       DocumentBuilderIntegrating.new(@instance)
+    end
+
+    def init_navigation_methods
+      documentation_xpathes = {}
+      DOCUMENTATION.each_key do |editor_name|
+        editor = editor_name.downcase.to_s.tr_s(' ', '').to_sym
+        editor_xpath = "//*[contains(@href, '#{editor}')]"
+        editor_xpath_expend = "(//*[contains(@href, '#{editor}')]/parent::li)[1]/div"
+        documentation_xpathes[editor_name] = { xpath: editor_xpath, xpath_expend: editor_xpath_expend }
+      end
+      documentation_xpathes
+    end
+
+    def editors_links_ok?
+      checked = check_editors_links
+      failed = checked.find_all { |_key, value| value == false }
+      [failed.empty?, failed]
+    end
+
+    def check_editors_links
+      checked = {}
+      DOCUMENTATION.each_key do |editor_name|
+        checked[editor_name] = @instance.webdriver.element_visible?(@documentation_xpathes[editor_name][:xpath])
+      end
+      checked
     end
   end
 end
