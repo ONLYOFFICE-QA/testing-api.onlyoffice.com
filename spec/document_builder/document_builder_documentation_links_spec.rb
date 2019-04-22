@@ -19,6 +19,11 @@ describe 'document_builder_documentation' do
       expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
     end
 
+    it 'check class links in documentation are visible' do
+      result, failed = @introduction_page.classes_links_ok?
+      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
+    end
+
     after :each do |example|
       @test_manager.add_result(example)
       @instance.webdriver.quit
