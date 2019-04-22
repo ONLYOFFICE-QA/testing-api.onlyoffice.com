@@ -108,6 +108,7 @@ module TestingApiOnlyfficeCom
       DOCUMENTATION.each_pair do |editor_name, classes_arrey|
         element = @instance.webdriver.get_element(@documentation_xpathes[editor_name][:xpath_expend])
         @instance.webdriver.click(element)
+        # wait until expended lists of editors are opened
         sleep 2
         classes_arrey.each_key do |class_name|
           checked_classes[class_name] = @instance.webdriver.element_visible?(@documentation_xpathes[editor_name][:classes][class_name][:xpath])
