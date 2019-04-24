@@ -47,9 +47,14 @@ module TestingApiOnlyfficeCom
       DocumentBuilderIntegrating.new(@instance)
     end
 
+    def menu_data
+      @menu_data ||= JSON.parse(File.read("#{__dir__}/document_entry.json"))
+    end
+
     def init_navigation_objects
       documentation_editors = []
-      JSON.parse(File.read("#{__dir__}/document_entry.json")).each_pair do |editor_name, classes_array|
+      menu_data
+      @menu_data.each_pair do |editor_name, classes_array|
         entry = DocumentEntry.new(@instance, editor_name.downcase.tr_s(' ', ''))
         classes_array.each_pair do |class_name, methods_array|
           entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name.downcase.tr_s(' ', '')}")
@@ -71,7 +76,7 @@ module TestingApiOnlyfficeCom
 
     def check_editors_links
       checked_editors = {}
-      JSON.parse(File.read("#{__dir__}/document_entry.json")).keys.each_with_index do |editor_name, index|
+      @menu_data.keys.each_with_index do |editor_name, index|
         checked_editors[editor_name] = @instance.webdriver.element_visible?(@documentation_objects[index].xpath)
       end
       checked_editors
@@ -85,7 +90,7 @@ module TestingApiOnlyfficeCom
 
     def check_classes_links
       checked_classes = {}
-      JSON.parse(File.read("#{__dir__}/document_entry.json")).each_with_index do |(_editor_name, classes_arrey), index1|
+      @menu_data.each_with_index do |(_editor_name, classes_arrey), index1|
         element = @instance.webdriver.get_element(@documentation_objects[index1].xpath_expend)
         @instance.webdriver.click(element)
         # wait until expended lists of editors are opened
@@ -105,7 +110,7 @@ module TestingApiOnlyfficeCom
 
     def check_methods_links
       checked_classes = {}
-      JSON.parse(File.read("#{__dir__}/document_entry.json")).each_with_index do |(_editor_name, classes_arrey), index1|
+      @menu_data.each_with_index do |(_editor_name, classes_arrey), index1|
         element = @instance.webdriver.get_element(@documentation_objects[index1].xpath_expend)
         @instance.webdriver.click(element)
         # wait until expended lists of classes are opened
