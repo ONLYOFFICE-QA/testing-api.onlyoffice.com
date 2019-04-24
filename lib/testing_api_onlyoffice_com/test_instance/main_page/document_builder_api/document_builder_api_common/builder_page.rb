@@ -1,30 +1,10 @@
 require 'onlyoffice_file_helper'
+require_relative 'document_entry'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
   # /docbuilder/basic
   class BuilderPage
     include PageObject
-
-    DOCUMENTATION = { 'Text document API': { Api: {}, ApiBlockLvlSdt: {}, ApiBullet: {}, ApiChart: {},
-                                             ApiDocument: {}, ApiDocumentContent: {}, ApiDrawing: {},
-                                             ApiFill: {}, ApiGradientStop: {}, ApiImage: {}, ApiInlineLvlSdt: {},
-                                             ApiNumbering: {}, ApiNumberingLevel: {}, ApiParagraph: {},
-                                             ApiParaPr: {}, ApiPresetColor: {}, ApiRGBColor: {}, ApiRun: {},
-                                             ApiSchemeColor: {}, ApiSection: {}, ApiShape: {}, ApiStroke: {},
-                                             ApiStyle: {}, ApiTable: {}, ApiTableCell: {}, ApiTableCellPr: {},
-                                             ApiTablePr: {}, ApiTableRow: {}, ApiTableRowPr: {}, ApiTableStylePr: {},
-                                             ApiTextPr: {}, ApiUniColor: {}, ApiUnsupported: {} },
-                      'Spreadsheet API': { Api: {}, ApiBullet: {}, ApiChart: {}, ApiColor: {}, ApiDocument: {},
-                                           ApiDocumentContent: {}, ApiDrawing: {}, ApiFill: {}, ApiGradientStop: {},
-                                           ApiImage: {}, ApiParagraph: {}, ApiParaPr: {}, ApiRange: {}, ApiRGBColor: {},
-                                           ApiRun: {}, ApiSchemeColor: {}, ApiShape: {}, ApiStroke: {}, ApiTextPr: {},
-                                           ApiUniColor: {}, ApiWorksheet: {} },
-                      'Presentation API': { Api: {}, ApiBullet: {}, ApiChart: {}, ApiDocument: {},
-                                            ApiDocumentContent: {}, ApiDrawing: {}, ApiFill: {}, ApiGradientStop: {},
-                                            ApiImage: {}, ApiParagraph: {}, ApiParaPr: {}, ApiPresentation: {},
-                                            ApiPresetColor: {}, ApiRGBColor: {}, ApiRun: {}, ApiSchemeColor: {},
-                                            ApiShape: {}, ApiSlide: {}, ApiStroke: {}, ApiTable: {}, ApiTableCell: {},
-                                            ApiTableRow: {}, ApiTextPr: {}, ApiUniColor: {} } }.freeze
 
     # actions
     link(:introduction, xpath: '//*[contains(@class, "side-nav")]//a[@href="/docbuilder/basic"]')
@@ -44,7 +24,7 @@ module TestingApiOnlyfficeCom
       @instance = instance
       super(@instance.webdriver.driver)
       wait_to_load
-      @documentation_xpathes = init_navigation_methods
+      @documentation_objects = init_navigation_objects
     end
 
     def wait_to_load
@@ -66,21 +46,20 @@ module TestingApiOnlyfficeCom
       DocumentBuilderIntegrating.new(@instance)
     end
 
-    def init_navigation_methods
-      documentation_xpathes = {}
-      DOCUMENTATION.each_pair do |editor_name, classes_arrey|
-        editor = editor_name.downcase.to_s.tr_s(' ', '').to_sym
-        editor_xpath = "//*[contains(@href, '#{editor}')]"
-        editor_xpath_expend = "(//*[contains(@href, '#{editor}')]/parent::li)[1]/div"
-        documentation_xpathes[editor_name] = { xpath: editor_xpath, xpath_expend: editor_xpath_expend, classes: {} }
-        classes_arrey.each_key do |class_name|
-          current_class = class_name.downcase.to_s.tr_s(' ', '').to_sym
-          current_class_xpath = "//*[contains(@href, '#{editor}/#{current_class}')]"
-          current_class_xpath_expend = "(//*[contains(@href, '#{editor}/#{current_class}')]/parent::li)[1]/div"
-          documentation_xpathes[editor_name][:classes][class_name] = { xpath: current_class_xpath, xpath_expend: current_class_xpath_expend }
+    def init_navigation_objects
+      documentation_editors = []
+      TestData::DOCUMENTATION.each_pair do |editor_name, classes_array|
+        entry = DocumentEntry.new(@instance, editor_name.downcase.to_s.tr_s(' ', ''))
+        classes_array.each_pair do |class_name, methods_array|
+          entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name.downcase.to_s.tr_s(' ', '')}")
+          methods_array.each do |method_name|
+            entry_class.children << DocumentEntry.new(@instance, "#{entry_class.link}/#{method_name.downcase.to_s.tr_s(' ', '')}")
+          end
+          entry.children << entry_class
         end
+        documentation_editors << entry
       end
-      documentation_xpathes
+      documentation_editors
     end
 
     def editors_links_ok?
@@ -91,8 +70,8 @@ module TestingApiOnlyfficeCom
 
     def check_editors_links
       checked_editors = {}
-      DOCUMENTATION.each_key do |editor_name|
-        checked_editors[editor_name] = @instance.webdriver.element_visible?(@documentation_xpathes[editor_name][:xpath])
+      TestData::DOCUMENTATION.keys.each_with_index do |editor_name, index|
+        checked_editors[editor_name] = @instance.webdriver.element_visible?(@documentation_objects[index].xpath)
       end
       checked_editors
     end
@@ -105,13 +84,37 @@ module TestingApiOnlyfficeCom
 
     def check_classes_links
       checked_classes = {}
-      DOCUMENTATION.each_pair do |editor_name, classes_arrey|
-        element = @instance.webdriver.get_element(@documentation_xpathes[editor_name][:xpath_expend])
+      TestData::DOCUMENTATION.each_with_index do |(_editor_name, classes_arrey), index1|
+        element = @instance.webdriver.get_element(@documentation_objects[index1].xpath_expend)
         @instance.webdriver.click(element)
         # wait until expended lists of editors are opened
         sleep 2
-        classes_arrey.each_key do |class_name|
-          checked_classes[class_name] = @instance.webdriver.element_visible?(@documentation_xpathes[editor_name][:classes][class_name][:xpath])
+        classes_arrey.each_with_index do |class_name, index2|
+          checked_classes[class_name] = @instance.webdriver.element_visible?(@documentation_objects[index1].children[index2].xpath)
+        end
+        checked_classes
+      end
+    end
+
+    def methods_links_ok?
+      checked_methods = check_methods_links
+      failed = checked_methods.find_all { |_key, value| value == false }
+      [failed.empty?, failed]
+    end
+
+    def check_methods_links
+      checked_classes = {}
+      TestData::DOCUMENTATION.each_with_index do |(_editor_name, classes_arrey), index1|
+        element = @instance.webdriver.get_element(@documentation_objects[index1].xpath_expend)
+        @instance.webdriver.click(element)
+        # wait until expended lists of editors are opened
+        sleep 2
+        classes_arrey.each_with_index do |(class_name, methods_array), index2|
+          element = @instance.webdriver.get_element(@documentation_objects[index1].children[index2].xpath_expend)
+          @instance.webdriver.click(element)
+          methods_array.each_with_index do |_method_name, index3|
+            checked_classes[class_name] = @instance.webdriver.element_visible?(@documentation_objects[index1].children[index2].children[index3].xpath)
+          end
         end
         checked_classes
       end
