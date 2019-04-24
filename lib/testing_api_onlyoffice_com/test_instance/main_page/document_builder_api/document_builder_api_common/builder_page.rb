@@ -1,5 +1,6 @@
 require 'onlyoffice_file_helper'
 require_relative 'document_entry'
+require 'json'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
   # /docbuilder/basic
@@ -48,12 +49,12 @@ module TestingApiOnlyfficeCom
 
     def init_navigation_objects
       documentation_editors = []
-      TestData::DOCUMENTATION.each_pair do |editor_name, classes_array|
-        entry = DocumentEntry.new(@instance, editor_name.downcase.to_s.tr_s(' ', ''))
+      JSON.parse(File.read("#{__dir__}/document_entry.json")).each_pair do |editor_name, classes_array|
+        entry = DocumentEntry.new(@instance, editor_name.downcase.tr_s(' ', ''))
         classes_array.each_pair do |class_name, methods_array|
-          entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name.downcase.to_s.tr_s(' ', '')}")
+          entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name.downcase.tr_s(' ', '')}")
           methods_array.each do |method_name|
-            entry_class.children << DocumentEntry.new(@instance, "#{entry_class.link}/#{method_name.downcase.to_s.tr_s(' ', '')}")
+            entry_class.children << DocumentEntry.new(@instance, "#{entry_class.link}/#{method_name.downcase.tr_s(' ', '')}")
           end
           entry.children << entry_class
         end
@@ -70,7 +71,7 @@ module TestingApiOnlyfficeCom
 
     def check_editors_links
       checked_editors = {}
-      TestData::DOCUMENTATION.keys.each_with_index do |editor_name, index|
+      JSON.parse(File.read("#{__dir__}/document_entry.json")).keys.each_with_index do |editor_name, index|
         checked_editors[editor_name] = @instance.webdriver.element_visible?(@documentation_objects[index].xpath)
       end
       checked_editors
@@ -84,7 +85,7 @@ module TestingApiOnlyfficeCom
 
     def check_classes_links
       checked_classes = {}
-      TestData::DOCUMENTATION.each_with_index do |(_editor_name, classes_arrey), index1|
+      JSON.parse(File.read("#{__dir__}/document_entry.json")).each_with_index do |(_editor_name, classes_arrey), index1|
         element = @instance.webdriver.get_element(@documentation_objects[index1].xpath_expend)
         @instance.webdriver.click(element)
         # wait until expended lists of editors are opened
@@ -104,10 +105,10 @@ module TestingApiOnlyfficeCom
 
     def check_methods_links
       checked_classes = {}
-      TestData::DOCUMENTATION.each_with_index do |(_editor_name, classes_arrey), index1|
+      JSON.parse(File.read("#{__dir__}/document_entry.json")).each_with_index do |(_editor_name, classes_arrey), index1|
         element = @instance.webdriver.get_element(@documentation_objects[index1].xpath_expend)
         @instance.webdriver.click(element)
-        # wait until expended lists of editors are opened
+        # wait until expended lists of classes are opened
         sleep 2
         classes_arrey.each_with_index do |(class_name, methods_array), index2|
           element = @instance.webdriver.get_element(@documentation_objects[index1].children[index2].xpath_expend)
