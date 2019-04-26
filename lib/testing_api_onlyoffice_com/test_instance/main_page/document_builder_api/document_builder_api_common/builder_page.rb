@@ -1,4 +1,6 @@
+require 'json'
 require 'onlyoffice_file_helper'
+require_relative 'document_entry'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
   # /docbuilder/basic
@@ -23,6 +25,7 @@ module TestingApiOnlyfficeCom
       @instance = instance
       super(@instance.webdriver.driver)
       wait_to_load
+      @documentation_objects = init_navigation_objects
     end
 
     def wait_to_load
@@ -42,6 +45,77 @@ module TestingApiOnlyfficeCom
     def open_integrating_document_builder
       integrating_document_builder_element.click
       DocumentBuilderIntegrating.new(@instance)
+    end
+
+    def menu_data
+      @menu_data ||= JSON.parse(File.read("#{__dir__}/document_entries.json"))
+    end
+
+    def init_navigation_objects
+      documentation_editors = []
+      menu_data.each_pair do |editor_name, classes_array|
+        entry = DocumentEntry.new(@instance, editor_name)
+        classes_array.each_pair do |class_name, methods_array|
+          entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name}")
+          methods_array.each do |method_name|
+            entry_class.children << DocumentEntry.new(@instance, "#{entry_class.link}/#{method_name}")
+          end
+          entry.children << entry_class
+        end
+        documentation_editors << entry
+      end
+      documentation_editors
+    end
+
+    def editors_links_ok?
+      checked_editors = check_editors_links
+      failed = checked_editors.find_all { |_key, value| value == false }
+      [failed.empty?, failed]
+    end
+
+    def check_editors_links
+      checked_editors = {}
+      menu_data.keys.each_with_index do |editor_name, index|
+        checked_editors[editor_name] = @documentation_objects[index].visible?
+      end
+      checked_editors
+    end
+
+    def classes_links_ok?
+      checked_classes = check_classes_links
+      failed = checked_classes.find_all { |_key, value| value == false }
+      [failed.empty?, failed]
+    end
+
+    def check_classes_links
+      checked_classes = {}
+      menu_data.each_with_index do |(_editor_name, classes_array), index|
+        @documentation_objects[index].click_expend
+        classes_array.each_key do |class_name|
+          checked_classes[class_name] = @documentation_objects[index][class_name].visible?
+        end
+        checked_classes
+      end
+    end
+
+    def methods_links_ok?
+      checked_methods = check_methods_links
+      failed = checked_methods.find_all { |_key, value| value == false }
+      [failed.empty?, failed]
+    end
+
+    def check_methods_links
+      checked_classes = {}
+      menu_data.each_with_index do |(_editor_name, classes_array), index|
+        @documentation_objects[index].click_expend
+        classes_array.each do |class_name, methods_array|
+          @documentation_objects[index][class_name].click_expend
+          methods_array.each do |method_name|
+            checked_classes[class_name] = @documentation_objects[index][class_name][method_name].visible?
+          end
+        end
+        checked_classes
+      end
     end
   end
 end
