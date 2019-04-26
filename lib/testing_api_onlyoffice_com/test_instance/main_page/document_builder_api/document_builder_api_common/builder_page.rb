@@ -91,8 +91,7 @@ module TestingApiOnlyfficeCom
     def check_classes_links
       checked_classes = {}
       @menu_data.each_with_index do |(_editor_name, classes_array), index|
-        element = @instance.webdriver.get_element(@documentation_objects[index].xpath_expend)
-        @instance.webdriver.click(element)
+        @documentation_objects[index].click_expend
         # wait until expended lists of editors are opened
         sleep 2
         classes_array.each_key do |class_name|
@@ -111,13 +110,11 @@ module TestingApiOnlyfficeCom
     def check_methods_links
       checked_classes = {}
       @menu_data.each_with_index do |(_editor_name, classes_array), index|
-        element = @instance.webdriver.get_element(@documentation_objects[index].xpath_expend)
-        @instance.webdriver.click(element)
+        @documentation_objects[index].click_expend
         # wait until expended lists of classes are opened
         sleep 2
         classes_array.each do |class_name, methods_array|
-          element = @instance.webdriver.get_element(@documentation_objects[index][class_name].xpath_expend)
-          @instance.webdriver.click(element)
+          @documentation_objects[index][class_name].click_expend
           methods_array.each do |method_name|
             checked_classes[class_name] = @instance.webdriver.element_visible?(@documentation_objects[index][class_name][method_name].xpath)
           end

@@ -14,6 +14,11 @@ module TestingApiOnlyfficeCom
       @name = @link.split('/').last
     end
 
+    def click_expend
+      element = @instance.webdriver.get_element(@xpath_expend)
+      @instance.webdriver.click(element)
+    end
+
     def [](var)
       if var.is_a?(String)
         @children.detect do |child|
