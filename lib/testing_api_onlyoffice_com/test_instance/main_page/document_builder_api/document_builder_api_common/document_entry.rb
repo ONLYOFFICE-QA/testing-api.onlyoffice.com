@@ -7,8 +7,8 @@ module TestingApiOnlyfficeCom
 
     def initialize(instance, link)
       @instance = instance
-      @link = link
-      @xpath = "//*[contains(@href, '#{link}')]"
+      @link = link.downcase.tr_s(' ', '')
+      @xpath = "//*[contains(@href, '#{@link}')]"
       @xpath_expend = "(#{@xpath}/parent::li)[1]/div"
       @children = []
       @name = @link.split('/').last
@@ -17,6 +17,10 @@ module TestingApiOnlyfficeCom
     def click_expend
       element = @instance.webdriver.get_element(@xpath_expend)
       @instance.webdriver.click(element)
+    end
+
+    def visible?
+      @instance.webdriver.element_visible?(@xpath)
     end
 
     def [](var)

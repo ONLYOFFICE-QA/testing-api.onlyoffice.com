@@ -54,11 +54,11 @@ module TestingApiOnlyfficeCom
     def init_navigation_objects
       documentation_editors = []
       menu_data.each_pair do |editor_name, classes_array|
-        entry = DocumentEntry.new(@instance, editor_name.downcase.tr_s(' ', ''))
+        entry = DocumentEntry.new(@instance, editor_name)
         classes_array.each_pair do |class_name, methods_array|
-          entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name.downcase.tr_s(' ', '')}")
+          entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name}")
           methods_array.each do |method_name|
-            entry_class.children << DocumentEntry.new(@instance, "#{entry_class.link}/#{method_name.downcase.tr_s(' ', '')}")
+            entry_class.children << DocumentEntry.new(@instance, "#{entry_class.link}/#{method_name}")
           end
           entry.children << entry_class
         end
@@ -76,7 +76,7 @@ module TestingApiOnlyfficeCom
     def check_editors_links
       checked_editors = {}
       menu_data.keys.each_with_index do |editor_name, index|
-        checked_editors[editor_name] = @instance.webdriver.element_visible?(@documentation_objects[index].xpath)
+        checked_editors[editor_name] = @documentation_objects[index].visible?
       end
       checked_editors
     end
@@ -94,7 +94,7 @@ module TestingApiOnlyfficeCom
         # wait until expended lists of editors are opened
         sleep 2
         classes_array.each_key do |class_name|
-          checked_classes[class_name] = @instance.webdriver.element_visible?(@documentation_objects[index][class_name].xpath)
+          checked_classes[class_name] = @documentation_objects[index][class_name].visible?
         end
         checked_classes
       end
@@ -115,7 +115,7 @@ module TestingApiOnlyfficeCom
         classes_array.each do |class_name, methods_array|
           @documentation_objects[index][class_name].click_expend
           methods_array.each do |method_name|
-            checked_classes[class_name] = @instance.webdriver.element_visible?(@documentation_objects[index][class_name][method_name].xpath)
+            checked_classes[class_name] = @documentation_objects[index][class_name][method_name].visible?
           end
         end
         checked_classes
