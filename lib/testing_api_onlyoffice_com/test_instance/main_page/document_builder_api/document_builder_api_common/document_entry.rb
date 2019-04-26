@@ -17,6 +17,8 @@ module TestingApiOnlyfficeCom
     def click_expend
       element = @instance.webdriver.get_element(@xpath_expend)
       @instance.webdriver.click(element)
+      # wait until expended lists of classes are opened
+      sleep 2
     end
 
     def visible?

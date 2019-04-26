@@ -91,8 +91,6 @@ module TestingApiOnlyfficeCom
       checked_classes = {}
       menu_data.each_with_index do |(_editor_name, classes_array), index|
         @documentation_objects[index].click_expend
-        # wait until expended lists of editors are opened
-        sleep 2
         classes_array.each_key do |class_name|
           checked_classes[class_name] = @documentation_objects[index][class_name].visible?
         end
@@ -110,8 +108,6 @@ module TestingApiOnlyfficeCom
       checked_classes = {}
       menu_data.each_with_index do |(_editor_name, classes_array), index|
         @documentation_objects[index].click_expend
-        # wait until expended lists of classes are opened
-        sleep 2
         classes_array.each do |class_name, methods_array|
           @documentation_objects[index][class_name].click_expend
           methods_array.each do |method_name|
