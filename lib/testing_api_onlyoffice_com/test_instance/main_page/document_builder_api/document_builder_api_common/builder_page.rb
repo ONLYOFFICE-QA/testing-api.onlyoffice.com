@@ -48,13 +48,12 @@ module TestingApiOnlyfficeCom
     end
 
     def menu_data
-      @menu_data ||= JSON.parse(File.read("#{__dir__}/document_entry.json"))
+      @menu_data ||= JSON.parse(File.read("#{__dir__}/document_entries.json"))
     end
 
     def init_navigation_objects
       documentation_editors = []
-      menu_data
-      @menu_data.each_pair do |editor_name, classes_array|
+      menu_data.each_pair do |editor_name, classes_array|
         entry = DocumentEntry.new(@instance, editor_name.downcase.tr_s(' ', ''))
         classes_array.each_pair do |class_name, methods_array|
           entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name.downcase.tr_s(' ', '')}")
@@ -76,7 +75,7 @@ module TestingApiOnlyfficeCom
 
     def check_editors_links
       checked_editors = {}
-      @menu_data.keys.each_with_index do |editor_name, index|
+      menu_data.keys.each_with_index do |editor_name, index|
         checked_editors[editor_name] = @instance.webdriver.element_visible?(@documentation_objects[index].xpath)
       end
       checked_editors
@@ -90,7 +89,7 @@ module TestingApiOnlyfficeCom
 
     def check_classes_links
       checked_classes = {}
-      @menu_data.each_with_index do |(_editor_name, classes_array), index|
+      menu_data.each_with_index do |(_editor_name, classes_array), index|
         @documentation_objects[index].click_expend
         # wait until expended lists of editors are opened
         sleep 2
@@ -109,7 +108,7 @@ module TestingApiOnlyfficeCom
 
     def check_methods_links
       checked_classes = {}
-      @menu_data.each_with_index do |(_editor_name, classes_array), index|
+      menu_data.each_with_index do |(_editor_name, classes_array), index|
         @documentation_objects[index].click_expend
         # wait until expended lists of classes are opened
         sleep 2
