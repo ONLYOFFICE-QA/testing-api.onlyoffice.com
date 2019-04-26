@@ -3,6 +3,7 @@ module TestingApiOnlyfficeCom
   # /docbuilder/basic
   class DocumentEntry
     attr_accessor :link, :xpath, :xpath_expend, :children
+    attr_reader :name
 
     def initialize(instance, link)
       @instance = instance
@@ -10,6 +11,17 @@ module TestingApiOnlyfficeCom
       @xpath = "//*[contains(@href, '#{link}')]"
       @xpath_expend = "(#{@xpath}/parent::li)[1]/div"
       @children = []
+      @name = @link.split('/').last
+    end
+
+    def [](var)
+      if var.is_a?(String)
+        @children.detect do |child|
+          child.name == var.downcase.tr_s(' ', '')
+        end
+      elsif var.is_a?(Numeric)
+        @children[var]
+      end
     end
   end
 end

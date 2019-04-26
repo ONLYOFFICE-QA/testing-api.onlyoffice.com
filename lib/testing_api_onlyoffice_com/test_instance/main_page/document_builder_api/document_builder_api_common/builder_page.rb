@@ -90,13 +90,13 @@ module TestingApiOnlyfficeCom
 
     def check_classes_links
       checked_classes = {}
-      @menu_data.each_with_index do |(_editor_name, classes_arrey), index1|
-        element = @instance.webdriver.get_element(@documentation_objects[index1].xpath_expend)
+      @menu_data.each_with_index do |(_editor_name, classes_array), index|
+        element = @instance.webdriver.get_element(@documentation_objects[index].xpath_expend)
         @instance.webdriver.click(element)
         # wait until expended lists of editors are opened
         sleep 2
-        classes_arrey.each_with_index do |class_name, index2|
-          checked_classes[class_name] = @instance.webdriver.element_visible?(@documentation_objects[index1].children[index2].xpath)
+        classes_array.each_key do |class_name|
+          checked_classes[class_name] = @instance.webdriver.element_visible?(@documentation_objects[index][class_name].xpath)
         end
         checked_classes
       end
@@ -110,16 +110,16 @@ module TestingApiOnlyfficeCom
 
     def check_methods_links
       checked_classes = {}
-      @menu_data.each_with_index do |(_editor_name, classes_arrey), index1|
-        element = @instance.webdriver.get_element(@documentation_objects[index1].xpath_expend)
+      @menu_data.each_with_index do |(_editor_name, classes_array), index|
+        element = @instance.webdriver.get_element(@documentation_objects[index].xpath_expend)
         @instance.webdriver.click(element)
         # wait until expended lists of classes are opened
         sleep 2
-        classes_arrey.each_with_index do |(class_name, methods_array), index2|
-          element = @instance.webdriver.get_element(@documentation_objects[index1].children[index2].xpath_expend)
+        classes_array.each do |class_name, methods_array|
+          element = @instance.webdriver.get_element(@documentation_objects[index][class_name].xpath_expend)
           @instance.webdriver.click(element)
-          methods_array.each_with_index do |_method_name, index3|
-            checked_classes[class_name] = @instance.webdriver.element_visible?(@documentation_objects[index1].children[index2].children[index3].xpath)
+          methods_array.each do |method_name|
+            checked_classes[class_name] = @instance.webdriver.element_visible?(@documentation_objects[index][class_name][method_name].xpath)
           end
         end
         checked_classes
