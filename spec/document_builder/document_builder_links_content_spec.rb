@@ -9,7 +9,7 @@ describe 'document_builder_documentation_content' do
 
   path_to_json = File.expand_path('../../lib/testing_api_onlyoffice_com/test_instance/main_page/document_builder_api/document_builder_api_common/document_entries.json', __dir__)
   menu_data = JSON.parse(File.read(path_to_json))
-  menu_data.each_pair do |editor, _method_array|
+  menu_data.each_pair do |editor, _class_array|
     context "#{editor} links content" do
       menu_data[editor].each_pair do |current_class, method_array|
         it "#{editor}/#{current_class}" do
