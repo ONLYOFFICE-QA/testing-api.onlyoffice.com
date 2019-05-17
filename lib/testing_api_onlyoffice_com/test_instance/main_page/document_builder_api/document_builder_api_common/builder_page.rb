@@ -51,10 +51,6 @@ module TestingApiOnlyfficeCom
       @menu_data ||= BuilderPage.parse_document_entries
     end
 
-    def self.parse_document_entries
-      JSON.parse(File.read("#{__dir__}/document_entries.json"))
-    end
-
     def init_navigation_objects
       documentation_editors = []
       menu_data.each_pair do |editor_name, classes_array|
@@ -120,6 +116,10 @@ module TestingApiOnlyfficeCom
         end
         checked_classes
       end
+    end
+
+    def self.parse_document_entries
+      JSON.parse(File.read("#{__dir__}/document_entries.json"))
     end
   end
 end
