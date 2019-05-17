@@ -47,13 +47,9 @@ module TestingApiOnlyfficeCom
       DocumentBuilderIntegrating.new(@instance)
     end
 
-    def menu_data
-      @menu_data ||= BuilderPage.parse_document_entries
-    end
-
     def init_navigation_objects
       documentation_editors = []
-      menu_data.each_pair do |editor_name, classes_array|
+      BuilderPage.parse_document_entries.each_pair do |editor_name, classes_array|
         entry = DocumentEntry.new(@instance, editor_name)
         classes_array.each_pair do |class_name, methods_array|
           entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name}")
@@ -75,7 +71,7 @@ module TestingApiOnlyfficeCom
 
     def check_editors_links
       checked_editors = {}
-      menu_data.keys.each_with_index do |editor_name, index|
+      BuilderPage.parse_document_entries.keys.each_with_index do |editor_name, index|
         checked_editors[editor_name] = @documentation_objects[index].visible?
       end
       checked_editors
@@ -89,7 +85,7 @@ module TestingApiOnlyfficeCom
 
     def check_classes_links
       checked_classes = {}
-      menu_data.each_with_index do |(_editor_name, classes_array), index|
+      BuilderPage.parse_document_entries.each_with_index do |(_editor_name, classes_array), index|
         @documentation_objects[index].click_expend
         classes_array.each_key do |class_name|
           checked_classes[class_name] = @documentation_objects[index][class_name].visible?
@@ -106,7 +102,7 @@ module TestingApiOnlyfficeCom
 
     def check_methods_links
       checked_classes = {}
-      menu_data.each_with_index do |(_editor_name, classes_array), index|
+      BuilderPage.parse_document_entries.each_with_index do |(_editor_name, classes_array), index|
         @documentation_objects[index].click_expend
         classes_array.each do |class_name, methods_array|
           @documentation_objects[index][class_name].click_expend
