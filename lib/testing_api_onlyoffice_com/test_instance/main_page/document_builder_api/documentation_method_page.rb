@@ -1,4 +1,5 @@
 require 'onlyoffice_file_helper'
+require_relative 'document_builder_api_common/class_name_helper'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/40513035/57924882-0e894d80-78af-11e9-9ce3-d3f5eb9a2b23.png
   # /docbuilder/basic
@@ -6,7 +7,7 @@ module TestingApiOnlyfficeCom
     attr_accessor :link, :page
 
     def initialize(editor, current_class, method)
-      @link = "#{TestingApiOnlyfficeCom::Config.new.server}/docbuilder/#{editor.downcase.tr_s(' ', '')}/#{current_class.downcase.tr_s(' ', '')}/#{method.downcase.tr_s(' ', '')}"
+      @link = "#{Config.new.server}/docbuilder/#{ClassNameHelper.cleanup_name(editor)}/#{ClassNameHelper.cleanup_name(current_class)}/#{ClassNameHelper.cleanup_name(method)}"
       @page = Nokogiri::HTML(URI.parse(@link).open)
       @params_exist ||= !@page.xpath('//*[@class="table"]').empty?
       @return_exist ||= !@page.xpath('//*[@class="param-type"]').empty?
