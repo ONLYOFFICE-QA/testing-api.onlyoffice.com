@@ -48,7 +48,11 @@ module TestingApiOnlyfficeCom
     end
 
     def menu_data
-      @menu_data ||= JSON.parse(File.read("#{__dir__}/document_entries.json"))
+      @menu_data ||= BuilderPage.parse_document_entries
+    end
+
+    def self.parse_document_entries
+      JSON.parse(File.read("#{__dir__}/document_entries.json"))
     end
 
     def init_navigation_objects
