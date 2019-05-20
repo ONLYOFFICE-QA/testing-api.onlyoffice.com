@@ -1,3 +1,4 @@
+require_relative 'class_name_helper'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/40513035/56642044-4c63cf00-667f-11e9-935f-0d275d601876.png
   # /docbuilder/basic
@@ -7,7 +8,7 @@ module TestingApiOnlyfficeCom
 
     def initialize(instance, link)
       @instance = instance
-      @link = link.downcase.tr_s(' ', '')
+      @link = ClassNameHelper.cleanup_name(link)
       @xpath = "//*[contains(@href, '#{@link}')]"
       @xpath_expend = "(#{@xpath}/parent::li)[1]/div"
       @children = []
@@ -28,7 +29,7 @@ module TestingApiOnlyfficeCom
     def [](var)
       if var.is_a?(String)
         @children.detect do |child|
-          child.name == var.downcase.tr_s(' ', '')
+          child.name == ClassNameHelper.cleanup_name(var)
         end
       elsif var.is_a?(Numeric)
         @children[var]
