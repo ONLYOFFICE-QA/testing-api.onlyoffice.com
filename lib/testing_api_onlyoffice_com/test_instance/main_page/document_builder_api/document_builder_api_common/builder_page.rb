@@ -115,7 +115,7 @@ module TestingApiOnlyfficeCom
     end
 
     def self.parse_document_entries
-      JSON.parse(File.read("#{__dir__}/document_entries.json"))
+      @parse_document_entries ||= JSON.parse(File.read("#{__dir__}/document_entries.json"))
     end
   end
 end
