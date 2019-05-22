@@ -11,9 +11,9 @@ describe 'document_builder_documentation_content' do
   TestingApiOnlyfficeCom::BuilderPage.parse_document_entries.each_pair do |editor, class_hash|
     class_hash.each_pair do |current_class, method_array|
       method_array.each do |method|
-        context "#{editor}/#{current_class}/#{method}" do
-          page = TestingApiOnlyfficeCom::DocumentationMethodPage.new(editor, current_class, method)
-          it_behaves_like 'page_content_exist', page
+        path = "#{editor}/#{current_class}/#{method}"
+        context path do
+          it_behaves_like 'page_content_exist', path, (-> { TestingApiOnlyfficeCom::DocumentationMethodPage.new(editor, current_class, method) })
         end
       end
     end
