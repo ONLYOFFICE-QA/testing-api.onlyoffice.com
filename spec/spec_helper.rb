@@ -2,7 +2,6 @@ require 'bundler/setup'
 require 'palladium'
 require 'onlyoffice_tcm_helper'
 require_relative '../lib/testing_api_onlyoffice_com'
-require_relative '../lib/testing_api_onlyoffice_com/failed_documentation_content_tests'
 include TestingApiOnlyfficeCom
 
 RSpec.configure do |config|
@@ -18,22 +17,22 @@ shared_examples_for 'page_content_exist' do |path, documentation_page|
     end
 
     it "#{path}/Parameters" do
-      pending('Not Yet Implemented') if FailedTests::FAILED_TESTS.include?("#{path}/Parameters")
+      pending('Not Yet Implemented') if File.read("#{__dir__}/failed_documentation_content_tests.txt").include?("#{path}/Parameters")
       expect(@documentation_page.params_exist).to be_truthy
     end
 
     it "#{path}/Returns" do
-      pending 'Not Yet Implemented' if FailedTests::FAILED_TESTS.include?("#{path}/Returns")
+      pending 'Not Yet Implemented' if File.read("#{__dir__}/failed_documentation_content_tests.txt").include?("#{path}/Returns")
       expect(@documentation_page.return_exist).to be_truthy
     end
 
     it "#{path}/Example" do
-      pending 'Not Yet Implemented' if FailedTests::FAILED_TESTS.include?("#{path}/Example")
+      pending 'Not Yet Implemented' if File.read("#{__dir__}/failed_documentation_content_tests.txt").include?("#{path}/Example")
       expect(@documentation_page.example_exist).to be_truthy
     end
 
     it "#{path}/Resulting document" do
-      pending 'Not Yet Implemented' if FailedTests::FAILED_TESTS.include?("#{path}/Resulting document")
+      pending 'Not Yet Implemented' if File.read("#{__dir__}/failed_documentation_content_tests.txt").include?("#{path}/Resulting document")
       expect(@documentation_page.document_exist).to be_truthy
     end
   end
