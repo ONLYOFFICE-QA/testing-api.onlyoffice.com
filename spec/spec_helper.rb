@@ -17,23 +17,27 @@ shared_examples_for 'page_content_exist' do |path, documentation_page|
     end
 
     it "#{path}/Parameters" do
-      pending('https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/49') if File.read("#{__dir__}/failed_documentation_content_tests.txt").include?("#{path}/Parameters")
+      pending('https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/49') if failed_docbuilder_tests.include?("#{path}/Parameters")
       expect(@documentation_page.params_exist).to be_truthy
     end
 
     it "#{path}/Returns" do
-      pending 'https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/49' if File.read("#{__dir__}/failed_documentation_content_tests.txt").include?("#{path}/Returns")
+      pending 'https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/49' if failed_docbuilder_tests.include?("#{path}/Returns")
       expect(@documentation_page.return_exist).to be_truthy
     end
 
     it "#{path}/Example" do
-      pending 'https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/49' if File.read("#{__dir__}/failed_documentation_content_tests.txt").include?("#{path}/Example")
+      pending 'https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/49' if failed_docbuilder_tests.include?("#{path}/Example")
       expect(@documentation_page.example_exist).to be_truthy
     end
 
     it "#{path}/Resulting document" do
-      pending 'https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/49' if File.read("#{__dir__}/failed_documentation_content_tests.txt").include?("#{path}/Resulting document")
+      pending 'https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/49' if failed_docbuilder_tests.include?("#{path}/Resulting document")
       expect(@documentation_page.document_exist).to be_truthy
     end
   end
+end
+
+def failed_docbuilder_tests
+  File.read("#{__dir__}/failed_documentation_content_tests")
 end
