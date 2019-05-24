@@ -39,5 +39,5 @@ shared_examples_for 'page_content_exist' do |path, documentation_page|
 end
 
 def failed_docbuilder_tests
-  File.read("#{__dir__}/failed_documentation_content_tests")
+  @failed_docbuilder_tests ||= File.read("#{__dir__}/failed_documentation_content_tests")
 end
