@@ -54,9 +54,6 @@ module TestingApiOnlyfficeCom
           end
           methods_array.each do |method_name|
             checked[method_name] = @documentation_objects[index][section_name][method_name].visible?
-            unless checked[method_name]
-
-            end
           end
         end
       end
