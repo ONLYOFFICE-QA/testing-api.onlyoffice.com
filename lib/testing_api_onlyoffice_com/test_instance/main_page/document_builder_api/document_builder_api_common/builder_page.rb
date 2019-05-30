@@ -1,6 +1,6 @@
 require 'json'
 require 'onlyoffice_file_helper'
-require_relative 'document_entry'
+require_relative '../../helper_for_api_documentation/document_entry'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
   # /docbuilder/basic
@@ -50,11 +50,11 @@ module TestingApiOnlyfficeCom
     def init_navigation_objects
       documentation_editors = []
       BuilderPage.parse_document_entries.each_pair do |editor_name, classes_array|
-        entry = DocumentEntry.new(@instance, editor_name)
+        entry = DocumentEntry.new(@instance, editor_name, editor_name)
         classes_array.each_pair do |class_name, methods_array|
-          entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name}")
+          entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name}", class_name)
           methods_array.each do |method_name|
-            entry_class.children << DocumentEntry.new(@instance, "#{entry_class.link}/#{method_name}")
+            entry_class.children << DocumentEntry.new(@instance, "#{entry_class.link}/#{method_name}", method_name)
           end
           entry.children << entry_class
         end
