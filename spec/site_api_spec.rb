@@ -10,15 +10,6 @@ describe 'site_api_tests' do
     @api_page = @instance.go_to_main_page
   end
 
-  context '#community_server' do
-    it '[API][CommunityServer] every api item shown' do
-      api_community_server_page = @api_page.go_to_community_server_api
-      api_community_server_page.expand_every_expandable_area
-      result, failed = api_community_server_page.community_server_links_ok?
-      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
-    end
-  end
-
   context '#document_builder' do
     before :each do
       @introduction_page = @api_page.go_to_document_builder_introduction
