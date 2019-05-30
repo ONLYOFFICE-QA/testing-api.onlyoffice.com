@@ -21,7 +21,7 @@ module TestingApiOnlyfficeCom
     end
 
     def init_navigation_objects
-      documentation_editors = []
+      documentation_modules = []
       CommunityServerAPI.parse_document_entries.each_pair do |module_name, sections_hash|
         entry = DocumentEntry.new(@instance, "section/#{module_name}", module_name)
         sections_hash.each_pair do |section_name, methods_array|
@@ -31,9 +31,9 @@ module TestingApiOnlyfficeCom
           end
           entry.children << entry_class
         end
-        documentation_editors << entry
+        documentation_modules << entry
       end
-      documentation_editors
+      documentation_modules
     end
 
     def all_documentation_links_ok?
