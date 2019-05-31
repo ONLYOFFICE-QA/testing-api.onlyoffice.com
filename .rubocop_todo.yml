@@ -24,7 +24,7 @@ Metrics/ClassLength:
 # Offense count: 1
 # Configuration parameters: CountComments, ExcludedMethods.
 Metrics/MethodLength:
-  Max: 14
+  Max: 17
 
 # Offense count: 1
 Style/MixinUsage:

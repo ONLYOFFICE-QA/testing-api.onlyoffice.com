@@ -6,13 +6,13 @@ module TestingApiOnlyfficeCom
     attr_accessor :link, :xpath, :xpath_expend, :children
     attr_reader :name
 
-    def initialize(instance, link)
+    def initialize(instance, link, current_object)
       @instance = instance
       @link = ClassNameHelper.cleanup_name(link)
       @xpath = "//*[contains(@href, '#{@link}')]"
       @xpath_expend = "(#{@xpath}/parent::li)[1]/div"
       @children = []
-      @name = @link.split('/').last
+      @name = ClassNameHelper.cleanup_name(current_object)
     end
 
     def click_expend
