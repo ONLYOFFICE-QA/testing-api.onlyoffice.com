@@ -1,6 +1,5 @@
 require 'json'
 require 'onlyoffice_file_helper'
-# require_relative '../../../../lib/testing_api_onlyoffice_com/test_instance/main_page/helper_for_api_documentation/document_entry'
 require_relative '../../../testing_api_onlyoffice_com/test_instance/main_page/helper_for_api_documentation/check_method_links'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37903128-7b1dcf28-30ff-11e8-828b-c3849e7a758c.png
