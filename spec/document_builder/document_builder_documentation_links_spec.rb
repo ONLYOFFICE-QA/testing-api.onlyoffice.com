@@ -14,18 +14,8 @@ describe 'document_builder_documentation' do
       @introduction_page = @api_page.go_to_document_builder_introduction
     end
 
-    it 'check editor links in documentation are visible' do
-      result, failed = @introduction_page.editors_links_ok?
-      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
-    end
-
-    it 'check class links in documentation are visible' do
-      result, failed = @introduction_page.classes_links_ok?
-      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
-    end
-
-    it 'check methods links in documentation are visible' do
-      result, failed = @introduction_page.methods_links_ok?
+    it 'check links in documentation are visible' do
+      result, failed = @introduction_page.document_builder_links_ok?
       expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
     end
 
