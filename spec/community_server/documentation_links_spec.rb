@@ -20,7 +20,7 @@ describe 'community_server_documentation' do
     end
 
     after :each do |example|
-      # @test_manager.add_result(example)
+      @test_manager.add_result(example)
       @instance.webdriver.quit
     end
   end
