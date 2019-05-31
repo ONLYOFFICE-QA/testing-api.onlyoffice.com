@@ -1,11 +1,13 @@
 require 'json'
 require 'onlyoffice_file_helper'
 require_relative '../../helper_for_api_documentation/document_entry'
+require_relative '../../../../../testing_api_onlyoffice_com/test_instance/main_page/helper_for_api_documentation/check_method_links'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
   # /docbuilder/basic
   class BuilderPage
     include PageObject
+    include CheckMethodLinks
 
     # actions
     link(:introduction, xpath: '//*[contains(@class, "side-nav")]//a[@href="/docbuilder/basic"]')
@@ -25,7 +27,6 @@ module TestingApiOnlyfficeCom
       @instance = instance
       super(@instance.webdriver.driver)
       wait_to_load
-      @documentation_objects = init_navigation_objects
     end
 
     def wait_to_load
@@ -47,9 +48,11 @@ module TestingApiOnlyfficeCom
       DocumentBuilderIntegrating.new(@instance)
     end
 
-    def init_navigation_objects
-      documentation_editors = []
-      BuilderPage.parse_document_entries.each_pair do |editor_name, classes_array|
+    def navigation_objects
+      return @navigation_objects unless @navigation_objects.nil?
+
+      @navigation_objects = []
+      BuilderPage.parsed_document_entries.each_pair do |editor_name, classes_array|
         entry = DocumentEntry.new(@instance, editor_name, editor_name)
         classes_array.each_pair do |class_name, methods_array|
           entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name}", class_name)
@@ -58,64 +61,18 @@ module TestingApiOnlyfficeCom
           end
           entry.children << entry_class
         end
-        documentation_editors << entry
+        @navigation_objects << entry
       end
-      documentation_editors
+      @navigation_objects
     end
 
-    def editors_links_ok?
-      checked_editors = check_editors_links
-      failed = checked_editors.find_all { |_key, value| value == false }
+    def document_builder_links_ok?
+      failed = check_documentation_links(navigation_objects, BuilderPage.parsed_document_entries)
       [failed.empty?, failed]
     end
 
-    def check_editors_links
-      checked_editors = {}
-      BuilderPage.parse_document_entries.keys.each_with_index do |editor_name, index|
-        checked_editors[editor_name] = @documentation_objects[index].visible?
-      end
-      checked_editors
-    end
-
-    def classes_links_ok?
-      checked_classes = check_classes_links
-      failed = checked_classes.find_all { |_key, value| value == false }
-      [failed.empty?, failed]
-    end
-
-    def check_classes_links
-      checked_classes = {}
-      BuilderPage.parse_document_entries.each_with_index do |(_editor_name, classes_array), index|
-        @documentation_objects[index].click_expend
-        classes_array.each_key do |class_name|
-          checked_classes[class_name] = @documentation_objects[index][class_name].visible?
-        end
-        checked_classes
-      end
-    end
-
-    def methods_links_ok?
-      checked_methods = check_methods_links
-      failed = checked_methods.find_all { |_key, value| value == false }
-      [failed.empty?, failed]
-    end
-
-    def check_methods_links
-      checked_classes = {}
-      BuilderPage.parse_document_entries.each_with_index do |(_editor_name, classes_array), index|
-        @documentation_objects[index].click_expend
-        classes_array.each do |class_name, methods_array|
-          @documentation_objects[index][class_name].click_expend
-          methods_array.each do |method_name|
-            checked_classes[class_name] = @documentation_objects[index][class_name][method_name].visible?
-          end
-        end
-        checked_classes
-      end
-    end
-
-    def self.parse_document_entries
-      @parse_document_entries ||= JSON.parse(File.read("#{__dir__}/document_entries.json"))
+    def self.parsed_document_entries
+      @parsed_document_entries ||= JSON.parse(File.read("#{__dir__}/document_entries.json"))
     end
   end
 end

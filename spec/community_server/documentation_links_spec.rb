@@ -1,4 +1,5 @@
 require 'spec_helper'
+require_relative '../../lib/testing_api_onlyoffice_com/test_instance/main_page/helper_for_api_documentation/check_method_links'
 describe 'community_server_documentation' do
   before :all do
     @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Community Server Documentation Links', plan_name: @config.to_s)
@@ -15,7 +16,7 @@ describe 'community_server_documentation' do
     end
 
     it 'check all module links are visible' do
-      result, failed = @api_community_server_page.all_documentation_links_ok?
+      result, failed = @api_community_server_page.community_server_links_ok?
       expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
     end
 
