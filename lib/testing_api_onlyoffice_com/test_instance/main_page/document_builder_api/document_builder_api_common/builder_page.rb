@@ -49,7 +49,7 @@ module TestingApiOnlyfficeCom
     end
 
     def navigation_objects
-      return @navigation_objects unless @navigation_objects.nil?
+      return @navigation_objects if @navigation_objects
 
       @navigation_objects = []
       BuilderPage.parsed_document_entries.each_pair do |editor_name, classes_array|
