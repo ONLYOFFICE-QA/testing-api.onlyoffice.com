@@ -1,4 +1,3 @@
-require_relative '../../../../../lib/testing_api_onlyoffice_com/test_instance/main_page/community_server_api'
 require_relative 'document_entry'
 module TestingApiOnlyfficeCom
   # class for editing class names

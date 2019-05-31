@@ -1,5 +1,4 @@
 require 'spec_helper'
-require_relative '../../lib/testing_api_onlyoffice_com/test_instance/main_page/helper_for_api_documentation/check_method_links'
 describe 'community_server_documentation' do
   before :all do
     @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Community Server Documentation Links', plan_name: @config.to_s)
@@ -21,7 +20,7 @@ describe 'community_server_documentation' do
     end
 
     after :each do |example|
-      @test_manager.add_result(example)
+      # @test_manager.add_result(example)
       @instance.webdriver.quit
     end
   end
