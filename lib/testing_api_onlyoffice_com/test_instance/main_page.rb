@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'main_page/community_server_api'
 require_relative 'main_page/document_builder_api'
 require_relative 'main_page/document_server_api'

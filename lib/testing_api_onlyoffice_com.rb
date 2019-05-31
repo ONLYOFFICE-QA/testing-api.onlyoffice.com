@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'onlyoffice_webdriver_wrapper'
 
 require_relative 'testing_api_onlyoffice_com/config'

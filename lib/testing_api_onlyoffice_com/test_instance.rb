@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'test_instance/main_page'
 module TestingApiOnlyfficeCom
   # Instance of browser to perform actions

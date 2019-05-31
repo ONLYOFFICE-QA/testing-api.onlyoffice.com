@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'onlyoffice_tcm_helper'
 require_relative 'test_manager/palladium_helper'
 module TestingApiOnlyfficeCom

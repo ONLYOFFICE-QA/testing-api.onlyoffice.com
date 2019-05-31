@@ -21,13 +21,6 @@ Metrics/BlockLength:
 Metrics/MethodLength:
   Max: 15
 
-# Offense count: 27
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: always, never
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
 # Offense count: 1
 Style/MixinUsage:
   Exclude:
