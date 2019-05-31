@@ -29,8 +29,7 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_webdriver_wrapper
-  revision: 2d316ddf54835192964b700c4d70296ed31ef591
-  branch: feature/chromedriver-74
+  revision: 8e086b7207a9e3b9fc089d697e36372a7eef8696
   specs:
     onlyoffice_webdriver_wrapper (0.0.2)
       headless (~> 2)
@@ -45,14 +44,14 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.0)
-    aws-eventstream (1.0.3)
-    aws-sdk (2.11.277)
-      aws-sdk-resources (= 2.11.277)
-    aws-sdk-core (2.11.277)
+    aws-eventstream (1.0.2)
+    aws-sdk (2.11.256)
+      aws-sdk-resources (= 2.11.256)
+    aws-sdk-core (2.11.256)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.277)
-      aws-sdk-core (= 2.11.277)
+    aws-sdk-resources (2.11.256)
+      aws-sdk-core (= 2.11.256)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     childprocess (0.9.0)
@@ -137,7 +136,6 @@ PLATFORMS
 
 DEPENDENCIES
   httparty
-  nokogiri
   onlyoffice_documentserver_testing_framework!
   onlyoffice_file_helper
   onlyoffice_tcm_helper!
