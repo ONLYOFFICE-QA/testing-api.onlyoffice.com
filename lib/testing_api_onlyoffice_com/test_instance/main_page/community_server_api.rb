@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'json'
 require 'onlyoffice_file_helper'
 require_relative 'helper_for_api_documentation/check_method_links'

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module TestingApiOnlyfficeCom
   # Config of running tests
   class Config
@@ -28,7 +30,7 @@ module TestingApiOnlyfficeCom
 
     # @return [String] server on which test are performed
     def default_server
-      return 'https://api.onlyoffice.com' if ENV['SPEC_REGION'] && ENV['SPEC_REGION'].include?('com')
+      return 'https://api.onlyoffice.com' if ENV['SPEC_REGION']&.include?('com')
 
       'https://api.teamlab.info'
     end

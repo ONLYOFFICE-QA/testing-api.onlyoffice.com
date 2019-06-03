@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'document_builder_api/document_builder_getting_started'
 require_relative 'document_builder_api/document_builder_integrating'
 require_relative 'document_builder_api/document_builder_introduction'

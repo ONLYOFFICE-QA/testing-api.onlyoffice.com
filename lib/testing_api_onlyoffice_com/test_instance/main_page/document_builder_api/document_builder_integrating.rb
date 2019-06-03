@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'onlyoffice_file_helper'
 require_relative 'document_builder_api_common/document_builder'
 require_relative 'document_builder_api_common/builder_page'
@@ -7,7 +9,7 @@ module TestingApiOnlyfficeCom
   class DocumentBuilderIntegrating < BuilderPage
     include DocumentBuilder
 
-    DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'.freeze
+    DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'
 
     DOC_BUILDER_EXAMPLES = %i[
       c_sharp_mvc

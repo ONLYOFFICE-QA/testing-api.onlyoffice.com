@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'onlyoffice_documentserver_testing_framework'
 
 module TestingApiOnlyfficeCom

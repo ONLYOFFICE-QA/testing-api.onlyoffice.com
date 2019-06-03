@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'onlyoffice_file_helper'
 require_relative 'document_builder_api_common/document_builder'
 require_relative 'document_builder_api_common/builder_page'

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module TestingApiOnlyfficeCom
   # module for initialise palladium object
   module PalladiumHelper
