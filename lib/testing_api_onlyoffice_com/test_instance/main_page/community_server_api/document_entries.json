@@ -773,11 +773,6 @@
       "POST/api/2.0/project/message/%7bmessageid%7d/files",
       "POST/api/2.0/project/task/%7btaskid%7d/files"
     ],
-    "Import": [
-      "POST/api/2.0/project/import",
-      "GET/api/2.0/project/import",
-      "POST/api/2.0/project/import/projects"
-    ],
     "Milestones": [
       "DELETE/api/2.0/project/milestone/%7bid%7d",
       "DELETE/api/2.0/project/milestone",
