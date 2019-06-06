@@ -10,10 +10,12 @@ module TestingApiOnlyfficeCom
       checked = {}
       parsed_json.each_with_index do |(module_name, section_hash), index|
         checked[module_name] = documentation_objects[index].visible?
+        @instance.webdriver.webdriver_error("Not visible element: #{module_name}") unless checked[module_name]
         documentation_objects[index].click_expend
         section_hash.each do |section_name, methods_array|
           unless section_name == 'unspecified'
             checked[section_name] = documentation_objects[index][section_name].visible?
+            @instance.webdriver.webdriver_error("Not visible element: #{module_name}/#{section_name}") unless checked[section_name]
             documentation_objects[index][section_name].click_expend
           end
           methods_array.each do |method_name|
