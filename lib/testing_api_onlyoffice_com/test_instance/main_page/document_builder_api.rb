@@ -3,3 +3,4 @@
 require_relative 'document_builder_api/document_builder_getting_started'
 require_relative 'document_builder_api/document_builder_integrating'
 require_relative 'document_builder_api/document_builder_introduction'
+require_relative 'document_builder_api/doc_builder_method_page'
