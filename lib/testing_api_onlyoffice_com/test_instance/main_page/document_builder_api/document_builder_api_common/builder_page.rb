@@ -1,9 +1,6 @@
 # frozen_string_literal: true
 
-require 'json'
-require 'onlyoffice_file_helper'
 require_relative '../../helper_for_api_documentation/document_entry'
-require_relative '../../helper_for_api_documentation/check_method_links'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
   # /docbuilder/basic

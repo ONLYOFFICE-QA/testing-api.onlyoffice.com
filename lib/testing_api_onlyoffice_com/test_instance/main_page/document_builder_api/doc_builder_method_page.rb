@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'onlyoffice_file_helper'
-require_relative '../helper_for_api_documentation/class_name_helper'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/40513035/57924882-0e894d80-78af-11e9-9ce3-d3f5eb9a2b23.png
   # /docbuilder/basic
