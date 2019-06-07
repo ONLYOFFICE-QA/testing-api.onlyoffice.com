@@ -5,7 +5,7 @@ require_relative '../helper_for_api_documentation/class_name_helper'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/40513035/57924882-0e894d80-78af-11e9-9ce3-d3f5eb9a2b23.png
   # /docbuilder/basic
-  class DocumentationMethodPage
+  class DocBuilderMethodPage
     attr_reader :link, :page, :params_exist, :return_exist, :example_exist, :document_exist
 
     def initialize(editor, current_class, method)

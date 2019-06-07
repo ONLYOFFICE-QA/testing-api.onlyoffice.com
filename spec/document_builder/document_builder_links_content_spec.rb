@@ -1,10 +1,6 @@
 # frozen_string_literal: true
 
-require 'json'
-require 'nokogiri'
-require 'onlyoffice_file_helper'
 require 'spec_helper'
-require_relative '../../lib/testing_api_onlyoffice_com/test_instance/main_page/document_builder_api/documentation_method_page'
 describe 'document_builder_documentation_content' do
   before :all do
     @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Document Builder Documentation Links Content', plan_name: @config.to_s)
@@ -15,7 +11,7 @@ describe 'document_builder_documentation_content' do
       method_array.each do |method|
         path = "#{editor}/#{current_class}/#{method}"
         context path do
-          it_behaves_like 'page_content_exist', path, (-> { TestingApiOnlyfficeCom::DocumentationMethodPage.new(editor, current_class, method) })
+          it_behaves_like 'page_content_exist', path, (-> { TestingApiOnlyfficeCom::DocBuilderMethodPage.new(editor, current_class, method) })
         end
       end
     end

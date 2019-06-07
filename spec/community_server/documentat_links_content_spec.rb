@@ -1,10 +1,6 @@
 # frozen_string_literal: true
 
-require 'json'
-require 'nokogiri'
-require 'onlyoffice_file_helper'
 require 'spec_helper'
-require_relative '../../lib/testing_api_onlyoffice_com/test_instance/main_page/community_server_api/documentation_method_page'
 describe 'community_server_documentation_content' do
   before :all do
     @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Community Server Documentation Links Content', plan_name: @config.to_s)
@@ -15,7 +11,7 @@ describe 'community_server_documentation_content' do
       method_array.each do |method|
         path = "#{module_name}/#{method}"
         context path do
-          it_behaves_like 'page_content_exist', path, (-> { TestingApiOnlyfficeCom::DocumentationMethodPage.new(module_name, method) })
+          it_behaves_like 'page_content_exist', path, (-> { TestingApiOnlyfficeCom::CommunityServerMethodPage.new(module_name, method) })
         end
       end
     end

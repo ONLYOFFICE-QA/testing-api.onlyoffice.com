@@ -2,8 +2,13 @@
 
 require 'bundler/setup'
 require 'palladium'
+require 'json'
+require 'nokogiri'
+require 'onlyoffice_file_helper'
 require 'onlyoffice_tcm_helper'
 require_relative '../lib/testing_api_onlyoffice_com'
+require_relative '../lib/testing_api_onlyoffice_com/test_instance/main_page/document_builder_api/doc_builder_method_page'
+require_relative '../lib/testing_api_onlyoffice_com/test_instance/main_page/community_server_api/community_server_method_page'
 include TestingApiOnlyfficeCom
 
 RSpec.configure do |config|
