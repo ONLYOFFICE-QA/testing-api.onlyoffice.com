@@ -3,7 +3,6 @@
     "unspecified": [
       "POST/api/2.0/authentication",
       "POST/api/2.0/authentication/%7bcode%7d",
-      "POST/api/2.0/authentication/register",
       "POST/api/2.0/authentication/setphone",
       "POST/api/2.0/authentication/sendsms"
     ]
@@ -25,6 +24,7 @@
       "GET/api/2.0/calendar/%7bcalendarId%7d/sharing",
       "GET/api/2.0/calendar/%7bcalendarId%7d/caldavurl",
       "GET/api/2.0/calendar/sharing",
+      "GET/api/2.0/calendar/%7bcalendarid%7d/ical/%7bsignature%7d",
       "GET/api/2.0/calendar/%7bcalendarId%7d/icalurl",
       "POST/api/2.0/calendar/import",
       "POST/api/2.0/calendar/%7bcalendarId%7d/import",
@@ -129,6 +129,7 @@
       "POST/api/2.0/community/wiki",
       "DELETE/api/2.0/community/wiki/file/%7bname%7d",
       "DELETE/api/2.0/community/wiki/%7bname%7d",
+      "GET/api/2.0/community/wiki/file/%7bname%7d",
       "POST/api/2.0/community/wiki/comment/preview",
       "GET/api/2.0/community/wiki/%7bpage%7d/story",
       "GET/api/2.0/community/wiki/%7bname%7d",
@@ -438,10 +439,10 @@
       "GET/api/2.0/files/file/%7bfileId%7d",
       "GET/api/2.0/files/file/%7bfileId%7d/history",
       "PUT/api/2.0/files/%7bfileId%7d/sharedlink",
-      "GET/api/2.0/files/file/%7bfileId%7d/openedit  ",
-      "PUT/api/2.0/files/file/%7bfileId%7d/saveediting ",
-      "POST/api/2.0/files/file/%7bfileId%7d/startedit  ",
-      "GET/api/2.0/files/file/%7bfileId%7d/trackeditfile ",
+      "GET/api/2.0/files/file/%7bfileId%7d/openedit",
+      "PUT/api/2.0/files/file/%7bfileId%7d/saveediting",
+      "POST/api/2.0/files/file/%7bfileId%7d/startedit",
+      "GET/api/2.0/files/file/%7bfileId%7d/trackeditfile",
       "PUT/api/2.0/files/file/%7bfileId%7d"
     ],
     "Folders": [
@@ -641,7 +642,7 @@
       "GET/api/2.0/mailserver/mailboxes/alias/valid",
       "DELETE/api/2.0/mailserver/mailboxes/remove/%7bid%7d",
       "PUT/api/2.0/mailserver/mailboxes/alias/remove",
-      "PUT/api/2.0/mailserver/mailboxes/"
+      "PUT/api/2.0/mailserver/mailboxes/update"
     ],
     "MailGroup": [
       "PUT/api/2.0/mailserver/groupaddress/address/add",
@@ -726,17 +727,17 @@
       "GET/api/2.0/portal/userscount"
     ],
     "unspecified": [
-      "GET/api/2.0/portal/search/state ",
+      "GET/api/2.0/portal/search/state",
       "GET/api/2.0/portal",
-      "GET/api/2.0/portal/search ",
-      "POST/api/2.0/portal/search/reindex  ",
+      "GET/api/2.0/portal/search",
+      "POST/api/2.0/portal/search/reindex",
       "POST/api/2.0/portal/search"
     ]
   },
   "project": {
     "Comments": [
       "POST/api/2.0/project/message/%7bmessageid%7d/comment",
-      "POST/api/2.0/project/comment  ",
+      "POST/api/2.0/project/comment",
       "POST/api/2.0/project/task/%7btaskid%7d/comment",
       "GET/api/2.0/project/comment/%7bcommentid%7d",
       "POST/api/2.0/project/comment/preview",
@@ -772,11 +773,6 @@
       "GET/api/2.0/project/message/%7bmessageid%7d/files",
       "POST/api/2.0/project/message/%7bmessageid%7d/files",
       "POST/api/2.0/project/task/%7btaskid%7d/files"
-    ],
-    "Import": [
-      "POST/api/2.0/project/import",
-      "GET/api/2.0/project/import",
-      "POST/api/2.0/project/import/projects"
     ],
     "Milestones": [
       "DELETE/api/2.0/project/milestone/%7bid%7d",
@@ -817,7 +813,7 @@
     "Report": [
       "POST/api/2.0/project/report",
       "DELETE/api/2.0/project/report/%7breportid%7d",
-      "GET/api/2.0/project/report/%7breportid%7d ",
+      "GET/api/2.0/project/report/%7breportid%7d",
       "PUT/api/2.0/project/report/%7breportid%7d"
     ],
     "Tags": [
@@ -881,13 +877,13 @@
       "PUT/api/2.0/project/time/times/status"
     ],
     "unspecified": [
-      "POST/api/2.0/project/report/create  ",
-      "POST/api/2.0/project/withSecurity ",
-      "GET/api/2.0/project/report/files  ",
-      "GET/api/2.0/project/report/status ",
-      "GET/api/2.0/project/settings  ",
-      "DELETE/api/2.0/project/report/files/%7bfileid%7d  ",
-      "GET/api/2.0/project/report/terminate  ",
+      "POST/api/2.0/project/report/create",
+      "POST/api/2.0/project/withSecurity",
+      "GET/api/2.0/project/report/files",
+      "GET/api/2.0/project/report/status",
+      "GET/api/2.0/project/settings",
+      "DELETE/api/2.0/project/report/files/%7bfileid%7d",
+      "GET/api/2.0/project/report/terminate",
       "PUT/api/2.0/project/%7bid%7d/withSecurityInfo ",
       "PUT/api/2.0/project/settings"
     ]
@@ -909,7 +905,7 @@
       "GET/api/2.0/settings/ldap/default",
       "GET/api/2.0/settings/ldap",
       "GET/api/2.0/settings/ldap/status",
-      "GET/api/2.0/settings/security/administrator/%7bproductid%7d ",
+      "GET/api/2.0/settings/security/administrator/%7bproductid%7d",
       "GET/api/2.0/settings/security",
       "GET/api/2.0/settings/smtp",
       "GET/api/2.0/settings/smtp/test/status",
@@ -918,16 +914,16 @@
       "GET/api/2.0/settings/ssov2/constants",
       "GET/api/2.0/settings/storage/progress",
       "GET/api/2.0/settings/statistics/visit",
-      "GET/api/2.0/settings/security/%7bid%7d  ",
+      "GET/api/2.0/settings/security/%7bid%7d",
       "GET/api/2.0/settings/security/administrator ",
       "GET/api/2.0/settings/security/password",
       "GET/api/2.0/settings/logo",
       "GET/api/2.0/settings",
       "GET/api/2.0/settings/recalculatequota",
-      "DELETE/api/2.0/settings/storage/cdn ",
+      "DELETE/api/2.0/settings/storage/cdn",
       "DELETE/api/2.0/settings/smtp",
       "DELETE/api/2.0/settings/ssov2",
-      "DELETE/api/2.0/settings/storage ",
+      "DELETE/api/2.0/settings/storage",
       "PUT/api/2.0/settings/iprestrictions",
       "POST/api/2.0/settings/ldap",
       "POST/api/2.0/settings/ldap/save/test",
