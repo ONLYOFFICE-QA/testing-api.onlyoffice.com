@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'httparty'
-require 'onlyoffice_file_helper'
 require_relative 'document_builder_api_common/builder_page'
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/40513035/55968227-48e64600-5c84-11e9-8ca6-90d1057918cd.png
