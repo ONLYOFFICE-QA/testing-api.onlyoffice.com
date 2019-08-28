@@ -9,10 +9,10 @@ module TestingApiOnlyfficeCom
     def initialize(current_module, method)
       @link = "#{Config.new.server}/portals/method/#{ClassNameHelper.cleanup_name(current_module)}/#{ClassNameHelper.cleanup_name(method)}"
       @page = Nokogiri::HTML(URI.parse(@link).open)
-      @params_exist ||= !@page.xpath('//*[@id="methodParams"]').empty?
-      @example_exist ||= !@page.xpath('//pre[1]').empty?
-      @return_exist ||= !@page.xpath('//*[@id="methodReturns"]/p/text()').empty?
-      @document_exist ||= !@page.xpath('//pre[2]').empty?
+      @params_exist ||= !@page.xpath('//div[@id="methodParams"]').empty?
+      @example_exist ||= !@page.xpath('//div[@id="methodExample"]').empty?
+      @return_exist ||= !@page.xpath('//div[@id="methodReturns"]/p/text()').empty?
+      @document_exist ||= !@page.xpath('//div[@id="methodResponse"]').empty?
     end
   end
 end
