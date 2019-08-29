@@ -25,7 +25,7 @@ module TestingApiOnlyfficeCom
     link(:php, xpath: '//*[contains(@href, "PHP")]')
     link(:ruby, xpath: '//*[contains(@href, "Ruby")]')
 
-    link(:try_now, xpath: '//*[contains(@href, "editors/try")]')
+    link(:try_now, xpath: '//a[contains(@href, "editors/try")]')
     link(:try_now_docx_editor, xpath: '//*[contains(@href, "editors/editor?method=docxEditor")]')
 
     link(:integration_examples, xpath: '//*[contains(@href, "editors/demopreview")]')
