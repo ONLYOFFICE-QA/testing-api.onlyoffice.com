@@ -36,7 +36,6 @@ module TestingApiOnlyfficeCom
     end
 
     def check_download_links
-      open_integrating_document_builder
       checked = {}
       DOC_BUILDER_EXAMPLES.each do |ex|
         link = send("#{ex}_element")
