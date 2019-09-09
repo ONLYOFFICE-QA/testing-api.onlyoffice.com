@@ -12,7 +12,7 @@ module TestingApiOnlyfficeCom
       @params_exist ||= !@page.xpath('//div[@id="methodParams"]').empty?
       @example_exist ||= !@page.xpath('//div[@id="methodExample"]/pre').empty?
       @return_exist ||= !@page.xpath('//div[@id="methodReturns"]/p/text()').empty?
-      @document_exist ||= !@page.xpath('//div[@id="methodResponse"]/pre[1]').empty?
+      @document_exist ||= !@page.xpath('//div[@id="methodResponse"]/pre').empty?
     end
   end
 end
