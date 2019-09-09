@@ -10,9 +10,9 @@ module TestingApiOnlyfficeCom
       @link = "#{Config.new.server}/portals/method/#{ClassNameHelper.cleanup_name(current_module)}/#{ClassNameHelper.cleanup_name(method)}"
       @page = Nokogiri::HTML(URI.parse(@link).open)
       @params_exist ||= !@page.xpath('//div[@id="methodParams"]').empty?
-      @example_exist ||= !@page.xpath('//div[@id="methodExample"]').empty?
+      @example_exist ||= !@page.xpath('//div[@id="methodExample"]/pre').empty?
       @return_exist ||= !@page.xpath('//div[@id="methodReturns"]/p/text()').empty?
-      @document_exist ||= !@page.xpath('//div[@id="methodResponse"]').empty?
+      @document_exist ||= !@page.xpath('//div[@id="methodResponse"]/pre[1]').empty?
     end
   end
 end
