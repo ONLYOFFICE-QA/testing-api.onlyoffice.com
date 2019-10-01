@@ -143,10 +143,9 @@ DEPENDENCIES
   onlyoffice_tcm_helper!
   onlyoffice_webdriver_wrapper!
   ooxml_parser!
-  page-object
   palladium!
   rspec
   rubocop
 
 BUNDLED WITH
-   2.0.1
+   2.0.2
