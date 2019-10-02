@@ -7,13 +7,13 @@ module TestingApiOnlyfficeCom
     include PageObject
 
     # actions
-    link(:generate_document, xpath: '//*[@id="generateButton"]')
-    link(:create_document, xpath: '//*[@id="createDocx"]')
-    link(:create_spreadsheet, xpath: '//*[@id="createXlsx"]')
+    button(:generate_document, xpath: '//button[@id="generateButton"]')
+    button(:create_document, xpath: '//button[@id="createDocx"]')
+    button(:create_spreadsheet, xpath: '//button[@id="createXlsx"]')
 
-    text_field(:name_field, xpath: '//*[@name="name"]')
-    text_field(:company_field, xpath: '//*[@name="company"]')
-    text_field(:position_field, xpath: '//*[@name="title"]')
+    text_field(:name_field, xpath: '//input[@name="name"]')
+    text_field(:company_field, xpath: '//input[@name="company"]')
+    text_field(:position_field, xpath: '//input[@name="title"]')
 
     # @return [String] path to generated file
     def generate_document_from_script
