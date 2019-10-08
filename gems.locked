@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_webdriver_wrapper
-  revision: c5f390825fa09416f6763f4a614b706212147302
+  revision: 08cd6e4b3052a4ad9010dbf48e94a879f55be03b
   specs:
     onlyoffice_webdriver_wrapper (0.0.2)
       headless (~> 2)
@@ -46,13 +46,13 @@ GEM
   specs:
     ast (2.4.0)
     aws-eventstream (1.0.3)
-    aws-sdk (2.11.368)
-      aws-sdk-resources (= 2.11.368)
-    aws-sdk-core (2.11.368)
+    aws-sdk (2.11.369)
+      aws-sdk-resources (= 2.11.369)
+    aws-sdk-core (2.11.369)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.368)
-      aws-sdk-core (= 2.11.368)
+    aws-sdk-resources (2.11.369)
+      aws-sdk-core (= 2.11.369)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     childprocess (3.0.0)
