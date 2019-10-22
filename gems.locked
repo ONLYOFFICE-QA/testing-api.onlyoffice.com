@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_documentserver_testing_framework
-  revision: db1abec0a6a07753fd3f5ca8046e5beaade52a0c
+  revision: c0470454a57310b9c935be41f5a5f6782eb4d41c
   specs:
     onlyoffice_documentserver_testing_framework (0.0.1)
       onlyoffice_logger_helper (~> 1)
