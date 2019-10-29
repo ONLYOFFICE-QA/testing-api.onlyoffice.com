@@ -7,9 +7,9 @@ module TestingApiOnlyfficeCom
     include PageObject
 
     # actions
-    link(:generate_document, xpath: '//*[@id="generateButton"]')
-    link(:create_document, xpath: '//*[@id="createDocx"]')
-    link(:create_spreadsheet, xpath: '//*[@id="createXlsx"]')
+    button(:generate_document, xpath: '//button[@id="generateButton"]')
+    button(:create_document, xpath: '//button[@id="createDocx"]')
+    button(:create_spreadsheet, xpath: '//button[@id="createXlsx"]')
 
     text_field(:name_field, xpath: '//*[@name="name"]')
     text_field(:company_field, xpath: '//*[@name="company"]')
@@ -52,7 +52,7 @@ module TestingApiOnlyfficeCom
     end
 
     def button_generate_document_visible?
-      generate_document_element.visible?
+      generate_document_element.present?
     end
   end
 end

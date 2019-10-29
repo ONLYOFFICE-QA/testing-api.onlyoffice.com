@@ -10,10 +10,10 @@ module TestingApiOnlyfficeCom
   class MainPage
     include PageObject
 
-    link(:portals, xpath: '//*[@href="/portals/basic"]/img')
-    link(:document_builder, xpath: '//*[@href="/docbuilder/basic"]/img')
-    link(:document_server, xpath: '//*[@href="/editors/basic"]/img')
-    link(:sidebar, xpath: '//*[contains(@class,"layout-side")]')
+    link(:portals, xpath: '//a[@href="/portals/basic"]')
+    link(:document_builder, xpath: '//a[@href="/docbuilder/basic"]')
+    link(:document_server, xpath: '//a[@href="/editors/basic"]')
+    element(:sidebar, xpath: '//*[contains(@class,"layout-side")]')
 
     def initialize(instance)
       @instance = instance
@@ -28,11 +28,11 @@ module TestingApiOnlyfficeCom
     end
 
     def sidebar_visible?
-      sidebar_element.visible?
+      sidebar_element.present?
     end
 
     def portals_api_visible?
-      portals_element.visible?
+      portals_element.present?
     end
 
     def go_to_community_server_api

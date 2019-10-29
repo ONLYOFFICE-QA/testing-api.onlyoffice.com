@@ -9,7 +9,7 @@ module TestingApiOnlyfficeCom
     include PageObject
     include CheckMethodLinks
 
-    link(:identification, xpath: '//*[contains(@class, "treeheader")][text()="Portal api methods"]')
+    div(:identification, xpath: '//div[contains(@class, "treeheader")][text()="Portal api methods"]')
 
     def initialize(instance)
       @instance = instance
@@ -18,7 +18,7 @@ module TestingApiOnlyfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until { identification_element.visible? }
+      @instance.webdriver.wait_until { identification_element.present? }
     end
 
     def navigation_objects
