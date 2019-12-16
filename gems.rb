@@ -12,3 +12,4 @@ gem 'ooxml_parser', git: 'https://github.com/ONLYOFFICE/ooxml_parser'
 gem 'palladium', git: 'https://github.com/flaminestone/palladium.git'
 gem 'rspec'
 gem 'rubocop', require: false
+gem 'rubocop-rspec', require: false
