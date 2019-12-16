@@ -10,7 +10,7 @@ describe 'site_api_tests' do
     @api_page = @instance.go_to_main_page
   end
 
-  context '#document_builder' do
+  describe '#document_builder' do
     before :each do
       @introduction_page = @api_page.go_to_document_builder_introduction
     end
@@ -27,7 +27,7 @@ describe 'site_api_tests' do
     end
   end
 
-  context '#document_server' do
+  describe '#document_server' do
     api_document_server_page = nil
     before { api_document_server_page = @api_page.go_to_document_server_api }
 
@@ -41,7 +41,7 @@ describe 'site_api_tests' do
       expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nBad mojo with document server links:\n #{failed}"
     end
 
-    context '#demo_editors' do
+    describe '#demo_editors' do
       it '[API][DocumentServer] demo `document` editor works' do
         expect(api_document_server_page.integration_example_work?(:document)).to be_truthy
       end

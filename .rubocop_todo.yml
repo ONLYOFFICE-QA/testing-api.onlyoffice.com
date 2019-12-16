@@ -27,13 +27,6 @@ RSpec/ContextMethod:
   Exclude:
     - 'spec/site_api_spec.rb'
 
-# Offense count: 3
-# Configuration parameters: Prefixes.
-# Prefixes: when, with, without
-RSpec/ContextWording:
-  Exclude:
-    - 'spec/site_api_spec.rb'
-
 # Offense count: 7
 RSpec/DescribeClass:
   Exclude:
