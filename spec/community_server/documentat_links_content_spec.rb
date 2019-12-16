@@ -3,7 +3,7 @@
 require 'spec_helper'
 describe 'community_server_documentation_content' do
   before :all do
-    @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Community Server Documentation Links Content', plan_name: @config.to_s)
+    @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Community Server Documentation Links Content', plan_name: config.to_s)
   end
 
   TestingApiOnlyfficeCom::CommunityServerAPI.parsed_document_entries.each_pair do |module_name, class_hash|
