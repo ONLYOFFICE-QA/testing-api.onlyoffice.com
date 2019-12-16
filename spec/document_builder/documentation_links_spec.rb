@@ -4,13 +4,13 @@ require 'spec_helper'
 describe 'document_builder_documentation' do
   test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Document Builder Documentation Links', plan_name: config.to_s)
 
-  before :each do
+  before do
     @instance = TestingApiOnlyfficeCom::TestInstance.new(config)
     @api_page = @instance.go_to_main_page
   end
 
   describe 'document_builder_documentation_links' do
-    before :each do
+    before do
       @introduction_page = @api_page.go_to_document_builder_introduction
     end
 
@@ -19,7 +19,7 @@ describe 'document_builder_documentation' do
       expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
     end
 
-    after :each do |example|
+    after do |example|
       test_manager.add_result(example)
       @instance.webdriver.quit
     end

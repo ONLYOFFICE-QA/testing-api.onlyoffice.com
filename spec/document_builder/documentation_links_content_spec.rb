@@ -15,7 +15,7 @@ describe 'document_builder_documentation_content' do
     end
   end
 
-  after :each do |example|
+  after do |example|
     test_manager.add_result(example)
   end
 end
