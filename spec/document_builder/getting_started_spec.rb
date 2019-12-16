@@ -2,9 +2,7 @@
 
 require 'spec_helper'
 describe 'document_builder_getting_started' do
-  before :all do
-    @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Document Builder Getting Started', plan_name: config.to_s)
-  end
+  test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Document Builder Getting Started', plan_name: config.to_s)
 
   before :each do
     @instance = TestingApiOnlyfficeCom::TestInstance.new(config)
@@ -34,7 +32,7 @@ describe 'document_builder_getting_started' do
   end
 
   after :each do |example|
-    @test_manager.add_result(example)
+    test_manager.add_result(example)
     @instance.webdriver.quit
   end
 end

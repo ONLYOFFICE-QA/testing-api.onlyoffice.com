@@ -2,9 +2,7 @@
 
 require 'spec_helper'
 describe 'community_server_documentation' do
-  before :all do
-    @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Community Server Documentation Links', plan_name: config.to_s)
-  end
+  test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Community Server Documentation Links', plan_name: config.to_s)
 
   before :each do
     @instance = TestingApiOnlyfficeCom::TestInstance.new(config)
@@ -22,7 +20,7 @@ describe 'community_server_documentation' do
     end
 
     after :each do |example|
-      @test_manager.add_result(example)
+      test_manager.add_result(example)
       @instance.webdriver.quit
     end
   end
