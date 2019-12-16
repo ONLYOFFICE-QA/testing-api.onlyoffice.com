@@ -72,15 +72,6 @@ RSpec/InstanceVariable:
 RSpec/MultipleExpectations:
   Max: 3
 
-# Offense count: 10
-# Cop supports --auto-correct.
-# Configuration parameters: Strict, EnforcedStyle, AllowedExplicitMatchers.
-# SupportedStyles: inflected, explicit
-RSpec/PredicateMatcher:
-  Exclude:
-    - 'spec/document_builder/example_spec.rb'
-    - 'spec/site_api_spec.rb'
-
 # Offense count: 1
 Style/MixinUsage:
   Exclude:

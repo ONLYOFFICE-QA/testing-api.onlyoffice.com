@@ -32,7 +32,7 @@ describe 'site_api_tests' do
     before { api_document_server_page = @api_page.go_to_document_server_api }
 
     it '[API][DocumentServer] try now works (editor)' do
-      expect(api_document_server_page.try_now_works?).to be_truthy
+      expect(api_document_server_page).to be_try_now_works
     end
 
     it '[API][DocumentServer] integration examples download links shown and alive' do
@@ -43,15 +43,15 @@ describe 'site_api_tests' do
 
     describe '#demo_editors' do
       it '[API][DocumentServer] demo `document` editor works' do
-        expect(api_document_server_page.integration_example_work?(:document)).to be_truthy
+        expect(api_document_server_page).to be_integration_example_work(:document)
       end
 
       it '[API][DocumentServer] demo `spreadsheet` editor works' do
-        expect(api_document_server_page.integration_example_work?(:spreadsheet)).to be_truthy
+        expect(api_document_server_page).to be_integration_example_work(:spreadsheet)
       end
 
       it '[API][DocumentServer] demo `presentation` editor works' do
-        expect(api_document_server_page.integration_example_work?(:presentation)).to be_truthy
+        expect(api_document_server_page).to be_integration_example_work(:presentation)
       end
     end
   end
