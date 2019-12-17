@@ -2,9 +2,7 @@
 
 require 'spec_helper'
 describe 'document_builder_documentation_content' do
-  before :all do
-    @test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Document Builder Documentation Links Content', plan_name: @config.to_s)
-  end
+  test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Document Builder Documentation Links Content', plan_name: config.to_s)
 
   TestingApiOnlyfficeCom::BuilderPage.parsed_document_entries.each_pair do |editor, class_hash|
     class_hash.each_pair do |current_class, method_array|
@@ -17,7 +15,7 @@ describe 'document_builder_documentation_content' do
     end
   end
 
-  after :each do |example|
-    @test_manager.add_result(example)
+  after do |example|
+    test_manager.add_result(example)
   end
 end

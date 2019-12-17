@@ -4,10 +4,9 @@ require 'bundler/setup'
 require_relative '../lib/testing_api_onlyoffice_com'
 include TestingApiOnlyfficeCom
 
-RSpec.configure do |config|
-  config.before :all do
-    @config = TestingApiOnlyfficeCom::Config.new
-  end
+# @return [TestingApiOnlyfficeCom::Config] config of test run
+def config
+  @config ||= TestingApiOnlyfficeCom::Config.new
 end
 
 shared_examples_for 'page_content_exist' do |path, documentation_page|
