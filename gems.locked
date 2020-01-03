@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_webdriver_wrapper
-  revision: e426b1f1dc246c9cb9dd8729e729ded522eb2e42
+  revision: f521240a2f26ca6dcfb198dad703fe74ca107d64
   specs:
     onlyoffice_webdriver_wrapper (0.1.1)
       headless (~> 2)
@@ -38,7 +38,7 @@ GIT
       onlyoffice_logger_helper (~> 1)
       onlyoffice_s3_wrapper (~> 0.1)
       page-object (~> 2)
-      selenium-webdriver (= 3.142.6)
+      selenium-webdriver (= 3.142.7)
       watir (~> 6)
 
 GEM
@@ -46,13 +46,13 @@ GEM
   specs:
     ast (2.4.0)
     aws-eventstream (1.0.3)
-    aws-sdk (2.11.421)
-      aws-sdk-resources (= 2.11.421)
-    aws-sdk-core (2.11.421)
+    aws-sdk (2.11.422)
+      aws-sdk-resources (= 2.11.422)
+    aws-sdk-core (2.11.422)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.421)
-      aws-sdk-core (= 2.11.421)
+    aws-sdk-resources (2.11.422)
+      aws-sdk-core (= 2.11.422)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     childprocess (3.0.0)
@@ -61,7 +61,7 @@ GEM
       faker (>= 1.1.2)
       yml_reader (>= 0.6)
     diff-lcs (1.3)
-    faker (2.9.0)
+    faker (2.10.0)
       i18n (>= 1.6, < 1.8)
     headless (2.3.1)
     httparty (0.17.3)
@@ -121,7 +121,7 @@ GEM
     ruby-filemagic (0.7.2)
     ruby-progressbar (1.10.1)
     rubyzip (1.3.0)
-    selenium-webdriver (3.142.6)
+    selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     unicode-display_width (1.6.0)
