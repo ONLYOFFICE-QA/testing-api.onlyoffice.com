@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_webdriver_wrapper
-  revision: 3fbbb3d2ef69323f663e2805b7acad6fd11121f1
+  revision: 0e2571f9e8a6ded0b995342708761f6f32caf2ea
   specs:
     onlyoffice_webdriver_wrapper (0.1.1)
       headless (~> 2)
@@ -46,13 +46,19 @@ GEM
   specs:
     ast (2.4.0)
     aws-eventstream (1.0.3)
-    aws-sdk (2.11.434)
-      aws-sdk-resources (= 2.11.434)
-    aws-sdk-core (2.11.434)
-      aws-sigv4 (~> 1.0)
+    aws-partitions (1.269.0)
+    aws-sdk-core (3.89.1)
+      aws-eventstream (~> 1.0, >= 1.0.2)
+      aws-partitions (~> 1, >= 1.239.0)
+      aws-sigv4 (~> 1.1)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.434)
-      aws-sdk-core (= 2.11.434)
+    aws-sdk-kms (1.28.0)
+      aws-sdk-core (~> 3, >= 3.71.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-s3 (1.60.1)
+      aws-sdk-core (~> 3, >= 3.83.0)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.1)
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     childprocess (3.0.0)
@@ -82,8 +88,8 @@ GEM
       onlyoffice_logger_helper (~> 1)
       rubyzip (~> 1.0)
     onlyoffice_logger_helper (1.0.1)
-    onlyoffice_s3_wrapper (0.1.1)
-      aws-sdk (~> 2.0)
+    onlyoffice_s3_wrapper (0.1.2)
+      aws-sdk-s3 (~> 1)
       onlyoffice_file_helper (~> 0.1)
     page-object (2.2.6)
       page_navigation (>= 0.10)
