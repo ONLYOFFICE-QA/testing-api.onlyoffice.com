@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_webdriver_wrapper
-  revision: 73fcbda4cbe99328dfdf8cc9703db7c99608f802
+  revision: 3d5be15c0a4000dffafbedbca594a9a635f925ce
   specs:
     onlyoffice_webdriver_wrapper (0.1.2)
       headless (~> 2)
@@ -46,7 +46,7 @@ GEM
   specs:
     ast (2.4.0)
     aws-eventstream (1.0.3)
-    aws-partitions (1.277.0)
+    aws-partitions (1.279.0)
     aws-sdk-core (3.90.1)
       aws-eventstream (~> 1.0, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
