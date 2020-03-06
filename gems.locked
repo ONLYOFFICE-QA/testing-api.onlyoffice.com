@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_webdriver_wrapper
-  revision: 3d5be15c0a4000dffafbedbca594a9a635f925ce
+  revision: 99f01c5f881cb6c733d701600ab96d92c51dd192
   specs:
     onlyoffice_webdriver_wrapper (0.1.2)
       headless (~> 2)
