@@ -1,13 +1,4 @@
 GIT
-  remote: https://github.com/ONLYOFFICE/ooxml_parser
-  revision: 8523670126e18ab8e28efa66abf6e3b039a93c90
-  specs:
-    ooxml_parser (0.4.1)
-      nokogiri (~> 1.6)
-      ruby-filemagic (~> 0.1)
-      rubyzip (>= 1.1, < 3.0)
-
-GIT
   remote: https://github.com/flaminestone/palladium.git
   revision: cf36ed451f0d525f9053aed681f4f3e6831c59f2
   specs:
@@ -91,6 +82,10 @@ GEM
     onlyoffice_s3_wrapper (0.1.2)
       aws-sdk-s3 (~> 1)
       onlyoffice_file_helper (~> 0.1)
+    ooxml_parser (0.5.1)
+      nokogiri (~> 1.6)
+      ruby-filemagic (~> 0.1)
+      rubyzip (>= 1.1, < 3.0)
     page-object (2.2.6)
       page_navigation (>= 0.10)
       selenium-webdriver (~> 3.0)
@@ -148,11 +143,11 @@ DEPENDENCIES
   onlyoffice_file_helper
   onlyoffice_tcm_helper!
   onlyoffice_webdriver_wrapper!
-  ooxml_parser!
+  ooxml_parser
   palladium!
   rspec
   rubocop
   rubocop-rspec
 
 BUNDLED WITH
-   2.0.2
+   2.1.4
