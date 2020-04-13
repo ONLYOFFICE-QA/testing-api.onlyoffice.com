@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_webdriver_wrapper
-  revision: 95d439b1969258eca90bae4bb3d83e2e2e243253
+  revision: 3dd7b28d771ab2914efa06c28fc7f4e1afff55ab
   specs:
     onlyoffice_webdriver_wrapper (0.1.2)
       headless (~> 2)
