@@ -19,19 +19,6 @@ GIT
     onlyoffice_tcm_helper (0.1.1)
       onlyoffice_file_helper (~> 0.1)
 
-GIT
-  remote: https://github.com/onlyoffice-testing-robot/onlyoffice_webdriver_wrapper
-  revision: cb6ee19f96f5e620f876c10f8832db4c1a2161fd
-  specs:
-    onlyoffice_webdriver_wrapper (0.1.2)
-      headless (~> 2)
-      onlyoffice_file_helper (~> 0.1)
-      onlyoffice_logger_helper (~> 1)
-      onlyoffice_s3_wrapper (~> 0.1)
-      page-object (~> 2)
-      selenium-webdriver (= 3.142.7)
-      watir (~> 6)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -81,6 +68,14 @@ GEM
     onlyoffice_s3_wrapper (0.1.2)
       aws-sdk-s3 (~> 1)
       onlyoffice_file_helper (~> 0.1)
+    onlyoffice_webdriver_wrapper (0.2.0)
+      headless (~> 2)
+      onlyoffice_file_helper (~> 0.1)
+      onlyoffice_logger_helper (~> 1)
+      onlyoffice_s3_wrapper (~> 0.1)
+      page-object (~> 2)
+      selenium-webdriver (= 3.142.7)
+      watir (~> 6)
     ooxml_parser (0.5.1)
       nokogiri (~> 1.6)
       ruby-filemagic (~> 0.1)
@@ -140,7 +135,7 @@ DEPENDENCIES
   onlyoffice_documentserver_testing_framework!
   onlyoffice_file_helper
   onlyoffice_tcm_helper!
-  onlyoffice_webdriver_wrapper!
+  onlyoffice_webdriver_wrapper
   ooxml_parser
   palladium!
   rspec
