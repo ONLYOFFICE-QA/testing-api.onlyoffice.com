@@ -24,7 +24,7 @@ GEM
   specs:
     ast (2.4.0)
     aws-eventstream (1.1.0)
-    aws-partitions (1.319.0)
+    aws-partitions (1.320.0)
     aws-sdk-core (3.96.1)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
@@ -68,7 +68,7 @@ GEM
     onlyoffice_s3_wrapper (0.1.2)
       aws-sdk-s3 (~> 1)
       onlyoffice_file_helper (~> 0.1)
-    onlyoffice_webdriver_wrapper (0.2.0)
+    onlyoffice_webdriver_wrapper (0.3.0)
       headless (~> 2)
       onlyoffice_file_helper (~> 0.1)
       onlyoffice_logger_helper (~> 1)
