@@ -6,9 +6,9 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_documentserver_testing_framework
-  revision: 80090c0964bae3974fd59b9b2b51f68a46f5c8c1
+  revision: ccc35ea449b1118e60e724c515d8dfe34276d97a
   specs:
-    onlyoffice_documentserver_testing_framework (0.0.1)
+    onlyoffice_documentserver_testing_framework (0.1.1)
       onlyoffice_logger_helper (~> 1)
       onlyoffice_webdriver_wrapper (~> 0)
 
@@ -33,7 +33,7 @@ GEM
     aws-sdk-kms (1.36.0)
       aws-sdk-core (~> 3, >= 3.99.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.77.0)
+    aws-sdk-s3 (1.78.0)
       aws-sdk-core (~> 3, >= 3.104.3)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.1)
