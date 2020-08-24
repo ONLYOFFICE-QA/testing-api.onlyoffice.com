@@ -299,7 +299,6 @@
 'mail/PUT/api/2.0/mail/messages/remove/Resulting document'
 'mail/PUT/api/2.0/mail/messages/restore/Resulting document'
 'mail/GET/api/2.0/mail/settings/conversationsEnabled/Resulting document'
-'mail/PUT/api/2.0/mail/messages/save/Resulting document'
 'mail/PUT/api/2.0/mail/messages/send/Resulting document'
 'mail/PUT/api/2.0/mail/settings/goNextAfterMoveEnabled/Resulting document'
 'mail/PUT/api/2.0/mail/messages/mark/Resulting document'

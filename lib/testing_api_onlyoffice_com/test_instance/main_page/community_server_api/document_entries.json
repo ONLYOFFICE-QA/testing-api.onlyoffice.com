@@ -586,7 +586,6 @@
       "PUT/api/2.0/mail/messages/move",
       "PUT/api/2.0/mail/messages/remove",
       "PUT/api/2.0/mail/messages/restore",
-      "PUT/api/2.0/mail/messages/save",
       "PUT/api/2.0/mail/messages/send",
       "PUT/api/2.0/mail/messages/mark"
     ],
