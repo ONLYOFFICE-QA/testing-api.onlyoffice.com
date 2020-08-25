@@ -271,7 +271,7 @@
       "DELETE/api/2.0/crm/invoice",
       "DELETE/api/2.0/crm/invoiceitem/%7bid%7d",
       "DELETE/api/2.0/crm/invoiceitem",
-      "DELETE/api/2.0/crm/invoiceline/%7binvoicelineid%7d",
+      "DELETE/api/2.0/crm/invoiceline/%7bid%7d",
       "DELETE/api/2.0/crm/invoice/tax/%7bid%7d",
       "GET/api/2.0/crm/invoice/settings",
       "GET/api/2.0/crm/%7bentityType%7d/invoicelist/%7bentityid%7d",
@@ -286,10 +286,10 @@
       "GET/api/2.0/crm/invoice/tax",
       "PUT/api/2.0/crm/invoice/settings/name",
       "PUT/api/2.0/crm/invoice/settings/terms",
-      "PUT/api/2.0/crm/invoice/%7binvoiceid%7d",
+      "PUT/api/2.0/crm/invoice/%7bid%7d",
       "PUT/api/2.0/crm/invoice/status/%7bstatus%7d",
       "PUT/api/2.0/crm/invoiceitem/%7bid%7d",
-      "PUT/api/2.0/crm/invoiceline/%7binvoicelineid%7d",
+      "PUT/api/2.0/crm/invoiceline/%7bid%7d",
       "PUT/api/2.0/crm/invoice/tax/%7bid%7d"
     ],
     "Opportunities": [
