@@ -10,6 +10,11 @@ describe 'site_api_tests' do
     @api_page = @instance.go_to_main_page
   end
 
+  after do |example|
+    test_manager.add_result(example)
+    @instance.webdriver.quit
+  end
+
   describe '#document_builder' do
     before do
       @introduction_page = @api_page.go_to_document_builder_introduction
@@ -54,10 +59,5 @@ describe 'site_api_tests' do
         expect(api_document_server_page).to be_integration_example_work(:presentation)
       end
     end
-  end
-
-  after do |example|
-    test_manager.add_result(example)
-    @instance.webdriver.quit
   end
 end

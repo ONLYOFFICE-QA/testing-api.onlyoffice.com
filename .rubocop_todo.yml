@@ -44,16 +44,6 @@ RSpec/ExampleLength:
   Exclude:
     - 'spec/document_builder/example_spec.rb'
 
-# Offense count: 5
-# Cop supports --auto-correct.
-RSpec/HooksBeforeExamples:
-  Exclude:
-    - 'spec/community_server/documentation_links_spec.rb'
-    - 'spec/document_builder/documentation_links_spec.rb'
-    - 'spec/document_builder/example_spec.rb'
-    - 'spec/document_builder/getting_started_spec.rb'
-    - 'spec/site_api_spec.rb'
-
 # Offense count: 50
 # Configuration parameters: AssignmentOnly.
 RSpec/InstanceVariable:
