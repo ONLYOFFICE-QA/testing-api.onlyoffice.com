@@ -70,12 +70,6 @@ RSpec/MultipleExpectations:
   Max: 3
 
 # Offense count: 1
-# Cop supports --auto-correct.
-Style/CaseLikeIf:
-  Exclude:
-    - 'lib/testing_api_onlyoffice_com/test_instance/main_page/helper_for_api_documentation/document_entry.rb'
-
-# Offense count: 1
 Style/MixinUsage:
   Exclude:
     - 'spec/spec_helper.rb'
