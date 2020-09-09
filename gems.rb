@@ -12,4 +12,5 @@ gem 'ooxml_parser'
 gem 'palladium', git: 'https://github.com/flaminestone/palladium.git'
 gem 'rspec'
 gem 'rubocop', require: false
+gem 'rubocop-performance', require: false
 gem 'rubocop-rspec', require: false
