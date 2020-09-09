@@ -29,11 +29,12 @@ module TestingApiOnlyfficeCom
     end
 
     def [](var)
-      if var.is_a?(String)
+      case var
+      when String
         @children.detect do |child|
           child.name == ClassNameHelper.cleanup_name(var)
         end
-      elsif var.is_a?(Numeric)
+      when Numeric
         @children[var]
       end
     end

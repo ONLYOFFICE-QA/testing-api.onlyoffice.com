@@ -22,7 +22,7 @@ module TestingApiOnlyfficeCom
 
     def download_library_linux_x64_works?
       linux_x64_element.click
-      path_to_downloaded_library_linux_x64 = @instance.webdriver.download_directory + '/' + TestData::DEFAULT_LIBRARY_LINUX_X64_NAME
+      path_to_downloaded_library_linux_x64 = "#{@instance.webdriver.download_directory}/#{TestData::DEFAULT_LIBRARY_LINUX_X64_NAME}"
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_library_linux_x64)
       file_size_linux_x64 = File.size(path_to_downloaded_library_linux_x64)
       [file_size_linux_x64 > 10_000, file_size_linux_x64]
@@ -30,7 +30,7 @@ module TestingApiOnlyfficeCom
 
     def download_library_windows_x64_works?
       windows_x64_element.click
-      path_to_downloaded_library_windows_x64 = @instance.webdriver.download_directory + '/' + TestData::DEFAULT_LIBRARY_WINDOWS_X64_NAME
+      path_to_downloaded_library_windows_x64 = "#{@instance.webdriver.download_directory}/#{TestData::DEFAULT_LIBRARY_WINDOWS_X64_NAME}"
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_library_windows_x64)
       file_size_windows_x64 = File.size(path_to_downloaded_library_windows_x64)
       [file_size_windows_x64 > 10_000, file_size_windows_x64]
@@ -38,7 +38,7 @@ module TestingApiOnlyfficeCom
 
     def download_library_windows_x86_works?
       windows_x86_element.click
-      path_to_downloaded_library_windows_x86 = @instance.webdriver.download_directory + '/' + TestData::DEFAULT_LIBRARY_WINDOWS_X86_NAME
+      path_to_downloaded_library_windows_x86 = "#{@instance.webdriver.download_directory}/#{TestData::DEFAULT_LIBRARY_WINDOWS_X86_NAME}"
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_library_windows_x86)
       file_size_windows_x86 = File.size(path_to_downloaded_library_windows_x86)
       [file_size_windows_x86 > 10_000, file_size_windows_x86]

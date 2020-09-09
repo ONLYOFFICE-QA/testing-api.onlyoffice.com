@@ -9,6 +9,11 @@ describe 'document_builder_getting_started' do
     @api_page = @instance.go_to_main_page
   end
 
+  after do |example|
+    test_manager.add_result(example)
+    @instance.webdriver.quit
+  end
+
   describe 'download_libraries' do
     before do
       introduction_page = @api_page.go_to_document_builder_introduction
@@ -29,10 +34,5 @@ describe 'document_builder_getting_started' do
       result, file_size_windows_x86 = @getting_started_page.download_library_windows_x86_works?
       expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nFile size: #{file_size_windows_x86}"
     end
-  end
-
-  after do |example|
-    test_manager.add_result(example)
-    @instance.webdriver.quit
   end
 end

@@ -9,6 +9,11 @@ describe 'document_builder_example' do
     @api_page = @instance.go_to_main_page
   end
 
+  after do |example|
+    test_manager.add_result(example)
+    @instance.webdriver.quit
+  end
+
   describe 'document_builder_generate_on_introduction_page' do
     before do
       @introduction_page = @api_page.go_to_document_builder_introduction
@@ -112,10 +117,5 @@ describe 'document_builder_example' do
                  .rows[6].cells[0].raw_text)
         .to match(/.*#{TestData::CUSTOM_COMPANY} #{TestData::CUSTOM_POSITION}.*#{TestData::CUSTOM_NAME}.*/)
     end
-  end
-
-  after do |example|
-    test_manager.add_result(example)
-    @instance.webdriver.quit
   end
 end

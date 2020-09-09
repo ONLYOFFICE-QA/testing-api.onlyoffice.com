@@ -14,14 +14,14 @@ describe 'community_server_documentation' do
       @api_community_server_page = @api_page.go_to_community_server_api
     end
 
-    it 'check all links in documentation are visible' do
-      result, failed = @api_community_server_page.community_server_links_ok?
-      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
-    end
-
     after do |example|
       test_manager.add_result(example)
       @instance.webdriver.quit
+    end
+
+    it 'check all links in documentation are visible' do
+      result, failed = @api_community_server_page.community_server_links_ok?
+      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
     end
   end
 end

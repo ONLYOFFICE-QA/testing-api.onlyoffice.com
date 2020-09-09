@@ -18,7 +18,7 @@ module TestingApiOnlyfficeCom
     # @return [String] path to generated file
     def generate_document_from_script
       generate_document_element.click
-      path_to_downloaded_file = @instance.webdriver.download_directory + '/' + TestData::DEFAULT_BUILDER_FILE_NAME
+      path_to_downloaded_file = "#{@instance.webdriver.download_directory}/#{TestData::DEFAULT_BUILDER_FILE_NAME}"
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_file)
       path_to_downloaded_file
     end
@@ -32,7 +32,7 @@ module TestingApiOnlyfficeCom
     # @return [String] path to docx file created from a sample data
     def create_docx_from_sample_data
       create_document_element.click
-      path_to_downloaded_docx_file = @instance.webdriver.download_directory + '/' + TestData::DEFAULT_BUILDER_DOCX_FILE_NAME
+      path_to_downloaded_docx_file = "#{@instance.webdriver.download_directory}/#{TestData::DEFAULT_BUILDER_DOCX_FILE_NAME}"
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_docx_file)
       path_to_downloaded_docx_file
     end
@@ -40,7 +40,7 @@ module TestingApiOnlyfficeCom
     # @return [String] path to xlsx file created from a sample data
     def create_xlsx_from_sample_data
       create_spreadsheet_element.click
-      path_to_downloaded_xlsx_file = @instance.webdriver.download_directory + '/' + TestData::DEFAULT_BUILDER_XLSX_FILE_NAME
+      path_to_downloaded_xlsx_file = "#{@instance.webdriver.download_directory}/#{TestData::DEFAULT_BUILDER_XLSX_FILE_NAME}"
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_xlsx_file)
       path_to_downloaded_xlsx_file
     end
