@@ -80,13 +80,6 @@ Style/MixinUsage:
   Exclude:
     - 'spec/spec_helper.rb'
 
-# Offense count: 6
-# Cop supports --auto-correct.
-Style/StringConcatenation:
-  Exclude:
-    - 'lib/testing_api_onlyoffice_com/test_instance/main_page/document_builder_api/document_builder_api_common/document_builder.rb'
-    - 'lib/testing_api_onlyoffice_com/test_instance/main_page/document_builder_api/document_builder_getting_started.rb'
-
 # Offense count: 37
 # Cop supports --auto-correct.
 # Configuration parameters: AutoCorrect, AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
