@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_documentserver_testing_framework
-  revision: 2c2a9c288bfd1857ed8722016add33ec65376df5
+  revision: ff5897c1f67f1a24136feb7e9454fb8c9230ab3c
   specs:
     onlyoffice_documentserver_testing_framework (0.2.0)
       onlyoffice_logger_helper (~> 1)
@@ -24,13 +24,13 @@ GEM
   specs:
     ast (2.4.1)
     aws-eventstream (1.1.0)
-    aws-partitions (1.368.0)
-    aws-sdk-core (3.105.0)
+    aws-partitions (1.370.0)
+    aws-sdk-core (3.107.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
       aws-sigv4 (~> 1.1)
       jmespath (~> 1.0)
-    aws-sdk-kms (1.37.0)
+    aws-sdk-kms (1.38.0)
       aws-sdk-core (~> 3, >= 3.99.0)
       aws-sigv4 (~> 1.1)
     aws-sdk-s3 (1.80.0)
