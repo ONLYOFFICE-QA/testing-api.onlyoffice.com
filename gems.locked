@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_documentserver_testing_framework
-  revision: 3186a04074aecb0f196d69c562a1c8bd975d2498
+  revision: 0e912aa51b7d70cc9df9ec6f4874715d5269d7b8
   specs:
     onlyoffice_documentserver_testing_framework (0.2.0)
       onlyoffice_logger_helper (~> 1)
@@ -90,7 +90,7 @@ GEM
     parser (2.7.1.5)
       ast (~> 2.4.1)
     rainbow (3.0.0)
-    regexp_parser (1.8.0)
+    regexp_parser (1.8.1)
     rexml (3.2.4)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
