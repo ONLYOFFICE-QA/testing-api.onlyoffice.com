@@ -18,7 +18,7 @@ module TestingApiOnlyfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until { identification_element.visible? }
+      @instance.webdriver.wait_until { identification_element.present? }
     end
 
     def navigation_objects

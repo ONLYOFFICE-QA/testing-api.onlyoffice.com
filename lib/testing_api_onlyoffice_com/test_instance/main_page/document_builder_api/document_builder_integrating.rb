@@ -32,15 +32,15 @@ module TestingApiOnlyfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until { generate_document_element.visible? }
+      @instance.webdriver.wait_until { generate_document_element.present? }
     end
 
     def check_download_links
       checked = {}
       DOC_BUILDER_EXAMPLES.each do |ex|
         link = send("#{ex}_element")
-        checked["#{ex}_visibility"] = link.visible?
-        checked["#{ex}_downloadable"] = HTTParty.head(link.href).success? if link.visible?
+        checked["#{ex}_visibility"] = link.present?
+        checked["#{ex}_downloadable"] = HTTParty.head(link.href).success? if link.present?
       end
       checked
     end

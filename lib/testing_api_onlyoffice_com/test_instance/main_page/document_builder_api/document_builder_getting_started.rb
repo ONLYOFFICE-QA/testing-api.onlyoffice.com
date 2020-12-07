@@ -17,7 +17,7 @@ module TestingApiOnlyfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until { windows_x86_element.visible? }
+      @instance.webdriver.wait_until { windows_x86_element.present? }
     end
 
     def download_library_linux_x64_works?

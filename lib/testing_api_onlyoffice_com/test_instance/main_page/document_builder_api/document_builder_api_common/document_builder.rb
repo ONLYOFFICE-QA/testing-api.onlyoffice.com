@@ -52,7 +52,7 @@ module TestingApiOnlyfficeCom
     end
 
     def button_generate_document_visible?
-      generate_document_element.visible?
+      generate_document_element.present?
     end
   end
 end
