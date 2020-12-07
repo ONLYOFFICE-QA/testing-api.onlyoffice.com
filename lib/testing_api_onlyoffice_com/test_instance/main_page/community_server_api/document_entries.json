@@ -74,7 +74,7 @@
       "GET/api/2.0/community/bookmark/%40self",
       "GET/api/2.0/community/bookmark",
       "GET/api/2.0/community/bookmark/tag",
-      "GET/api/2.0/community/bookmark/tag/%7btag%7d",
+      "GET/api/2.0/community/bookmark/bytag",
       "GET/api/2.0/community/bookmark/%7bid%7d",
       "POST/api/2.0/community/bookmark/comment/preview",
       "GET/api/2.0/community/bookmark/%7bid%7d/comment",
@@ -410,81 +410,88 @@
     ]
   },
   "files": {
-    "File%20Creation": [
+    "Files": [
+      "PUT/api/2.0/files/file/%7bfileId%7d/history",
+      "POST/api/2.0/files/%7bfolderid%7d/file",
       "POST/api/2.0/files/%40my/file",
-      "POST/api/2.0/files/%7bfolderId%7d/file",
-      "POST/api/2.0/files/%7bfolderId%7d/html",
-      "POST/api/2.0/files/%40common/html",
-      "POST/api/2.0/files/%40my/html",
-      "POST/api/2.0/files/%7bfolderId%7d/text",
-      "POST/api/2.0/files/%40common/text",
-      "POST/api/2.0/files/%40my/text"
+      "GET/api/2.0/files/file/%7bfileid%7d/openedit",
+      "PUT/api/2.0/files/file/%7bfileId%7d/saveediting",
+      "POST/api/2.0/files/file/%7bfileId%7d/startedit",
+      "GET/api/2.0/files/file/%7bfileId%7d/trackeditfile",
+      "POST/api/2.0/files/favorites",
+      "DELETE/api/2.0/files/favorites",
+      "GET/api/2.0/files/file/%7bfileId%7d",
+      "GET/api/2.0/files/file/%7bfileId%7d/history",
+      "POST/api/2.0/files/templates",
+      "DELETE/api/2.0/files/templates",
+      "PUT/api/2.0/files/file/%7bfileId%7d",
+      "PUT/api/2.0/files/%7bfileid%7d/update"
     ],
-    "File%20operations": [
+    "Folders": [
+      "POST/api/2.0/files/folder/%7bfolderId%7d",
+      "GET/api/2.0/files/%7bfolderId%7d",
+      "GET/api/2.0/files/folder/%7bfolderId%7d",
+      "GET/api/2.0/files/folder/%7bfolderId%7d/path",
+      "PUT/api/2.0/files/folder/%7bfolderId%7d",
+      "GET/api/2.0/files/%40common",
+      "GET/api/2.0/files/%40favorites",
+      "GET/api/2.0/files/%40my",
+      "GET/api/2.0/files/%40projects",
+      "GET/api/2.0/files/%40recent",
+      "GET/api/2.0/files/%40share",
+      "GET/api/2.0/files/%40template",
+      "GET/api/2.0/files/%40trash"
+    ],
+    "Operations": [
       "PUT/api/2.0/files/fileops/emptytrash",
       "PUT/api/2.0/files/file/%7bfileId%7d/checkconversion",
       "GET/api/2.0/files/file/%7bfileId%7d/checkconversion",
       "PUT/api/2.0/files/fileops/copy",
+      "PUT/api/2.0/files/file/%7bfileid%7d",
       "PUT/api/2.0/files/fileops/delete",
+      "PUT/api/2.0/files/folder/%7bfolderid%7d",
       "PUT/api/2.0/files/fileops/terminate",
       "PUT/api/2.0/files/fileops/bulkdownload",
-      "GET/api/2.0/files/fileops",
       "PUT/api/2.0/files/fileops/markasread",
       "GET/api/2.0/files/fileops/move",
-      "PUT/api/2.0/files/fileops/move"
+      "PUT/api/2.0/files/fileops/move",
+      "GET/api/2.0/files/fileops"
     ],
-    "Files": [
-      "PUT/api/2.0/files/file/%7bfileId%7d/history",
-      "DELETE/api/2.0/files/file/%7bfileId%7d",
-      "GET/api/2.0/files/file/%7bfileId%7d",
-      "GET/api/2.0/files/file/%7bfileId%7d/history",
-      "PUT/api/2.0/files/%7bfileId%7d/sharedlink",
-      "GET/api/2.0/files/file/%7bfileId%7d/openedit",
-      "PUT/api/2.0/files/file/%7bfileId%7d/saveediting",
-      "POST/api/2.0/files/file/%7bfileId%7d/startedit",
-      "GET/api/2.0/files/file/%7bfileId%7d/trackeditfile",
-      "PUT/api/2.0/files/file/%7bfileId%7d"
-    ],
-    "Folders": [
-      "GET/api/2.0/files/%40common",
-      "DELETE/api/2.0/files/folder/%7bfolderId%7d",
-      "GET/api/2.0/files/%7bfolderId%7d",
-      "GET/api/2.0/files/folder/%7bfolderId%7d",
-      "GET/api/2.0/files/folder/%7bfolderId%7d/path",
-      "GET/api/2.0/files/%40my",
-      "POST/api/2.0/files/folder/%7bfolderId%7d",
-      "GET/api/2.0/files/%40projects",
-      "PUT/api/2.0/files/folder/%7bfolderId%7d",
-      "GET/api/2.0/files/%40share",
-      "GET/api/2.0/files/%40trash"
+    "Settings": [
+      "PUT/api/2.0/files/docservice",
+      "PUT/api/2.0/files/settings/favorites",
+      "PUT/api/2.0/files/displayrecent",
+      "PUT/api/2.0/files/settings/templates",
+      "PUT/api/2.0/files/docservice",
+      "PUT/api/2.0/files/storeoriginal",
+      "PUT/api/2.0/files/updateifexist"
     ],
     "Sharing": [
       "GET/api/2.0/files/file/%7bfileId%7d/share",
       "GET/api/2.0/files/folder/%7bfolderId%7d/share",
       "DELETE/api/2.0/files/share",
       "PUT/api/2.0/files/file/%7bfileId%7d/share",
-      "PUT/api/2.0/files/folder/%7bfolderId%7d/share"
+      "PUT/api/2.0/files/folder/%7bfolderId%7d/share",
+      "PUT/api/2.0/files/%7bfileid%7d/sharedlink"
     ],
     "Third-Party%20Integration": [
-      "GET/api/2.0/files/thirdparty/common",
-      "GET/api/2.0/files/thirdparty",
+      "GET/api/2.0/files/thirdparty/capabilities",
       "DELETE/api/2.0/files/thirdparty/%7bproviderId%7d",
-      "POST/api/2.0/files/thirdparty"
+      "POST/api/2.0/files/thirdparty",
+      "GET/api/2.0/files/thirdparty/common",
+      "GET/api/2.0/files/thirdparty"
     ],
     "Uploads": [
       "POST/api/2.0/files/%7bfolderId%7d/upload/create_session",
       "POST/api/2.0/files/%7bfolderId%7d/insert",
       "POST/api/2.0/files/%40common/insert",
       "POST/api/2.0/files/%40my/insert",
+      "POST/api/2.0/files/%7bfolderid%7d/upload",
       "POST/api/2.0/files/%40common/upload",
-      "POST/api/2.0/files/%7bfolderId%7d/upload",
       "POST/api/2.0/files/%40my/upload"
     ],
     "unspecified": [
-      "PUT/api/2.0/files/docservice",
-      "GET/api/2.0/files/%40search/%7bquery%7d",
-      "PUT/api/2.0/files/storeoriginal",
-      "PUT/api/2.0/files/updateifexist"
+      "GET/api/2.0/files/%40search/%7bquery%7d"
     ]
   },
   "group": {
