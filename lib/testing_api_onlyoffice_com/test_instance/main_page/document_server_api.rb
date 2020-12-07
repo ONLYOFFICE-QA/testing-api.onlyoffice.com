@@ -42,7 +42,7 @@ module TestingApiOnlyfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until { try_now_element.visible? }
+      @instance.webdriver.wait_until { try_now_element.present? }
     end
 
     def try_now_works?
@@ -66,7 +66,7 @@ module TestingApiOnlyfficeCom
     end
 
     def editor_seems_legit?(editor = :document)
-      send("#{editor}_editor_demo_element").visible? && documents_framework.management.editor_type == editor
+      send("#{editor}_editor_demo_element").present? && documents_framework.management.editor_type == editor
     end
 
     def demo_editor_switch_seems_legit?(editor = :document)
@@ -78,8 +78,8 @@ module TestingApiOnlyfficeCom
       checked = {}
       DOC_SERVER_EXAMPLES.each do |ex|
         link = send("#{ex}_element")
-        checked["#{ex}_visibility"] = link.visible?
-        checked["#{ex}_downloadable"] = HTTParty.head(link.href).success? if link.visible?
+        checked["#{ex}_visibility"] = link.present?
+        checked["#{ex}_downloadable"] = HTTParty.head(link.href).success? if link.present?
       end
       checked
     end

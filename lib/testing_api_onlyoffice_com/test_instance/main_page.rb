@@ -28,11 +28,11 @@ module TestingApiOnlyfficeCom
     end
 
     def sidebar_visible?
-      sidebar_element.visible?
+      sidebar_element.present?
     end
 
     def portals_api_visible?
-      portals_element.visible?
+      portals_element.present?
     end
 
     def go_to_community_server_api

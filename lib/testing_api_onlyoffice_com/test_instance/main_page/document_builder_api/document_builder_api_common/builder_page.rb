@@ -29,7 +29,7 @@ module TestingApiOnlyfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until { integrating_document_builder_element.visible? }
+      @instance.webdriver.wait_until { integrating_document_builder_element.present? }
     end
 
     def open_introduction
