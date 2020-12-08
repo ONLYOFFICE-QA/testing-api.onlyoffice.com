@@ -42,9 +42,9 @@ shared_examples_for 'page_content_exist' do |path, documentation_page|
 end
 
 def failed_docbuilder_tests
-  @failed_docbuilder_tests ||= File.read("#{__dir__}/failed_docbuilder_tests").split("\n")
+  @failed_docbuilder_tests ||= File.read("#{__dir__}/data/failed_docbuilder_tests.list").split("\n")
 end
 
 def failed_community_server_tests
-  @failed_community_server_tests ||= File.read("#{__dir__}/failed_community_server_tests").split("\n")
+  @failed_community_server_tests ||= File.read("#{__dir__}/data/failed_community_server_tests.list").split("\n")
 end
