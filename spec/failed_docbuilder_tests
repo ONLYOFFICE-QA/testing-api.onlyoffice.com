@@ -1,989 +1,989 @@
-'Spreadsheet API/ApiParaPr/GetClassType/Parameters'
-'Text document API/ApiParagraph/SetTabs/Returns'
-'Presentation API/ApiParagraph/SetSpacingAfter/Returns'
-'Text document API/Api/CreateBlockLvlSdt/Parameters'
-'Text document API/Api/CreateBullet/Resulting document'
-'Text document API/Api/CreateBlockLvlSdt/Example'
-'Text document API/Api/CreateBullet/Example'
-'Text document API/Api/CreateNumbering/Example'
-'Text document API/Api/CreateInlineLvlSdt/Example'
-'Text document API/Api/CreateNumbering/Resulting document'
-'Text document API/Api/CreateInlineLvlSdt/Resulting document'
-'Text document API/Api/CreateParagraph/Parameters'
-'Text document API/Api/CreateNoFill/Parameters'
-'Text document API/Api/CreateInlineLvlSdt/Parameters'
-'Text document API/ApiBlockLvlSdt/GetAlias/Resulting document'
-'Text document API/ApiBlockLvlSdt/GetAlias/Parameters'
-'Text document API/ApiBlockLvlSdt/GetAlias/Example'
-'Text document API/ApiChart/SetMajorHorizontalGridlines/Resulting document'
-'Text document API/ApiChart/SetMajorVerticalGridlines/Returns'
-'Text document API/ApiChart/SetMajorVerticalGridlines/Example'
-'Text document API/ApiBlockLvlSdt/GetClassType/Parameters'
-'Text document API/ApiBlockLvlSdt/SetAlias/Example'
-'Text document API/ApiBlockLvlSdt/GetClassType/Example'
-'Text document API/ApiBlockLvlSdt/SetLock/Returns'
-'Text document API/ApiBlockLvlSdt/GetClassType/Resulting document'
-'Text document API/Api/CreateBlockLvlSdt/Resulting document'
-'Text document API/ApiBlockLvlSdt/GetLock/Example'
-'Text document API/ApiBlockLvlSdt/GetContent/Parameters'
-'Text document API/ApiBlockLvlSdt/SetAlias/Resulting document'
-'Text document API/ApiBlockLvlSdt/GetLock/Resulting document'
-'Text document API/ApiBlockLvlSdt/GetContent/Example'
-'Text document API/Api/CreateRun/Parameters'
-'Text document API/ApiDocument/AddElement/Returns'
-'Text document API/ApiBlockLvlSdt/GetContent/Resulting document'
-'Text document API/ApiBlockLvlSdt/GetTag/Parameters'
-'Text document API/ApiBlockLvlSdt/GetLabel/Parameters'
-'Text document API/ApiBlockLvlSdt/GetLabel/Example'
-'Text document API/ApiBlockLvlSdt/GetLabel/Resulting document'
-'Text document API/ApiBlockLvlSdt/SetLock/Example'
-'Text document API/ApiBlockLvlSdt/GetTag/Example'
-'Text document API/ApiBlockLvlSdt/GetLock/Parameters'
-'Text document API/ApiBlockLvlSdt/SetLabel/Returns'
-'Text document API/ApiBlockLvlSdt/GetTag/Resulting document'
-'Text document API/ApiBlockLvlSdt/SetAlias/Returns'
-'Text document API/ApiBlockLvlSdt/SetLabel/Example'
-'Text document API/ApiBlockLvlSdt/SetLabel/Resulting document'
-'Text document API/ApiBlockLvlSdt/SetLock/Resulting document'
-'Text document API/ApiDocument/CreateNewHistoryPoint/Parameters'
-'Text document API/ApiChart/SetVertAxisTickLabelPosition/Resulting document'
-'Text document API/ApiDocument/CreateNewHistoryPoint/Returns'
-'Text document API/ApiDocument/CreateNewHistoryPoint/Example'
-'Text document API/ApiDocument/GetElement/Parameters'
-'Text document API/ApiDocument/GetElementsCount/Parameters'
-'Text document API/ApiChart/SetHorAxisTickLabelPosition/Resulting document'
-'Text document API/ApiChart/SetHorAxisMajorTickMark/Returns'
-'Text document API/ApiChart/SetHorAxisMajorTickMark/Example'
-'Text document API/ApiChart/SetHorAxisMajorTickMark/Resulting document'
-'Text document API/ApiChart/SetHorAxisTitle/Returns'
-'Text document API/ApiChart/SetHorAxisMinorTickMark/Returns'
-'Text document API/ApiChart/SetVertAxisMajorTickMark/Example'
-'Text document API/ApiChart/SetHorAxisMinorTickMark/Example'
-'Text document API/ApiChart/SetHorAxisMinorTickMark/Resulting document'
-'Text document API/ApiChart/SetHorAxisOrientation/Returns'
-'Text document API/ApiChart/SetHorAxisOrientation/Example'
-'Text document API/ApiChart/SetLegendFontSize/Parameters'
-'Text document API/ApiChart/SetHorAxisOrientation/Resulting document'
-'Text document API/ApiChart/SetMajorHorizontalGridlines/Returns'
-'Text document API/ApiChart/SetLegendFontSize/Returns'
-'Text document API/ApiChart/SetHorAxisTickLabelPosition/Returns'
-'Text document API/ApiChart/SetHorAxisTickLabelPosition/Example'
-'Text document API/ApiChart/SetLegendFontSize/Example'
-'Text document API/ApiChart/SetLegendFontSize/Resulting document'
-'Text document API/ApiChart/SetShowPointDataLabel/Returns'
-'Text document API/ApiChart/SetLegendPos/Returns'
-'Text document API/ApiChart/SetShowPointDataLabel/Example'
-'Text document API/ApiChart/SetShowPointDataLabel/Resulting document'
-'Text document API/ApiChart/SetTitle/Returns'
-'Text document API/ApiChart/SetVerAxisTitle/Returns'
-'Text document API/ApiChart/SetVerAxisOrientation/Returns'
-'Text document API/ApiChart/SetVertAxisLablesFontSize/Resulting document'
-'Text document API/ApiChart/SetVerAxisOrientation/Example'
-'Text document API/ApiChart/SetVerAxisOrientation/Resulting document'
-'Text document API/ApiChart/SetVertAxisLablesFontSize/Returns'
-'Text document API/ApiChart/SetVertAxisMajorTickMark/Returns'
-'Text document API/ApiChart/SetVertAxisLablesFontSize/Example'
-'Text document API/ApiChart/SetVertAxisMajorTickMark/Resulting document'
-'Text document API/ApiChart/SetVertAxisMinorTickMark/Returns'
-'Text document API/ApiChart/SetVertAxisMinorTickMark/Example'
-'Text document API/ApiChart/SetVertAxisMinorTickMark/Resulting document'
-'Text document API/ApiChart/SetVertAxisTickLabelPosition/Returns'
-'Text document API/ApiChart/SetVertAxisTickLabelPosition/Example'
-'Text document API/ApiDocument/RemoveElement/Returns'
-'Text document API/ApiChart/SetMajorHorizontalGridlines/Example'
-'Text document API/ApiDocument/CreateNewHistoryPoint/Resulting document'
-'Text document API/ApiInlineLvlSdt/RemoveElement/Returns'
-'Text document API/ApiDocument/SearchAndReplace/Returns'
-'Text document API/ApiDocument/SearchAndReplace/Example'
-'Text document API/ApiDocument/SearchAndReplace/Resulting document'
-'Text document API/ApiParagraph/AddPageBreak/Parameters'
-'Text document API/ApiParagraph/GetElementsCount/Parameters'
-'Text document API/ApiDocument/RemoveAllElements/Parameters'
-'Text document API/ApiInlineLvlSdt/RemoveAllElements/Returns'
-'Text document API/ApiDocument/RemoveAllElements/Returns'
-'Text document API/ApiParagraph/GetClassType/Parameters'
-'Text document API/ApiParagraph/GetNumbering/Parameters'
-'Text document API/ApiParagraph/SetSpacingBefore/Returns'
-'Text document API/ApiParagraph/SetSpacingLine/Returns'
-'Text document API/ApiDocument/GetDefaultParaPr/Parameters'
-'Text document API/ApiDocument/GetReviewReport/Parameters'
-'Text document API/ApiDocument/GetAllContentControls/Parameters'
-'Text document API/ApiDocument/GetDefaultTextPr/Parameters'
-'Text document API/ApiDocument/GetCommentsReport/Parameters'
-'Text document API/ApiFill/GetClassType/Parameters'
-'Text document API/ApiDocument/GetFinalSection/Parameters'
-'Text document API/ApiDocument/GetAllContentControls/Example'
-'Text document API/ApiBlockLvlSdt/SetTag/Resulting document'
-'Text document API/ApiDocument/GetAllContentControls/Resulting document'
-'Text document API/ApiChart/SetHorAxisLablesFontSize/Resulting document'
-'Text document API/ApiDocument/GetClassType/Parameters'
-'Text document API/ApiGradientStop/GetClassType/Parameters'
-'Text document API/ApiImage/GetClassType/Parameters'
-'Text document API/ApiInlineLvlSdt/SetAlias/Resulting document'
-'Text document API/ApiInlineLvlSdt/SetAlias/Example'
-'Text document API/ApiInlineLvlSdt/SetAlias/Returns'
-'Text document API/ApiInlineLvlSdt/SetLabel/Returns'
-'Text document API/ApiInlineLvlSdt/SetLock/Returns'
-'Text document API/ApiParagraph/AddTabStop/Parameters'
-'Text document API/ApiInlineLvlSdt/SetTag/Returns'
-'Text document API/ApiNumberingLevel/GetClassType/Parameters'
-'Text document API/ApiDocument/InsertContent/Example'
-'Text document API/ApiNumbering/GetClassType/Parameters'
-'Text document API/ApiNumberingLevel/GetNumbering/Parameters'
-'Text document API/ApiDocument/InsertContent/Resulting document'
-'Text document API/ApiDocument/InsertWatermark/Returns'
-'Text document API/ApiDocument/InsertWatermark/Example'
-'Text document API/ApiDocument/InsertWatermark/Resulting document'
-'Text document API/ApiDocument/Push/Returns'
-'Text document API/ApiNumberingLevel/GetLevelIndex/Parameters'
-'Text document API/ApiNumberingLevel/GetParaPr/Parameters'
-'Text document API/ApiNumberingLevel/GetTextPr/Parameters'
-'Text document API/ApiNumberingLevel/SetRestart/Returns'
-'Text document API/ApiNumberingLevel/SetCustomType/Returns'
-'Text document API/ApiParagraph/SetStyle/Returns'
-'Text document API/ApiDocument/SetEvenAndOddHdrFtr/Returns'
-'Text document API/ApiDocumentContent/GetElementsCount/Parameters'
-'Text document API/ApiDocumentContent/AddElement/Returns'
-'Text document API/ApiDocumentContent/GetClassType/Parameters'
-'Text document API/ApiDocumentContent/GetElement/Parameters'
-'Text document API/ApiDocumentContent/Push/Returns'
-'Text document API/ApiDocumentContent/RemoveElement/Returns'
-'Text document API/ApiDrawing/SetHorAlign/Returns'
-'Text document API/ApiDocumentContent/RemoveAllElements/Parameters'
-'Text document API/ApiDocumentContent/RemoveAllElements/Returns'
-'Text document API/ApiDrawing/SetHorPosition/Returns'
-'Text document API/ApiDrawing/SetDistances/Returns'
-'Text document API/ApiDrawing/GetClassType/Parameters'
-'Text document API/ApiDrawing/SetSize/Returns'
-'Text document API/ApiDrawing/SetVerAlign/Returns'
-'Text document API/ApiDrawing/SetVerPosition/Returns'
-'Text document API/ApiDrawing/SetWrappingStyle/Returns'
-'Text document API/ApiInlineLvlSdt/GetLock/Example'
-'Text document API/ApiInlineLvlSdt/GetElementsCount/Parameters'
-'Text document API/ApiInlineLvlSdt/GetLock/Resulting document'
-'Text document API/ApiInlineLvlSdt/GetAlias/Parameters'
-'Text document API/ApiInlineLvlSdt/GetAlias/Example'
-'Text document API/ApiInlineLvlSdt/GetTag/Parameters'
-'Text document API/ApiInlineLvlSdt/GetAlias/Resulting document'
-'Text document API/ApiInlineLvlSdt/GetClassType/Parameters'
-'Text document API/ApiInlineLvlSdt/GetLabel/Parameters'
-'Text document API/ApiInlineLvlSdt/GetLabel/Example'
-'Text document API/ApiInlineLvlSdt/GetTag/Example'
-'Text document API/ApiInlineLvlSdt/GetLabel/Resulting document'
-'Text document API/ApiNumberingLevel/SetTemplateType/Returns'
-'Text document API/ApiInlineLvlSdt/GetLock/Parameters'
-'Text document API/ApiInlineLvlSdt/GetTag/Resulting document'
-'Text document API/ApiInlineLvlSdt/RemoveAllElements/Parameters'
-'Text document API/ApiNumberingLevel/SetSuff/Returns'
-'Text document API/ApiNumberingLevel/SetStart/Returns'
-'Text document API/ApiParagraph/AddColumnBreak/Parameters'
-'Text document API/ApiParagraph/AddInlineLvlSdt/Example'
-'Text document API/ApiParagraph/AddInlineLvlSdt/Resulting document'
-'Text document API/ApiParagraph/AddLineBreak/Parameters'
-'Text document API/ApiParagraph/AddPageNumber/Parameters'
-'Text document API/ApiParagraph/SetNumPr/Returns'
-'Text document API/ApiParagraph/AddPagesCount/Parameters'
-'Text document API/ApiParagraph/SetIndLeft/Returns'
-'Text document API/ApiParagraph/SetBullet/Resulting document'
-'Text document API/ApiParagraph/SetNumbering/Returns'
-'Text document API/ApiParagraph/SetContextualSpacing/Returns'
-'Text document API/ApiParagraph/SetKeepLines/Returns'
-'Text document API/ApiParagraph/SetIndRight/Returns'
-'Text document API/ApiParagraph/SetIndFirstLine/Returns'
-'Text document API/ApiParagraph/SetLeftBorder/Returns'
-'Text document API/ApiParagraph/SetJc/Returns'
-'Text document API/ApiParagraph/SetKeepNext/Returns'
-'Text document API/ApiParagraph/SetPageBreakBefore/Returns'
-'Text document API/ApiParagraph/SetRightBorder/Returns'
-'Text document API/ApiParagraph/SetShd/Returns'
-'Text document API/ApiParagraph/SetSpacingAfter/Returns'
-'Text document API/ApiParagraph/GetParagraphMarkTextPr/Parameters'
-'Text document API/ApiParaPr/SetBullet/Returns'
-'Text document API/ApiParagraph/SetBetweenBorder/Returns'
-'Text document API/ApiParagraph/GetParaPr/Parameters'
-'Text document API/ApiParagraph/RemoveAllElements/Parameters'
-'Text document API/ApiParagraph/RemoveAllElements/Returns'
-'Text document API/ApiParaPr/SetBottomBorder/Returns'
-'Text document API/ApiParagraph/SetBottomBorder/Returns'
-'Text document API/ApiParagraph/SetWidowControl/Returns'
-'Text document API/ApiParagraph/RemoveElement/Returns'
-'Text document API/ApiParagraph/SetBullet/Returns'
-'Text document API/ApiParagraph/SetBullet/Example'
-'Text document API/ApiParaPr/SetBetweenBorder/Returns'
-'Text document API/ApiParaPr/GetClassType/Parameters'
-'Text document API/ApiParaPr/SetBullet/Example'
-'Text document API/ApiParaPr/SetContextualSpacing/Returns'
-'Text document API/ApiParaPr/SetBullet/Resulting document'
-'Text document API/ApiParaPr/SetRightBorder/Returns'
-'Text document API/ApiParaPr/SetIndFirstLine/Returns'
-'Text document API/ApiStyle/GetTableRowPr/Parameters'
-'Text document API/ApiStyle/GetTextPr/Parameters'
-'Text document API/ApiParagraph/SetTopBorder/Returns'
-'Text document API/ApiParaPr/SetKeepLines/Returns'
-'Text document API/ApiParaPr/SetIndLeft/Returns'
-'Text document API/ApiParaPr/SetNumPr/Returns'
-'Text document API/ApiParaPr/SetIndRight/Returns'
-'Text document API/ApiParaPr/SetKeepNext/Returns'
-'Text document API/ApiParaPr/SetJc/Returns'
-'Text document API/ApiParaPr/SetStyle/Returns'
-'Text document API/ApiParaPr/SetLeftBorder/Returns'
-'Text document API/ApiParaPr/SetPageBreakBefore/Returns'
-'Text document API/ApiParaPr/SetTabs/Returns'
-'Text document API/ApiParaPr/SetTopBorder/Returns'
-'Text document API/ApiParaPr/SetWidowControl/Returns'
-'Text document API/ApiPresetColor/GetClassType/Parameters'
-'Text document API/ApiRGBColor/GetClassType/Parameters'
-'Text document API/ApiRun/AddColumnBreak/Parameters'
-'Text document API/ApiRun/AddColumnBreak/Returns'
-'Text document API/ApiParaPr/SetShd/Returns'
-'Text document API/ApiRun/AddPageBreak/Parameters'
-'Text document API/ApiParaPr/SetSpacingAfter/Returns'
-'Text document API/ApiRun/AddPageBreak/Returns'
-'Text document API/ApiParaPr/SetSpacingBefore/Returns'
-'Text document API/ApiParaPr/SetSpacingLine/Returns'
-'Text document API/ApiRun/AddDrawing/Returns'
-'Text document API/ApiRun/AddTabStop/Parameters'
-'Text document API/ApiRun/AddLineBreak/Parameters'
-'Text document API/ApiRun/AddLineBreak/Returns'
-'Text document API/ApiSection/GetClassType/Parameters'
-'Text document API/ApiRun/AddTabStop/Returns'
-'Text document API/ApiRun/AddText/Returns'
-'Text document API/ApiRun/ClearContent/Parameters'
-'Text document API/ApiRun/ClearContent/Returns'
-'Text document API/ApiSection/SetPageSize/Returns'
-'Text document API/ApiSection/SetTitlePage/Returns'
-'Text document API/ApiSection/SetType/Returns'
-'Text document API/ApiShape/GetClassType/Parameters'
-'Text document API/ApiShape/GetDocContent/Parameters'
-'Text document API/ApiShape/SetPaddings/Returns'
-'Text document API/ApiRun/SetColor/Returns'
-'Text document API/ApiRun/SetFontSize/Returns'
-'Text document API/ApiRun/SetDoubleStrikeout/Returns'
-'Text document API/ApiRun/SetShd/Returns'
-'Text document API/ApiRun/SetLanguage/Returns'
-'Text document API/ApiRun/SetFill/Returns'
-'Text document API/ApiRun/SetFill/Example'
-'Text document API/ApiRun/SetHighlight/Returns'
-'Text document API/ApiRun/SetFill/Resulting document'
-'Text document API/ApiRun/SetFontFamily/Returns'
-'Text document API/ApiRun/SetItalic/Returns'
-'Text document API/ApiRun/SetPosition/Returns'
-'Text document API/ApiRun/SetSpacing/Returns'
-'Text document API/ApiRun/SetStrikeout/Returns'
-'Text document API/ApiRun/SetSmallCaps/Returns'
-'Text document API/ApiRun/SetUnderline/Returns'
-'Text document API/ApiRun/SetStyle/Returns'
-'Text document API/ApiRun/SetVertAlign/Returns'
-'Text document API/ApiSchemeColor/GetClassType/Parameters'
-'Text document API/ApiRun/GetClassType/Parameters'
-'Text document API/ApiSection/SetPageMargins/Returns'
-'Text document API/ApiRun/GetTextPr/Parameters'
-'Text document API/ApiRun/SetBold/Returns'
-'Text document API/ApiSection/SetNotEqualColumns/Returns'
-'Text document API/ApiSection/SetEqualColumns/Returns'
-'Text document API/ApiSection/RemoveFooter/Returns'
-'Text document API/ApiRun/SetCaps/Returns'
-'Text document API/ApiSection/SetHeaderDistance/Returns'
-'Text document API/ApiSection/RemoveHeader/Returns'
-'Text document API/ApiSection/SetFooterDistance/Returns'
-'Text document API/ApiStyle/GetParaPr/Parameters'
-'Text document API/ApiStyle/GetName/Parameters'
-'Text document API/ApiStyle/GetTableCellPr/Parameters'
-'Text document API/ApiStyle/GetTablePr/Parameters'
-'Text document API/ApiShape/SetPaddings/Example'
-'Text document API/ApiShape/SetPaddings/Resulting document'
-'Text document API/ApiShape/SetVerticalTextAlign/Returns'
-'Text document API/ApiTableCellPr/SetCellMarginRight/Returns'
-'Text document API/ApiTableCellPr/SetCellBorderTop/Returns'
-'Text document API/ApiStroke/GetClassType/Parameters'
-'Text document API/ApiStyle/GetClassType/Parameters'
-'Text document API/ApiTableCellPr/SetCellMarginBottom/Returns'
-'Text document API/ApiTableCellPr/SetCellMarginLeft/Returns'
-'Text document API/ApiTableCellPr/SetCellMarginTop/Returns'
-'Text document API/ApiTableCellPr/SetNoWrap/Returns'
-'Text document API/ApiTableCellPr/SetTextDirection/Returns'
-'Text document API/ApiTableCellPr/SetShd/Returns'
-'Text document API/ApiTablePr/SetTableLayout/Resulting document'
-'Text document API/ApiTablePr/SetTableLayout/Returns'
-'Text document API/ApiTablePr/SetWidth/Returns'
-'Text document API/ApiTablePr/SetWidth/Resulting document'
-'Text document API/ApiTableRow/GetCellsCount/Parameters'
-'Text document API/ApiTableRow/GetClassType/Parameters'
-'Text document API/ApiTableCell/SetWidth/Returns'
-'Text document API/ApiStyle/GetType/Parameters'
-'Text document API/ApiStyle/SetBasedOn/Returns'
-'Text document API/ApiTableCell/GetClassType/Parameters'
-'Text document API/ApiTable/SetCellSpacing/Returns'
-'Text document API/ApiTableCell/SetTextDirection/Returns'
-'Text document API/ApiTable/SetTableLayout/Returns'
-'Text document API/ApiTable/SetTableLook/Returns'
-'Text document API/ApiTableCell/GetContent/Parameters'
-'Text document API/ApiTable/SetWidth/Returns'
-'Text document API/ApiTableCell/SetCellBorderBottom/Returns'
-'Text document API/ApiTableCell/SetShd/Returns'
-'Text document API/ApiTableCellPr/GetClassType/Parameters'
-'Text document API/ApiTableCell/SetVerticalAlign/Returns'
-'Text document API/ApiTableCellPr/SetCellBorderBottom/Returns'
-'Text document API/ApiTableCellPr/SetCellBorderLeft/Returns'
-'Text document API/ApiStyle/SetName/Returns'
-'Text document API/ApiTable/AddColumn/Returns'
-'Text document API/ApiTable/GetRowsCount/Parameters'
-'Text document API/ApiTable/GetRowsCount/Returns'
-'Text document API/ApiTable/GetClassType/Parameters'
-'Text document API/ApiTableCell/SetCellMarginLeft/Returns'
-'Text document API/ApiTableCell/SetCellMarginBottom/Returns'
-'Text document API/ApiTableCell/SetCellMarginRight/Returns'
-'Text document API/ApiTableCell/SetCellBorderTop/Returns'
-'Text document API/ApiTableCell/SetNoWrap/Returns'
-'Text document API/ApiTableCell/SetCellMarginTop/Returns'
-'Text document API/ApiTablePr/SetTableCellMarginTop/Returns'
-'Text document API/ApiTablePr/SetTableInd/Returns'
-'Text document API/ApiTable/SetJc/Returns'
-'Text document API/ApiTable/SetStyleRowBandSize/Returns'
-'Text document API/ApiTable/SetShd/Returns'
-'Text document API/ApiTable/SetTableBorderInsideV/Returns'
-'Text document API/ApiTable/SetStyle/Returns'
-'Text document API/ApiTable/SetTableBorderBottom/Returns'
-'Text document API/ApiTable/SetStyleColBandSize/Returns'
-'Text document API/ApiTable/SetTableBorderRight/Returns'
-'Text document API/ApiTable/SetTableBorderInsideH/Returns'
-'Text document API/ApiTable/SetTableBorderLeft/Returns'
-'Text document API/ApiTable/SetTableCellMarginLeft/Returns'
-'Text document API/ApiTable/SetTableBorderTop/Returns'
-'Text document API/ApiTable/SetTableCellMarginBottom/Returns'
-'Text document API/ApiTable/SetTableCellMarginRight/Returns'
-'Text document API/ApiTable/SetTableCellMarginTop/Returns'
-'Text document API/ApiTable/SetTableInd/Returns'
-'Text document API/ApiTablePr/SetTableBorderBottom/Returns'
-'Text document API/ApiTableRow/SetTableHeader/Returns'
-'Text document API/ApiTableCell/SetCellBorderLeft/Returns'
-'Text document API/ApiTablePr/SetTableBorderTop/Returns'
-'Text document API/ApiTablePr/SetTableBorderLeft/Returns'
-'Text document API/ApiTableCell/SetCellBorderRight/Returns'
-'Text document API/ApiTablePr/SetTableBorderInsideH/Returns'
-'Text document API/ApiTableCellPr/SetCellBorderRight/Returns'
-'Text document API/ApiTablePr/SetStyleRowBandSize/Returns'
-'Text document API/ApiTablePr/SetTableBorderInsideV/Returns'
-'Text document API/ApiTablePr/SetTableBorderRight/Returns'
-'Text document API/ApiTablePr/SetTableCellMarginBottom/Returns'
-'Text document API/ApiTablePr/SetTableCellMarginLeft/Returns'
-'Text document API/ApiTablePr/SetTableCellMarginRight/Returns'
-'Text document API/ApiTableRow/SetHeight/Returns'
-'Text document API/ApiTableRowPr/GetClassType/Parameters'
-'Text document API/ApiTableStylePr/GetTableRowPr/Parameters'
-'Text document API/ApiTableCellPr/SetVerticalAlign/Returns'
-'Text document API/ApiTablePr/SetJc/Returns'
-'Text document API/ApiTableCellPr/SetWidth/Returns'
-'Text document API/ApiTableCellPr/SetWidth/Resulting document'
-'Text document API/ApiTablePr/GetClassType/Parameters'
-'Text document API/ApiTablePr/SetShd/Returns'
-'Text document API/ApiTablePr/SetCellSpacing/Returns'
-'Text document API/ApiTablePr/SetStyleColBandSize/Returns'
-'Text document API/ApiTableStylePr/GetType/Resulting document'
-'Text document API/ApiTableStylePr/GetTextPr/Parameters'
-'Text document API/ApiTableStylePr/GetType/Parameters'
-'Text document API/ApiTextPr/GetClassType/Parameters'
-'Text document API/ApiTextPr/SetBold/Returns'
-'Text document API/ApiTextPr/SetCaps/Returns'
-'Text document API/ApiTextPr/SetColor/Returns'
-'Text document API/ApiTextPr/SetShd/Returns'
-'Text document API/ApiTableRowPr/SetTableHeader/Returns'
-'Text document API/ApiTableStylePr/GetClassType/Parameters'
-'Text document API/ApiTableStylePr/GetParaPr/Parameters'
-'Text document API/ApiTextPr/SetStrikeout/Returns'
-'Text document API/ApiTableStylePr/GetTableCellPr/Parameters'
-'Text document API/ApiTextPr/SetSmallCaps/Returns'
-'Text document API/ApiTextPr/SetUnderline/Returns'
-'Text document API/ApiTextPr/SetSpacing/Returns'
-'Text document API/ApiTextPr/SetStyle/Returns'
-'Text document API/ApiTextPr/SetVertAlign/Returns'
-'Spreadsheet API/Api/SetLocale/Returns'
-'Spreadsheet API/Api/SetLocale/Resulting document'
-'Spreadsheet API/Api/SetLocale/Example'
-'Spreadsheet API/Api/SetThemeColors/Returns'
-'Spreadsheet API/ApiBullet/GetClassType/Parameters'
-'Text document API/ApiTableRowPr/SetHeight/Returns'
-'Spreadsheet API/ApiChart/SetHorAxisOrientation/Returns'
-'Text document API/ApiTableStylePr/GetTablePr/Parameters'
-'Text document API/ApiTextPr/SetDoubleStrikeout/Returns'
-'Text document API/ApiUniColor/GetClassType/Parameters'
-'Text document API/ApiTextPr/SetFill/Returns'
-'Text document API/ApiTextPr/SetFill/Example'
-'Text document API/ApiTextPr/SetFill/Resulting document'
-'Text document API/ApiTextPr/SetFontFamily/Returns'
-'Text document API/ApiTextPr/SetFontSize/Returns'
-'Text document API/ApiUnsupported/GetClassType/Parameters'
-'Text document API/ApiTextPr/SetHighlight/Returns'
-'Text document API/ApiUnsupported/GetClassType/Example'
-'Spreadsheet API/ApiChart/SetLegendFontSize/Returns'
-'Spreadsheet API/ApiChart/SetHorAxisMinorTickMark/Resulting document'
-'Spreadsheet API/ApiChart/SetHorAxisTitle/Returns'
-'Spreadsheet API/ApiChart/SetHorAxisTickLabelPosition/Returns'
-'Spreadsheet API/ApiChart/SetLegendPos/Returns'
-'Spreadsheet API/ApiChart/SetLegendFontSize/Example'
-'Spreadsheet API/ApiChart/SetLegendFontSize/Parameters'
-'Spreadsheet API/ApiChart/SetLegendFontSize/Resulting document'
-'Spreadsheet API/ApiChart/SetMinorHorizontalGridlines/Resulting document'
-'Spreadsheet API/ApiChart/SetMajorHorizontalGridlines/Returns'
-'Spreadsheet API/ApiChart/SetVerAxisOrientation/Returns'
-'Spreadsheet API/ApiChart/SetVerAxisTitle/Returns'
-'Text document API/ApiTextPr/SetItalic/Returns'
-'Text document API/ApiTextPr/SetLanguage/Returns'
-'Spreadsheet API/Api/Format/Example'
-'Spreadsheet API/Api/Format/Resulting document'
-'Spreadsheet API/Api/GetSheet/Example'
-'Text document API/ApiTextPr/SetPosition/Returns'
-'Spreadsheet API/Api/GetActiveSheet/Parameters'
-'Spreadsheet API/Api/GetSheet/Resulting document'
-'Spreadsheet API/ApiChart/SetHorAxisMajorTickMark/Resulting document'
-'Spreadsheet API/Api/GetSheets/Parameters'
-'Spreadsheet API/Api/GetLocale/Parameters'
-'Spreadsheet API/ApiChart/ApplyChartStyle/Returns'
-'Spreadsheet API/Api/GetLocale/Example'
-'Spreadsheet API/Api/GetLocale/Resulting document'
-'Spreadsheet API/Api/GetSheets/Example'
-'Spreadsheet API/ApiChart/SetHorAxisLablesFontSize/Example'
-'Spreadsheet API/ApiChart/ApplyChartStyle/Example'
-'Spreadsheet API/Api/GetSheets/Resulting document'
-'Spreadsheet API/Api/GetThemesColors/Parameters'
-'Spreadsheet API/ApiChart/ApplyChartStyle/Resulting document'
-'Spreadsheet API/ApiChart/SetHorAxisMajorTickMark/Returns'
-'Spreadsheet API/ApiChart/GetClassType/Parameters'
-'Spreadsheet API/ApiChart/SetHorAxisLablesFontSize/Resulting document'
-'Spreadsheet API/ApiChart/SetHorAxisLablesFontSize/Returns'
-'Spreadsheet API/ApiChart/SetHorAxisMajorTickMark/Example'
-'Spreadsheet API/ApiChart/SetVertAxisLablesFontSize/Returns'
-'Spreadsheet API/ApiChart/SetHorAxisMinorTickMark/Returns'
-'Spreadsheet API/ApiChart/SetHorAxisMinorTickMark/Example'
-'Spreadsheet API/ApiChart/SetVertAxisLablesFontSize/Example'
-'Spreadsheet API/ApiDrawing/GetClassType/Parameters'
-'Spreadsheet API/ApiDrawing/SetPosition/Returns'
-'Text document API/ApiUnsupported/GetClassType/Resulting document'
-'Spreadsheet API/Api/AddSheet/Returns'
-'Spreadsheet API/Api/AddSheet/Example'
-'Spreadsheet API/Api/AddSheet/Resulting document'
-'Spreadsheet API/Api/CreateNoFill/Parameters'
-'Spreadsheet API/ApiChart/SetMajorHorizontalGridlines/Example'
-'Spreadsheet API/Api/CreateParagraph/Parameters'
-'Spreadsheet API/Api/CreateRun/Parameters'
-'Spreadsheet API/ApiChart/SetMajorHorizontalGridlines/Resulting document'
-'Spreadsheet API/ApiChart/SetMajorVerticalGridlines/Returns'
-'Spreadsheet API/ApiChart/SetMajorVerticalGridlines/Example'
-'Spreadsheet API/ApiChart/SetMajorVerticalGridlines/Resulting document'
-'Spreadsheet API/ApiChart/SetMinorHorizontalGridlines/Returns'
-'Spreadsheet API/ApiChart/SetMinorHorizontalGridlines/Example'
-'Spreadsheet API/ApiChart/SetMinorVerticalGridlines/Returns'
-'Spreadsheet API/ApiChart/SetMinorVerticalGridlines/Example'
-'Spreadsheet API/ApiDocument/Push/Returns'
-'Spreadsheet API/ApiDocument/AddElement/Returns'
-'Spreadsheet API/ApiChart/SetMinorVerticalGridlines/Resulting document'
-'Spreadsheet API/ApiDocument/AddElement/Example'
-'Spreadsheet API/ApiChart/SetShowDataLabels/Returns'
-'Spreadsheet API/ApiDocument/RemoveElement/Example'
-'Spreadsheet API/ApiDocument/Push/Example'
-'Spreadsheet API/ApiDocument/AddElement/Resulting document'
-'Spreadsheet API/ApiDocument/GetElement/Parameters'
-'Spreadsheet API/ApiChart/SetShowPointDataLabel/Returns'
-'Spreadsheet API/ApiDocumentContent/GetClassType/Parameters'
-'Spreadsheet API/ApiChart/SetShowPointDataLabel/Example'
-'Spreadsheet API/ApiDocument/Push/Resulting document'
-'Spreadsheet API/ApiChart/SetShowPointDataLabel/Resulting document'
-'Spreadsheet API/ApiDocument/GetElement/Example'
-'Spreadsheet API/ApiChart/SetTitle/Returns'
-'Spreadsheet API/ApiDocument/RemoveElement/Resulting document'
-'Spreadsheet API/ApiColor/GetClassType/Parameters'
-'Spreadsheet API/ApiDocument/RemoveAllElements/Parameters'
-'Spreadsheet API/ApiDocument/GetElement/Resulting document'
-'Spreadsheet API/ApiDocument/GetElementsCount/Parameters'
-'Spreadsheet API/ApiDocument/RemoveAllElements/Returns'
-'Spreadsheet API/ApiDocument/GetElementsCount/Example'
-'Spreadsheet API/ApiDocument/RemoveAllElements/Example'
-'Spreadsheet API/ApiDocument/GetElementsCount/Resulting document'
-'Spreadsheet API/ApiDocument/RemoveAllElements/Resulting document'
-'Spreadsheet API/ApiDocumentContent/AddElement/Returns'
-'Spreadsheet API/ApiDocument/RemoveElement/Returns'
-'Spreadsheet API/ApiDocumentContent/GetElementsCount/Parameters'
-'Spreadsheet API/ApiDocumentContent/GetElement/Parameters'
-'Spreadsheet API/ApiDocumentContent/Push/Returns'
-'Spreadsheet API/ApiDocumentContent/RemoveAllElements/Parameters'
-'Spreadsheet API/ApiDocumentContent/RemoveAllElements/Returns'
-'Spreadsheet API/ApiDocumentContent/RemoveElement/Returns'
-'Spreadsheet API/ApiChart/SetVertAxisLablesFontSize/Resulting document'
-'Spreadsheet API/ApiChart/SetVertAxisMajorTickMark/Returns'
-'Spreadsheet API/ApiFill/GetClassType/Parameters'
-'Spreadsheet API/ApiChart/SetVertAxisMajorTickMark/Example'
-'Spreadsheet API/ApiChart/SetVertAxisMajorTickMark/Resulting document'
-'Spreadsheet API/ApiChart/SetVertAxisMinorTickMark/Returns'
-'Spreadsheet API/ApiChart/SetVertAxisMinorTickMark/Example'
-'Spreadsheet API/ApiChart/SetVertAxisMinorTickMark/Resulting document'
-'Spreadsheet API/ApiChart/SetVertAxisTickLabelPosition/Returns'
-'Spreadsheet API/ApiGradientStop/GetClassType/Parameters'
-'Spreadsheet API/ApiDrawing/SetSize/Returns'
-'Spreadsheet API/ApiParagraph/AddLineBreak/Parameters'
-'Spreadsheet API/ApiImage/GetClassType/Parameters'
-'Spreadsheet API/ApiParagraph/GetElementsCount/Parameters'
-'Spreadsheet API/ApiParagraph/AddTabStop/Parameters'
-'Spreadsheet API/ApiRange/SetAlignVertical/Returns'
-'Spreadsheet API/ApiRange/SetBold/Returns'
-'Spreadsheet API/ApiRange/SetBorders/Returns'
-'Spreadsheet API/ApiRange/GetAddress/Example'
-'Spreadsheet API/ApiParaPr/SetSpacingAfter/Returns'
-'Spreadsheet API/ApiRange/GetAddress/Resulting document'
-'Spreadsheet API/ApiRange/SetAlignHorizontal/Returns'
-'Spreadsheet API/ApiRange/GetCount/Parameters'
-'Spreadsheet API/ApiRange/AddComment/Returns'
-'Spreadsheet API/ApiParaPr/SetSpacingBefore/Returns'
-'Spreadsheet API/ApiRange/GetCol/Parameters'
-'Spreadsheet API/ApiRange/AddComment/Example'
-'Spreadsheet API/ApiRange/AddComment/Resulting document'
-'Spreadsheet API/ApiParaPr/SetSpacingLine/Returns'
-'Spreadsheet API/ApiRange/ForEach/Parameters'
-'Spreadsheet API/ApiRange/ForEach/Returns'
-'Spreadsheet API/ApiParaPr/SetTabs/Returns'
-'Spreadsheet API/ApiRange/ForEach/Example'
-'Spreadsheet API/ApiRange/ForEach/Resulting document'
-'Spreadsheet API/ApiRange/SetColumnWidth/Returns'
-'Spreadsheet API/ApiRange/GetCount/Example'
-'Spreadsheet API/ApiRange/GetColumnWidth/Parameters'
-'Spreadsheet API/ApiRange/SetColumnWidth/Example'
-'Spreadsheet API/ApiRange/GetCount/Resulting document'
-'Spreadsheet API/ApiRange/GetColumnWidth/Example'
-'Spreadsheet API/ApiRange/SetColumnWidth/Resulting document'
-'Spreadsheet API/ApiRange/GetColumnWidth/Resulting document'
-'Spreadsheet API/ApiRange/GetHidden/Parameters'
-'Spreadsheet API/ApiRange/GetHidden/Example'
-'Spreadsheet API/ApiRange/SetFillColor/Returns'
-'Spreadsheet API/ApiRange/SetFontColor/Returns'
-'Spreadsheet API/ApiRange/SetWrap/Returns'
-'Spreadsheet API/ApiRange/UnMerge/Parameters'
-'Spreadsheet API/ApiRange/UnMerge/Returns'
-'Spreadsheet API/ApiRGBColor/GetClassType/Parameters'
-'Spreadsheet API/ApiRun/SetDoubleStrikeout/Returns'
-'Spreadsheet API/ApiParagraph/GetParaPr/Parameters'
-'Spreadsheet API/ApiParagraph/SetIndFirstLine/Returns'
-'Spreadsheet API/ApiRun/SetFill/Returns'
-'Spreadsheet API/ApiParagraph/RemoveAllElements/Parameters'
-'Spreadsheet API/ApiParagraph/RemoveAllElements/Returns'
-'Spreadsheet API/ApiParagraph/RemoveElement/Returns'
-'Spreadsheet API/ApiWorksheet/SetRightMargin/Resulting document'
-'Spreadsheet API/ApiParagraph/SetIndLeft/Returns'
-'Spreadsheet API/ApiParagraph/SetBullet/Returns'
-'Spreadsheet API/ApiParagraph/SetIndRight/Returns'
-'Spreadsheet API/ApiWorksheet/SetPageOrientation/Returns'
-'Spreadsheet API/ApiWorksheet/SetName/Returns'
-'Spreadsheet API/ApiWorksheet/SetLeftMargin/Returns'
-'Spreadsheet API/ApiWorksheet/SetLeftMargin/Example'
-'Spreadsheet API/ApiWorksheet/SetLeftMargin/Resulting document'
-'Spreadsheet API/ApiWorksheet/SetPageOrientation/Example'
-'Spreadsheet API/ApiWorksheet/SetPageOrientation/Resulting document'
-'Spreadsheet API/ApiWorksheet/SetRightMargin/Example'
-'Spreadsheet API/ApiWorksheet/SetRightMargin/Returns'
-'Spreadsheet API/ApiWorksheet/SetRowHeight/Returns'
-'Spreadsheet API/ApiWorksheet/SetRowHeight/Example'
-'Spreadsheet API/ApiWorksheet/SetRowHeight/Resulting document'
-'Spreadsheet API/ApiWorksheet/SetTopMargin/Returns'
-'Spreadsheet API/ApiWorksheet/SetTopMargin/Example'
-'Spreadsheet API/ApiRange/SetOffset/Returns'
-'Spreadsheet API/ApiRange/SetFontName/Returns'
-'Spreadsheet API/ApiRange/SetOffset/Example'
-'Spreadsheet API/ApiRange/SetFontSize/Returns'
-'Spreadsheet API/ApiRange/SetOffset/Resulting document'
-'Spreadsheet API/ApiRange/SetHidden/Returns'
-'Spreadsheet API/ApiRange/SetHidden/Example'
-'Spreadsheet API/ApiRange/SetHidden/Resulting document'
-'Spreadsheet API/ApiRange/SetRowHeight/Returns'
-'Spreadsheet API/ApiRange/SetItalic/Returns'
-'Spreadsheet API/ApiRange/SetRowHeight/Example'
-'Spreadsheet API/ApiRange/SetValue/Returns'
-'Spreadsheet API/ApiRange/SetNumberFormat/Returns'
-'Spreadsheet API/ApiRange/SetRowHeight/Resulting document'
-'Spreadsheet API/ApiRun/AddTabStop/Parameters'
-'Spreadsheet API/ApiRange/SetStrikeout/Returns'
-'Spreadsheet API/ApiRange/SetUnderline/Returns'
-'Spreadsheet API/ApiRun/AddTabStop/Returns'
-'Spreadsheet API/ApiRun/AddLineBreak/Parameters'
-'Spreadsheet API/ApiRun/AddLineBreak/Returns'
-'Spreadsheet API/ApiRun/AddText/Returns'
-'Spreadsheet API/ApiRun/ClearContent/Parameters'
-'Spreadsheet API/ApiRun/ClearContent/Returns'
-'Spreadsheet API/ApiRun/GetTextPr/Parameters'
-'Spreadsheet API/ApiRun/SetBold/Returns'
-'Spreadsheet API/ApiRun/SetCaps/Returns'
-'Spreadsheet API/ApiRun/SetFontFamily/Returns'
-'Spreadsheet API/ApiRun/SetSpacing/Returns'
-'Spreadsheet API/ApiRun/SetVertAlign/Returns'
-'Spreadsheet API/ApiRun/SetFontSize/Returns'
-'Spreadsheet API/ApiStroke/GetClassType/Parameters'
-'Spreadsheet API/ApiRun/SetItalic/Returns'
-'Spreadsheet API/ApiRun/SetStrikeout/Returns'
-'Spreadsheet API/ApiRun/SetSmallCaps/Returns'
-'Spreadsheet API/ApiSchemeColor/GetClassType/Parameters'
-'Spreadsheet API/ApiRun/SetUnderline/Returns'
-'Spreadsheet API/ApiShape/GetDocContent/Parameters'
-'Spreadsheet API/ApiShape/SetVerticalTextAlign/Returns'
-'Spreadsheet API/ApiShape/GetClassType/Parameters'
-'Spreadsheet API/ApiTextPr/GetClassType/Parameters'
-'Spreadsheet API/ApiTextPr/SetBold/Returns'
-'Spreadsheet API/ApiTextPr/SetCaps/Returns'
-'Spreadsheet API/ApiTextPr/SetDoubleStrikeout/Returns'
-'Spreadsheet API/ApiTextPr/SetFill/Returns'
-'Spreadsheet API/ApiTextPr/SetSmallCaps/Returns'
-'Spreadsheet API/ApiTextPr/SetUnderline/Returns'
-'Spreadsheet API/ApiTextPr/SetFontFamily/Returns'
-'Spreadsheet API/ApiTextPr/SetFontSize/Returns'
-'Spreadsheet API/ApiTextPr/SetSpacing/Returns'
-'Spreadsheet API/ApiTextPr/SetItalic/Returns'
-'Spreadsheet API/ApiTextPr/SetStrikeout/Returns'
-'Spreadsheet API/ApiTextPr/SetVertAlign/Returns'
-'Spreadsheet API/ApiUniColor/GetClassType/Parameters'
-'Spreadsheet API/ApiWorksheet/GetName/Example'
-'Spreadsheet API/ApiWorksheet/GetPageOrientation/Example'
-'Spreadsheet API/ApiWorksheet/GetName/Resulting document'
-'Spreadsheet API/ApiWorksheet/GetPageOrientation/Parameters'
-'Spreadsheet API/ApiWorksheet/GetPageOrientation/Resulting document'
-'Presentation API/Api/CreateGroup/Parameters'
-'Presentation API/Api/CreateGroup/Example'
-'Presentation API/Api/CreateGroup/Resulting document'
-'Spreadsheet API/ApiWorksheet/GetLeftMargin/Resulting document'
-'Spreadsheet API/ApiWorksheet/GetCells/Resulting document'
-'Spreadsheet API/ApiWorksheet/FormatAsTable/Returns'
-'Spreadsheet API/ApiWorksheet/GetName/Parameters'
-'Spreadsheet API/ApiWorksheet/GetActiveCell/Parameters'
-'Spreadsheet API/ApiWorksheet/GetCols/Example'
-'Spreadsheet API/ApiWorksheet/GetUsedRange/Parameters'
-'Spreadsheet API/ApiWorksheet/GetActiveCell/Example'
-'Spreadsheet API/ApiWorksheet/GetCols/Resulting document'
-'Spreadsheet API/ApiWorksheet/GetActiveCell/Resulting document'
-'Spreadsheet API/ApiWorksheet/GetBottomMargin/Parameters'
-'Spreadsheet API/ApiWorksheet/GetIndex/Parameters'
-'Spreadsheet API/ApiWorksheet/GetRows/Example'
-'Spreadsheet API/ApiWorksheet/GetBottomMargin/Example'
-'Spreadsheet API/ApiWorksheet/GetBottomMargin/Resulting document'
-'Spreadsheet API/ApiWorksheet/GetCells/Parameters'
-'Spreadsheet API/ApiWorksheet/GetIndex/Example'
-'Spreadsheet API/ApiWorksheet/GetTopMargin/Parameters'
-'Spreadsheet API/ApiWorksheet/GetCells/Example'
-'Spreadsheet API/ApiWorksheet/GetRightMargin/Parameters'
-'Spreadsheet API/ApiWorksheet/GetIndex/Resulting document'
-'Spreadsheet API/ApiWorksheet/GetRows/Resulting document'
-'Spreadsheet API/ApiWorksheet/GetLeftMargin/Parameters'
-'Spreadsheet API/ApiWorksheet/GetLeftMargin/Example'
-'Spreadsheet API/ApiWorksheet/GetRightMargin/Example'
-'Spreadsheet API/ApiWorksheet/GetVisible/Example'
-'Spreadsheet API/ApiWorksheet/GetSelection/Parameters'
-'Spreadsheet API/ApiWorksheet/GetRightMargin/Resulting document'
-'Spreadsheet API/ApiWorksheet/GetTopMargin/Example'
-'Spreadsheet API/ApiWorksheet/GetSelection/Example'
-'Spreadsheet API/ApiWorksheet/GetSelection/Resulting document'
-'Spreadsheet API/ApiWorksheet/GetVisible/Parameters'
-'Spreadsheet API/ApiWorksheet/GetTopMargin/Resulting document'
-'Spreadsheet API/ApiWorksheet/GetUsedRange/Example'
-'Spreadsheet API/ApiWorksheet/ReplaceCurrentImage/Returns'
-'Spreadsheet API/ApiWorksheet/ReplaceCurrentImage/Parameters'
-'Spreadsheet API/ApiWorksheet/GetUsedRange/Resulting document'
-'Spreadsheet API/ApiWorksheet/GetVisible/Resulting document'
-'Spreadsheet API/ApiWorksheet/ReplaceCurrentImage/Example'
-'Spreadsheet API/ApiWorksheet/ReplaceCurrentImage/Resulting document'
-'Spreadsheet API/ApiWorksheet/SetBottomMargin/Returns'
-'Spreadsheet API/ApiWorksheet/SetBottomMargin/Example'
-'Spreadsheet API/ApiWorksheet/SetBottomMargin/Resulting document'
-'Spreadsheet API/ApiWorksheet/SetColumnWidth/Returns'
-'Presentation API/ApiDocument/GetElement/Example'
-'Presentation API/ApiDocument/RemoveAllElements/Returns'
-'Presentation API/ApiDocument/GetElement/Resulting document'
-'Presentation API/ApiDocumentContent/AddElement/Returns'
-'Presentation API/ApiDocument/GetElementsCount/Parameters'
-'Spreadsheet API/ApiWorksheet/SetDisplayGridlines/Returns'
-'Presentation API/ApiDocument/RemoveAllElements/Example'
-'Presentation API/ApiDocument/GetElementsCount/Example'
-'Spreadsheet API/ApiWorksheet/SetDisplayHeadings/Returns'
-'Presentation API/ApiDocument/RemoveAllElements/Resulting document'
-'Presentation API/ApiChart/SetMajorHorizontalGridlines/Returns'
-'Presentation API/ApiChart/SetMajorHorizontalGridlines/Example'
-'Presentation API/ApiChart/SetMajorHorizontalGridlines/Resulting document'
-'Presentation API/ApiChart/SetMajorVerticalGridlines/Returns'
-'Presentation API/ApiChart/SetMajorVerticalGridlines/Example'
-'Presentation API/ApiChart/SetMinorVerticalGridlines/Returns'
-'Presentation API/ApiDocument/GetElementsCount/Resulting document'
-'Presentation API/ApiDocument/Push/Returns'
-'Presentation API/ApiDocument/RemoveElement/Returns'
-'Presentation API/ApiDocument/Push/Example'
-'Presentation API/ApiDocument/Push/Resulting document'
-'Presentation API/ApiDocument/RemoveElement/Example'
-'Presentation API/ApiDocument/RemoveAllElements/Parameters'
-'Presentation API/ApiDocument/RemoveElement/Resulting document'
-'Presentation API/ApiDocumentContent/GetClassType/Parameters'
-'Presentation API/ApiDocumentContent/GetElement/Parameters'
-'Presentation API/ApiDocumentContent/GetElementsCount/Parameters'
-'Presentation API/ApiDocumentContent/Push/Returns'
-'Presentation API/ApiDocumentContent/RemoveAllElements/Parameters'
-'Presentation API/ApiDocumentContent/RemoveAllElements/Returns'
-'Presentation API/ApiDocumentContent/RemoveElement/Returns'
-'Presentation API/ApiChart/SetHorAxisOrientation/Example'
-'Spreadsheet API/ApiWorksheet/SetTopMargin/Resulting document'
-'Spreadsheet API/ApiWorksheet/SetVisible/Returns'
-'Spreadsheet API/ApiWorksheet/SetVisible/Example'
-'Spreadsheet API/ApiWorksheet/SetVisible/Resulting document'
-'Presentation API/Api/CreateNoFill/Parameters'
-'Presentation API/Api/CreateParagraph/Parameters'
-'Presentation API/ApiChart/SetHorAxisMinorTickMark/Example'
-'Presentation API/ApiChart/SetHorAxisLablesFontSize/Resulting document'
-'Presentation API/ApiChart/SetHorAxisMajorTickMark/Returns'
-'Presentation API/ApiChart/SetHorAxisMajorTickMark/Example'
-'Presentation API/ApiChart/SetHorAxisMinorTickMark/Resulting document'
-'Presentation API/ApiChart/SetHorAxisMajorTickMark/Resulting document'
-'Presentation API/ApiChart/SetHorAxisOrientation/Resulting document'
-'Presentation API/ApiChart/SetHorAxisMinorTickMark/Returns'
-'Presentation API/ApiChart/SetLegendFontSize/Returns'
-'Presentation API/ApiChart/SetHorAxisTickLabelPosition/Example'
-'Presentation API/ApiChart/SetHorAxisOrientation/Returns'
-'Presentation API/ApiChart/SetHorAxisTickLabelPosition/Returns'
-'Presentation API/ApiChart/SetHorAxisTickLabelPosition/Resulting document'
-'Presentation API/ApiChart/SetHorAxisTitle/Returns'
-'Presentation API/ApiChart/SetLegendFontSize/Parameters'
-'Presentation API/ApiChart/SetLegendFontSize/Example'
-'Presentation API/ApiChart/SetLegendFontSize/Resulting document'
-'Presentation API/ApiChart/SetLegendPos/Returns'
-'Presentation API/ApiBullet/GetClassType/Parameters'
-'Presentation API/Api/CreateTable/Example'
-'Presentation API/Api/CreateRun/Parameters'
-'Presentation API/Api/CreateTable/Resulting document'
-'Presentation API/Api/CreateSlide/Parameters'
-'Presentation API/Api/GetPresentation/Parameters'
-'Presentation API/Api/CreateTable/Parameters'
-'Presentation API/ApiChart/SetMinorVerticalGridlines/Resulting document'
-'Presentation API/ApiChart/SetHorAxisLablesFontSize/Returns'
-'Presentation API/ApiChart/GetClassType/Parameters'
-'Presentation API/ApiChart/SetMinorVerticalGridlines/Example'
-'Presentation API/ApiChart/SetHorAxisLablesFontSize/Example'
-'Presentation API/ApiParaPr/SetIndFirstLine/Returns'
-'Presentation API/ApiParaPr/SetIndLeft/Returns'
-'Presentation API/ApiRun/GetClassType/Parameters'
-'Presentation API/ApiChart/SetVertAxisLablesFontSize/Example'
-'Presentation API/ApiChart/SetMajorVerticalGridlines/Resulting document'
-'Presentation API/ApiChart/SetMinorHorizontalGridlines/Returns'
-'Presentation API/ApiChart/SetMinorHorizontalGridlines/Example'
-'Presentation API/ApiChart/SetMinorHorizontalGridlines/Resulting document'
-'Presentation API/ApiChart/SetVertAxisMinorTickMark/Example'
-'Presentation API/ApiChart/SetVertAxisLablesFontSize/Resulting document'
-'Presentation API/ApiChart/SetVerAxisOrientation/Returns'
-'Presentation API/ApiChart/SetShowDataLabels/Returns'
-'Presentation API/ApiChart/SetVerAxisOrientation/Example'
-'Presentation API/ApiChart/SetVerAxisOrientation/Resulting document'
-'Presentation API/ApiChart/SetShowPointDataLabel/Returns'
-'Presentation API/ApiChart/SetShowPointDataLabel/Example'
-'Presentation API/ApiChart/SetShowPointDataLabel/Resulting document'
-'Presentation API/ApiChart/SetVertAxisMinorTickMark/Resulting document'
-'Presentation API/ApiChart/SetVertAxisMajorTickMark/Returns'
-'Presentation API/ApiChart/SetVerAxisTitle/Returns'
-'Presentation API/ApiChart/SetTitle/Returns'
-'Presentation API/ApiChart/SetVertAxisMajorTickMark/Example'
-'Presentation API/ApiChart/SetVertAxisMajorTickMark/Resulting document'
-'Presentation API/ApiChart/SetVertAxisLablesFontSize/Returns'
-'Presentation API/ApiChart/SetVertAxisTickLabelPosition/Returns'
-'Presentation API/ApiChart/SetVertAxisMinorTickMark/Returns'
-'Presentation API/ApiDocument/AddElement/Returns'
-'Presentation API/ApiParagraph/SetIndFirstLine/Returns'
-'Presentation API/ApiChart/SetVertAxisTickLabelPosition/Example'
-'Presentation API/ApiDocument/AddElement/Example'
-'Presentation API/ApiChart/SetVertAxisTickLabelPosition/Resulting document'
-'Presentation API/ApiDocument/AddElement/Resulting document'
-'Presentation API/ApiDocument/GetElement/Parameters'
-'Presentation API/ApiParagraph/SetIndLeft/Returns'
-'Presentation API/ApiParagraph/SetIndRight/Returns'
-'Presentation API/ApiParagraph/SetJc/Returns'
-'Presentation API/ApiDrawing/GetClassType/Parameters'
-'Presentation API/ApiGradientStop/GetClassType/Parameters'
-'Presentation API/ApiParagraph/AddLineBreak/Parameters'
-'Presentation API/ApiDrawing/SetPosition/Returns'
-'Presentation API/ApiImage/GetClassType/Parameters'
-'Presentation API/ApiDrawing/SetSize/Returns'
-'Presentation API/ApiFill/GetClassType/Parameters'
-'Presentation API/ApiParagraph/AddTabStop/Parameters'
-'Presentation API/ApiParagraph/GetClassType/Parameters'
-'Presentation API/ApiParagraph/GetParaPr/Parameters'
-'Presentation API/ApiParagraph/GetElementsCount/Parameters'
-'Presentation API/ApiParagraph/RemoveAllElements/Returns'
-'Presentation API/ApiParagraph/RemoveAllElements/Parameters'
-'Presentation API/ApiParagraph/RemoveElement/Returns'
-'Presentation API/ApiParagraph/SetBullet/Returns'
-'Presentation API/ApiParagraph/SetSpacingBefore/Returns'
-'Presentation API/ApiParaPr/SetBullet/Returns'
-'Presentation API/ApiParagraph/SetSpacingLine/Returns'
-'Presentation API/ApiParaPr/SetSpacingBefore/Returns'
-'Presentation API/ApiParagraph/SetTabs/Returns'
-'Presentation API/ApiParaPr/SetJc/Returns'
-'Presentation API/ApiParaPr/GetClassType/Parameters'
-'Presentation API/ApiParaPr/SetTabs/Returns'
-'Presentation API/ApiParaPr/SetSpacingAfter/Returns'
-'Presentation API/ApiParaPr/SetSpacingLine/Returns'
-'Presentation API/ApiPresentation/CreateNewHistoryPoint/Resulting document'
-'Presentation API/ApiPresentation/CreateNewHistoryPoint/Parameters'
-'Presentation API/ApiPresentation/AddSlide/Returns'
-'Presentation API/ApiPresentation/CreateNewHistoryPoint/Returns'
-'Presentation API/ApiPresentation/GetClassType/Parameters'
-'Presentation API/ApiPresentation/CreateNewHistoryPoint/Example'
-'Presentation API/ApiPresentation/GetCurrentSlide/Parameters'
-'Presentation API/ApiPresentation/GetCurSlideIndex/Parameters'
-'Presentation API/ApiShape/SetVerticalTextAlign/Returns'
-'Presentation API/ApiParaPr/SetIndRight/Returns'
-'Presentation API/ApiSlide/GetWidth/Parameters'
-'Presentation API/ApiPresentation/ReplaceCurrentImage/Parameters'
-'Presentation API/ApiPresentation/ReplaceCurrentImage/Returns'
-'Presentation API/ApiPresentation/ReplaceCurrentImage/Example'
-'Presentation API/ApiShape/GetClassType/Parameters'
-'Presentation API/ApiRun/AddText/Returns'
-'Presentation API/ApiRun/ClearContent/Parameters'
-'Presentation API/ApiRun/ClearContent/Returns'
-'Presentation API/ApiShape/GetDocContent/Parameters'
-'Presentation API/ApiSlide/AddObject/Returns'
-'Presentation API/ApiSlide/GetHeight/Parameters'
-'Presentation API/ApiSlide/RemoveAllObjects/Returns'
-'Presentation API/ApiSlide/GetClassType/Parameters'
-'Presentation API/ApiSlide/RemoveAllObjects/Parameters'
-'Presentation API/ApiStroke/GetClassType/Parameters'
-'Presentation API/ApiSlide/SetBackground/Returns'
-'Presentation API/ApiTable/AddColumn/Returns'
-'Presentation API/ApiTable/AddColumn/Example'
-'Presentation API/ApiTable/AddColumn/Resulting document'
-'Presentation API/ApiTable/AddRow/Example'
-'Presentation API/ApiPresentation/ReplaceCurrentImage/Resulting document'
-'Presentation API/ApiTable/GetRow/Resulting document'
-'Presentation API/ApiPresentation/SetSizes/Returns'
-'Presentation API/ApiRun/GetTextPr/Parameters'
-'Presentation API/ApiPresetColor/GetClassType/Parameters'
-'Presentation API/ApiRGBColor/GetClassType/Parameters'
-'Presentation API/ApiRun/AddLineBreak/Parameters'
-'Presentation API/ApiTable/AddRow/Resulting document'
-'Presentation API/ApiRun/AddLineBreak/Returns'
-'Presentation API/ApiRun/AddTabStop/Parameters'
-'Presentation API/ApiRun/SetBold/Returns'
-'Presentation API/ApiRun/AddTabStop/Returns'
-'Presentation API/ApiTable/GetClassType/Parameters'
-'Presentation API/ApiRun/SetCaps/Returns'
-'Presentation API/ApiTable/GetClassType/Example'
-'Presentation API/ApiRun/SetDoubleStrikeout/Returns'
-'Presentation API/ApiTable/GetClassType/Resulting document'
-'Presentation API/ApiTable/GetRow/Example'
-'Presentation API/ApiTable/MergeCells/Example'
-'Presentation API/ApiTable/MergeCells/Resulting document'
-'Presentation API/ApiTableRow/GetCell/Example'
-'Presentation API/ApiTableRow/GetCellsCount/Parameters'
-'Presentation API/ApiTableRow/GetCell/Resulting document'
-'Presentation API/ApiTableRow/GetCellsCount/Resulting document'
-'Presentation API/ApiTableRow/GetClassType/Parameters'
-'Presentation API/ApiTableRow/GetCellsCount/Example'
-'Presentation API/ApiTableRow/GetClassType/Example'
-'Presentation API/ApiTableRow/GetClassType/Resulting document'
-'Presentation API/ApiTableRow/SetHeight/Returns'
-'Presentation API/ApiTableRow/SetHeight/Example'
-'Presentation API/ApiRun/SetSmallCaps/Returns'
-'Presentation API/ApiRun/SetFill/Returns'
-'Presentation API/ApiRun/SetUnderline/Returns'
-'Presentation API/ApiTable/RemoveColumn/Resulting document'
-'Presentation API/ApiRun/SetFontFamily/Returns'
-'Presentation API/ApiTable/SetShd/Example'
-'Presentation API/ApiRun/SetSpacing/Returns'
-'Presentation API/ApiRun/SetFontSize/Returns'
-'Presentation API/ApiRun/SetItalic/Returns'
-'Presentation API/ApiRun/SetVertAlign/Returns'
-'Presentation API/ApiRun/SetStrikeout/Returns'
-'Presentation API/ApiTable/SetTableLook/Resulting document'
-'Presentation API/ApiTable/SetShd/Resulting document'
-'Presentation API/ApiTable/RemoveRow/Example'
-'Presentation API/ApiSchemeColor/GetClassType/Parameters'
-'Presentation API/ApiTable/RemoveColumn/Example'
-'Presentation API/ApiTable/RemoveRow/Resulting document'
-'Presentation API/ApiTable/SetShd/Returns'
-'Presentation API/ApiTableCell/GetClassType/Parameters'
-'Presentation API/ApiTable/SetTableLook/Returns'
-'Presentation API/ApiTableCell/GetClassType/Example'
-'Presentation API/ApiTable/SetTableLook/Example'
-'Presentation API/ApiTableCell/GetContent/Parameters'
-'Presentation API/ApiTableCell/GetClassType/Resulting document'
-'Presentation API/ApiTableCell/GetContent/Example'
-'Presentation API/ApiTableCell/GetContent/Resulting document'
-'Presentation API/ApiTableCell/SetCellBorderBottom/Returns'
-'Presentation API/ApiTableCell/SetCellBorderBottom/Example'
-'Presentation API/ApiTableCell/SetCellBorderBottom/Resulting document'
-'Presentation API/ApiTableCell/SetCellBorderLeft/Returns'
-'Presentation API/ApiTableCell/SetCellBorderLeft/Example'
-'Presentation API/ApiTableCell/SetCellBorderLeft/Resulting document'
-'Presentation API/ApiTableCell/SetCellBorderRight/Returns'
-'Presentation API/ApiTableCell/SetCellBorderRight/Example'
-'Presentation API/ApiTextPr/SetDoubleStrikeout/Returns'
-'Presentation API/ApiTableCell/SetCellBorderRight/Resulting document'
-'Presentation API/ApiTableCell/SetCellBorderTop/Returns'
-'Presentation API/ApiTableCell/SetCellBorderTop/Example'
-'Presentation API/ApiTableCell/SetCellBorderTop/Resulting document'
-'Presentation API/ApiTableRow/SetHeight/Resulting document'
-'Presentation API/ApiTextPr/GetClassType/Parameters'
-'Presentation API/ApiTextPr/SetBold/Returns'
-'Presentation API/ApiTextPr/SetCaps/Returns'
-'Presentation API/ApiTableCell/SetCellMarginBottom/Returns'
-'Presentation API/ApiTableCell/SetCellMarginBottom/Example'
-'Presentation API/ApiTableCell/SetShd/Returns'
-'Presentation API/ApiTableCell/SetCellMarginBottom/Resulting document'
-'Presentation API/ApiTextPr/SetFill/Returns'
-'Presentation API/ApiTableCell/SetShd/Example'
-'Presentation API/ApiTableCell/SetCellMarginLeft/Returns'
-'Presentation API/ApiTableCell/SetCellMarginLeft/Example'
-'Presentation API/ApiTableCell/SetShd/Resulting document'
-'Presentation API/ApiTableCell/SetCellMarginLeft/Resulting document'
-'Presentation API/ApiTableCell/SetCellMarginRight/Returns'
-'Presentation API/ApiTableCell/SetCellMarginRight/Example'
-'Presentation API/ApiTableCell/SetTextDirection/Returns'
-'Presentation API/ApiTableCell/SetCellMarginRight/Resulting document'
-'Presentation API/ApiTableCell/SetTextDirection/Example'
-'Presentation API/ApiTableCell/SetCellMarginTop/Returns'
-'Presentation API/ApiTableCell/SetCellMarginTop/Example'
-'Presentation API/ApiTableCell/SetTextDirection/Resulting document'
-'Presentation API/ApiTableCell/SetCellMarginTop/Resulting document'
-'Presentation API/ApiTextPr/SetSpacing/Returns'
-'Presentation API/ApiTableCell/SetVerticalAlign/Returns'
-'Presentation API/ApiTextPr/SetFontFamily/Returns'
-'Presentation API/ApiTableCell/SetVerticalAlign/Example'
-'Presentation API/ApiTextPr/SetSmallCaps/Returns'
-'Presentation API/ApiTableCell/SetVerticalAlign/Resulting document'
-'Presentation API/ApiTextPr/SetItalic/Returns'
-'Presentation API/ApiTextPr/SetFontSize/Returns'
-'Presentation API/ApiTextPr/SetStrikeout/Returns'
-'Presentation API/ApiTextPr/SetUnderline/Returns'
-'Presentation API/ApiTextPr/SetVertAlign/Returns'
-'Presentation API/ApiUniColor/GetClassType/Parameters'
-'Spreadsheet API/ApiParagraph/SetSpacingBefore/Returns'
-'Spreadsheet API/ApiParagraph/GetClassType/Parameters'
-'Spreadsheet API/ApiParagraph/SetJc/Returns'
-'Spreadsheet API/ApiParagraph/SetSpacingLine/Returns'
-'Spreadsheet API/ApiRange/GetRowHeight/Parameters'
-'Spreadsheet API/ApiParagraph/SetSpacingAfter/Returns'
-'Spreadsheet API/ApiParaPr/SetJc/Returns'
-'Spreadsheet API/ApiParagraph/SetTabs/Returns'
-'Spreadsheet API/ApiParaPr/SetIndRight/Returns'
-'Spreadsheet API/ApiParaPr/SetBullet/Returns'
-'Spreadsheet API/ApiParaPr/SetIndLeft/Returns'
-'Spreadsheet API/ApiParaPr/SetIndFirstLine/Returns'
-'Spreadsheet API/ApiRange/GetHidden/Resulting document'
-'Spreadsheet API/ApiRange/GetRowHeight/Example'
-'Spreadsheet API/ApiRange/GetRow/Parameters'
-'Spreadsheet API/ApiRange/GetRowHeight/Resulting document'
-'Spreadsheet API/ApiRange/GetValue/Parameters'
-'Spreadsheet API/ApiRange/GetValue/Example'
-'Spreadsheet API/ApiRange/GetValue/Resulting document'
-'Spreadsheet API/ApiRange/Merge/Returns'
-'Text document API/ApiBullet/GetClassType/Parameters'
-'Text document API/ApiBullet/GetClassType/Example'
-'Text document API/ApiBullet/GetClassType/Resulting document'
-'Text document API/ApiChart/SetMajorVerticalGridlines/Resulting document'
-'Text document API/ApiChart/GetClassType/Parameters'
-'Text document API/ApiBlockLvlSdt/SetTag/Example'
-'Text document API/ApiChart/SetHorAxisLablesFontSize/Returns'
-'Text document API/ApiChart/SetHorAxisLablesFontSize/Example'
-'Text document API/ApiChart/SetMinorHorizontalGridlines/Returns'
-'Text document API/ApiChart/SetMinorHorizontalGridlines/Example'
-'Text document API/ApiChart/SetMinorHorizontalGridlines/Resulting document'
-'Text document API/ApiChart/SetMinorVerticalGridlines/Returns'
-'Text document API/ApiChart/SetMinorVerticalGridlines/Example'
-'Text document API/ApiChart/SetMinorVerticalGridlines/Resulting document'
-'Text document API/ApiChart/SetShowDataLabels/Returns'
-'Text document API/ApiBlockLvlSdt/SetTag/Returns'
+Spreadsheet API/ApiParaPr/GetClassType/Parameters
+Text document API/ApiParagraph/SetTabs/Returns
+Presentation API/ApiParagraph/SetSpacingAfter/Returns
+Text document API/Api/CreateBlockLvlSdt/Parameters
+Text document API/Api/CreateBullet/Resulting document
+Text document API/Api/CreateBlockLvlSdt/Example
+Text document API/Api/CreateBullet/Example
+Text document API/Api/CreateNumbering/Example
+Text document API/Api/CreateInlineLvlSdt/Example
+Text document API/Api/CreateNumbering/Resulting document
+Text document API/Api/CreateInlineLvlSdt/Resulting document
+Text document API/Api/CreateParagraph/Parameters
+Text document API/Api/CreateNoFill/Parameters
+Text document API/Api/CreateInlineLvlSdt/Parameters
+Text document API/ApiBlockLvlSdt/GetAlias/Resulting document
+Text document API/ApiBlockLvlSdt/GetAlias/Parameters
+Text document API/ApiBlockLvlSdt/GetAlias/Example
+Text document API/ApiChart/SetMajorHorizontalGridlines/Resulting document
+Text document API/ApiChart/SetMajorVerticalGridlines/Returns
+Text document API/ApiChart/SetMajorVerticalGridlines/Example
+Text document API/ApiBlockLvlSdt/GetClassType/Parameters
+Text document API/ApiBlockLvlSdt/SetAlias/Example
+Text document API/ApiBlockLvlSdt/GetClassType/Example
+Text document API/ApiBlockLvlSdt/SetLock/Returns
+Text document API/ApiBlockLvlSdt/GetClassType/Resulting document
+Text document API/Api/CreateBlockLvlSdt/Resulting document
+Text document API/ApiBlockLvlSdt/GetLock/Example
+Text document API/ApiBlockLvlSdt/GetContent/Parameters
+Text document API/ApiBlockLvlSdt/SetAlias/Resulting document
+Text document API/ApiBlockLvlSdt/GetLock/Resulting document
+Text document API/ApiBlockLvlSdt/GetContent/Example
+Text document API/Api/CreateRun/Parameters
+Text document API/ApiDocument/AddElement/Returns
+Text document API/ApiBlockLvlSdt/GetContent/Resulting document
+Text document API/ApiBlockLvlSdt/GetTag/Parameters
+Text document API/ApiBlockLvlSdt/GetLabel/Parameters
+Text document API/ApiBlockLvlSdt/GetLabel/Example
+Text document API/ApiBlockLvlSdt/GetLabel/Resulting document
+Text document API/ApiBlockLvlSdt/SetLock/Example
+Text document API/ApiBlockLvlSdt/GetTag/Example
+Text document API/ApiBlockLvlSdt/GetLock/Parameters
+Text document API/ApiBlockLvlSdt/SetLabel/Returns
+Text document API/ApiBlockLvlSdt/GetTag/Resulting document
+Text document API/ApiBlockLvlSdt/SetAlias/Returns
+Text document API/ApiBlockLvlSdt/SetLabel/Example
+Text document API/ApiBlockLvlSdt/SetLabel/Resulting document
+Text document API/ApiBlockLvlSdt/SetLock/Resulting document
+Text document API/ApiDocument/CreateNewHistoryPoint/Parameters
+Text document API/ApiChart/SetVertAxisTickLabelPosition/Resulting document
+Text document API/ApiDocument/CreateNewHistoryPoint/Returns
+Text document API/ApiDocument/CreateNewHistoryPoint/Example
+Text document API/ApiDocument/GetElement/Parameters
+Text document API/ApiDocument/GetElementsCount/Parameters
+Text document API/ApiChart/SetHorAxisTickLabelPosition/Resulting document
+Text document API/ApiChart/SetHorAxisMajorTickMark/Returns
+Text document API/ApiChart/SetHorAxisMajorTickMark/Example
+Text document API/ApiChart/SetHorAxisMajorTickMark/Resulting document
+Text document API/ApiChart/SetHorAxisTitle/Returns
+Text document API/ApiChart/SetHorAxisMinorTickMark/Returns
+Text document API/ApiChart/SetVertAxisMajorTickMark/Example
+Text document API/ApiChart/SetHorAxisMinorTickMark/Example
+Text document API/ApiChart/SetHorAxisMinorTickMark/Resulting document
+Text document API/ApiChart/SetHorAxisOrientation/Returns
+Text document API/ApiChart/SetHorAxisOrientation/Example
+Text document API/ApiChart/SetLegendFontSize/Parameters
+Text document API/ApiChart/SetHorAxisOrientation/Resulting document
+Text document API/ApiChart/SetMajorHorizontalGridlines/Returns
+Text document API/ApiChart/SetLegendFontSize/Returns
+Text document API/ApiChart/SetHorAxisTickLabelPosition/Returns
+Text document API/ApiChart/SetHorAxisTickLabelPosition/Example
+Text document API/ApiChart/SetLegendFontSize/Example
+Text document API/ApiChart/SetLegendFontSize/Resulting document
+Text document API/ApiChart/SetShowPointDataLabel/Returns
+Text document API/ApiChart/SetLegendPos/Returns
+Text document API/ApiChart/SetShowPointDataLabel/Example
+Text document API/ApiChart/SetShowPointDataLabel/Resulting document
+Text document API/ApiChart/SetTitle/Returns
+Text document API/ApiChart/SetVerAxisTitle/Returns
+Text document API/ApiChart/SetVerAxisOrientation/Returns
+Text document API/ApiChart/SetVertAxisLablesFontSize/Resulting document
+Text document API/ApiChart/SetVerAxisOrientation/Example
+Text document API/ApiChart/SetVerAxisOrientation/Resulting document
+Text document API/ApiChart/SetVertAxisLablesFontSize/Returns
+Text document API/ApiChart/SetVertAxisMajorTickMark/Returns
+Text document API/ApiChart/SetVertAxisLablesFontSize/Example
+Text document API/ApiChart/SetVertAxisMajorTickMark/Resulting document
+Text document API/ApiChart/SetVertAxisMinorTickMark/Returns
+Text document API/ApiChart/SetVertAxisMinorTickMark/Example
+Text document API/ApiChart/SetVertAxisMinorTickMark/Resulting document
+Text document API/ApiChart/SetVertAxisTickLabelPosition/Returns
+Text document API/ApiChart/SetVertAxisTickLabelPosition/Example
+Text document API/ApiDocument/RemoveElement/Returns
+Text document API/ApiChart/SetMajorHorizontalGridlines/Example
+Text document API/ApiDocument/CreateNewHistoryPoint/Resulting document
+Text document API/ApiInlineLvlSdt/RemoveElement/Returns
+Text document API/ApiDocument/SearchAndReplace/Returns
+Text document API/ApiDocument/SearchAndReplace/Example
+Text document API/ApiDocument/SearchAndReplace/Resulting document
+Text document API/ApiParagraph/AddPageBreak/Parameters
+Text document API/ApiParagraph/GetElementsCount/Parameters
+Text document API/ApiDocument/RemoveAllElements/Parameters
+Text document API/ApiInlineLvlSdt/RemoveAllElements/Returns
+Text document API/ApiDocument/RemoveAllElements/Returns
+Text document API/ApiParagraph/GetClassType/Parameters
+Text document API/ApiParagraph/GetNumbering/Parameters
+Text document API/ApiParagraph/SetSpacingBefore/Returns
+Text document API/ApiParagraph/SetSpacingLine/Returns
+Text document API/ApiDocument/GetDefaultParaPr/Parameters
+Text document API/ApiDocument/GetReviewReport/Parameters
+Text document API/ApiDocument/GetAllContentControls/Parameters
+Text document API/ApiDocument/GetDefaultTextPr/Parameters
+Text document API/ApiDocument/GetCommentsReport/Parameters
+Text document API/ApiFill/GetClassType/Parameters
+Text document API/ApiDocument/GetFinalSection/Parameters
+Text document API/ApiDocument/GetAllContentControls/Example
+Text document API/ApiBlockLvlSdt/SetTag/Resulting document
+Text document API/ApiDocument/GetAllContentControls/Resulting document
+Text document API/ApiChart/SetHorAxisLablesFontSize/Resulting document
+Text document API/ApiDocument/GetClassType/Parameters
+Text document API/ApiGradientStop/GetClassType/Parameters
+Text document API/ApiImage/GetClassType/Parameters
+Text document API/ApiInlineLvlSdt/SetAlias/Resulting document
+Text document API/ApiInlineLvlSdt/SetAlias/Example
+Text document API/ApiInlineLvlSdt/SetAlias/Returns
+Text document API/ApiInlineLvlSdt/SetLabel/Returns
+Text document API/ApiInlineLvlSdt/SetLock/Returns
+Text document API/ApiParagraph/AddTabStop/Parameters
+Text document API/ApiInlineLvlSdt/SetTag/Returns
+Text document API/ApiNumberingLevel/GetClassType/Parameters
+Text document API/ApiDocument/InsertContent/Example
+Text document API/ApiNumbering/GetClassType/Parameters
+Text document API/ApiNumberingLevel/GetNumbering/Parameters
+Text document API/ApiDocument/InsertContent/Resulting document
+Text document API/ApiDocument/InsertWatermark/Returns
+Text document API/ApiDocument/InsertWatermark/Example
+Text document API/ApiDocument/InsertWatermark/Resulting document
+Text document API/ApiDocument/Push/Returns
+Text document API/ApiNumberingLevel/GetLevelIndex/Parameters
+Text document API/ApiNumberingLevel/GetParaPr/Parameters
+Text document API/ApiNumberingLevel/GetTextPr/Parameters
+Text document API/ApiNumberingLevel/SetRestart/Returns
+Text document API/ApiNumberingLevel/SetCustomType/Returns
+Text document API/ApiParagraph/SetStyle/Returns
+Text document API/ApiDocument/SetEvenAndOddHdrFtr/Returns
+Text document API/ApiDocumentContent/GetElementsCount/Parameters
+Text document API/ApiDocumentContent/AddElement/Returns
+Text document API/ApiDocumentContent/GetClassType/Parameters
+Text document API/ApiDocumentContent/GetElement/Parameters
+Text document API/ApiDocumentContent/Push/Returns
+Text document API/ApiDocumentContent/RemoveElement/Returns
+Text document API/ApiDrawing/SetHorAlign/Returns
+Text document API/ApiDocumentContent/RemoveAllElements/Parameters
+Text document API/ApiDocumentContent/RemoveAllElements/Returns
+Text document API/ApiDrawing/SetHorPosition/Returns
+Text document API/ApiDrawing/SetDistances/Returns
+Text document API/ApiDrawing/GetClassType/Parameters
+Text document API/ApiDrawing/SetSize/Returns
+Text document API/ApiDrawing/SetVerAlign/Returns
+Text document API/ApiDrawing/SetVerPosition/Returns
+Text document API/ApiDrawing/SetWrappingStyle/Returns
+Text document API/ApiInlineLvlSdt/GetLock/Example
+Text document API/ApiInlineLvlSdt/GetElementsCount/Parameters
+Text document API/ApiInlineLvlSdt/GetLock/Resulting document
+Text document API/ApiInlineLvlSdt/GetAlias/Parameters
+Text document API/ApiInlineLvlSdt/GetAlias/Example
+Text document API/ApiInlineLvlSdt/GetTag/Parameters
+Text document API/ApiInlineLvlSdt/GetAlias/Resulting document
+Text document API/ApiInlineLvlSdt/GetClassType/Parameters
+Text document API/ApiInlineLvlSdt/GetLabel/Parameters
+Text document API/ApiInlineLvlSdt/GetLabel/Example
+Text document API/ApiInlineLvlSdt/GetTag/Example
+Text document API/ApiInlineLvlSdt/GetLabel/Resulting document
+Text document API/ApiNumberingLevel/SetTemplateType/Returns
+Text document API/ApiInlineLvlSdt/GetLock/Parameters
+Text document API/ApiInlineLvlSdt/GetTag/Resulting document
+Text document API/ApiInlineLvlSdt/RemoveAllElements/Parameters
+Text document API/ApiNumberingLevel/SetSuff/Returns
+Text document API/ApiNumberingLevel/SetStart/Returns
+Text document API/ApiParagraph/AddColumnBreak/Parameters
+Text document API/ApiParagraph/AddInlineLvlSdt/Example
+Text document API/ApiParagraph/AddInlineLvlSdt/Resulting document
+Text document API/ApiParagraph/AddLineBreak/Parameters
+Text document API/ApiParagraph/AddPageNumber/Parameters
+Text document API/ApiParagraph/SetNumPr/Returns
+Text document API/ApiParagraph/AddPagesCount/Parameters
+Text document API/ApiParagraph/SetIndLeft/Returns
+Text document API/ApiParagraph/SetBullet/Resulting document
+Text document API/ApiParagraph/SetNumbering/Returns
+Text document API/ApiParagraph/SetContextualSpacing/Returns
+Text document API/ApiParagraph/SetKeepLines/Returns
+Text document API/ApiParagraph/SetIndRight/Returns
+Text document API/ApiParagraph/SetIndFirstLine/Returns
+Text document API/ApiParagraph/SetLeftBorder/Returns
+Text document API/ApiParagraph/SetJc/Returns
+Text document API/ApiParagraph/SetKeepNext/Returns
+Text document API/ApiParagraph/SetPageBreakBefore/Returns
+Text document API/ApiParagraph/SetRightBorder/Returns
+Text document API/ApiParagraph/SetShd/Returns
+Text document API/ApiParagraph/SetSpacingAfter/Returns
+Text document API/ApiParagraph/GetParagraphMarkTextPr/Parameters
+Text document API/ApiParaPr/SetBullet/Returns
+Text document API/ApiParagraph/SetBetweenBorder/Returns
+Text document API/ApiParagraph/GetParaPr/Parameters
+Text document API/ApiParagraph/RemoveAllElements/Parameters
+Text document API/ApiParagraph/RemoveAllElements/Returns
+Text document API/ApiParaPr/SetBottomBorder/Returns
+Text document API/ApiParagraph/SetBottomBorder/Returns
+Text document API/ApiParagraph/SetWidowControl/Returns
+Text document API/ApiParagraph/RemoveElement/Returns
+Text document API/ApiParagraph/SetBullet/Returns
+Text document API/ApiParagraph/SetBullet/Example
+Text document API/ApiParaPr/SetBetweenBorder/Returns
+Text document API/ApiParaPr/GetClassType/Parameters
+Text document API/ApiParaPr/SetBullet/Example
+Text document API/ApiParaPr/SetContextualSpacing/Returns
+Text document API/ApiParaPr/SetBullet/Resulting document
+Text document API/ApiParaPr/SetRightBorder/Returns
+Text document API/ApiParaPr/SetIndFirstLine/Returns
+Text document API/ApiStyle/GetTableRowPr/Parameters
+Text document API/ApiStyle/GetTextPr/Parameters
+Text document API/ApiParagraph/SetTopBorder/Returns
+Text document API/ApiParaPr/SetKeepLines/Returns
+Text document API/ApiParaPr/SetIndLeft/Returns
+Text document API/ApiParaPr/SetNumPr/Returns
+Text document API/ApiParaPr/SetIndRight/Returns
+Text document API/ApiParaPr/SetKeepNext/Returns
+Text document API/ApiParaPr/SetJc/Returns
+Text document API/ApiParaPr/SetStyle/Returns
+Text document API/ApiParaPr/SetLeftBorder/Returns
+Text document API/ApiParaPr/SetPageBreakBefore/Returns
+Text document API/ApiParaPr/SetTabs/Returns
+Text document API/ApiParaPr/SetTopBorder/Returns
+Text document API/ApiParaPr/SetWidowControl/Returns
+Text document API/ApiPresetColor/GetClassType/Parameters
+Text document API/ApiRGBColor/GetClassType/Parameters
+Text document API/ApiRun/AddColumnBreak/Parameters
+Text document API/ApiRun/AddColumnBreak/Returns
+Text document API/ApiParaPr/SetShd/Returns
+Text document API/ApiRun/AddPageBreak/Parameters
+Text document API/ApiParaPr/SetSpacingAfter/Returns
+Text document API/ApiRun/AddPageBreak/Returns
+Text document API/ApiParaPr/SetSpacingBefore/Returns
+Text document API/ApiParaPr/SetSpacingLine/Returns
+Text document API/ApiRun/AddDrawing/Returns
+Text document API/ApiRun/AddTabStop/Parameters
+Text document API/ApiRun/AddLineBreak/Parameters
+Text document API/ApiRun/AddLineBreak/Returns
+Text document API/ApiSection/GetClassType/Parameters
+Text document API/ApiRun/AddTabStop/Returns
+Text document API/ApiRun/AddText/Returns
+Text document API/ApiRun/ClearContent/Parameters
+Text document API/ApiRun/ClearContent/Returns
+Text document API/ApiSection/SetPageSize/Returns
+Text document API/ApiSection/SetTitlePage/Returns
+Text document API/ApiSection/SetType/Returns
+Text document API/ApiShape/GetClassType/Parameters
+Text document API/ApiShape/GetDocContent/Parameters
+Text document API/ApiShape/SetPaddings/Returns
+Text document API/ApiRun/SetColor/Returns
+Text document API/ApiRun/SetFontSize/Returns
+Text document API/ApiRun/SetDoubleStrikeout/Returns
+Text document API/ApiRun/SetShd/Returns
+Text document API/ApiRun/SetLanguage/Returns
+Text document API/ApiRun/SetFill/Returns
+Text document API/ApiRun/SetFill/Example
+Text document API/ApiRun/SetHighlight/Returns
+Text document API/ApiRun/SetFill/Resulting document
+Text document API/ApiRun/SetFontFamily/Returns
+Text document API/ApiRun/SetItalic/Returns
+Text document API/ApiRun/SetPosition/Returns
+Text document API/ApiRun/SetSpacing/Returns
+Text document API/ApiRun/SetStrikeout/Returns
+Text document API/ApiRun/SetSmallCaps/Returns
+Text document API/ApiRun/SetUnderline/Returns
+Text document API/ApiRun/SetStyle/Returns
+Text document API/ApiRun/SetVertAlign/Returns
+Text document API/ApiSchemeColor/GetClassType/Parameters
+Text document API/ApiRun/GetClassType/Parameters
+Text document API/ApiSection/SetPageMargins/Returns
+Text document API/ApiRun/GetTextPr/Parameters
+Text document API/ApiRun/SetBold/Returns
+Text document API/ApiSection/SetNotEqualColumns/Returns
+Text document API/ApiSection/SetEqualColumns/Returns
+Text document API/ApiSection/RemoveFooter/Returns
+Text document API/ApiRun/SetCaps/Returns
+Text document API/ApiSection/SetHeaderDistance/Returns
+Text document API/ApiSection/RemoveHeader/Returns
+Text document API/ApiSection/SetFooterDistance/Returns
+Text document API/ApiStyle/GetParaPr/Parameters
+Text document API/ApiStyle/GetName/Parameters
+Text document API/ApiStyle/GetTableCellPr/Parameters
+Text document API/ApiStyle/GetTablePr/Parameters
+Text document API/ApiShape/SetPaddings/Example
+Text document API/ApiShape/SetPaddings/Resulting document
+Text document API/ApiShape/SetVerticalTextAlign/Returns
+Text document API/ApiTableCellPr/SetCellMarginRight/Returns
+Text document API/ApiTableCellPr/SetCellBorderTop/Returns
+Text document API/ApiStroke/GetClassType/Parameters
+Text document API/ApiStyle/GetClassType/Parameters
+Text document API/ApiTableCellPr/SetCellMarginBottom/Returns
+Text document API/ApiTableCellPr/SetCellMarginLeft/Returns
+Text document API/ApiTableCellPr/SetCellMarginTop/Returns
+Text document API/ApiTableCellPr/SetNoWrap/Returns
+Text document API/ApiTableCellPr/SetTextDirection/Returns
+Text document API/ApiTableCellPr/SetShd/Returns
+Text document API/ApiTablePr/SetTableLayout/Resulting document
+Text document API/ApiTablePr/SetTableLayout/Returns
+Text document API/ApiTablePr/SetWidth/Returns
+Text document API/ApiTablePr/SetWidth/Resulting document
+Text document API/ApiTableRow/GetCellsCount/Parameters
+Text document API/ApiTableRow/GetClassType/Parameters
+Text document API/ApiTableCell/SetWidth/Returns
+Text document API/ApiStyle/GetType/Parameters
+Text document API/ApiStyle/SetBasedOn/Returns
+Text document API/ApiTableCell/GetClassType/Parameters
+Text document API/ApiTable/SetCellSpacing/Returns
+Text document API/ApiTableCell/SetTextDirection/Returns
+Text document API/ApiTable/SetTableLayout/Returns
+Text document API/ApiTable/SetTableLook/Returns
+Text document API/ApiTableCell/GetContent/Parameters
+Text document API/ApiTable/SetWidth/Returns
+Text document API/ApiTableCell/SetCellBorderBottom/Returns
+Text document API/ApiTableCell/SetShd/Returns
+Text document API/ApiTableCellPr/GetClassType/Parameters
+Text document API/ApiTableCell/SetVerticalAlign/Returns
+Text document API/ApiTableCellPr/SetCellBorderBottom/Returns
+Text document API/ApiTableCellPr/SetCellBorderLeft/Returns
+Text document API/ApiStyle/SetName/Returns
+Text document API/ApiTable/AddColumn/Returns
+Text document API/ApiTable/GetRowsCount/Parameters
+Text document API/ApiTable/GetRowsCount/Returns
+Text document API/ApiTable/GetClassType/Parameters
+Text document API/ApiTableCell/SetCellMarginLeft/Returns
+Text document API/ApiTableCell/SetCellMarginBottom/Returns
+Text document API/ApiTableCell/SetCellMarginRight/Returns
+Text document API/ApiTableCell/SetCellBorderTop/Returns
+Text document API/ApiTableCell/SetNoWrap/Returns
+Text document API/ApiTableCell/SetCellMarginTop/Returns
+Text document API/ApiTablePr/SetTableCellMarginTop/Returns
+Text document API/ApiTablePr/SetTableInd/Returns
+Text document API/ApiTable/SetJc/Returns
+Text document API/ApiTable/SetStyleRowBandSize/Returns
+Text document API/ApiTable/SetShd/Returns
+Text document API/ApiTable/SetTableBorderInsideV/Returns
+Text document API/ApiTable/SetStyle/Returns
+Text document API/ApiTable/SetTableBorderBottom/Returns
+Text document API/ApiTable/SetStyleColBandSize/Returns
+Text document API/ApiTable/SetTableBorderRight/Returns
+Text document API/ApiTable/SetTableBorderInsideH/Returns
+Text document API/ApiTable/SetTableBorderLeft/Returns
+Text document API/ApiTable/SetTableCellMarginLeft/Returns
+Text document API/ApiTable/SetTableBorderTop/Returns
+Text document API/ApiTable/SetTableCellMarginBottom/Returns
+Text document API/ApiTable/SetTableCellMarginRight/Returns
+Text document API/ApiTable/SetTableCellMarginTop/Returns
+Text document API/ApiTable/SetTableInd/Returns
+Text document API/ApiTablePr/SetTableBorderBottom/Returns
+Text document API/ApiTableRow/SetTableHeader/Returns
+Text document API/ApiTableCell/SetCellBorderLeft/Returns
+Text document API/ApiTablePr/SetTableBorderTop/Returns
+Text document API/ApiTablePr/SetTableBorderLeft/Returns
+Text document API/ApiTableCell/SetCellBorderRight/Returns
+Text document API/ApiTablePr/SetTableBorderInsideH/Returns
+Text document API/ApiTableCellPr/SetCellBorderRight/Returns
+Text document API/ApiTablePr/SetStyleRowBandSize/Returns
+Text document API/ApiTablePr/SetTableBorderInsideV/Returns
+Text document API/ApiTablePr/SetTableBorderRight/Returns
+Text document API/ApiTablePr/SetTableCellMarginBottom/Returns
+Text document API/ApiTablePr/SetTableCellMarginLeft/Returns
+Text document API/ApiTablePr/SetTableCellMarginRight/Returns
+Text document API/ApiTableRow/SetHeight/Returns
+Text document API/ApiTableRowPr/GetClassType/Parameters
+Text document API/ApiTableStylePr/GetTableRowPr/Parameters
+Text document API/ApiTableCellPr/SetVerticalAlign/Returns
+Text document API/ApiTablePr/SetJc/Returns
+Text document API/ApiTableCellPr/SetWidth/Returns
+Text document API/ApiTableCellPr/SetWidth/Resulting document
+Text document API/ApiTablePr/GetClassType/Parameters
+Text document API/ApiTablePr/SetShd/Returns
+Text document API/ApiTablePr/SetCellSpacing/Returns
+Text document API/ApiTablePr/SetStyleColBandSize/Returns
+Text document API/ApiTableStylePr/GetType/Resulting document
+Text document API/ApiTableStylePr/GetTextPr/Parameters
+Text document API/ApiTableStylePr/GetType/Parameters
+Text document API/ApiTextPr/GetClassType/Parameters
+Text document API/ApiTextPr/SetBold/Returns
+Text document API/ApiTextPr/SetCaps/Returns
+Text document API/ApiTextPr/SetColor/Returns
+Text document API/ApiTextPr/SetShd/Returns
+Text document API/ApiTableRowPr/SetTableHeader/Returns
+Text document API/ApiTableStylePr/GetClassType/Parameters
+Text document API/ApiTableStylePr/GetParaPr/Parameters
+Text document API/ApiTextPr/SetStrikeout/Returns
+Text document API/ApiTableStylePr/GetTableCellPr/Parameters
+Text document API/ApiTextPr/SetSmallCaps/Returns
+Text document API/ApiTextPr/SetUnderline/Returns
+Text document API/ApiTextPr/SetSpacing/Returns
+Text document API/ApiTextPr/SetStyle/Returns
+Text document API/ApiTextPr/SetVertAlign/Returns
+Spreadsheet API/Api/SetLocale/Returns
+Spreadsheet API/Api/SetLocale/Resulting document
+Spreadsheet API/Api/SetLocale/Example
+Spreadsheet API/Api/SetThemeColors/Returns
+Spreadsheet API/ApiBullet/GetClassType/Parameters
+Text document API/ApiTableRowPr/SetHeight/Returns
+Spreadsheet API/ApiChart/SetHorAxisOrientation/Returns
+Text document API/ApiTableStylePr/GetTablePr/Parameters
+Text document API/ApiTextPr/SetDoubleStrikeout/Returns
+Text document API/ApiUniColor/GetClassType/Parameters
+Text document API/ApiTextPr/SetFill/Returns
+Text document API/ApiTextPr/SetFill/Example
+Text document API/ApiTextPr/SetFill/Resulting document
+Text document API/ApiTextPr/SetFontFamily/Returns
+Text document API/ApiTextPr/SetFontSize/Returns
+Text document API/ApiUnsupported/GetClassType/Parameters
+Text document API/ApiTextPr/SetHighlight/Returns
+Text document API/ApiUnsupported/GetClassType/Example
+Spreadsheet API/ApiChart/SetLegendFontSize/Returns
+Spreadsheet API/ApiChart/SetHorAxisMinorTickMark/Resulting document
+Spreadsheet API/ApiChart/SetHorAxisTitle/Returns
+Spreadsheet API/ApiChart/SetHorAxisTickLabelPosition/Returns
+Spreadsheet API/ApiChart/SetLegendPos/Returns
+Spreadsheet API/ApiChart/SetLegendFontSize/Example
+Spreadsheet API/ApiChart/SetLegendFontSize/Parameters
+Spreadsheet API/ApiChart/SetLegendFontSize/Resulting document
+Spreadsheet API/ApiChart/SetMinorHorizontalGridlines/Resulting document
+Spreadsheet API/ApiChart/SetMajorHorizontalGridlines/Returns
+Spreadsheet API/ApiChart/SetVerAxisOrientation/Returns
+Spreadsheet API/ApiChart/SetVerAxisTitle/Returns
+Text document API/ApiTextPr/SetItalic/Returns
+Text document API/ApiTextPr/SetLanguage/Returns
+Spreadsheet API/Api/Format/Example
+Spreadsheet API/Api/Format/Resulting document
+Spreadsheet API/Api/GetSheet/Example
+Text document API/ApiTextPr/SetPosition/Returns
+Spreadsheet API/Api/GetActiveSheet/Parameters
+Spreadsheet API/Api/GetSheet/Resulting document
+Spreadsheet API/ApiChart/SetHorAxisMajorTickMark/Resulting document
+Spreadsheet API/Api/GetSheets/Parameters
+Spreadsheet API/Api/GetLocale/Parameters
+Spreadsheet API/ApiChart/ApplyChartStyle/Returns
+Spreadsheet API/Api/GetLocale/Example
+Spreadsheet API/Api/GetLocale/Resulting document
+Spreadsheet API/Api/GetSheets/Example
+Spreadsheet API/ApiChart/SetHorAxisLablesFontSize/Example
+Spreadsheet API/ApiChart/ApplyChartStyle/Example
+Spreadsheet API/Api/GetSheets/Resulting document
+Spreadsheet API/Api/GetThemesColors/Parameters
+Spreadsheet API/ApiChart/ApplyChartStyle/Resulting document
+Spreadsheet API/ApiChart/SetHorAxisMajorTickMark/Returns
+Spreadsheet API/ApiChart/GetClassType/Parameters
+Spreadsheet API/ApiChart/SetHorAxisLablesFontSize/Resulting document
+Spreadsheet API/ApiChart/SetHorAxisLablesFontSize/Returns
+Spreadsheet API/ApiChart/SetHorAxisMajorTickMark/Example
+Spreadsheet API/ApiChart/SetVertAxisLablesFontSize/Returns
+Spreadsheet API/ApiChart/SetHorAxisMinorTickMark/Returns
+Spreadsheet API/ApiChart/SetHorAxisMinorTickMark/Example
+Spreadsheet API/ApiChart/SetVertAxisLablesFontSize/Example
+Spreadsheet API/ApiDrawing/GetClassType/Parameters
+Spreadsheet API/ApiDrawing/SetPosition/Returns
+Text document API/ApiUnsupported/GetClassType/Resulting document
+Spreadsheet API/Api/AddSheet/Returns
+Spreadsheet API/Api/AddSheet/Example
+Spreadsheet API/Api/AddSheet/Resulting document
+Spreadsheet API/Api/CreateNoFill/Parameters
+Spreadsheet API/ApiChart/SetMajorHorizontalGridlines/Example
+Spreadsheet API/Api/CreateParagraph/Parameters
+Spreadsheet API/Api/CreateRun/Parameters
+Spreadsheet API/ApiChart/SetMajorHorizontalGridlines/Resulting document
+Spreadsheet API/ApiChart/SetMajorVerticalGridlines/Returns
+Spreadsheet API/ApiChart/SetMajorVerticalGridlines/Example
+Spreadsheet API/ApiChart/SetMajorVerticalGridlines/Resulting document
+Spreadsheet API/ApiChart/SetMinorHorizontalGridlines/Returns
+Spreadsheet API/ApiChart/SetMinorHorizontalGridlines/Example
+Spreadsheet API/ApiChart/SetMinorVerticalGridlines/Returns
+Spreadsheet API/ApiChart/SetMinorVerticalGridlines/Example
+Spreadsheet API/ApiDocument/Push/Returns
+Spreadsheet API/ApiDocument/AddElement/Returns
+Spreadsheet API/ApiChart/SetMinorVerticalGridlines/Resulting document
+Spreadsheet API/ApiDocument/AddElement/Example
+Spreadsheet API/ApiChart/SetShowDataLabels/Returns
+Spreadsheet API/ApiDocument/RemoveElement/Example
+Spreadsheet API/ApiDocument/Push/Example
+Spreadsheet API/ApiDocument/AddElement/Resulting document
+Spreadsheet API/ApiDocument/GetElement/Parameters
+Spreadsheet API/ApiChart/SetShowPointDataLabel/Returns
+Spreadsheet API/ApiDocumentContent/GetClassType/Parameters
+Spreadsheet API/ApiChart/SetShowPointDataLabel/Example
+Spreadsheet API/ApiDocument/Push/Resulting document
+Spreadsheet API/ApiChart/SetShowPointDataLabel/Resulting document
+Spreadsheet API/ApiDocument/GetElement/Example
+Spreadsheet API/ApiChart/SetTitle/Returns
+Spreadsheet API/ApiDocument/RemoveElement/Resulting document
+Spreadsheet API/ApiColor/GetClassType/Parameters
+Spreadsheet API/ApiDocument/RemoveAllElements/Parameters
+Spreadsheet API/ApiDocument/GetElement/Resulting document
+Spreadsheet API/ApiDocument/GetElementsCount/Parameters
+Spreadsheet API/ApiDocument/RemoveAllElements/Returns
+Spreadsheet API/ApiDocument/GetElementsCount/Example
+Spreadsheet API/ApiDocument/RemoveAllElements/Example
+Spreadsheet API/ApiDocument/GetElementsCount/Resulting document
+Spreadsheet API/ApiDocument/RemoveAllElements/Resulting document
+Spreadsheet API/ApiDocumentContent/AddElement/Returns
+Spreadsheet API/ApiDocument/RemoveElement/Returns
+Spreadsheet API/ApiDocumentContent/GetElementsCount/Parameters
+Spreadsheet API/ApiDocumentContent/GetElement/Parameters
+Spreadsheet API/ApiDocumentContent/Push/Returns
+Spreadsheet API/ApiDocumentContent/RemoveAllElements/Parameters
+Spreadsheet API/ApiDocumentContent/RemoveAllElements/Returns
+Spreadsheet API/ApiDocumentContent/RemoveElement/Returns
+Spreadsheet API/ApiChart/SetVertAxisLablesFontSize/Resulting document
+Spreadsheet API/ApiChart/SetVertAxisMajorTickMark/Returns
+Spreadsheet API/ApiFill/GetClassType/Parameters
+Spreadsheet API/ApiChart/SetVertAxisMajorTickMark/Example
+Spreadsheet API/ApiChart/SetVertAxisMajorTickMark/Resulting document
+Spreadsheet API/ApiChart/SetVertAxisMinorTickMark/Returns
+Spreadsheet API/ApiChart/SetVertAxisMinorTickMark/Example
+Spreadsheet API/ApiChart/SetVertAxisMinorTickMark/Resulting document
+Spreadsheet API/ApiChart/SetVertAxisTickLabelPosition/Returns
+Spreadsheet API/ApiGradientStop/GetClassType/Parameters
+Spreadsheet API/ApiDrawing/SetSize/Returns
+Spreadsheet API/ApiParagraph/AddLineBreak/Parameters
+Spreadsheet API/ApiImage/GetClassType/Parameters
+Spreadsheet API/ApiParagraph/GetElementsCount/Parameters
+Spreadsheet API/ApiParagraph/AddTabStop/Parameters
+Spreadsheet API/ApiRange/SetAlignVertical/Returns
+Spreadsheet API/ApiRange/SetBold/Returns
+Spreadsheet API/ApiRange/SetBorders/Returns
+Spreadsheet API/ApiRange/GetAddress/Example
+Spreadsheet API/ApiParaPr/SetSpacingAfter/Returns
+Spreadsheet API/ApiRange/GetAddress/Resulting document
+Spreadsheet API/ApiRange/SetAlignHorizontal/Returns
+Spreadsheet API/ApiRange/GetCount/Parameters
+Spreadsheet API/ApiRange/AddComment/Returns
+Spreadsheet API/ApiParaPr/SetSpacingBefore/Returns
+Spreadsheet API/ApiRange/GetCol/Parameters
+Spreadsheet API/ApiRange/AddComment/Example
+Spreadsheet API/ApiRange/AddComment/Resulting document
+Spreadsheet API/ApiParaPr/SetSpacingLine/Returns
+Spreadsheet API/ApiRange/ForEach/Parameters
+Spreadsheet API/ApiRange/ForEach/Returns
+Spreadsheet API/ApiParaPr/SetTabs/Returns
+Spreadsheet API/ApiRange/ForEach/Example
+Spreadsheet API/ApiRange/ForEach/Resulting document
+Spreadsheet API/ApiRange/SetColumnWidth/Returns
+Spreadsheet API/ApiRange/GetCount/Example
+Spreadsheet API/ApiRange/GetColumnWidth/Parameters
+Spreadsheet API/ApiRange/SetColumnWidth/Example
+Spreadsheet API/ApiRange/GetCount/Resulting document
+Spreadsheet API/ApiRange/GetColumnWidth/Example
+Spreadsheet API/ApiRange/SetColumnWidth/Resulting document
+Spreadsheet API/ApiRange/GetColumnWidth/Resulting document
+Spreadsheet API/ApiRange/GetHidden/Parameters
+Spreadsheet API/ApiRange/GetHidden/Example
+Spreadsheet API/ApiRange/SetFillColor/Returns
+Spreadsheet API/ApiRange/SetFontColor/Returns
+Spreadsheet API/ApiRange/SetWrap/Returns
+Spreadsheet API/ApiRange/UnMerge/Parameters
+Spreadsheet API/ApiRange/UnMerge/Returns
+Spreadsheet API/ApiRGBColor/GetClassType/Parameters
+Spreadsheet API/ApiRun/SetDoubleStrikeout/Returns
+Spreadsheet API/ApiParagraph/GetParaPr/Parameters
+Spreadsheet API/ApiParagraph/SetIndFirstLine/Returns
+Spreadsheet API/ApiRun/SetFill/Returns
+Spreadsheet API/ApiParagraph/RemoveAllElements/Parameters
+Spreadsheet API/ApiParagraph/RemoveAllElements/Returns
+Spreadsheet API/ApiParagraph/RemoveElement/Returns
+Spreadsheet API/ApiWorksheet/SetRightMargin/Resulting document
+Spreadsheet API/ApiParagraph/SetIndLeft/Returns
+Spreadsheet API/ApiParagraph/SetBullet/Returns
+Spreadsheet API/ApiParagraph/SetIndRight/Returns
+Spreadsheet API/ApiWorksheet/SetPageOrientation/Returns
+Spreadsheet API/ApiWorksheet/SetName/Returns
+Spreadsheet API/ApiWorksheet/SetLeftMargin/Returns
+Spreadsheet API/ApiWorksheet/SetLeftMargin/Example
+Spreadsheet API/ApiWorksheet/SetLeftMargin/Resulting document
+Spreadsheet API/ApiWorksheet/SetPageOrientation/Example
+Spreadsheet API/ApiWorksheet/SetPageOrientation/Resulting document
+Spreadsheet API/ApiWorksheet/SetRightMargin/Example
+Spreadsheet API/ApiWorksheet/SetRightMargin/Returns
+Spreadsheet API/ApiWorksheet/SetRowHeight/Returns
+Spreadsheet API/ApiWorksheet/SetRowHeight/Example
+Spreadsheet API/ApiWorksheet/SetRowHeight/Resulting document
+Spreadsheet API/ApiWorksheet/SetTopMargin/Returns
+Spreadsheet API/ApiWorksheet/SetTopMargin/Example
+Spreadsheet API/ApiRange/SetOffset/Returns
+Spreadsheet API/ApiRange/SetFontName/Returns
+Spreadsheet API/ApiRange/SetOffset/Example
+Spreadsheet API/ApiRange/SetFontSize/Returns
+Spreadsheet API/ApiRange/SetOffset/Resulting document
+Spreadsheet API/ApiRange/SetHidden/Returns
+Spreadsheet API/ApiRange/SetHidden/Example
+Spreadsheet API/ApiRange/SetHidden/Resulting document
+Spreadsheet API/ApiRange/SetRowHeight/Returns
+Spreadsheet API/ApiRange/SetItalic/Returns
+Spreadsheet API/ApiRange/SetRowHeight/Example
+Spreadsheet API/ApiRange/SetValue/Returns
+Spreadsheet API/ApiRange/SetNumberFormat/Returns
+Spreadsheet API/ApiRange/SetRowHeight/Resulting document
+Spreadsheet API/ApiRun/AddTabStop/Parameters
+Spreadsheet API/ApiRange/SetStrikeout/Returns
+Spreadsheet API/ApiRange/SetUnderline/Returns
+Spreadsheet API/ApiRun/AddTabStop/Returns
+Spreadsheet API/ApiRun/AddLineBreak/Parameters
+Spreadsheet API/ApiRun/AddLineBreak/Returns
+Spreadsheet API/ApiRun/AddText/Returns
+Spreadsheet API/ApiRun/ClearContent/Parameters
+Spreadsheet API/ApiRun/ClearContent/Returns
+Spreadsheet API/ApiRun/GetTextPr/Parameters
+Spreadsheet API/ApiRun/SetBold/Returns
+Spreadsheet API/ApiRun/SetCaps/Returns
+Spreadsheet API/ApiRun/SetFontFamily/Returns
+Spreadsheet API/ApiRun/SetSpacing/Returns
+Spreadsheet API/ApiRun/SetVertAlign/Returns
+Spreadsheet API/ApiRun/SetFontSize/Returns
+Spreadsheet API/ApiStroke/GetClassType/Parameters
+Spreadsheet API/ApiRun/SetItalic/Returns
+Spreadsheet API/ApiRun/SetStrikeout/Returns
+Spreadsheet API/ApiRun/SetSmallCaps/Returns
+Spreadsheet API/ApiSchemeColor/GetClassType/Parameters
+Spreadsheet API/ApiRun/SetUnderline/Returns
+Spreadsheet API/ApiShape/GetDocContent/Parameters
+Spreadsheet API/ApiShape/SetVerticalTextAlign/Returns
+Spreadsheet API/ApiShape/GetClassType/Parameters
+Spreadsheet API/ApiTextPr/GetClassType/Parameters
+Spreadsheet API/ApiTextPr/SetBold/Returns
+Spreadsheet API/ApiTextPr/SetCaps/Returns
+Spreadsheet API/ApiTextPr/SetDoubleStrikeout/Returns
+Spreadsheet API/ApiTextPr/SetFill/Returns
+Spreadsheet API/ApiTextPr/SetSmallCaps/Returns
+Spreadsheet API/ApiTextPr/SetUnderline/Returns
+Spreadsheet API/ApiTextPr/SetFontFamily/Returns
+Spreadsheet API/ApiTextPr/SetFontSize/Returns
+Spreadsheet API/ApiTextPr/SetSpacing/Returns
+Spreadsheet API/ApiTextPr/SetItalic/Returns
+Spreadsheet API/ApiTextPr/SetStrikeout/Returns
+Spreadsheet API/ApiTextPr/SetVertAlign/Returns
+Spreadsheet API/ApiUniColor/GetClassType/Parameters
+Spreadsheet API/ApiWorksheet/GetName/Example
+Spreadsheet API/ApiWorksheet/GetPageOrientation/Example
+Spreadsheet API/ApiWorksheet/GetName/Resulting document
+Spreadsheet API/ApiWorksheet/GetPageOrientation/Parameters
+Spreadsheet API/ApiWorksheet/GetPageOrientation/Resulting document
+Presentation API/Api/CreateGroup/Parameters
+Presentation API/Api/CreateGroup/Example
+Presentation API/Api/CreateGroup/Resulting document
+Spreadsheet API/ApiWorksheet/GetLeftMargin/Resulting document
+Spreadsheet API/ApiWorksheet/GetCells/Resulting document
+Spreadsheet API/ApiWorksheet/FormatAsTable/Returns
+Spreadsheet API/ApiWorksheet/GetName/Parameters
+Spreadsheet API/ApiWorksheet/GetActiveCell/Parameters
+Spreadsheet API/ApiWorksheet/GetCols/Example
+Spreadsheet API/ApiWorksheet/GetUsedRange/Parameters
+Spreadsheet API/ApiWorksheet/GetActiveCell/Example
+Spreadsheet API/ApiWorksheet/GetCols/Resulting document
+Spreadsheet API/ApiWorksheet/GetActiveCell/Resulting document
+Spreadsheet API/ApiWorksheet/GetBottomMargin/Parameters
+Spreadsheet API/ApiWorksheet/GetIndex/Parameters
+Spreadsheet API/ApiWorksheet/GetRows/Example
+Spreadsheet API/ApiWorksheet/GetBottomMargin/Example
+Spreadsheet API/ApiWorksheet/GetBottomMargin/Resulting document
+Spreadsheet API/ApiWorksheet/GetCells/Parameters
+Spreadsheet API/ApiWorksheet/GetIndex/Example
+Spreadsheet API/ApiWorksheet/GetTopMargin/Parameters
+Spreadsheet API/ApiWorksheet/GetCells/Example
+Spreadsheet API/ApiWorksheet/GetRightMargin/Parameters
+Spreadsheet API/ApiWorksheet/GetIndex/Resulting document
+Spreadsheet API/ApiWorksheet/GetRows/Resulting document
+Spreadsheet API/ApiWorksheet/GetLeftMargin/Parameters
+Spreadsheet API/ApiWorksheet/GetLeftMargin/Example
+Spreadsheet API/ApiWorksheet/GetRightMargin/Example
+Spreadsheet API/ApiWorksheet/GetVisible/Example
+Spreadsheet API/ApiWorksheet/GetSelection/Parameters
+Spreadsheet API/ApiWorksheet/GetRightMargin/Resulting document
+Spreadsheet API/ApiWorksheet/GetTopMargin/Example
+Spreadsheet API/ApiWorksheet/GetSelection/Example
+Spreadsheet API/ApiWorksheet/GetSelection/Resulting document
+Spreadsheet API/ApiWorksheet/GetVisible/Parameters
+Spreadsheet API/ApiWorksheet/GetTopMargin/Resulting document
+Spreadsheet API/ApiWorksheet/GetUsedRange/Example
+Spreadsheet API/ApiWorksheet/ReplaceCurrentImage/Returns
+Spreadsheet API/ApiWorksheet/ReplaceCurrentImage/Parameters
+Spreadsheet API/ApiWorksheet/GetUsedRange/Resulting document
+Spreadsheet API/ApiWorksheet/GetVisible/Resulting document
+Spreadsheet API/ApiWorksheet/ReplaceCurrentImage/Example
+Spreadsheet API/ApiWorksheet/ReplaceCurrentImage/Resulting document
+Spreadsheet API/ApiWorksheet/SetBottomMargin/Returns
+Spreadsheet API/ApiWorksheet/SetBottomMargin/Example
+Spreadsheet API/ApiWorksheet/SetBottomMargin/Resulting document
+Spreadsheet API/ApiWorksheet/SetColumnWidth/Returns
+Presentation API/ApiDocument/GetElement/Example
+Presentation API/ApiDocument/RemoveAllElements/Returns
+Presentation API/ApiDocument/GetElement/Resulting document
+Presentation API/ApiDocumentContent/AddElement/Returns
+Presentation API/ApiDocument/GetElementsCount/Parameters
+Spreadsheet API/ApiWorksheet/SetDisplayGridlines/Returns
+Presentation API/ApiDocument/RemoveAllElements/Example
+Presentation API/ApiDocument/GetElementsCount/Example
+Spreadsheet API/ApiWorksheet/SetDisplayHeadings/Returns
+Presentation API/ApiDocument/RemoveAllElements/Resulting document
+Presentation API/ApiChart/SetMajorHorizontalGridlines/Returns
+Presentation API/ApiChart/SetMajorHorizontalGridlines/Example
+Presentation API/ApiChart/SetMajorHorizontalGridlines/Resulting document
+Presentation API/ApiChart/SetMajorVerticalGridlines/Returns
+Presentation API/ApiChart/SetMajorVerticalGridlines/Example
+Presentation API/ApiChart/SetMinorVerticalGridlines/Returns
+Presentation API/ApiDocument/GetElementsCount/Resulting document
+Presentation API/ApiDocument/Push/Returns
+Presentation API/ApiDocument/RemoveElement/Returns
+Presentation API/ApiDocument/Push/Example
+Presentation API/ApiDocument/Push/Resulting document
+Presentation API/ApiDocument/RemoveElement/Example
+Presentation API/ApiDocument/RemoveAllElements/Parameters
+Presentation API/ApiDocument/RemoveElement/Resulting document
+Presentation API/ApiDocumentContent/GetClassType/Parameters
+Presentation API/ApiDocumentContent/GetElement/Parameters
+Presentation API/ApiDocumentContent/GetElementsCount/Parameters
+Presentation API/ApiDocumentContent/Push/Returns
+Presentation API/ApiDocumentContent/RemoveAllElements/Parameters
+Presentation API/ApiDocumentContent/RemoveAllElements/Returns
+Presentation API/ApiDocumentContent/RemoveElement/Returns
+Presentation API/ApiChart/SetHorAxisOrientation/Example
+Spreadsheet API/ApiWorksheet/SetTopMargin/Resulting document
+Spreadsheet API/ApiWorksheet/SetVisible/Returns
+Spreadsheet API/ApiWorksheet/SetVisible/Example
+Spreadsheet API/ApiWorksheet/SetVisible/Resulting document
+Presentation API/Api/CreateNoFill/Parameters
+Presentation API/Api/CreateParagraph/Parameters
+Presentation API/ApiChart/SetHorAxisMinorTickMark/Example
+Presentation API/ApiChart/SetHorAxisLablesFontSize/Resulting document
+Presentation API/ApiChart/SetHorAxisMajorTickMark/Returns
+Presentation API/ApiChart/SetHorAxisMajorTickMark/Example
+Presentation API/ApiChart/SetHorAxisMinorTickMark/Resulting document
+Presentation API/ApiChart/SetHorAxisMajorTickMark/Resulting document
+Presentation API/ApiChart/SetHorAxisOrientation/Resulting document
+Presentation API/ApiChart/SetHorAxisMinorTickMark/Returns
+Presentation API/ApiChart/SetLegendFontSize/Returns
+Presentation API/ApiChart/SetHorAxisTickLabelPosition/Example
+Presentation API/ApiChart/SetHorAxisOrientation/Returns
+Presentation API/ApiChart/SetHorAxisTickLabelPosition/Returns
+Presentation API/ApiChart/SetHorAxisTickLabelPosition/Resulting document
+Presentation API/ApiChart/SetHorAxisTitle/Returns
+Presentation API/ApiChart/SetLegendFontSize/Parameters
+Presentation API/ApiChart/SetLegendFontSize/Example
+Presentation API/ApiChart/SetLegendFontSize/Resulting document
+Presentation API/ApiChart/SetLegendPos/Returns
+Presentation API/ApiBullet/GetClassType/Parameters
+Presentation API/Api/CreateTable/Example
+Presentation API/Api/CreateRun/Parameters
+Presentation API/Api/CreateTable/Resulting document
+Presentation API/Api/CreateSlide/Parameters
+Presentation API/Api/GetPresentation/Parameters
+Presentation API/Api/CreateTable/Parameters
+Presentation API/ApiChart/SetMinorVerticalGridlines/Resulting document
+Presentation API/ApiChart/SetHorAxisLablesFontSize/Returns
+Presentation API/ApiChart/GetClassType/Parameters
+Presentation API/ApiChart/SetMinorVerticalGridlines/Example
+Presentation API/ApiChart/SetHorAxisLablesFontSize/Example
+Presentation API/ApiParaPr/SetIndFirstLine/Returns
+Presentation API/ApiParaPr/SetIndLeft/Returns
+Presentation API/ApiRun/GetClassType/Parameters
+Presentation API/ApiChart/SetVertAxisLablesFontSize/Example
+Presentation API/ApiChart/SetMajorVerticalGridlines/Resulting document
+Presentation API/ApiChart/SetMinorHorizontalGridlines/Returns
+Presentation API/ApiChart/SetMinorHorizontalGridlines/Example
+Presentation API/ApiChart/SetMinorHorizontalGridlines/Resulting document
+Presentation API/ApiChart/SetVertAxisMinorTickMark/Example
+Presentation API/ApiChart/SetVertAxisLablesFontSize/Resulting document
+Presentation API/ApiChart/SetVerAxisOrientation/Returns
+Presentation API/ApiChart/SetShowDataLabels/Returns
+Presentation API/ApiChart/SetVerAxisOrientation/Example
+Presentation API/ApiChart/SetVerAxisOrientation/Resulting document
+Presentation API/ApiChart/SetShowPointDataLabel/Returns
+Presentation API/ApiChart/SetShowPointDataLabel/Example
+Presentation API/ApiChart/SetShowPointDataLabel/Resulting document
+Presentation API/ApiChart/SetVertAxisMinorTickMark/Resulting document
+Presentation API/ApiChart/SetVertAxisMajorTickMark/Returns
+Presentation API/ApiChart/SetVerAxisTitle/Returns
+Presentation API/ApiChart/SetTitle/Returns
+Presentation API/ApiChart/SetVertAxisMajorTickMark/Example
+Presentation API/ApiChart/SetVertAxisMajorTickMark/Resulting document
+Presentation API/ApiChart/SetVertAxisLablesFontSize/Returns
+Presentation API/ApiChart/SetVertAxisTickLabelPosition/Returns
+Presentation API/ApiChart/SetVertAxisMinorTickMark/Returns
+Presentation API/ApiDocument/AddElement/Returns
+Presentation API/ApiParagraph/SetIndFirstLine/Returns
+Presentation API/ApiChart/SetVertAxisTickLabelPosition/Example
+Presentation API/ApiDocument/AddElement/Example
+Presentation API/ApiChart/SetVertAxisTickLabelPosition/Resulting document
+Presentation API/ApiDocument/AddElement/Resulting document
+Presentation API/ApiDocument/GetElement/Parameters
+Presentation API/ApiParagraph/SetIndLeft/Returns
+Presentation API/ApiParagraph/SetIndRight/Returns
+Presentation API/ApiParagraph/SetJc/Returns
+Presentation API/ApiDrawing/GetClassType/Parameters
+Presentation API/ApiGradientStop/GetClassType/Parameters
+Presentation API/ApiParagraph/AddLineBreak/Parameters
+Presentation API/ApiDrawing/SetPosition/Returns
+Presentation API/ApiImage/GetClassType/Parameters
+Presentation API/ApiDrawing/SetSize/Returns
+Presentation API/ApiFill/GetClassType/Parameters
+Presentation API/ApiParagraph/AddTabStop/Parameters
+Presentation API/ApiParagraph/GetClassType/Parameters
+Presentation API/ApiParagraph/GetParaPr/Parameters
+Presentation API/ApiParagraph/GetElementsCount/Parameters
+Presentation API/ApiParagraph/RemoveAllElements/Returns
+Presentation API/ApiParagraph/RemoveAllElements/Parameters
+Presentation API/ApiParagraph/RemoveElement/Returns
+Presentation API/ApiParagraph/SetBullet/Returns
+Presentation API/ApiParagraph/SetSpacingBefore/Returns
+Presentation API/ApiParaPr/SetBullet/Returns
+Presentation API/ApiParagraph/SetSpacingLine/Returns
+Presentation API/ApiParaPr/SetSpacingBefore/Returns
+Presentation API/ApiParagraph/SetTabs/Returns
+Presentation API/ApiParaPr/SetJc/Returns
+Presentation API/ApiParaPr/GetClassType/Parameters
+Presentation API/ApiParaPr/SetTabs/Returns
+Presentation API/ApiParaPr/SetSpacingAfter/Returns
+Presentation API/ApiParaPr/SetSpacingLine/Returns
+Presentation API/ApiPresentation/CreateNewHistoryPoint/Resulting document
+Presentation API/ApiPresentation/CreateNewHistoryPoint/Parameters
+Presentation API/ApiPresentation/AddSlide/Returns
+Presentation API/ApiPresentation/CreateNewHistoryPoint/Returns
+Presentation API/ApiPresentation/GetClassType/Parameters
+Presentation API/ApiPresentation/CreateNewHistoryPoint/Example
+Presentation API/ApiPresentation/GetCurrentSlide/Parameters
+Presentation API/ApiPresentation/GetCurSlideIndex/Parameters
+Presentation API/ApiShape/SetVerticalTextAlign/Returns
+Presentation API/ApiParaPr/SetIndRight/Returns
+Presentation API/ApiSlide/GetWidth/Parameters
+Presentation API/ApiPresentation/ReplaceCurrentImage/Parameters
+Presentation API/ApiPresentation/ReplaceCurrentImage/Returns
+Presentation API/ApiPresentation/ReplaceCurrentImage/Example
+Presentation API/ApiShape/GetClassType/Parameters
+Presentation API/ApiRun/AddText/Returns
+Presentation API/ApiRun/ClearContent/Parameters
+Presentation API/ApiRun/ClearContent/Returns
+Presentation API/ApiShape/GetDocContent/Parameters
+Presentation API/ApiSlide/AddObject/Returns
+Presentation API/ApiSlide/GetHeight/Parameters
+Presentation API/ApiSlide/RemoveAllObjects/Returns
+Presentation API/ApiSlide/GetClassType/Parameters
+Presentation API/ApiSlide/RemoveAllObjects/Parameters
+Presentation API/ApiStroke/GetClassType/Parameters
+Presentation API/ApiSlide/SetBackground/Returns
+Presentation API/ApiTable/AddColumn/Returns
+Presentation API/ApiTable/AddColumn/Example
+Presentation API/ApiTable/AddColumn/Resulting document
+Presentation API/ApiTable/AddRow/Example
+Presentation API/ApiPresentation/ReplaceCurrentImage/Resulting document
+Presentation API/ApiTable/GetRow/Resulting document
+Presentation API/ApiPresentation/SetSizes/Returns
+Presentation API/ApiRun/GetTextPr/Parameters
+Presentation API/ApiPresetColor/GetClassType/Parameters
+Presentation API/ApiRGBColor/GetClassType/Parameters
+Presentation API/ApiRun/AddLineBreak/Parameters
+Presentation API/ApiTable/AddRow/Resulting document
+Presentation API/ApiRun/AddLineBreak/Returns
+Presentation API/ApiRun/AddTabStop/Parameters
+Presentation API/ApiRun/SetBold/Returns
+Presentation API/ApiRun/AddTabStop/Returns
+Presentation API/ApiTable/GetClassType/Parameters
+Presentation API/ApiRun/SetCaps/Returns
+Presentation API/ApiTable/GetClassType/Example
+Presentation API/ApiRun/SetDoubleStrikeout/Returns
+Presentation API/ApiTable/GetClassType/Resulting document
+Presentation API/ApiTable/GetRow/Example
+Presentation API/ApiTable/MergeCells/Example
+Presentation API/ApiTable/MergeCells/Resulting document
+Presentation API/ApiTableRow/GetCell/Example
+Presentation API/ApiTableRow/GetCellsCount/Parameters
+Presentation API/ApiTableRow/GetCell/Resulting document
+Presentation API/ApiTableRow/GetCellsCount/Resulting document
+Presentation API/ApiTableRow/GetClassType/Parameters
+Presentation API/ApiTableRow/GetCellsCount/Example
+Presentation API/ApiTableRow/GetClassType/Example
+Presentation API/ApiTableRow/GetClassType/Resulting document
+Presentation API/ApiTableRow/SetHeight/Returns
+Presentation API/ApiTableRow/SetHeight/Example
+Presentation API/ApiRun/SetSmallCaps/Returns
+Presentation API/ApiRun/SetFill/Returns
+Presentation API/ApiRun/SetUnderline/Returns
+Presentation API/ApiTable/RemoveColumn/Resulting document
+Presentation API/ApiRun/SetFontFamily/Returns
+Presentation API/ApiTable/SetShd/Example
+Presentation API/ApiRun/SetSpacing/Returns
+Presentation API/ApiRun/SetFontSize/Returns
+Presentation API/ApiRun/SetItalic/Returns
+Presentation API/ApiRun/SetVertAlign/Returns
+Presentation API/ApiRun/SetStrikeout/Returns
+Presentation API/ApiTable/SetTableLook/Resulting document
+Presentation API/ApiTable/SetShd/Resulting document
+Presentation API/ApiTable/RemoveRow/Example
+Presentation API/ApiSchemeColor/GetClassType/Parameters
+Presentation API/ApiTable/RemoveColumn/Example
+Presentation API/ApiTable/RemoveRow/Resulting document
+Presentation API/ApiTable/SetShd/Returns
+Presentation API/ApiTableCell/GetClassType/Parameters
+Presentation API/ApiTable/SetTableLook/Returns
+Presentation API/ApiTableCell/GetClassType/Example
+Presentation API/ApiTable/SetTableLook/Example
+Presentation API/ApiTableCell/GetContent/Parameters
+Presentation API/ApiTableCell/GetClassType/Resulting document
+Presentation API/ApiTableCell/GetContent/Example
+Presentation API/ApiTableCell/GetContent/Resulting document
+Presentation API/ApiTableCell/SetCellBorderBottom/Returns
+Presentation API/ApiTableCell/SetCellBorderBottom/Example
+Presentation API/ApiTableCell/SetCellBorderBottom/Resulting document
+Presentation API/ApiTableCell/SetCellBorderLeft/Returns
+Presentation API/ApiTableCell/SetCellBorderLeft/Example
+Presentation API/ApiTableCell/SetCellBorderLeft/Resulting document
+Presentation API/ApiTableCell/SetCellBorderRight/Returns
+Presentation API/ApiTableCell/SetCellBorderRight/Example
+Presentation API/ApiTextPr/SetDoubleStrikeout/Returns
+Presentation API/ApiTableCell/SetCellBorderRight/Resulting document
+Presentation API/ApiTableCell/SetCellBorderTop/Returns
+Presentation API/ApiTableCell/SetCellBorderTop/Example
+Presentation API/ApiTableCell/SetCellBorderTop/Resulting document
+Presentation API/ApiTableRow/SetHeight/Resulting document
+Presentation API/ApiTextPr/GetClassType/Parameters
+Presentation API/ApiTextPr/SetBold/Returns
+Presentation API/ApiTextPr/SetCaps/Returns
+Presentation API/ApiTableCell/SetCellMarginBottom/Returns
+Presentation API/ApiTableCell/SetCellMarginBottom/Example
+Presentation API/ApiTableCell/SetShd/Returns
+Presentation API/ApiTableCell/SetCellMarginBottom/Resulting document
+Presentation API/ApiTextPr/SetFill/Returns
+Presentation API/ApiTableCell/SetShd/Example
+Presentation API/ApiTableCell/SetCellMarginLeft/Returns
+Presentation API/ApiTableCell/SetCellMarginLeft/Example
+Presentation API/ApiTableCell/SetShd/Resulting document
+Presentation API/ApiTableCell/SetCellMarginLeft/Resulting document
+Presentation API/ApiTableCell/SetCellMarginRight/Returns
+Presentation API/ApiTableCell/SetCellMarginRight/Example
+Presentation API/ApiTableCell/SetTextDirection/Returns
+Presentation API/ApiTableCell/SetCellMarginRight/Resulting document
+Presentation API/ApiTableCell/SetTextDirection/Example
+Presentation API/ApiTableCell/SetCellMarginTop/Returns
+Presentation API/ApiTableCell/SetCellMarginTop/Example
+Presentation API/ApiTableCell/SetTextDirection/Resulting document
+Presentation API/ApiTableCell/SetCellMarginTop/Resulting document
+Presentation API/ApiTextPr/SetSpacing/Returns
+Presentation API/ApiTableCell/SetVerticalAlign/Returns
+Presentation API/ApiTextPr/SetFontFamily/Returns
+Presentation API/ApiTableCell/SetVerticalAlign/Example
+Presentation API/ApiTextPr/SetSmallCaps/Returns
+Presentation API/ApiTableCell/SetVerticalAlign/Resulting document
+Presentation API/ApiTextPr/SetItalic/Returns
+Presentation API/ApiTextPr/SetFontSize/Returns
+Presentation API/ApiTextPr/SetStrikeout/Returns
+Presentation API/ApiTextPr/SetUnderline/Returns
+Presentation API/ApiTextPr/SetVertAlign/Returns
+Presentation API/ApiUniColor/GetClassType/Parameters
+Spreadsheet API/ApiParagraph/SetSpacingBefore/Returns
+Spreadsheet API/ApiParagraph/GetClassType/Parameters
+Spreadsheet API/ApiParagraph/SetJc/Returns
+Spreadsheet API/ApiParagraph/SetSpacingLine/Returns
+Spreadsheet API/ApiRange/GetRowHeight/Parameters
+Spreadsheet API/ApiParagraph/SetSpacingAfter/Returns
+Spreadsheet API/ApiParaPr/SetJc/Returns
+Spreadsheet API/ApiParagraph/SetTabs/Returns
+Spreadsheet API/ApiParaPr/SetIndRight/Returns
+Spreadsheet API/ApiParaPr/SetBullet/Returns
+Spreadsheet API/ApiParaPr/SetIndLeft/Returns
+Spreadsheet API/ApiParaPr/SetIndFirstLine/Returns
+Spreadsheet API/ApiRange/GetHidden/Resulting document
+Spreadsheet API/ApiRange/GetRowHeight/Example
+Spreadsheet API/ApiRange/GetRow/Parameters
+Spreadsheet API/ApiRange/GetRowHeight/Resulting document
+Spreadsheet API/ApiRange/GetValue/Parameters
+Spreadsheet API/ApiRange/GetValue/Example
+Spreadsheet API/ApiRange/GetValue/Resulting document
+Spreadsheet API/ApiRange/Merge/Returns
+Text document API/ApiBullet/GetClassType/Parameters
+Text document API/ApiBullet/GetClassType/Example
+Text document API/ApiBullet/GetClassType/Resulting document
+Text document API/ApiChart/SetMajorVerticalGridlines/Resulting document
+Text document API/ApiChart/GetClassType/Parameters
+Text document API/ApiBlockLvlSdt/SetTag/Example
+Text document API/ApiChart/SetHorAxisLablesFontSize/Returns
+Text document API/ApiChart/SetHorAxisLablesFontSize/Example
+Text document API/ApiChart/SetMinorHorizontalGridlines/Returns
+Text document API/ApiChart/SetMinorHorizontalGridlines/Example
+Text document API/ApiChart/SetMinorHorizontalGridlines/Resulting document
+Text document API/ApiChart/SetMinorVerticalGridlines/Returns
+Text document API/ApiChart/SetMinorVerticalGridlines/Example
+Text document API/ApiChart/SetMinorVerticalGridlines/Resulting document
+Text document API/ApiChart/SetShowDataLabels/Returns
+Text document API/ApiBlockLvlSdt/SetTag/Returns
