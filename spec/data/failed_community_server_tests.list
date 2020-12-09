@@ -11,7 +11,6 @@ calendar/GET/api/2.0/calendar/%7bcalendarId%7d/caldavurl/Resulting document
 calendar/DELETE/api/2.0/calendar/events/%7beventId%7d/unsubscribe/Resulting document
 calendar/POST/api/2.0/calendar/%7bcalendarId%7d/import/Resulting document
 calendar/POST/api/2.0/calendar/importIcs/Resulting document
-calendar/PUT/api/2.0/calendar/icstodo/Returns
 community/POST/api/2.0/community/blog/comment/Returns
 calendar/DELETE/api/2.0/calendar/events/%7beventId%7d/unsubscribe/Returns
 community/POST/api/2.0/community/birthday/Resulting document
@@ -184,7 +183,6 @@ crm/PUT/api/2.0/crm/voip/numbers/settings/Returns
 files/PUT/api/2.0/files/file/%7bfileId%7d/history/Returns
 files/GET/api/2.0/files/file/%7bfileId%7d/openedit/Returns
 files/PUT/api/2.0/files/file/%7bfileId%7d/saveediting/Returns
-files/POST/api/2.0/files/file/%7bfileId%7d/startedit/Returns
 files/GET/api/2.0/files/file/%7bfileId%7d/trackeditfile/Returns
 crm/PUT/api/2.0/crm/voip/numbers/settings/Resulting document
 feed/GET/api/2.0/feed/filter/Resulting document
@@ -214,7 +212,6 @@ files/PUT/api/2.0/files/docservice/Resulting document
 files/PUT/api/2.0/files/storeoriginal/Resulting document
 group/DELETE/api/2.0/group/%7bgroupid%7d/Returns
 files/PUT/api/2.0/files/docservice/Returns
-files/GET/api/2.0/files/%40search/%7bquery%7d/Returns
 files/POST/api/2.0/files/%7bfolderId%7d/insert/Returns
 files/POST/api/2.0/files/%40common/insert/Returns
 files/PUT/api/2.0/files/storeoriginal/Returns
