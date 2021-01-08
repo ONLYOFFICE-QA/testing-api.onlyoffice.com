@@ -59,7 +59,7 @@ GEM
     mime-types-data (3.2020.1104)
     mini_portile2 (2.5.0)
     multi_xml (0.6.0)
-    nokogiri (1.11.0)
+    nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     onlyoffice_file_helper (0.4.0)
