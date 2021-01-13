@@ -12,13 +12,6 @@ GIT
       onlyoffice_logger_helper (~> 1)
       onlyoffice_webdriver_wrapper (~> 0)
 
-GIT
-  remote: https://github.com/onlyoffice-testing-robot/onlyoffice_tcm_helper
-  revision: 24d8daebd8102bc443ef31dd3a42a471e2e21c43
-  specs:
-    onlyoffice_tcm_helper (0.1.1)
-      onlyoffice_file_helper (~> 0.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -68,6 +61,8 @@ GEM
     onlyoffice_logger_helper (1.1.0)
     onlyoffice_s3_wrapper (0.4.0)
       aws-sdk-s3 (~> 1)
+      onlyoffice_file_helper (~> 0)
+    onlyoffice_tcm_helper (0.2.0)
       onlyoffice_file_helper (~> 0)
     onlyoffice_webdriver_wrapper (0.9.0)
       headless (~> 2)
@@ -145,7 +140,7 @@ DEPENDENCIES
   nokogiri
   onlyoffice_documentserver_testing_framework!
   onlyoffice_file_helper
-  onlyoffice_tcm_helper!
+  onlyoffice_tcm_helper
   onlyoffice_webdriver_wrapper
   ooxml_parser
   palladium!
