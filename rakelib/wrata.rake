@@ -42,7 +42,7 @@ namespace(:wrata) do
     Rake::Task['wrata:wrata_turn_on_servers'].execute(count: 1)
     Rake::Task['wrata:add_tests_to_queue'].execute(location: location, path: 'spec/testing-api.onlyoffice.com')
     puts('One test node is setup. Please check that test are run fine on it')
-    # sleep(3 * 60)
+    sleep(3 * 60)
     Rake::Task['wrata:wrata_turn_on_servers'].execute(count: 1)
   end
 end
