@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_documentserver_testing_framework
-  revision: 4024f92689af272a74e5f558305535e228844842
+  revision: 1519c568ed1e9803dada67f4851c97165cf651d1
   specs:
     onlyoffice_documentserver_testing_framework (0.2.0)
       onlyoffice_logger_helper (~> 1)
@@ -87,7 +87,7 @@ GEM
       ast (~> 2.4.1)
     racc (1.5.2)
     rainbow (3.0.0)
-    regexp_parser (1.8.2)
+    regexp_parser (2.1.1)
     rexml (3.2.4)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
@@ -127,9 +127,9 @@ GEM
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     unicode-display_width (2.0.0)
-    watir (6.17.0)
-      regexp_parser (~> 1.2)
-      selenium-webdriver (~> 3.6)
+    watir (6.18.0)
+      regexp_parser (>= 1.2, < 3)
+      selenium-webdriver (>= 3.8)
     yml_reader (0.7)
 
 PLATFORMS
