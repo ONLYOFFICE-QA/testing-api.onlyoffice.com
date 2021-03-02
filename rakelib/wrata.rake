@@ -37,12 +37,12 @@ namespace(:wrata) do
   end
 
   desc 'Run test after site update'
-  task :run_site_tests, [:location] => :ensure_user do |_, args|
+  task :run_tests, [:location] => :ensure_user do |_, args|
     location = args[:location] || 'default'
     Rake::Task['wrata:wrata_turn_on_servers'].execute(count: 1)
-    Rake::Task['wrata:add_tests_to_queue'].execute(location: location, path: 'spec')
+    Rake::Task['wrata:add_tests_to_queue'].execute(location: location, path: 'spec/testing-api.onlyoffice.com')
     puts('One test node is setup. Please check that test are run fine on it')
-    sleep(3 * 60)
+    # sleep(3 * 60)
     Rake::Task['wrata:wrata_turn_on_servers'].execute(count: 1)
   end
 end
