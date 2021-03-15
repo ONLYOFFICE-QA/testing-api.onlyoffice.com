@@ -127,9 +127,9 @@ GEM
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     unicode-display_width (2.0.0)
-    watir (6.18.0)
+    watir (6.19.0)
       regexp_parser (>= 1.2, < 3)
-      selenium-webdriver (>= 3.8)
+      selenium-webdriver (= 3.142.7)
     yml_reader (0.7)
 
 PLATFORMS
