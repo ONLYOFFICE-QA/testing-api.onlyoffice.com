@@ -1,10 +1,4 @@
 GIT
-  remote: https://github.com/flaminestone/palladium.git
-  revision: 5b3fff574d42b9d70306d652cf103d65ca1df3eb
-  specs:
-    palladium (0.3.4)
-
-GIT
   remote: https://github.com/onlyoffice-testing-robot/onlyoffice_documentserver_testing_framework
   revision: e72dfef1d488183896d139aeae8eb6a8cf424389
   specs:
@@ -82,6 +76,7 @@ GEM
       watir (>= 6.10.3)
     page_navigation (0.10)
       data_magic (>= 0.22)
+    palladium (1.0.0)
     parallel (1.20.1)
     parser (3.0.0.0)
       ast (~> 2.4.1)
@@ -143,7 +138,7 @@ DEPENDENCIES
   onlyoffice_tcm_helper
   onlyoffice_webdriver_wrapper
   ooxml_parser
-  palladium!
+  palladium
   rspec
   rspec_passed_time_formatter
   rubocop
@@ -151,4 +146,4 @@ DEPENDENCIES
   rubocop-rspec
 
 BUNDLED WITH
-   2.1.4
+   2.2.14
