@@ -9,7 +9,7 @@ gem 'onlyoffice_file_helper'
 gem 'onlyoffice_tcm_helper'
 gem 'onlyoffice_webdriver_wrapper'
 gem 'ooxml_parser'
-gem 'palladium', git: 'https://github.com/flaminestone/palladium.git'
+gem 'palladium'
 gem 'rspec'
 gem 'rspec_passed_time_formatter'
 gem 'rubocop', require: false
