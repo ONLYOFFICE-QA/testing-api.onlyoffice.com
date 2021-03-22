@@ -12,7 +12,15 @@ module TestingApiOnlyfficeCom
       @params_exist ||= !@page.xpath('//*[@class="table"]').empty?
       @return_exist ||= !@page.xpath('//*[@class="param-type"]').empty?
       @example_exist ||= !@page.xpath('//pre').empty?
-      @document_exist ||= !@page.xpath('//*[@class="docbuilder_resulting_docs"]').empty?
+      @document_exist ||= sample_document_exists?
+    end
+
+    private
+
+    # @return [True, False] is sample document exists for this page
+    def sample_document_exists?
+      !@page.xpath('//*[@class="docbuilder_resulting_docs"]').empty? ||
+        !@page.xpath('//*[@id="editorSpace"]').empty?
     end
   end
 end
