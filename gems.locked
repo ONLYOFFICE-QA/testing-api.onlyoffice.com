@@ -1,11 +1,3 @@
-GIT
-  remote: https://github.com/onlyoffice-testing-robot/onlyoffice_documentserver_testing_framework
-  revision: 312d7740d23027710d46b70ebdf7c912a3512f27
-  specs:
-    onlyoffice_documentserver_testing_framework (0.2.0)
-      onlyoffice_logger_helper (~> 1)
-      onlyoffice_webdriver_wrapper (~> 0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -49,6 +41,9 @@ GEM
     nokogiri (1.11.2)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
+    onlyoffice_documentserver_testing_framework (0.3.0)
+      onlyoffice_logger_helper (~> 1)
+      onlyoffice_webdriver_wrapper (~> 0)
     onlyoffice_file_helper (0.4.0)
       onlyoffice_logger_helper (~> 1)
       rubyzip (~> 2)
@@ -132,7 +127,7 @@ PLATFORMS
 DEPENDENCIES
   httparty
   nokogiri
-  onlyoffice_documentserver_testing_framework!
+  onlyoffice_documentserver_testing_framework
   onlyoffice_file_helper
   onlyoffice_tcm_helper
   onlyoffice_webdriver_wrapper
