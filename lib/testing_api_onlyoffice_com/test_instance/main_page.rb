@@ -10,10 +10,11 @@ module TestingApiOnlyfficeCom
   class MainPage
     include PageObject
 
-    image(:portals, xpath: '//a[@href="/portals/basic"]/img')
-    image(:document_builder, xpath: '//a[@href="/docbuilder/basic"]/img')
-    image(:document_server, xpath: '//a[@href="/editors/basic"]/img')
-    div(:sidebar, xpath: '//div[contains(@class,"layout-side")]')
+    ROOT_XPATH = '//td[contains(@class, "layout-table-content")]'
+    link(:portals, xpath: "#{ROOT_XPATH}//a[@href='/portals/basic']")
+    link(:document_builder, xpath: "#{ROOT_XPATH}//a[@href='/docbuilder/basic']")
+    link(:document_server, xpath: "#{ROOT_XPATH}//a[@href='/editors/basic']")
+    div(:sidebar, xpath: "//div[contains(@class,'layout-side')]")
 
     def initialize(instance)
       @instance = instance
