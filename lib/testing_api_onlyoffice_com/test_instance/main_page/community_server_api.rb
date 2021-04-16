@@ -9,7 +9,7 @@ module TestingApiOnlyfficeCom
     include PageObject
     include CheckMethodLinks
 
-    div(:identification, xpath: '//div[contains(@class, "treeheader")][text()="Portal api methods"]')
+    link(:identification, xpath: '//a[@href="/portals/auth"]')
 
     def initialize(instance)
       @instance = instance
