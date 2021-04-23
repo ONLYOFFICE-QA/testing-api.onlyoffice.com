@@ -20,6 +20,11 @@ module TestingApiOnlyfficeCom
           methods_array.each do |method_name|
             checked[method_name] = documentation_objects[index][section_name][method_name].visible?
           end
+          next if documentation_objects[index][section_name].child_count_on_page == methods_array.length
+
+          @instance.webdriver.webdriver_error("Incorrect child count on page: #{module_name}/#{section_name}\n"\
+                                              "In data: #{methods_array.length}.\n"\
+                                              "On page: #{documentation_objects[index][section_name].child_count_on_page}")
         end
       end
       checked.find_all { |_key, value| !value }

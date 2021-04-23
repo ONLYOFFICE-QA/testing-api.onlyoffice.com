@@ -24,6 +24,16 @@ module TestingApiOnlyfficeCom
       sleep 2
     end
 
+    # @return [Integer] child count on page
+    def child_count_on_page
+      child_xpath = "#{@xpath}/../ul/li[not(contains(@class, 'collapsable')) and not(contains(@class, 'expandable'))]"
+      if child_xpath.include?('/unspecified')
+        child_xpath = child_xpath.gsub('/unspecified', '')
+        child_xpath = "//ul[contains(@class, 'side-nav')]/li#{child_xpath.gsub('//*', '/a')}"
+      end
+      @instance.webdriver.get_element_count(child_xpath)
+    end
+
     def visible?
       @instance.webdriver.element_visible?(@xpath)
     end
