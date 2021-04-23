@@ -449,7 +449,7 @@
       "GET/api/2.0/files/%40projects",
       "GET/api/2.0/files/%40recent",
       "GET/api/2.0/files/%40share",
-      "GET/api/2.0/files/%40template",
+      "GET/api/2.0/files/%40templates",
       "GET/api/2.0/files/%40trash"
     ],
     "Operations": [
