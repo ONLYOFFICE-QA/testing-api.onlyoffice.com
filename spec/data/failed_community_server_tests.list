@@ -1,6 +1,8 @@
 calendar/DELETE/api/2.0/calendar/%7bcalendarId%7d/Resulting document
-calendar/DELETE/api/2.0/calendar/events/%7beventId%7d/Resulting document
+calendar/DELETE/api/2.0/calendar/caldavevent/Resulting document
+calendar/DELETE/api/2.0/calendar/caldavprojcal/Resulting document
 calendar/DELETE/api/2.0/calendar/events/%7beventId%7d/unsubscribe/Resulting document
+calendar/DELETE/api/2.0/calendar/events/%7beventid%7d/Resulting document
 calendar/DELETE/api/2.0/calendar/todos/%7btodoId%7d/Resulting document
 calendar/GET/api/2.0/calendar/%7bcalendarId%7d/caldavurl/Resulting document
 calendar/GET/api/2.0/calendar/%7bcalendarId%7d/icalurl/Resulting document
@@ -8,6 +10,9 @@ calendar/GET/api/2.0/calendar/%7bcalendarid%7d/ical/%7bsignature%7d/Resulting do
 calendar/POST/api/2.0/calendar/%7bcalendarId%7d/import/Resulting document
 calendar/POST/api/2.0/calendar/import/Resulting document
 calendar/POST/api/2.0/calendar/importIcs/Resulting document
+calendar/POST/api/2.0/calendar/outsideevent/Resulting document
+calendar/POST/api/2.0/calendar/utcoffset/Resulting document
+calendar/PUT/api/2.0/calendar/caldavevent/Resulting document
 community/DELETE/api/2.0/community/blog/comment/%7bcommentid%7d/Resulting document
 community/DELETE/api/2.0/community/bookmark/%7bid%7d /Resulting document
 community/DELETE/api/2.0/community/bookmark/comment/%7bcommentid%7d/Resulting document
@@ -191,6 +196,7 @@ mail/GET/api/2.0/mail/settings/alwaysDisplayImages/Resulting document
 mail/GET/api/2.0/mail/settings/cacheMessagesEnabled/Resulting document
 mail/GET/api/2.0/mail/settings/conversationsEnabled/Resulting document
 mail/GET/api/2.0/mail/settings/goNextAfterMoveEnabled/Resulting document
+mail/GET/api/2.0/mail/settings/replacemessagebody/Resulting document
 mail/GET/api/2.0/mail/signature/%7bmailbox_id%7d/Resulting document
 mail/GET/api/2.0/mail/tags/Resulting document
 mail/GET/api/2.0/mail/userfolders/Resulting document
@@ -225,12 +231,15 @@ mail/PUT/api/2.0/mail/conversations/remove/Resulting document
 mail/PUT/api/2.0/mail/conversations/restore/Resulting document
 mail/PUT/api/2.0/mail/conversations/tag/%7btag_id%7d/set/Resulting document
 mail/PUT/api/2.0/mail/conversations/tag/%7btag_id%7d/unset/Resulting document
+mail/PUT/api/2.0/mail/drafts/save/Resulting document
 mail/PUT/api/2.0/mail/filters/Resulting document
+mail/PUT/api/2.0/mail/messages/attachment/downloadall/%7bmessageid%7d/Resulting document
 mail/PUT/api/2.0/mail/messages/attachment/export/Resulting document
 mail/PUT/api/2.0/mail/messages/attachments/export/Resulting document
 mail/PUT/api/2.0/mail/messages/crm/export/Resulting document
 mail/PUT/api/2.0/mail/messages/mark/Resulting document
 mail/PUT/api/2.0/mail/messages/move/Resulting document
+mail/PUT/api/2.0/mail/messages/reassign/Resulting document
 mail/PUT/api/2.0/mail/messages/remove/Resulting document
 mail/PUT/api/2.0/mail/messages/restore/Resulting document
 mail/PUT/api/2.0/mail/messages/send/Resulting document
@@ -238,6 +247,7 @@ mail/PUT/api/2.0/mail/settings/alwaysDisplayImages/Resulting document
 mail/PUT/api/2.0/mail/settings/cacheMessagesEnabled/Resulting document
 mail/PUT/api/2.0/mail/settings/conversationsEnabled/Resulting document
 mail/PUT/api/2.0/mail/settings/goNextAfterMoveEnabled/Resulting document
+mail/PUT/api/2.0/mail/settings/replacemessagebody/Resulting document
 mail/PUT/api/2.0/mail/tags/%7bid%7d/Resulting document
 mail/PUT/api/2.0/mail/tags/%7bid%7d/set/Resulting document
 mail/PUT/api/2.0/mail/tags/%7bid%7d/unset/Resulting document
@@ -304,6 +314,7 @@ portal/POST/api/2.0/portal/startrestore/Resulting document
 project/DELETE/api/2.0/project/%7bprojectid%7d/team/Resulting document
 project/DELETE/api/2.0/project/comment/%7bcommentid%7d/Resulting document
 project/DELETE/api/2.0/project/report/files/%7bfileid%7d/Resulting document
+project/DELETE/api/2.0/project/status/%7bid%7d/Resulting document
 project/DELETE/api/2.0/project/template/%7bid%7d/Resulting document
 project/GET/api/2.0/project/%7bid%7d/time/total /Resulting document
 project/GET/api/2.0/project/%7bprojectid%7d/team/Resulting document
@@ -313,6 +324,7 @@ project/GET/api/2.0/project/message/%7bmessageid%7d/subscribe/Resulting document
 project/GET/api/2.0/project/report/status/Resulting document
 project/GET/api/2.0/project/report/terminate/Resulting document
 project/GET/api/2.0/project/settings/Resulting document
+project/GET/api/2.0/project/status/Resulting document
 project/GET/api/2.0/project/tag/Resulting document
 project/GET/api/2.0/project/tag/search/Resulting document
 project/GET/api/2.0/project/task/%7btaskid%7d/Resulting document
@@ -325,6 +337,7 @@ project/POST/api/2.0/project/comment/Resulting document
 project/POST/api/2.0/project/comment/preview/Resulting document
 project/POST/api/2.0/project/message/discussion/preview/Resulting document
 project/POST/api/2.0/project/report/create/Resulting document
+project/POST/api/2.0/project/status/Resulting document
 project/POST/api/2.0/project/tag/Resulting document
 project/POST/api/2.0/project/team/Resulting document
 project/POST/api/2.0/project/template/Resulting document
@@ -333,6 +346,8 @@ project/PUT/api/2.0/project/%7bprojectid%7d/team/security/Resulting document
 project/PUT/api/2.0/project/comment/%7bcommentid%7d/Resulting document
 project/PUT/api/2.0/project/message/%7bmessageid%7d/Resulting document
 project/PUT/api/2.0/project/settings/Resulting document
+project/PUT/api/2.0/project/status/Resulting document
+project/PUT/api/2.0/project/statuses/Resulting document
 project/PUT/api/2.0/project/task/%7btaskid%7d/Resulting document
 project/PUT/api/2.0/project/task/%7btaskid%7d/milestone/Resulting document
 project/PUT/api/2.0/project/task/%7btaskid%7d/status/Resulting document
@@ -343,6 +358,7 @@ settings/DELETE/api/2.0/settings/customnavigation/delete/%7bid%7d/Resulting docu
 settings/DELETE/api/2.0/settings/ssov2/Resulting document
 settings/DELETE/api/2.0/settings/storage/Resulting document
 settings/DELETE/api/2.0/settings/storage/cdn/Resulting document
+settings/DELETE/api/2.0/settings/telegramdisconnect/Resulting document
 settings/GET/api/2.0/settings/checkrecalculatequota/Resulting document
 settings/GET/api/2.0/settings/iprestrictions/Resulting document
 settings/GET/api/2.0/settings/ldap/Resulting document
@@ -356,6 +372,7 @@ settings/GET/api/2.0/settings/recalculatequota/Resulting document
 settings/GET/api/2.0/settings/security/%7bid%7d/Resulting document
 settings/GET/api/2.0/settings/security/administrator /Resulting document
 settings/GET/api/2.0/settings/security/password/Resulting document
+settings/GET/api/2.0/settings/socket/Resulting document
 settings/GET/api/2.0/settings/ssov2/Resulting document
 settings/GET/api/2.0/settings/ssov2/constants/Resulting document
 settings/GET/api/2.0/settings/ssov2/default/Resulting document
@@ -363,6 +380,7 @@ settings/GET/api/2.0/settings/storage/Resulting document
 settings/GET/api/2.0/settings/storage/backup/Resulting document
 settings/GET/api/2.0/settings/storage/cdn/Resulting document
 settings/GET/api/2.0/settings/storage/progress/Resulting document
+settings/GET/api/2.0/settings/telegramisconnected/Resulting document
 settings/POST/api/2.0/settings/ldap/Resulting document
 settings/POST/api/2.0/settings/ldap/cron/Resulting document
 settings/POST/api/2.0/settings/ldap/save/test/Resulting document
