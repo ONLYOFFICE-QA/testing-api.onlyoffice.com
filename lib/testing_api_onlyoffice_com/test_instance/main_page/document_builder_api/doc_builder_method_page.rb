@@ -20,7 +20,7 @@ module TestingApiOnlyfficeCom
 
     # @return [String] full page name
     def full_page_name
-      "#{@editor} #{@current_class}/#{@method}"
+      "#{@editor}/#{@current_class}/#{@method}"
     end
 
     # @return [True, False] is page fully documented
