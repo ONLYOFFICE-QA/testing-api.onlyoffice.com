@@ -605,6 +605,7 @@
   },
   "Spreadsheet API": {
     "Api": [
+      "AddDefName",
       "AddSheet",
       "CreateBlipFill",
       "CreateBullet",
@@ -617,6 +618,7 @@
       "CreateParagraph",
       "CreatePatternFill",
       "CreatePresetColor",
+      "CreateRadialGradientFill",
       "CreateRGBColor",
       "CreateRun",
       "CreateSchemeColor",
@@ -624,10 +626,16 @@
       "CreateStroke",
       "Format",
       "GetActiveSheet",
+      "GetDefName",
       "GetLocale",
+      "GetMailMergeData",
+      "GetRange",
+      "GetSelection",
       "GetSheet",
       "GetSheets",
       "GetThemesColors",
+      "Intersect",
+      "Save",
       "SetLocale",
       "SetThemeColors"
     ],
@@ -662,10 +670,15 @@
     "ApiColor": [
       "GetClassType"
     ],
+    "ApiComment": [
+      "Delete",
+      "GetText"
+    ],
     "ApiDocument": [
       "AddElement",
       "GetElement",
       "GetElementsCount",
+      "Last",
       "Push",
       "RemoveAllElements",
       "RemoveElement"
@@ -690,8 +703,20 @@
     "ApiGradientStop": [
       "GetClassType"
     ],
+    "ApiHyperlink": [
+      "GetElement",
+      "GetElementsCount"
+    ],
     "ApiImage": [
       "GetClassType"
+    ],
+    "ApiName": [
+      "Delete",
+      "GetName",
+      "GetRefersTo",
+      "GetRefersToRange",
+      "SetName",
+      "SetRefersTo"
     ],
     "ApiParagraph": [
       "AddElement",
@@ -726,18 +751,33 @@
       "SetSpacingLine",
       "SetTabs"
     ],
+    "ApiPresetColor": [
+      "GetClassType"
+    ],
     "ApiRange": [
       "AddComment",
+      "Clear",
       "ForEach",
       "GetAddress",
+      "GetClassType",
       "GetCol",
       "GetColumnWidth",
+      "GetComment",
       "GetCount",
+      "GetDefName",
+      "GetFillColor",
+      "GetFormula",
       "GetHidden",
       "GetRow",
       "GetRowHeight",
+      "GetRows",
+      "GetText",
       "GetValue",
+      "GetValue2",
+      "GetWorksheet",
+      "GetWrapText",
       "Merge",
+      "Select",
       "SetAlignHorizontal",
       "SetAlignVertical",
       "SetBold",
@@ -766,17 +806,28 @@
       "AddTabStop",
       "AddText",
       "ClearContent",
+      "Copy",
+      "Delete",
+      "GetClassType",
       "GetTextPr",
+      "RemoveAllElements",
       "SetBold",
       "SetCaps",
+      "SetColor",
       "SetDoubleStrikeout",
       "SetFill",
       "SetFontFamily",
       "SetFontSize",
+      "SetHighlight",
       "SetItalic",
+      "SetLanguage",
+      "SetPosition",
+      "SetShd",
       "SetSmallCaps",
       "SetSpacing",
       "SetStrikeout",
+      "SetStyle",
+      "SetTextPr",
       "SetUnderline",
       "SetVertAlign"
     ],
@@ -785,11 +836,18 @@
     ],
     "ApiShape": [
       "GetClassType",
+      "GetContent",
       "GetDocContent",
+      "SetPaddings",
       "SetVerticalTextAlign"
     ],
     "ApiStroke": [
       "GetClassType"
+    ],
+    "ApiTable": [
+      "AddElement",
+      "Copy",
+      "Select"
     ],
     "ApiTextPr": [
       "GetClassType",
@@ -811,17 +869,24 @@
     ],
     "ApiWorksheet": [
       "AddChart",
+      "AddDefName",
       "AddImage",
       "AddShape",
+      "Delete",
       "FormatAsTable",
       "GetActiveCell",
       "GetBottomMargin",
       "GetCells",
       "GetCols",
+      "GetComments",
+      "GetDefName",
+      "GetDefNames",
       "GetIndex",
       "GetLeftMargin",
       "GetName",
       "GetPageOrientation",
+      "GetPrintGridlines",
+      "GetPrintHeadings",
       "GetRange",
       "GetRangeByNumber",
       "GetRightMargin",
@@ -831,13 +896,17 @@
       "GetUsedRange",
       "GetVisible",
       "ReplaceCurrentImage",
+      "SetActive",
       "SetBottomMargin",
       "SetColumnWidth",
       "SetDisplayGridlines",
       "SetDisplayHeadings",
+      "SetHyperlink",
       "SetLeftMargin",
       "SetName",
       "SetPageOrientation",
+      "SetPrintGridlines",
+      "SetPrintHeadings",
       "SetRightMargin",
       "SetRowHeight",
       "SetTopMargin",
