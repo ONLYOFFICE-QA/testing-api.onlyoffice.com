@@ -16,6 +16,7 @@ module TestingApiOnlyfficeCom
       @return_exist ||= !@page.xpath('//*[@class="param-type"]').empty?
       @example_exist ||= !@page.xpath('//pre').empty?
       @document_exist ||= sample_document_exists?
+      OnlyofficeLoggerHelper.log("Got info about #{full_page_name} page")
     end
 
     # @return [String] full page name
