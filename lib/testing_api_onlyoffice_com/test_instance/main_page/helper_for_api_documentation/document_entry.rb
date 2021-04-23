@@ -24,6 +24,13 @@ module TestingApiOnlyfficeCom
       sleep 2
     end
 
+    # @return [Integer] child count on page
+    def child_count_on_page
+      child_xpath = "#{@xpath}/../ul/li"
+      child_xpath = child_xpath.gsub('/unspecified', '')
+      @instance.webdriver.get_element_count(child_xpath)
+    end
+
     def visible?
       @instance.webdriver.element_visible?(@xpath)
     end
