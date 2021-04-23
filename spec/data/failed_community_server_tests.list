@@ -133,10 +133,6 @@ files/DELETE/api/2.0/files/share/Resulting document
 files/DELETE/api/2.0/files/templates/Resulting document
 files/DELETE/api/2.0/files/thirdparty/%7bproviderId%7d/Resulting document
 files/GET/api/2.0/files/%40search/%7bquery%7d/Resulting document
-files/GET/api/2.0/files/%40template/Parameters
-files/GET/api/2.0/files/%40template/Example
-files/GET/api/2.0/files/%40template/Returns
-files/GET/api/2.0/files/%40template/Resulting document
 files/GET/api/2.0/files/file/%7bfileId%7d/checkconversion/Resulting document
 files/GET/api/2.0/files/file/%7bfileId%7d/trackeditfile/Resulting document
 files/GET/api/2.0/files/file/%7bfileid%7d/openedit/Resulting document
