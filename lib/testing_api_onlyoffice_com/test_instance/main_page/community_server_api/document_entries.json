@@ -604,7 +604,7 @@
       "PUT/api/2.0/mail/messages/reassign",
       "PUT/api/2.0/mail/messages/remove",
       "PUT/api/2.0/mail/messages/restore",
-      "PUT/api/2.0/mail/messages/save",
+      "PUT/api/2.0/mail/drafts/save",
       "PUT/api/2.0/mail/messages/send",
       "PUT/api/2.0/mail/messages/mark"
     ],
@@ -812,6 +812,7 @@
       "POST/api/2.0/project/%7bid%7d/milestone",
       "POST/api/2.0/project",
       "DELETE/api/2.0/project/%7bid%7d",
+      "DELETE/api/2.0/project",
       "GET/api/2.0/project/%40follow",
       "PUT/api/2.0/project/%7bprojectid%7d/follow",
       "GET/api/2.0/project/%7bid%7d/milestone",
@@ -900,13 +901,18 @@
     "unspecified": [
       "POST/api/2.0/project/report/create",
       "POST/api/2.0/project/withSecurity",
+      "POST/api/2.0/project/status",
+      "DELETE/api/2.0/project/status/%7bid%7d",
       "GET/api/2.0/project/report/files",
       "GET/api/2.0/project/report/status",
       "GET/api/2.0/project/settings",
+      "GET/api/2.0/project/status",
       "DELETE/api/2.0/project/report/files/%7bfileid%7d",
       "GET/api/2.0/project/report/terminate",
       "PUT/api/2.0/project/%7bid%7d/withSecurityInfo ",
-      "PUT/api/2.0/project/settings"
+      "PUT/api/2.0/project/settings",
+      "PUT/api/2.0/project/status",
+      "PUT/api/2.0/project/statuses"
     ]
   },
   "settings": {
@@ -930,6 +936,7 @@
       "GET/api/2.0/settings/security",
       "GET/api/2.0/settings/smtp",
       "GET/api/2.0/settings/smtp/test/status",
+      "GET/api/2.0/settings/socket",
       "GET/api/2.0/settings/statistics/spaceusage/%7bid%7d",
       "GET/api/2.0/settings/ssov2",
       "GET/api/2.0/settings/ssov2/constants",
@@ -957,6 +964,8 @@
       "GET/api/2.0/settings/quota",
       "GET/api/2.0/settings/ldap/sync",
       "GET/api/2.0/settings/ldap/sync/test",
+      "DELETE/api/2.0/settings/telegramdisconnect",
+      "GET/api/2.0/settings/telegramisconnected",
       "GET/api/2.0/settings/smtp/test",
       "PUT/api/2.0/settings/tfaappnewapp",
       "PUT/api/2.0/settings/tfaappnewcodes",
