@@ -127,27 +127,48 @@
       "Push",
       "RemoveAllElements",
       "RemoveElement",
+      "RemoveSelection",
       "Search",
       "SearchAndReplace",
-      "SetEvenAndOddHdrFtr"
+      "SetEvenAndOddHdrFtr",
+      "SetTrackRevisions"
     ],
     "ApiDocumentContent": [
       "AddElement",
       "GetClassType",
       "GetElement",
       "GetElementsCount",
+      "GetRange",
       "Push",
       "RemoveAllElements",
       "RemoveElement"
     ],
     "ApiDrawing": [
+      "AddBreak",
+      "Copy",
+      "Delete",
+      "Fill",
       "GetClassType",
+      "GetNextDrawing",
+      "GetParentContentControl",
+      "GetParentParagraph",
+      "GetParentTable",
+      "GetParentTableCell",
+      "GetPrevDrawing",
+      "InsertInContentControl",
+      "InsertParagraph",
+      "ScaleHeight",
+      "ScaleWidth",
+      "Select",
       "SetDistances",
       "SetHorAlign",
+      "SetHorFlip",
       "SetHorPosition",
+      "SetOutLine",
       "SetSize",
       "SetVerAlign",
       "SetVerPosition",
+      "SetVertFlip",
       "SetWrappingStyle"
     ],
     "ApiFill": [
@@ -157,7 +178,9 @@
       "GetClassType"
     ],
     "ApiImage": [
-      "GetClassType"
+      "GetClassType",
+      "GetNextImage",
+      "GetPrevImage"
     ],
     "ApiInlineLvlSdt": [
       "AddElement",
