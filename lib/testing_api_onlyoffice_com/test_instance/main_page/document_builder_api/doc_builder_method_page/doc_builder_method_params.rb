@@ -17,7 +17,8 @@ module TestingApiOnlyfficeCom
 
     # @return [Boolean] is page contains correct message for no params
     def correct_message_no_params?
-      @page.xpath('//*[@id="methodParams"]').text == "This method doesn't have any parameters."
+      raw_text = @page.xpath('//*[@id="methodParams"]').text
+      raw_text.strip == "This method doesn't have any parameters."
     end
   end
 end
