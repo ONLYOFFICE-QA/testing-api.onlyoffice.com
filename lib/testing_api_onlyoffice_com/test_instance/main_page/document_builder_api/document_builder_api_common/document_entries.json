@@ -940,7 +940,8 @@
       "CreateSolidFill",
       "CreateStroke",
       "CreateTable",
-      "GetPresentation"
+      "GetPresentation",
+      "Save"
     ],
     "ApiBullet": [
       "GetClassType"
@@ -973,6 +974,7 @@
       "AddElement",
       "GetElement",
       "GetElementsCount",
+      "Last",
       "Push",
       "RemoveAllElements",
       "RemoveElement"
@@ -997,6 +999,10 @@
     "ApiGradientStop": [
       "GetClassType"
     ],
+    "ApiHyperlink": [
+      "GetElement",
+      "GetElementsCount"
+    ],
     "ApiImage": [
       "GetClassType"
     ],
@@ -1005,10 +1011,14 @@
       "AddLineBreak",
       "AddTabStop",
       "AddText",
+      "Copy",
+      "Delete",
       "GetClassType",
       "GetElement",
       "GetElementsCount",
+      "GetNext",
       "GetParaPr",
+      "GetPrevious",
       "RemoveAllElements",
       "RemoveElement",
       "SetBullet",
@@ -1054,18 +1064,28 @@
       "AddTabStop",
       "AddText",
       "ClearContent",
+      "Copy",
+      "Delete",
       "GetClassType",
       "GetTextPr",
+      "RemoveAllElements",
       "SetBold",
       "SetCaps",
+      "SetColor",
       "SetDoubleStrikeout",
       "SetFill",
       "SetFontFamily",
       "SetFontSize",
+      "SetHighlight",
       "SetItalic",
+      "SetLanguage",
+      "SetPosition",
+      "SetShd",
       "SetSmallCaps",
       "SetSpacing",
       "SetStrikeout",
+      "SetStyle",
+      "SetTextPr",
       "SetUnderline",
       "SetVertAlign"
     ],
@@ -1074,6 +1094,7 @@
     ],
     "ApiShape": [
       "GetClassType",
+      "GetContent",
       "GetDocContent",
       "SetVerticalTextAlign"
     ],
@@ -1090,12 +1111,15 @@
     ],
     "ApiTable": [
       "AddColumn",
+      "AddElement",
       "AddRow",
+      "Copy",
       "GetClassType",
       "GetRow",
       "MergeCells",
       "RemoveColumn",
       "RemoveRow",
+      "Select",
       "SetShd",
       "SetTableLook"
     ],
