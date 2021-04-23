@@ -1,273 +1,97 @@
-Presentation API/Api/CreateGroup/Parameters
-Presentation API/Api/CreateNoFill/Parameters
-Presentation API/Api/CreateParagraph/Parameters
-Presentation API/Api/CreateRun/Parameters
-Presentation API/Api/CreateSlide/Parameters
-Presentation API/Api/CreateTable/Parameters
-Presentation API/Api/GetPresentation/Parameters
-Presentation API/Api/Save/Parameters
-Presentation API/ApiBullet/GetClassType/Parameters
-Presentation API/ApiChart/GetClassType/Parameters
-Presentation API/ApiChart/SetLegendFontSize/Parameters
 Presentation API/ApiDocument/AddElement/Example
 Presentation API/ApiDocument/AddElement/Resulting document
-Presentation API/ApiDocument/GetElement/Parameters
 Presentation API/ApiDocument/GetElement/Example
 Presentation API/ApiDocument/GetElement/Resulting document
-Presentation API/ApiDocument/GetElementsCount/Parameters
 Presentation API/ApiDocument/GetElementsCount/Example
 Presentation API/ApiDocument/GetElementsCount/Resulting document
-Presentation API/ApiDocument/Last/Parameters
 Presentation API/ApiDocument/Last/Example
 Presentation API/ApiDocument/Last/Resulting document
 Presentation API/ApiDocument/Push/Example
 Presentation API/ApiDocument/Push/Resulting document
-Presentation API/ApiDocument/RemoveAllElements/Parameters
 Presentation API/ApiDocument/RemoveAllElements/Example
 Presentation API/ApiDocument/RemoveAllElements/Resulting document
 Presentation API/ApiDocument/RemoveElement/Example
 Presentation API/ApiDocument/RemoveElement/Resulting document
-Presentation API/ApiDocumentContent/GetClassType/Parameters
-Presentation API/ApiDocumentContent/GetElement/Parameters
-Presentation API/ApiDocumentContent/GetElementsCount/Parameters
-Presentation API/ApiDocumentContent/RemoveAllElements/Parameters
-Presentation API/ApiDrawing/GetClassType/Parameters
-Presentation API/ApiFill/GetClassType/Parameters
-Presentation API/ApiGradientStop/GetClassType/Parameters
 Presentation API/ApiHyperlink/GetElement/Example
 Presentation API/ApiHyperlink/GetElement/Resulting document
-Presentation API/ApiHyperlink/GetElementsCount/Parameters
 Presentation API/ApiHyperlink/GetElementsCount/Example
 Presentation API/ApiHyperlink/GetElementsCount/Resulting document
-Presentation API/ApiImage/GetClassType/Parameters
-Presentation API/ApiParaPr/GetClassType/Parameters
-Presentation API/ApiParagraph/AddLineBreak/Parameters
-Presentation API/ApiParagraph/AddTabStop/Parameters
-Presentation API/ApiParagraph/Copy/Parameters
-Presentation API/ApiParagraph/Delete/Parameters
-Presentation API/ApiParagraph/GetClassType/Parameters
-Presentation API/ApiParagraph/GetElementsCount/Parameters
-Presentation API/ApiParagraph/GetNext/Parameters
-Presentation API/ApiParagraph/GetParaPr/Parameters
-Presentation API/ApiParagraph/GetPrevious/Parameters
-Presentation API/ApiParagraph/RemoveAllElements/Parameters
-Presentation API/ApiPresentation/CreateNewHistoryPoint/Parameters
-Presentation API/ApiPresentation/GetClassType/Parameters
-Presentation API/ApiPresentation/GetCurSlideIndex/Parameters
-Presentation API/ApiPresentation/GetCurrentSlide/Parameters
-Presentation API/ApiPresentation/ReplaceCurrentImage/Parameters
 Presentation API/ApiPresentation/ReplaceCurrentImage/Example
 Presentation API/ApiPresentation/ReplaceCurrentImage/Resulting document
-Presentation API/ApiPresetColor/GetClassType/Parameters
-Presentation API/ApiRGBColor/GetClassType/Parameters
-Presentation API/ApiRun/AddLineBreak/Parameters
-Presentation API/ApiRun/AddTabStop/Parameters
-Presentation API/ApiRun/ClearContent/Parameters
-Presentation API/ApiRun/Copy/Parameters
-Presentation API/ApiRun/Delete/Parameters
-Presentation API/ApiRun/GetClassType/Parameters
-Presentation API/ApiRun/GetTextPr/Parameters
-Presentation API/ApiRun/RemoveAllElements/Parameters
 Presentation API/ApiRun/SetStyle/Example
 Presentation API/ApiRun/SetStyle/Resulting document
-Presentation API/ApiSchemeColor/GetClassType/Parameters
-Presentation API/ApiShape/GetClassType/Parameters
-Presentation API/ApiShape/GetContent/Parameters
 Presentation API/ApiShape/GetContent/Example
 Presentation API/ApiShape/GetContent/Resulting document
-Presentation API/ApiShape/GetDocContent/Parameters
-Presentation API/ApiSlide/GetClassType/Parameters
-Presentation API/ApiSlide/GetHeight/Parameters
-Presentation API/ApiSlide/GetWidth/Parameters
-Presentation API/ApiSlide/RemoveAllObjects/Parameters
-Presentation API/ApiStroke/GetClassType/Parameters
 Presentation API/ApiTable/AddElement/Example
 Presentation API/ApiTable/AddElement/Resulting document
-Presentation API/ApiTable/Copy/Parameters
 Presentation API/ApiTable/Copy/Example
 Presentation API/ApiTable/Copy/Resulting document
-Presentation API/ApiTable/GetClassType/Parameters
-Presentation API/ApiTable/Select/Parameters
 Presentation API/ApiTable/Select/Example
 Presentation API/ApiTable/Select/Resulting document
-Presentation API/ApiTableCell/GetClassType/Parameters
-Presentation API/ApiTableCell/GetContent/Parameters
-Presentation API/ApiTableRow/GetCellsCount/Parameters
-Presentation API/ApiTableRow/GetClassType/Parameters
-Presentation API/ApiTextPr/GetClassType/Parameters
-Presentation API/ApiUniColor/GetClassType/Parameters
-Spreadsheet API/Api/CreateNoFill/Parameters
-Spreadsheet API/Api/CreateParagraph/Parameters
-Spreadsheet API/Api/CreateRun/Parameters
-Spreadsheet API/Api/GetActiveSheet/Parameters
-Spreadsheet API/Api/GetLocale/Parameters
-Spreadsheet API/Api/GetRange/Parameters
-Spreadsheet API/Api/GetSelection/Parameters
-Spreadsheet API/Api/GetSheets/Parameters
-Spreadsheet API/Api/GetThemesColors/Parameters
 Spreadsheet API/Api/Intersect/Example
 Spreadsheet API/Api/Intersect/Resulting document
-Spreadsheet API/Api/Save/Parameters
-Spreadsheet API/ApiBullet/GetClassType/Parameters
-Spreadsheet API/ApiChart/GetClassType/Parameters
-Spreadsheet API/ApiColor/GetClassType/Parameters
-Spreadsheet API/ApiComment/Delete/Parameters
 Spreadsheet API/ApiComment/Delete/Example
 Spreadsheet API/ApiComment/Delete/Resulting document
-Spreadsheet API/ApiComment/GetText/Parameters
 Spreadsheet API/ApiDocument/AddElement/Example
 Spreadsheet API/ApiDocument/AddElement/Resulting document
-Spreadsheet API/ApiDocument/GetElement/Parameters
 Spreadsheet API/ApiDocument/GetElement/Example
 Spreadsheet API/ApiDocument/GetElement/Resulting document
-Spreadsheet API/ApiDocument/GetElementsCount/Parameters
 Spreadsheet API/ApiDocument/GetElementsCount/Example
 Spreadsheet API/ApiDocument/GetElementsCount/Resulting document
-Spreadsheet API/ApiDocument/Last/Parameters
 Spreadsheet API/ApiDocument/Last/Example
 Spreadsheet API/ApiDocument/Last/Resulting document
 Spreadsheet API/ApiDocument/Push/Example
 Spreadsheet API/ApiDocument/Push/Resulting document
-Spreadsheet API/ApiDocument/RemoveAllElements/Parameters
 Spreadsheet API/ApiDocument/RemoveAllElements/Example
 Spreadsheet API/ApiDocument/RemoveAllElements/Resulting document
 Spreadsheet API/ApiDocument/RemoveElement/Example
 Spreadsheet API/ApiDocument/RemoveElement/Resulting document
-Spreadsheet API/ApiDocumentContent/GetClassType/Parameters
-Spreadsheet API/ApiDocumentContent/GetElement/Parameters
-Spreadsheet API/ApiDocumentContent/GetElementsCount/Parameters
-Spreadsheet API/ApiDocumentContent/RemoveAllElements/Parameters
-Spreadsheet API/ApiDrawing/GetClassType/Parameters
-Spreadsheet API/ApiFill/GetClassType/Parameters
-Spreadsheet API/ApiGradientStop/GetClassType/Parameters
 Spreadsheet API/ApiHyperlink/GetElement/Example
 Spreadsheet API/ApiHyperlink/GetElement/Resulting document
-Spreadsheet API/ApiHyperlink/GetElementsCount/Parameters
 Spreadsheet API/ApiHyperlink/GetElementsCount/Example
 Spreadsheet API/ApiHyperlink/GetElementsCount/Resulting document
-Spreadsheet API/ApiImage/GetClassType/Parameters
-Spreadsheet API/ApiName/Delete/Parameters
-Spreadsheet API/ApiName/GetName/Parameters
-Spreadsheet API/ApiName/GetRefersTo/Parameters
-Spreadsheet API/ApiName/GetRefersToRange/Parameters
-Spreadsheet API/ApiParaPr/GetClassType/Parameters
-Spreadsheet API/ApiParagraph/AddLineBreak/Parameters
-Spreadsheet API/ApiParagraph/AddTabStop/Parameters
-Spreadsheet API/ApiParagraph/Copy/Parameters
 Spreadsheet API/ApiParagraph/Copy/Example
 Spreadsheet API/ApiParagraph/Copy/Resulting document
-Spreadsheet API/ApiParagraph/Delete/Parameters
-Spreadsheet API/ApiParagraph/GetClassType/Parameters
-Spreadsheet API/ApiParagraph/GetElementsCount/Parameters
-Spreadsheet API/ApiParagraph/GetNext/Parameters
-Spreadsheet API/ApiParagraph/GetParaPr/Parameters
-Spreadsheet API/ApiParagraph/GetPrevious/Parameters
-Spreadsheet API/ApiParagraph/RemoveAllElements/Parameters
-Spreadsheet API/ApiPresetColor/GetClassType/Parameters
-Spreadsheet API/ApiRGBColor/GetClassType/Parameters
-Spreadsheet API/ApiRange/Clear/Parameters
-Spreadsheet API/ApiRange/GetClassType/Parameters
-Spreadsheet API/ApiRange/GetCol/Parameters
-Spreadsheet API/ApiRange/GetColumnWidth/Parameters
-Spreadsheet API/ApiRange/GetComment/Parameters
-Spreadsheet API/ApiRange/GetCount/Parameters
-Spreadsheet API/ApiRange/GetDefName/Parameters
-Spreadsheet API/ApiRange/GetFillColor/Parameters
-Spreadsheet API/ApiRange/GetFormula/Parameters
-Spreadsheet API/ApiRange/GetHidden/Parameters
-Spreadsheet API/ApiRange/GetRow/Parameters
-Spreadsheet API/ApiRange/GetRowHeight/Parameters
-Spreadsheet API/ApiRange/GetText/Parameters
-Spreadsheet API/ApiRange/GetValue/Parameters
-Spreadsheet API/ApiRange/GetValue2/Parameters
-Spreadsheet API/ApiRange/GetWorksheet/Parameters
-Spreadsheet API/ApiRange/GetWrapText/Parameters
-Spreadsheet API/ApiRange/Select/Parameters
-Spreadsheet API/ApiRange/UnMerge/Parameters
-Spreadsheet API/ApiRun/AddLineBreak/Parameters
-Spreadsheet API/ApiRun/AddTabStop/Parameters
-Spreadsheet API/ApiRun/ClearContent/Parameters
-Spreadsheet API/ApiRun/Copy/Parameters
-Spreadsheet API/ApiRun/Delete/Parameters
-Spreadsheet API/ApiRun/GetClassType/Parameters
-Spreadsheet API/ApiRun/GetTextPr/Parameters
-Spreadsheet API/ApiRun/RemoveAllElements/Parameters
 Spreadsheet API/ApiRun/SetHighlight/Example
 Spreadsheet API/ApiRun/SetHighlight/Resulting document
 Spreadsheet API/ApiRun/SetShd/Example
 Spreadsheet API/ApiRun/SetShd/Resulting document
 Spreadsheet API/ApiRun/SetStyle/Example
 Spreadsheet API/ApiRun/SetStyle/Resulting document
-Spreadsheet API/ApiSchemeColor/GetClassType/Parameters
-Spreadsheet API/ApiShape/GetClassType/Parameters
-Spreadsheet API/ApiShape/GetContent/Parameters
-Spreadsheet API/ApiShape/GetDocContent/Parameters
 Spreadsheet API/ApiShape/SetPaddings/Example
 Spreadsheet API/ApiShape/SetPaddings/Resulting document
-Spreadsheet API/ApiStroke/GetClassType/Parameters
 Spreadsheet API/ApiTable/AddElement/Example
 Spreadsheet API/ApiTable/AddElement/Resulting document
-Spreadsheet API/ApiTable/Copy/Parameters
 Spreadsheet API/ApiTable/Copy/Example
 Spreadsheet API/ApiTable/Copy/Resulting document
-Spreadsheet API/ApiTable/Select/Parameters
 Spreadsheet API/ApiTable/Select/Example
 Spreadsheet API/ApiTable/Select/Resulting document
-Spreadsheet API/ApiTextPr/GetClassType/Parameters
-Spreadsheet API/ApiUniColor/GetClassType/Parameters
-Spreadsheet API/ApiWorksheet/Delete/Parameters
 Spreadsheet API/ApiWorksheet/Delete/Example
 Spreadsheet API/ApiWorksheet/Delete/Resulting document
-Spreadsheet API/ApiWorksheet/GetActiveCell/Parameters
-Spreadsheet API/ApiWorksheet/GetBottomMargin/Parameters
-Spreadsheet API/ApiWorksheet/GetCells/Parameters
-Spreadsheet API/ApiWorksheet/GetComments/Parameters
-Spreadsheet API/ApiWorksheet/GetDefNames/Parameters
-Spreadsheet API/ApiWorksheet/GetIndex/Parameters
-Spreadsheet API/ApiWorksheet/GetLeftMargin/Parameters
-Spreadsheet API/ApiWorksheet/GetName/Parameters
-Spreadsheet API/ApiWorksheet/GetPageOrientation/Parameters
-Spreadsheet API/ApiWorksheet/GetPrintGridlines/Parameters
 Spreadsheet API/ApiWorksheet/GetPrintGridlines/Example
 Spreadsheet API/ApiWorksheet/GetPrintGridlines/Resulting document
-Spreadsheet API/ApiWorksheet/GetPrintHeadings/Parameters
 Spreadsheet API/ApiWorksheet/GetPrintHeadings/Example
 Spreadsheet API/ApiWorksheet/GetPrintHeadings/Resulting document
-Spreadsheet API/ApiWorksheet/GetRightMargin/Parameters
-Spreadsheet API/ApiWorksheet/GetSelection/Parameters
-Spreadsheet API/ApiWorksheet/GetTopMargin/Parameters
-Spreadsheet API/ApiWorksheet/GetUsedRange/Parameters
-Spreadsheet API/ApiWorksheet/GetVisible/Parameters
 Spreadsheet API/ApiWorksheet/ReplaceCurrentImage/Example
 Spreadsheet API/ApiWorksheet/ReplaceCurrentImage/Resulting document
-Spreadsheet API/ApiWorksheet/SetActive/Parameters
 Spreadsheet API/ApiWorksheet/SetPrintGridlines/Example
 Spreadsheet API/ApiWorksheet/SetPrintGridlines/Resulting document
 Spreadsheet API/ApiWorksheet/SetPrintHeadings/Example
 Spreadsheet API/ApiWorksheet/SetPrintHeadings/Resulting document
 Text document API/Api/AddComment/Example
 Text document API/Api/AddComment/Resulting document
-Text document API/Api/CreateBlockLvlSdt/Parameters
 Text document API/Api/CreateBullet/Example
 Text document API/Api/CreateBullet/Resulting document
 Text document API/Api/CreateHyperlink/Example
 Text document API/Api/CreateHyperlink/Resulting document
-Text document API/Api/CreateInlineLvlSdt/Parameters
-Text document API/Api/CreateNoFill/Parameters
-Text document API/Api/CreateParagraph/Parameters
-Text document API/Api/CreateRange/Parameters
 Text document API/Api/CreateRange/Example
 Text document API/Api/CreateRange/Resulting document
-Text document API/Api/CreateRun/Parameters
-Text document API/Api/GetDocument/Parameters
 Text document API/Api/GetFirstRunInArray/Example
 Text document API/Api/GetFirstRunInArray/Resulting document
 Text document API/Api/GetLastRunInArray/Example
 Text document API/Api/GetLastRunInArray/Resulting document
-Text document API/Api/GetMailMergeReceptionsCount/Parameters
 Text document API/Api/GetMailMergeReceptionsCount/Example
 Text document API/Api/GetMailMergeReceptionsCount/Resulting document
-Text document API/Api/GetMailMergeTemplateDocContent/Parameters
 Text document API/Api/GetMailMergeTemplateDocContent/Example
 Text document API/Api/GetMailMergeTemplateDocContent/Resulting document
 Text document API/Api/LoadMailMergeData/Example
@@ -276,237 +100,49 @@ Text document API/Api/MailMerge/Example
 Text document API/Api/MailMerge/Resulting document
 Text document API/Api/ReplaceDocumentContent/Example
 Text document API/Api/ReplaceDocumentContent/Resulting document
-Text document API/Api/Save/Parameters
 Text document API/ApiBlockLvlSdt/Delete/Example
 Text document API/ApiBlockLvlSdt/Delete/Resulting document
-Text document API/ApiBlockLvlSdt/GetAlias/Parameters
-Text document API/ApiBlockLvlSdt/GetAllContentControls/Parameters
 Text document API/ApiBlockLvlSdt/GetAllContentControls/Example
 Text document API/ApiBlockLvlSdt/GetAllContentControls/Resulting document
-Text document API/ApiBlockLvlSdt/GetAllDrawingObjects/Parameters
-Text document API/ApiBlockLvlSdt/GetAllParagraphs/Parameters
-Text document API/ApiBlockLvlSdt/GetAllTablesOnPage/Parameters
 Text document API/ApiBlockLvlSdt/GetAllTablesOnPage/Example
 Text document API/ApiBlockLvlSdt/GetAllTablesOnPage/Resulting document
-Text document API/ApiBlockLvlSdt/GetClassType/Parameters
-Text document API/ApiBlockLvlSdt/GetContent/Parameters
-Text document API/ApiBlockLvlSdt/GetLabel/Parameters
-Text document API/ApiBlockLvlSdt/GetLock/Parameters
-Text document API/ApiBlockLvlSdt/GetParentContentControl/Parameters
-Text document API/ApiBlockLvlSdt/GetParentTable/Parameters
-Text document API/ApiBlockLvlSdt/GetParentTableCell/Parameters
-Text document API/ApiBlockLvlSdt/GetTag/Parameters
-Text document API/ApiBlockLvlSdt/RemoveAllElements/Parameters
-Text document API/ApiBlockLvlSdt/Select/Parameters
-Text document API/ApiBullet/GetClassType/Parameters
 Text document API/ApiBullet/GetClassType/Example
 Text document API/ApiBullet/GetClassType/Resulting document
-Text document API/ApiChart/GetClassType/Parameters
-Text document API/ApiChart/GetNextChart/Parameters
-Text document API/ApiChart/GetPrevChart/Parameters
 Text document API/ApiChart/GetPrevChart/Example
 Text document API/ApiChart/GetPrevChart/Resulting document
-Text document API/ApiChart/SetLegendFontSize/Parameters
-Text document API/ApiDocument/CreateNewHistoryPoint/Parameters
-Text document API/ApiDocument/GetAllCharts/Parameters
-Text document API/ApiDocument/GetAllContentControls/Parameters
-Text document API/ApiDocument/GetAllDrawingObjects/Parameters
-Text document API/ApiDocument/GetAllImages/Parameters
-Text document API/ApiDocument/GetAllShapes/Parameters
-Text document API/ApiDocument/GetAllTablesOnPage/Parameters
 Text document API/ApiDocument/GetAllTablesOnPage/Example
 Text document API/ApiDocument/GetAllTablesOnPage/Resulting document
-Text document API/ApiDocument/GetClassType/Parameters
-Text document API/ApiDocument/GetCommentsReport/Parameters
-Text document API/ApiDocument/GetDefaultParaPr/Parameters
-Text document API/ApiDocument/GetDefaultTextPr/Parameters
-Text document API/ApiDocument/GetElement/Parameters
-Text document API/ApiDocument/GetElementsCount/Parameters
-Text document API/ApiDocument/GetFinalSection/Parameters
-Text document API/ApiDocument/GetRangeBySelect/Parameters
-Text document API/ApiDocument/GetReviewReport/Parameters
-Text document API/ApiDocument/GetSections/Parameters
-Text document API/ApiDocument/IsTrackRevisions/Parameters
-Text document API/ApiDocument/Last/Parameters
-Text document API/ApiDocument/RemoveAllElements/Parameters
-Text document API/ApiDocument/RemoveSelection/Parameters
-Text document API/ApiDocumentContent/GetClassType/Parameters
-Text document API/ApiDocumentContent/GetElement/Parameters
-Text document API/ApiDocumentContent/GetElementsCount/Parameters
-Text document API/ApiDocumentContent/RemoveAllElements/Parameters
-Text document API/ApiDrawing/Copy/Parameters
-Text document API/ApiDrawing/Delete/Parameters
-Text document API/ApiDrawing/GetClassType/Parameters
-Text document API/ApiDrawing/GetNextDrawing/Parameters
-Text document API/ApiDrawing/GetParentContentControl/Parameters
-Text document API/ApiDrawing/GetParentParagraph/Parameters
-Text document API/ApiDrawing/GetParentTable/Parameters
-Text document API/ApiDrawing/GetParentTableCell/Parameters
-Text document API/ApiDrawing/GetPrevDrawing/Parameters
-Text document API/ApiDrawing/Select/Parameters
-Text document API/ApiFill/GetClassType/Parameters
-Text document API/ApiGradientStop/GetClassType/Parameters
-Text document API/ApiImage/GetClassType/Parameters
-Text document API/ApiImage/GetNextImage/Parameters
-Text document API/ApiImage/GetPrevImage/Parameters
-Text document API/ApiInlineLvlSdt/GetAlias/Parameters
-Text document API/ApiInlineLvlSdt/GetClassType/Parameters
-Text document API/ApiInlineLvlSdt/GetElementsCount/Parameters
-Text document API/ApiInlineLvlSdt/GetLabel/Parameters
-Text document API/ApiInlineLvlSdt/GetLock/Parameters
-Text document API/ApiInlineLvlSdt/GetParentContentControl/Parameters
-Text document API/ApiInlineLvlSdt/GetParentTable/Parameters
-Text document API/ApiInlineLvlSdt/GetParentTableCell/Parameters
-Text document API/ApiInlineLvlSdt/GetTag/Parameters
-Text document API/ApiInlineLvlSdt/RemoveAllElements/Parameters
-Text document API/ApiNumbering/GetClassType/Parameters
-Text document API/ApiNumberingLevel/GetClassType/Parameters
-Text document API/ApiNumberingLevel/GetLevelIndex/Parameters
-Text document API/ApiNumberingLevel/GetNumbering/Parameters
-Text document API/ApiNumberingLevel/GetParaPr/Parameters
-Text document API/ApiNumberingLevel/GetTextPr/Parameters
-Text document API/ApiParaPr/GetClassType/Parameters
 Text document API/ApiParaPr/SetBullet/Example
 Text document API/ApiParaPr/SetBullet/Resulting document
-Text document API/ApiParagraph/AddColumnBreak/Parameters
-Text document API/ApiParagraph/AddLineBreak/Parameters
-Text document API/ApiParagraph/AddPageBreak/Parameters
-Text document API/ApiParagraph/AddPageNumber/Parameters
-Text document API/ApiParagraph/AddPagesCount/Parameters
-Text document API/ApiParagraph/AddTabStop/Parameters
-Text document API/ApiParagraph/Copy/Parameters
-Text document API/ApiParagraph/Delete/Parameters
-Text document API/ApiParagraph/GetAllCharts/Parameters
 Text document API/ApiParagraph/GetAllCharts/Example
 Text document API/ApiParagraph/GetAllCharts/Resulting document
-Text document API/ApiParagraph/GetAllContentControls/Parameters
-Text document API/ApiParagraph/GetAllDrawingObjects/Parameters
-Text document API/ApiParagraph/GetAllImages/Parameters
-Text document API/ApiParagraph/GetAllShapes/Parameters
 Text document API/ApiParagraph/GetAllShapes/Example
 Text document API/ApiParagraph/GetAllShapes/Resulting document
-Text document API/ApiParagraph/GetClassType/Parameters
-Text document API/ApiParagraph/GetElementsCount/Parameters
-Text document API/ApiParagraph/GetLastRunWithText/Parameters
-Text document API/ApiParagraph/GetNext/Parameters
-Text document API/ApiParagraph/GetNumbering/Parameters
-Text document API/ApiParagraph/GetParaPr/Parameters
-Text document API/ApiParagraph/GetParagraphMarkTextPr/Parameters
-Text document API/ApiParagraph/GetParentContentControl/Parameters
-Text document API/ApiParagraph/GetParentTable/Parameters
-Text document API/ApiParagraph/GetParentTableCell/Parameters
-Text document API/ApiParagraph/GetPrevious/Parameters
-Text document API/ApiParagraph/GetText/Parameters
-Text document API/ApiParagraph/GetTextPr/Parameters
-Text document API/ApiParagraph/Last/Parameters
-Text document API/ApiParagraph/RemoveAllElements/Parameters
-Text document API/ApiParagraph/Select/Parameters
 Text document API/ApiParagraph/SetBullet/Example
 Text document API/ApiParagraph/SetBullet/Resulting document
-Text document API/ApiParagraph/WrapInMailMergeField/Parameters
 Text document API/ApiParagraph/WrapInMailMergeField/Example
 Text document API/ApiParagraph/WrapInMailMergeField/Resulting document
-Text document API/ApiPresetColor/GetClassType/Parameters
-Text document API/ApiRGBColor/GetClassType/Parameters
-Text document API/ApiRun/AddColumnBreak/Parameters
-Text document API/ApiRun/AddLineBreak/Parameters
-Text document API/ApiRun/AddPageBreak/Parameters
-Text document API/ApiRun/AddTabStop/Parameters
-Text document API/ApiRun/ClearContent/Parameters
-Text document API/ApiRun/Copy/Parameters
-Text document API/ApiRun/Delete/Parameters
-Text document API/ApiRun/GetClassType/Parameters
-Text document API/ApiRun/GetParentContentControl/Parameters
 Text document API/ApiRun/GetParentContentControl/Example
 Text document API/ApiRun/GetParentContentControl/Resulting document
-Text document API/ApiRun/GetParentTable/Parameters
-Text document API/ApiRun/GetParentTableCell/Parameters
-Text document API/ApiRun/GetTextPr/Parameters
-Text document API/ApiRun/RemoveAllElements/Parameters
-Text document API/ApiRun/Select/Parameters
-Text document API/ApiRun/WrapInMailMergeField/Parameters
 Text document API/ApiRun/WrapInMailMergeField/Example
 Text document API/ApiRun/WrapInMailMergeField/Resulting document
-Text document API/ApiSchemeColor/GetClassType/Parameters
-Text document API/ApiSection/GetClassType/Parameters
-Text document API/ApiSection/GetNext/Parameters
 Text document API/ApiSection/GetNext/Example
 Text document API/ApiSection/GetNext/Resulting document
-Text document API/ApiSection/GetPrevious/Parameters
 Text document API/ApiSection/GetPrevious/Example
 Text document API/ApiSection/GetPrevious/Resulting document
-Text document API/ApiShape/GetClassType/Parameters
-Text document API/ApiShape/GetContent/Parameters
-Text document API/ApiShape/GetDocContent/Parameters
-Text document API/ApiShape/GetNextShape/Parameters
-Text document API/ApiShape/GetPrevShape/Parameters
-Text document API/ApiStroke/GetClassType/Parameters
-Text document API/ApiStyle/GetClassType/Parameters
-Text document API/ApiStyle/GetName/Parameters
-Text document API/ApiStyle/GetParaPr/Parameters
-Text document API/ApiStyle/GetTableCellPr/Parameters
-Text document API/ApiStyle/GetTablePr/Parameters
-Text document API/ApiStyle/GetTableRowPr/Parameters
-Text document API/ApiStyle/GetTextPr/Parameters
-Text document API/ApiStyle/GetType/Parameters
-Text document API/ApiTable/Clear/Parameters
-Text document API/ApiTable/Copy/Parameters
 Text document API/ApiTable/Copy/Example
 Text document API/ApiTable/Copy/Resulting document
-Text document API/ApiTable/Delete/Parameters
 Text document API/ApiTable/Delete/Example
 Text document API/ApiTable/Delete/Resulting document
-Text document API/ApiTable/GetClassType/Parameters
-Text document API/ApiTable/GetNext/Parameters
 Text document API/ApiTable/GetNext/Example
 Text document API/ApiTable/GetNext/Resulting document
-Text document API/ApiTable/GetParentContentControl/Parameters
-Text document API/ApiTable/GetParentTable/Parameters
-Text document API/ApiTable/GetParentTableCell/Parameters
-Text document API/ApiTable/GetPrevious/Parameters
 Text document API/ApiTable/GetPrevious/Example
 Text document API/ApiTable/GetPrevious/Resulting document
-Text document API/ApiTable/GetRowsCount/Parameters
-Text document API/ApiTable/GetTables/Parameters
 Text document API/ApiTable/GetTables/Example
 Text document API/ApiTable/GetTables/Resulting document
-Text document API/ApiTable/Select/Parameters
 Text document API/ApiTable/Split/Example
 Text document API/ApiTable/Split/Resulting document
-Text document API/ApiTableCell/Clear/Parameters
-Text document API/ApiTableCell/GetClassType/Parameters
-Text document API/ApiTableCell/GetContent/Parameters
-Text document API/ApiTableCell/GetIndex/Parameters
-Text document API/ApiTableCell/GetNext/Parameters
-Text document API/ApiTableCell/GetParentRow/Parameters
-Text document API/ApiTableCell/GetParentTable/Parameters
-Text document API/ApiTableCell/GetPrevious/Parameters
-Text document API/ApiTableCell/GetRowIndex/Parameters
-Text document API/ApiTableCell/RemoveColumn/Parameters
-Text document API/ApiTableCell/RemoveRow/Parameters
 Text document API/ApiTableCell/Split/Example
 Text document API/ApiTableCell/Split/Resulting document
-Text document API/ApiTableCellPr/GetClassType/Parameters
-Text document API/ApiTablePr/GetClassType/Parameters
-Text document API/ApiTableRow/Clear/Parameters
-Text document API/ApiTableRow/GetCellsCount/Parameters
-Text document API/ApiTableRow/GetClassType/Parameters
-Text document API/ApiTableRow/GetIndex/Parameters
-Text document API/ApiTableRow/GetNext/Parameters
-Text document API/ApiTableRow/GetParentTable/Parameters
-Text document API/ApiTableRow/GetPrevious/Parameters
-Text document API/ApiTableRow/MergeCells/Parameters
-Text document API/ApiTableRow/Remove/Parameters
-Text document API/ApiTableRowPr/GetClassType/Parameters
-Text document API/ApiTableStylePr/GetClassType/Parameters
-Text document API/ApiTableStylePr/GetParaPr/Parameters
-Text document API/ApiTableStylePr/GetTableCellPr/Parameters
-Text document API/ApiTableStylePr/GetTablePr/Parameters
-Text document API/ApiTableStylePr/GetTableRowPr/Parameters
-Text document API/ApiTableStylePr/GetTextPr/Parameters
-Text document API/ApiTableStylePr/GetType/Parameters
-Text document API/ApiTextPr/GetClassType/Parameters
-Text document API/ApiUniColor/GetClassType/Parameters
-Text document API/ApiUnsupported/GetClassType/Parameters
 Text document API/ApiUnsupported/GetClassType/Example
 Text document API/ApiUnsupported/GetClassType/Resulting document
