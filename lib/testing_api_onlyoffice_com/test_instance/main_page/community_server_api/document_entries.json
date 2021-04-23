@@ -601,8 +601,10 @@
       "GET/api/2.0/mail/messages/template",
       "GET/api/2.0/mail/messages/%7bid%7d/%7bdirection%7d",
       "PUT/api/2.0/mail/messages/move",
+      "PUT/api/2.0/mail/messages/reassign",
       "PUT/api/2.0/mail/messages/remove",
       "PUT/api/2.0/mail/messages/restore",
+      "PUT/api/2.0/mail/messages/save",
       "PUT/api/2.0/mail/messages/send",
       "PUT/api/2.0/mail/messages/mark"
     ],
