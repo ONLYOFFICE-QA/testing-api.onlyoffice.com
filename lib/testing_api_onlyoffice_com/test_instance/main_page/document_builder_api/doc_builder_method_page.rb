@@ -1,9 +1,13 @@
 # frozen_string_literal: true
 
+require_relative 'doc_builder_method_page/doc_builder_method_params'
+
 module TestingApiOnlyfficeCom
   # https://user-images.githubusercontent.com/40513035/57924882-0e894d80-78af-11e9-9ce3-d3f5eb9a2b23.png
   # /docbuilder/basic
   class DocBuilderMethodPage
+    include DocBuilderMethodParams
+
     attr_reader :link, :page, :params_exist, :return_exist, :example_exist, :document_exist
 
     def initialize(editor, current_class, method)
@@ -12,11 +16,17 @@ module TestingApiOnlyfficeCom
       @method = method
       @link = "#{Config.new.server}/docbuilder/#{ClassNameHelper.cleanup_name(editor)}/#{ClassNameHelper.cleanup_name(current_class)}/#{ClassNameHelper.cleanup_name(method)}"
       @page = Nokogiri::HTML(URI.parse(@link).open)
-      @params_exist ||= !@page.xpath('//*[@class="table"]').empty?
+      @params_exist ||= check_params
       @return_exist ||= !@page.xpath('//*[@class="param-type"]').empty?
       @example_exist ||= !@page.xpath('//pre').empty?
       @document_exist ||= sample_document_exists?
       OnlyofficeLoggerHelper.log("Got info about #{full_page_name} page")
+    end
+
+    # @return [String] method signature fetched from page
+    def method_signature
+      raw_text = @page.xpath('//h4[@class="header-gray"]').text
+      raw_text.split("\n")[1].delete(' ').chomp
     end
 
     # @return [String] full page name
