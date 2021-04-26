@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 describe 'community_server_search' do
-  test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Community Server Documentation Links', plan_name: config.to_s)
+  test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Community Server Search', plan_name: config.to_s)
 
   before do
     @instance = TestingApiOnlyfficeCom::TestInstance.new(config)
