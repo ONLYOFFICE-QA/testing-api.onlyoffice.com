@@ -8,6 +8,7 @@ module TestingApiOnlyfficeCom
   class CommunityServerAPI
     include PageObject
     include CheckMethodLinks
+    include SearchSidebar
 
     link(:identification, xpath: '//a[@href="/portals/auth"]')
 
