@@ -30,8 +30,23 @@ describe 'community_server_search' do
     expect(result_page.search_result_count).to be > 0
   end
 
-  it 'Search for xss will not result any strange errors' do
-    result_page = @api_community_server_page.search('"><script>alert(1)</script>')
-    expect(result_page).to be_no_entries_found
+  it 'Search input contains search string' do
+    search_string = 'auth'
+    result_page = @api_community_server_page.search(search_string)
+    expect(result_page.search_input_value).to eq(search_string)
+  end
+
+  describe 'xss' do
+    let(:xss) { '"><script>alert(1)</script>' }
+
+    it 'Search for xss will will result no entries' do
+      result_page = @api_community_server_page.search(xss)
+      expect(result_page).to be_no_entries_found
+    end
+
+    it 'Search for xss save value in input field' do
+      result_page = @api_community_server_page.search(xss)
+      expect(result_page.search_input_value).to eq(xss)
+    end
   end
 end
