@@ -26,7 +26,7 @@ describe 'community_server_search' do
   end
 
   it 'Search for existing method result several results' do
-    result_page = @api_community_server_page.search('Fakeword')
+    result_page = @api_community_server_page.search('auth')
     expect(result_page.search_result_count).to be > 0
   end
 
