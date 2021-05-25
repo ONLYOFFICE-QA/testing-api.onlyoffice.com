@@ -1,3 +1,5 @@
+Presentation API/Api/ReplaceTextSmart/Example
+Presentation API/Api/ReplaceTextSmart/Resulting document
 Presentation API/ApiDocument/AddElement/Example
 Presentation API/ApiDocument/AddElement/Resulting document
 Presentation API/ApiDocument/GetElement/Example
@@ -16,6 +18,38 @@ Presentation API/ApiHyperlink/GetElement/Example
 Presentation API/ApiHyperlink/GetElement/Resulting document
 Presentation API/ApiHyperlink/GetElementsCount/Example
 Presentation API/ApiHyperlink/GetElementsCount/Resulting document
+Presentation API/ApiParaPr/GetIndFirstLine/Example
+Presentation API/ApiParaPr/GetIndFirstLine/Resulting document
+Presentation API/ApiParaPr/GetIndLeft/Example
+Presentation API/ApiParaPr/GetIndLeft/Resulting document
+Presentation API/ApiParaPr/GetIndRight/Example
+Presentation API/ApiParaPr/GetIndRight/Resulting document
+Presentation API/ApiParaPr/GetJc/Example
+Presentation API/ApiParaPr/GetJc/Resulting document
+Presentation API/ApiParaPr/GetSpacingAfter/Example
+Presentation API/ApiParaPr/GetSpacingAfter/Resulting document
+Presentation API/ApiParaPr/GetSpacingBefore/Example
+Presentation API/ApiParaPr/GetSpacingBefore/Resulting document
+Presentation API/ApiParaPr/GetSpacingLineRule/Example
+Presentation API/ApiParaPr/GetSpacingLineRule/Resulting document
+Presentation API/ApiParaPr/GetSpacingLineValue/Example
+Presentation API/ApiParaPr/GetSpacingLineValue/Resulting document
+Presentation API/ApiParagraph/GetIndFirstLine/Example
+Presentation API/ApiParagraph/GetIndFirstLine/Resulting document
+Presentation API/ApiParagraph/GetIndLeft/Example
+Presentation API/ApiParagraph/GetIndLeft/Resulting document
+Presentation API/ApiParagraph/GetIndRight/Example
+Presentation API/ApiParagraph/GetIndRight/Resulting document
+Presentation API/ApiParagraph/GetJc/Example
+Presentation API/ApiParagraph/GetJc/Resulting document
+Presentation API/ApiParagraph/GetSpacingAfter/Example
+Presentation API/ApiParagraph/GetSpacingAfter/Resulting document
+Presentation API/ApiParagraph/GetSpacingBefore/Example
+Presentation API/ApiParagraph/GetSpacingBefore/Resulting document
+Presentation API/ApiParagraph/GetSpacingLineRule/Example
+Presentation API/ApiParagraph/GetSpacingLineRule/Resulting document
+Presentation API/ApiParagraph/GetSpacingLineValue/Example
+Presentation API/ApiParagraph/GetSpacingLineValue/Resulting document
 Presentation API/ApiPresentation/ReplaceCurrentImage/Example
 Presentation API/ApiPresentation/ReplaceCurrentImage/Resulting document
 Presentation API/ApiRun/SetStyle/Example
@@ -28,8 +62,8 @@ Presentation API/ApiTable/Copy/Example
 Presentation API/ApiTable/Copy/Resulting document
 Presentation API/ApiTable/Select/Example
 Presentation API/ApiTable/Select/Resulting document
-Spreadsheet API/Api/Intersect/Example
-Spreadsheet API/Api/Intersect/Resulting document
+Spreadsheet API/Api/ReplaceTextSmart/Example
+Spreadsheet API/Api/ReplaceTextSmart/Resulting document
 Spreadsheet API/ApiComment/Delete/Example
 Spreadsheet API/ApiComment/Delete/Resulting document
 Spreadsheet API/ApiDocument/AddElement/Example
@@ -50,8 +84,40 @@ Spreadsheet API/ApiHyperlink/GetElement/Example
 Spreadsheet API/ApiHyperlink/GetElement/Resulting document
 Spreadsheet API/ApiHyperlink/GetElementsCount/Example
 Spreadsheet API/ApiHyperlink/GetElementsCount/Resulting document
+Spreadsheet API/ApiParaPr/GetIndFirstLine/Example
+Spreadsheet API/ApiParaPr/GetIndFirstLine/Resulting document
+Spreadsheet API/ApiParaPr/GetIndLeft/Example
+Spreadsheet API/ApiParaPr/GetIndLeft/Resulting document
+Spreadsheet API/ApiParaPr/GetIndRight/Example
+Spreadsheet API/ApiParaPr/GetIndRight/Resulting document
+Spreadsheet API/ApiParaPr/GetJc/Example
+Spreadsheet API/ApiParaPr/GetJc/Resulting document
+Spreadsheet API/ApiParaPr/GetSpacingAfter/Example
+Spreadsheet API/ApiParaPr/GetSpacingAfter/Resulting document
+Spreadsheet API/ApiParaPr/GetSpacingBefore/Example
+Spreadsheet API/ApiParaPr/GetSpacingBefore/Resulting document
+Spreadsheet API/ApiParaPr/GetSpacingLineRule/Example
+Spreadsheet API/ApiParaPr/GetSpacingLineRule/Resulting document
+Spreadsheet API/ApiParaPr/GetSpacingLineValue/Example
+Spreadsheet API/ApiParaPr/GetSpacingLineValue/Resulting document
 Spreadsheet API/ApiParagraph/Copy/Example
 Spreadsheet API/ApiParagraph/Copy/Resulting document
+Spreadsheet API/ApiParagraph/GetIndFirstLine/Example
+Spreadsheet API/ApiParagraph/GetIndFirstLine/Resulting document
+Spreadsheet API/ApiParagraph/GetIndLeft/Example
+Spreadsheet API/ApiParagraph/GetIndLeft/Resulting document
+Spreadsheet API/ApiParagraph/GetIndRight/Example
+Spreadsheet API/ApiParagraph/GetIndRight/Resulting document
+Spreadsheet API/ApiParagraph/GetJc/Example
+Spreadsheet API/ApiParagraph/GetJc/Resulting document
+Spreadsheet API/ApiParagraph/GetSpacingAfter/Example
+Spreadsheet API/ApiParagraph/GetSpacingAfter/Resulting document
+Spreadsheet API/ApiParagraph/GetSpacingBefore/Example
+Spreadsheet API/ApiParagraph/GetSpacingBefore/Resulting document
+Spreadsheet API/ApiParagraph/GetSpacingLineRule/Example
+Spreadsheet API/ApiParagraph/GetSpacingLineRule/Resulting document
+Spreadsheet API/ApiParagraph/GetSpacingLineValue/Example
+Spreadsheet API/ApiParagraph/GetSpacingLineValue/Resulting document
 Spreadsheet API/ApiRun/SetHighlight/Example
 Spreadsheet API/ApiRun/SetHighlight/Resulting document
 Spreadsheet API/ApiRun/SetShd/Example
@@ -100,30 +166,60 @@ Text document API/Api/MailMerge/Example
 Text document API/Api/MailMerge/Resulting document
 Text document API/Api/ReplaceDocumentContent/Example
 Text document API/Api/ReplaceDocumentContent/Resulting document
+Text document API/Api/ReplaceTextSmart/Example
+Text document API/Api/ReplaceTextSmart/Resulting document
 Text document API/ApiBlockLvlSdt/Delete/Example
 Text document API/ApiBlockLvlSdt/Delete/Resulting document
 Text document API/ApiBlockLvlSdt/GetAllContentControls/Example
 Text document API/ApiBlockLvlSdt/GetAllContentControls/Resulting document
-Text document API/ApiBlockLvlSdt/GetAllTablesOnPage/Example
-Text document API/ApiBlockLvlSdt/GetAllTablesOnPage/Resulting document
 Text document API/ApiBullet/GetClassType/Example
 Text document API/ApiBullet/GetClassType/Resulting document
-Text document API/ApiChart/GetPrevChart/Example
-Text document API/ApiChart/GetPrevChart/Resulting document
-Text document API/ApiDocument/GetAllTablesOnPage/Example
-Text document API/ApiDocument/GetAllTablesOnPage/Resulting document
+Text document API/ApiParaPr/GetIndFirstLine/Example
+Text document API/ApiParaPr/GetIndFirstLine/Resulting document
+Text document API/ApiParaPr/GetIndLeft/Example
+Text document API/ApiParaPr/GetIndLeft/Resulting document
+Text document API/ApiParaPr/GetIndRight/Example
+Text document API/ApiParaPr/GetIndRight/Resulting document
+Text document API/ApiParaPr/GetJc/Example
+Text document API/ApiParaPr/GetJc/Resulting document
+Text document API/ApiParaPr/GetShd/Example
+Text document API/ApiParaPr/GetShd/Resulting document
+Text document API/ApiParaPr/GetSpacingAfter/Example
+Text document API/ApiParaPr/GetSpacingAfter/Resulting document
+Text document API/ApiParaPr/GetSpacingBefore/Example
+Text document API/ApiParaPr/GetSpacingBefore/Resulting document
+Text document API/ApiParaPr/GetSpacingLineRule/Example
+Text document API/ApiParaPr/GetSpacingLineRule/Resulting document
+Text document API/ApiParaPr/GetSpacingLineValue/Example
+Text document API/ApiParaPr/GetSpacingLineValue/Resulting document
+Text document API/ApiParaPr/GetStyle/Example
+Text document API/ApiParaPr/GetStyle/Resulting document
 Text document API/ApiParaPr/SetBullet/Example
 Text document API/ApiParaPr/SetBullet/Resulting document
-Text document API/ApiParagraph/GetAllCharts/Example
-Text document API/ApiParagraph/GetAllCharts/Resulting document
-Text document API/ApiParagraph/GetAllShapes/Example
-Text document API/ApiParagraph/GetAllShapes/Resulting document
+Text document API/ApiParagraph/GetIndFirstLine/Example
+Text document API/ApiParagraph/GetIndFirstLine/Resulting document
+Text document API/ApiParagraph/GetIndLeft/Example
+Text document API/ApiParagraph/GetIndLeft/Resulting document
+Text document API/ApiParagraph/GetIndRight/Example
+Text document API/ApiParagraph/GetIndRight/Resulting document
+Text document API/ApiParagraph/GetJc/Example
+Text document API/ApiParagraph/GetJc/Resulting document
+Text document API/ApiParagraph/GetShd/Example
+Text document API/ApiParagraph/GetShd/Resulting document
+Text document API/ApiParagraph/GetSpacingAfter/Example
+Text document API/ApiParagraph/GetSpacingAfter/Resulting document
+Text document API/ApiParagraph/GetSpacingBefore/Example
+Text document API/ApiParagraph/GetSpacingBefore/Resulting document
+Text document API/ApiParagraph/GetSpacingLineRule/Example
+Text document API/ApiParagraph/GetSpacingLineRule/Resulting document
+Text document API/ApiParagraph/GetSpacingLineValue/Example
+Text document API/ApiParagraph/GetSpacingLineValue/Resulting document
+Text document API/ApiParagraph/GetStyle/Example
+Text document API/ApiParagraph/GetStyle/Resulting document
 Text document API/ApiParagraph/SetBullet/Example
 Text document API/ApiParagraph/SetBullet/Resulting document
 Text document API/ApiParagraph/WrapInMailMergeField/Example
 Text document API/ApiParagraph/WrapInMailMergeField/Resulting document
-Text document API/ApiRun/GetParentContentControl/Example
-Text document API/ApiRun/GetParentContentControl/Resulting document
 Text document API/ApiRun/WrapInMailMergeField/Example
 Text document API/ApiRun/WrapInMailMergeField/Resulting document
 Text document API/ApiSection/GetNext/Example
