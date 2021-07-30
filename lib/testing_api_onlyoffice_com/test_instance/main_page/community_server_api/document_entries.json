@@ -375,8 +375,7 @@
       "PUT/api/2.0/crm/task/category/%7bid%7d",
       "PUT/api/2.0/crm/task/category/%7bid%7d/icon"
     ],
-
-    "User%20fields": [
+    "Custom%20fields": [
       "POST/api/2.0/crm/%7bentityType%7d/customfield",
       "DELETE/api/2.0/crm/%7bentityType%7d/customfield/%7bfieldid%7d",
       "GET/api/2.0/crm/%7bentityType%7d/customfield/definitions",
@@ -469,9 +468,11 @@
       "PUT/api/2.0/files/fileops/markasread",
       "GET/api/2.0/files/fileops/move",
       "PUT/api/2.0/files/fileops/move",
-      "GET/api/2.0/files/fileops"
+      "GET/api/2.0/files/fileops",
+      "GET/api/2.0/files/%40search/%7bquery%7"
     ],
     "Settings": [
+      "put/api/2.0/files/settings/downloadtargz",
       "PUT/api/2.0/files/docservice",
       "PUT/api/2.0/files/settings/favorites",
       "PUT/api/2.0/files/displayrecent",
@@ -503,9 +504,6 @@
       "POST/api/2.0/files/%7bfolderid%7d/upload",
       "POST/api/2.0/files/%40common/upload",
       "POST/api/2.0/files/%40my/upload"
-    ],
-    "unspecified": [
-      "GET/api/2.0/files/%40search/%7bquery%7d"
     ]
   },
   "group": {
@@ -584,7 +582,7 @@
       "DELETE/api/2.0/mail/folders/%7bfolderid%7d/messages",
       "PUT/api/2.0/mail/userfolders/%7bid%7d"
     ],
-    "HelpCenter": [
+    "help%20center": [
       "GET/api/2.0/mail/helpcenter"
     ],
     "Images": [
