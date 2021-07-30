@@ -39,7 +39,8 @@ module TestingApiOnlyfficeCom
 
     # @return [String] no result found message xpath
     def no_result_found_xpath
-      "//span[text() = 'No results found']"
+      "//span[text() = 'No results found'] | " \
+        "//span[(text() = 'No results matching your query could be found')]"
     end
 
     # @return [String] xpath of search result entry
