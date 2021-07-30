@@ -19,8 +19,8 @@ namespace(:wrata) do
     api = WrataApi::WrataApi.new
     free_pcs = api.free_servers(args[:count])
     free_pcs.power_on('1gb')
-    free_pcs.book
     sleep(60) # timeout to correctly turn on of all services
+    free_pcs.book
   end
 
   desc 'Add tests to queue'
