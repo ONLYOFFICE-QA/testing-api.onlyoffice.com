@@ -1021,6 +1021,6 @@
     "tips": [
       "PUT/api/2.0/settings/tips",
       "PUT/api/2.0/settings/tips/change/subscription"
-    ],
+    ]
   }
 }
