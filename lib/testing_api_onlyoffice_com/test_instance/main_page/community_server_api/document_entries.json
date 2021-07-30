@@ -688,6 +688,33 @@
     ]
   },
   "people": {
+    "affiliate%20programm": [
+      "PUT/api/2.0/people/self/joinaffiliate"
+    ],
+    "Contacts": [
+      "DELETE/api/2.0/people/%7buserid%7d/contacts",
+      "POST/api/2.0/people/%7buserid%7d/contacts",
+      "PUT/api/2.0/people/%7buserid%7d/contacts"
+    ],
+    "Photoes": [
+      "POST/api/2.0/people/%7buserid%7d/photo/thumbnails",
+      "DELETE/api/2.0/people/%7buserid%7d/photo",
+      "GET/api/2.0/people/%7buserid%7d/photo",
+      "PUT/api/2.0/people/%7buserid%7d/photo"
+    ],
+    "Profiles": [
+      "POST/api/2.0/people",
+      "DELETE/api/2.0/people/%7buserid%7d",
+      "PUT/api/2.0/people/delete",
+      "GET/api/2.0/people/email",
+      "GET/api/2.0/people/%7busername%7d",
+      "GET/api/2.0/people",
+      "GET/api/2.0/people/%40self",
+      "POST/api/2.0/people/import/save",
+      "PUT/api/2.0/people/invite",
+      "PUT/api/2.0/people/self/delete",
+      "PUT/api/2.0/people/%7buserid%7d"
+    ],
     "Reassign%20user%20data": [
       "GET/api/2.0/people/reassign/progress",
       "POST/api/2.0/people/reassign/start",
@@ -698,34 +725,19 @@
       "POST/api/2.0/people/remove/start",
       "PUT/api/2.0/people/remove/terminate"
     ],
-    "unspecified": [
-      "POST/api/2.0/people/import/save",
-      "POST/api/2.0/people",
-      "GET/api/2.0/people",
-      "POST/api/2.0/people/%7buserid%7d/photo/thumbnails",
-      "DELETE/api/2.0/people/%7buserid%7d",
-      "DELETE/api/2.0/people/%7buserid%7d/contacts",
-      "DELETE/api/2.0/people/%7buserid%7d/photo",
-      "PUT/api/2.0/people/delete",
-      "GET/api/2.0/people/status/%7bstatus%7d  ",
-      "GET/api/2.0/people/import/status  ",
-      "GET/api/2.0/people/%7buserid%7d/photo",
-      "PUT/api/2.0/people/self/joinaffiliate",
-      "GET/api/2.0/people/%40self",
+    "Search": [
       "GET/api/2.0/people/%40search/%7bquery%7d",
-      "PUT/api/2.0/people/invite",
-      "PUT/api/2.0/people/self/delete",
-      "POST/api/2.0/people/%7buserid%7d/contacts",
-      "GET/api/2.0/people/%7busername%7d",
-      "GET/api/2.0/people/email",
-      "PUT/api/2.0/people/%7buserid%7d",
-      "PUT/api/2.0/people/%7buserid%7d/contacts",
-      "PUT/api/2.0/people/%7buserid%7d/photo",
       "GET/api/2.0/people/search",
       "GET/api/2.0/people/filter",
       "GET/api/2.0/people/simple/filter",
-      "GET/api/2.0/people/status/%7bstatus%7d/search",
+      "GET/api/2.0/people/status/%7bstatus%7d/search"
+    ],
+    "user%20status": [
       "PUT/api/2.0/people/status/%7bstatus%7d",
+      "GET/api/2.0/people/import/status",
+      "GET/api/2.0/people/status/%7bstatus%7d  "
+    ],
+    "user%20type": [
       "PUT/api/2.0/people/type/%7btype%7d"
     ]
   },
@@ -748,17 +760,19 @@
       "GET/api/2.0/portal/tariff",
       "GET/api/2.0/portal/usedspace"
     ],
+    "Search": [
+      "GET/api/2.0/portal/search/state",
+      "GET/api/2.0/portal/search",
+      "POST/api/2.0/portal/search/reindex",
+      "POST/api/2.0/portal/search"
+    ],
     "Users": [
       "GET/api/2.0/portal/users/invite/%7bemployeeType%7d",
       "GET/api/2.0/portal/users/%7buserID%7d",
       "GET/api/2.0/portal/userscount"
     ],
     "unspecified": [
-      "GET/api/2.0/portal/search/state",
-      "GET/api/2.0/portal",
-      "GET/api/2.0/portal/search",
-      "POST/api/2.0/portal/search/reindex",
-      "POST/api/2.0/portal/search"
+      "GET/api/2.0/portal"
     ]
   },
   "project": {
@@ -796,59 +810,68 @@
       "DELETE/api/2.0/project/message/%7bmessageid%7d/files",
       "DELETE/api/2.0/project/task/%7btaskid%7d/files",
       "GET/api/2.0/project/%7bentityID%7d/entityfiles",
-      "GET/api/2.0/project/task/%7btaskid%7d/files",
       "GET/api/2.0/project/message/%7bmessageid%7d/files",
+      "GET/api/2.0/project/%7bid%7d/files",
+      "GET/api/2.0/project/task/%7btaskid%7d/files",
       "POST/api/2.0/project/message/%7bmessageid%7d/files",
       "POST/api/2.0/project/task/%7btaskid%7d/files"
     ],
     "Milestones": [
+      "GET/api/2.0/project/task/%7btaskid%7d/files",
       "DELETE/api/2.0/project/milestone/%7bid%7d",
       "DELETE/api/2.0/project/milestone",
       "GET/api/2.0/project/milestone/%7bid%7d",
       "GET/api/2.0/project/milestone/%7bid%7d/task",
+      "get/api/2.0/project/milestone",
+      "get/api/2.0/project/milestone/%7byear%7d/%7bmonth%7d/%7bday%7d",
+      "get/api/2.0/project/milestone/%7byear%7d/%7bmonth%7d",
       "GET/api/2.0/project/milestone/filter",
-      "GET/api/2.0/project/milestone/%7byear%7d/%7bmonth%7d/%7bday%7d",
-      "GET/api/2.0/project/milestone/%7byear%7d/%7bmonth%7d",
+      "get/api/2.0/project/%7bid%7d/milestone",
+      "get/api/2.0/project/%7bid%7d/milestone/%7bstatus%7d",
       "GET/api/2.0/project/milestone/late",
-      "GET/api/2.0/project/milestone",
       "PUT/api/2.0/project/milestone/%7bid%7d",
       "PUT/api/2.0/project/milestone/%7bid%7d/status"
     ],
     "Projects": [
-      "POST/api/2.0/project/%7bid%7d/milestone",
       "POST/api/2.0/project",
+      "POST/api/2.0/project/withSecurity",
       "DELETE/api/2.0/project/%7bid%7d",
       "DELETE/api/2.0/project",
-      "GET/api/2.0/project/%40follow",
-      "PUT/api/2.0/project/%7bprojectid%7d/follow",
-      "GET/api/2.0/project/%7bid%7d/milestone",
-      "GET/api/2.0/project/%7bid%7d/milestone/%7bstatus%7d",
-      "GET/api/2.0/project/%7bid%7d/time/total ",
-      "GET/api/2.0/project/%40self",
       "GET/api/2.0/project/%7bid%7d",
-      "GET/api/2.0/project/%7bstatus%7d",
-      "GET/api/2.0/project/%7bid%7d/files",
-      "GET/api/2.0/project/%7bid%7d/time",
-      "GET/api/2.0/project",
       "GET/api/2.0/project/filter",
-      "GET/api/2.0/project/%40search/%7bquery%7d",
+      "GET/api/2.0/project/%40follow",
+      "GET/api/2.0/project/%40self",
+      "GET/api/2.0/project",
+      "GET/api/2.0/project/%7bstatus%7d",
+      "PUT/api/2.0/project/%7bprojectid%7d/follow",
       "GET/api/2.0/project/%7bid%7d/%40search/%7bquery%7d",
+      "GET/api/2.0/project/%40search/%7bquery%7d",
       "PUT/api/2.0/project/%7bid%7d",
       "PUT/api/2.0/project/%7bid%7d/status",
-      "PUT/api/2.0/project/%7bid%7d/tag",
-      "PUT/api/2.0/project/%7bid%7d/tags"
+      "PUT/api/2.0/project/%7bid%7d/withSecurityInfo"
     ],
     "Report": [
+      "POST/api/2.0/project/report/create",
       "POST/api/2.0/project/report",
       "DELETE/api/2.0/project/report/%7breportid%7d",
+      "GET/api/2.0/project/report/status",
       "GET/api/2.0/project/report/%7breportid%7d",
+      "GET/api/2.0/project/report/files",
+      "DELETE/api/2.0/project/report/files/%7bfileid%7d",
+      "GET/api/2.0/project/report/terminate",
       "PUT/api/2.0/project/report/%7breportid%7d"
     ],
+    "Settings": [
+      "GET/api/2.0/project/settings",
+      "PUT/api/2.0/project/settings"
+    ],
     "Tags": [
-      "GET/api/2.0/project/tag/%7btag%7d",
-      "GET/api/2.0/project/tag",
       "POST/api/2.0/project/tag",
-      "GET/api/2.0/project/tag/search"
+      "GET/api/2.0/project/tag",
+      "GET/api/2.0/project/tag/%7btag%7d",
+      "GET/api/2.0/project/tag/search",
+      "PUT/api/2.0/project/%7bid%7d/tag",
+      "PUT/api/2.0/project/%7bid%7d/tags"
     ],
     "Tasks": [
       "POST/api/2.0/project/task/%7bparentTaskId%7d/link",
@@ -879,7 +902,7 @@
       "PUT/api/2.0/project/task/milestone",
       "PUT/api/2.0/project/task/status"
     ],
-    "Team": [
+    "Teams": [
       "POST/api/2.0/project/%7bprojectid%7d/team",
       "GET/api/2.0/project/%7bprojectid%7d/team",
       "GET/api/2.0/project/%7bprojectid%7d/teamExcluded",
@@ -905,18 +928,9 @@
       "PUT/api/2.0/project/time/times/status"
     ],
     "unspecified": [
-      "POST/api/2.0/project/report/create",
-      "POST/api/2.0/project/withSecurity",
       "POST/api/2.0/project/status",
       "DELETE/api/2.0/project/status/%7bid%7d",
-      "GET/api/2.0/project/report/files",
-      "GET/api/2.0/project/report/status",
-      "GET/api/2.0/project/settings",
       "GET/api/2.0/project/status",
-      "DELETE/api/2.0/project/report/files/%7bfileid%7d",
-      "GET/api/2.0/project/report/terminate",
-      "PUT/api/2.0/project/%7bid%7d/withSecurityInfo ",
-      "PUT/api/2.0/project/settings",
       "PUT/api/2.0/project/status",
       "PUT/api/2.0/project/statuses"
     ]
