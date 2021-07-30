@@ -926,18 +926,13 @@
     "Time": [
       "POST/api/2.0/project/task/%7btaskid%7d/time",
       "DELETE/api/2.0/project/time/times/remove",
+      "GET/api/2.0/project/%7bid%7d/time",
       "GET/api/2.0/project/task/%7btaskid%7d/time",
       "GET/api/2.0/project/time/filter",
+      "GET/api/2.0/project/%7bid%7d/time/total",
       "GET/api/2.0/project/time/filter/total",
-      "PUT/api/2.0/project/time/%7btimeid%7d",
-      "PUT/api/2.0/project/time/times/status"
-    ],
-    "unspecified": [
-      "POST/api/2.0/project/status",
-      "DELETE/api/2.0/project/status/%7bid%7d",
-      "GET/api/2.0/project/status",
-      "PUT/api/2.0/project/status",
-      "PUT/api/2.0/project/statuses"
+      "PUT/api/2.0/project/time/times/status",
+      "PUT/api/2.0/project/time/%7btimeid%7d"
     ]
   },
   "settings": {
