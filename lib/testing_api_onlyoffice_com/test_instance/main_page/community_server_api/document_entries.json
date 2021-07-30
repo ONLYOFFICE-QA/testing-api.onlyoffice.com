@@ -469,7 +469,7 @@
       "GET/api/2.0/files/fileops/move",
       "PUT/api/2.0/files/fileops/move",
       "GET/api/2.0/files/fileops",
-      "GET/api/2.0/files/%40search/%7bquery%7"
+      "GET/api/2.0/files/%40search/%7bquery%7d"
     ],
     "Settings": [
       "PUT/api/2.0/files/settings/downloadtargz",
