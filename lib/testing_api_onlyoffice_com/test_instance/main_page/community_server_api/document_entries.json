@@ -936,66 +936,91 @@
     ]
   },
   "settings": {
-    "unspecified": [
-      "GET/api/2.0/settings/checkrecalculatequota",
+    "common%20settings": [
+      "GET/api/2.0/settings/logo",
+      "GET/api/2.0/settings",
+      "GET/api/2.0/settings/socket",
+      "PUT/api/2.0/settings/emailactivation"
+    ],
+    "custom%20navigation": [
       "POST/api/2.0/settings/customnavigation/create",
       "DELETE/api/2.0/settings/customnavigation/delete/%7bid%7d",
-      "GET/api/2.0/settings/storage/backup",
-      "GET/api/2.0/settings/storage/cdn",
-      "GET/api/2.0/settings/storage",
       "GET/api/2.0/settings/customnavigation/get/%7bid%7d",
       "GET/api/2.0/settings/customnavigation/getsample",
-      "GET/api/2.0/settings/customnavigation/getall",
-      "GET/api/2.0/settings/ssov2/default",
+      "GET/api/2.0/settings/customnavigation/getall"
+    ],
+    "ip%20restrictions": [
       "GET/api/2.0/settings/iprestrictions",
+      "PUT/api/2.0/settings/iprestrictions",
+      "PUT/api/2.0/settings/iprestrictions/settings"
+    ],
+    "ldap": [
       "GET/api/2.0/settings/ldap/cron",
       "GET/api/2.0/settings/ldap/default",
       "GET/api/2.0/settings/ldap",
       "GET/api/2.0/settings/ldap/status",
+      "POST/api/2.0/settings/ldap",
+      "POST/api/2.0/settings/ldap/cron",
+      "GET/api/2.0/settings/ldap/sync",
+      "POST/api/2.0/settings/ldap/save/test",
+      "GET/api/2.0/settings/ldap/sync/test"
+
+    ],
+    "quota": [
+      "GET/api/2.0/settings/checkrecalculatequota",
+      "GET/api/2.0/settings/quota",
+      "GET/api/2.0/settings/recalculatequota"
+    ],
+    "security": [
+      "GET/api/2.0/settings/security/administrator",
+      "GET/api/2.0/settings/security/%7bid%7d",
+      "GET/api/2.0/settings/security/password",
       "GET/api/2.0/settings/security/administrator/%7bproductid%7d",
       "GET/api/2.0/settings/security",
+      "PUT/api/2.0/settings/security/access",
+      "PUT/api/2.0/settings/security/administrator",
+      "PUT/api/2.0/settings/security"
+    ],
+    "smtp": [
       "GET/api/2.0/settings/smtp",
       "GET/api/2.0/settings/smtp/test/status",
-      "GET/api/2.0/settings/socket",
-      "GET/api/2.0/settings/statistics/spaceusage/%7bid%7d",
-      "GET/api/2.0/settings/ssov2",
-      "GET/api/2.0/settings/ssov2/constants",
-      "GET/api/2.0/settings/storage/progress",
-      "GET/api/2.0/settings/statistics/visit",
-      "GET/api/2.0/settings/security/%7bid%7d",
-      "GET/api/2.0/settings/security/administrator ",
-      "GET/api/2.0/settings/security/password",
-      "GET/api/2.0/settings/logo",
-      "GET/api/2.0/settings",
-      "GET/api/2.0/settings/recalculatequota",
-      "DELETE/api/2.0/settings/storage/cdn",
       "DELETE/api/2.0/settings/smtp",
-      "DELETE/api/2.0/settings/ssov2",
-      "DELETE/api/2.0/settings/storage",
-      "PUT/api/2.0/settings/iprestrictions",
-      "POST/api/2.0/settings/ldap",
-      "POST/api/2.0/settings/ldap/save/test",
       "POST/api/2.0/settings/smtp",
-      "POST/api/2.0/settings/ssov2",
-      "PUT/api/2.0/settings/security/access",
-      "PUT/api/2.0/settings/security/administrator ",
-      "PUT/api/2.0/settings/security",
-      "POST/api/2.0/settings/ldap/cron",
-      "GET/api/2.0/settings/quota",
-      "GET/api/2.0/settings/ldap/sync",
-      "GET/api/2.0/settings/ldap/sync/test",
-      "DELETE/api/2.0/settings/telegramdisconnect",
-      "GET/api/2.0/settings/telegramisconnected",
-      "GET/api/2.0/settings/smtp/test",
-      "PUT/api/2.0/settings/tfaappnewapp",
-      "PUT/api/2.0/settings/tfaappnewcodes",
-      "PUT/api/2.0/settings/tfaapp",
-      "PUT/api/2.0/settings/storage/cdn",
-      "PUT/api/2.0/settings/emailactivation",
-      "PUT/api/2.0/settings/iprestrictions/settings",
+      "GET/api/2.0/settings/smtp/test"
+    ],
+    "sso": [
+      "GET/api/2.0/settings/ssov2/constants",
+      "GET/api/2.0/settings/ssov2/default",
+      "GET/api/2.0/settings/ssov2",
+      "DELETE/api/2.0/settings/ssov2",
+      "POST/api/2.0/settings/ssov2"
+    ],
+    "statistic": [
+      "GET/api/2.0/settings/statistics/spaceusage/%7bid%7d",
+      "GET/api/2.0/settings/statistics/visit"
+    ],
+    "storage": [
+      "GET/api/2.0/settings/storage",
+      "GET/api/2.0/settings/storage/backup",
+      "GET/api/2.0/settings/storage/cdn",
+      "GET/api/2.0/settings/storage/progress",
+      "DELETE/api/2.0/settings/storage/cdn",
+      "DELETE/api/2.0/settings/storage",
       "PUT/api/2.0/settings/storage",
+      "PUT/api/2.0/settings/storage/cdn"
+    ],
+    "telegram": [
+      "GET/api/2.0/settings/telegramisconnected",
+      "DELETE/api/2.0/settings/telegramdisconnect"
+    ],
+    "tfa%20settings": [
+      "PUT/api/2.0/settings/tfaappnewcodes",
+      "PUT/api/2.0/settings/tfaappnewapp",
+      "PUT/api/2.0/settings/tfaapp"
+    ],
+    "tips": [
       "PUT/api/2.0/settings/tips",
       "PUT/api/2.0/settings/tips/change/subscription"
-    ]
+    ],
   }
 }
