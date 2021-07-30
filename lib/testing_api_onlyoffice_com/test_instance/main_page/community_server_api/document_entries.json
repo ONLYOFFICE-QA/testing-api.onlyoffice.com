@@ -541,6 +541,9 @@
       "DELETE/api/2.0/mail/alert/%7bid%7d",
       "GET/api/2.0/mail/alert"
     ],
+    "Autoreply": [
+      "POST/api/2.0/mail/autoreply/update/%7bmailboxId%7d"
+    ],
     "Contacts": [
       "POST/api/2.0/mail/contact/add",
       "GET/api/2.0/mail/emails/search",
@@ -591,10 +594,11 @@
       "DELETE/api/2.0/mail/display_images/address"
     ],
     "Messages": [
-      "POST/api/2.0/mail/messages/attachment/add",
       "POST/api/2.0/mail/messages/calendarbody/add",
+      "POST/api/2.0/mail/messages/attachment/add",
       "POST/api/2.0/mail/messages/%7bid%7d/document",
       "DELETE/api/2.0/mail/messages/%7bmessageid%7d/attachments/%7battachmentid%7d",
+      "put/api/2.0/mail/messages/attachment/downloadall/%7bmessageid%7d",
       "PUT/api/2.0/mail/messages/attachment/export",
       "PUT/api/2.0/mail/messages/attachments/export",
       "PUT/api/2.0/mail/messages/crm/export",
@@ -610,6 +614,10 @@
       "PUT/api/2.0/mail/messages/send",
       "PUT/api/2.0/mail/messages/mark"
     ],
+    "Operations": [
+      "GET/api/2.0/mail/operations",
+      "GET/api/2.0/mail/operations/%7boperationId%7d"
+    ],
     "Settings": [
       "GET/api/2.0/mail/settings/alwaysDisplayImages",
       "GET/api/2.0/mail/settings/cacheMessagesEnabled",
@@ -623,6 +631,10 @@
       "PUT/api/2.0/mail/settings/goNextAfterMoveEnabled",
       "PUT/api/2.0/mail/settings/replacemessagebody"
     ],
+    "Signature": [
+      "GET/api/2.0/mail/signature/%7bmailbox_id%7d",
+      "POST/api/2.0/mail/signature/update/%7bmailbox_id%7d"
+    ],
     "Tags": [
       "POST/api/2.0/mail/tags",
       "DELETE/api/2.0/mail/tags/%7bid%7d",
@@ -630,31 +642,30 @@
       "PUT/api/2.0/mail/tags/%7bid%7d/unset",
       "PUT/api/2.0/mail/tags/%7bid%7d/set",
       "PUT/api/2.0/mail/tags/%7bid%7d"
-    ],
-    "unspecified": [
-      "PUT/api/2.0/mail/messages/attachment/downloadall/%7bmessageid%7d",
-      "GET/api/2.0/mail/operations",
-      "GET/api/2.0/mail/operations/%7boperationId%7d",
-      "GET/api/2.0/mail/signature/%7bmailbox_id%7d",
-      "POST/api/2.0/mail/autoreply/update/%7bmailboxId%7d",
-      "POST/api/2.0/mail/signature/update/%7bmailbox_id%7d"
     ]
   },
   "mailserver": {
-    "AddressData": [
+    "address%20data": [
       "PUT/api/2.0/mailserver/mailboxes/alias/add"
     ],
-    "DnsRecords": [
+    "dns%20records": [
       "GET/api/2.0/mailserver/freedns/get",
       "GET/api/2.0/mailserver/domains/dns/get"
     ],
-    "Domain": [
+    "Domains": [
       "POST/api/2.0/mailserver/domains/add",
       "GET/api/2.0/mailserver/domains/ownership/check",
       "GET/api/2.0/mailserver/domains/common",
       "GET/api/2.0/mailserver/domains/get",
       "GET/api/2.0/mailserver/domains/exists",
       "DELETE/api/2.0/mailserver/domains/remove/%7bid%7d"
+    ],
+    "mail%20groups": [
+      "PUT/api/2.0/mailserver/groupaddress/address/add",
+      "POST/api/2.0/mailserver/groupaddress/add",
+      "GET/api/2.0/mailserver/groupaddress/get",
+      "DELETE/api/2.0/mailserver/groupaddress/remove/%7bid%7d",
+      "DELETE/api/2.0/mailserver/groupaddress/addresses/remove"
     ],
     "Mailboxes": [
       "PUT/api/2.0/mailserver/mailboxes/changepwd",
@@ -666,13 +677,6 @@
       "DELETE/api/2.0/mailserver/mailboxes/remove/%7bid%7d",
       "PUT/api/2.0/mailserver/mailboxes/alias/remove",
       "PUT/api/2.0/mailserver/mailboxes/update"
-    ],
-    "MailGroup": [
-      "PUT/api/2.0/mailserver/groupaddress/address/add",
-      "POST/api/2.0/mailserver/groupaddress/add",
-      "GET/api/2.0/mailserver/groupaddress/get",
-      "DELETE/api/2.0/mailserver/groupaddress/remove/%7bid%7d",
-      "DELETE/api/2.0/mailserver/groupaddress/addresses/remove"
     ],
     "Notifications": [
       "POST/api/2.0/mailserver/notification/address/add",
