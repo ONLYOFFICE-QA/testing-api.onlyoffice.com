@@ -36,7 +36,7 @@
       "GET/api/2.0/calendar/events/%7beventid%7d/historybyid",
       "GET/api/2.0/calendar/events/%7beventuid%7d/historybyuid",
       "POST/api/2.0/calendar/import",
-      "ost/api/2.0/calendar/%7bcalendarid%7d/import",
+      "POST/api/2.0/calendar/%7bcalendarid%7d/import",
       "POST/api/2.0/calendar/importics",
       "DELETE/api/2.0/calendar/events/%7beventid%7d/unsubscribe",
       "PUT/api/2.0/calendar/%7bcalendarid%7d/%7beventid%7d",
