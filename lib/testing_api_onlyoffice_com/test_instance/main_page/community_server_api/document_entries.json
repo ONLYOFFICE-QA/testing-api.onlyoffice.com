@@ -8,40 +8,44 @@
     ]
   },
   "calendar": {
-    "unspecified": [
-      "POST/api/2.0/calendar/outsideevent",
-      "GET/api/2.0/calendar/%7bcalendarId%7d",
-      "GET/api/2.0/calendar/calendars/%7bstartDate%7d/%7bendDate%7d",
+    "calendars%20and%20subscriptions": [
       "POST/api/2.0/calendar",
-      "POST/api/2.0/calendar/calendarUrl",
-      "POST/api/2.0/calendar/event",
-      "POST/api/2.0/calendar/%7bcalendarId%7d/event",
-      "POST/api/2.0/calendar/icsevent",
-      "POST/api/2.0/calendar/icstodo",
-      "DELETE/api/2.0/calendar/%7bcalendarId%7d",
-      "DELETE/api/2.0/calendar/caldavevent",
-      "DELETE/api/2.0/calendar/events/%7beventId%7d/custom",
-      "DELETE/api/2.0/calendar/events/%7beventid%7d",
+      "POST/api/2.0/calendar/calendarurl",
+      "DELETE/api/2.0/calendar/%7bcalendarid%7d",
       "DELETE/api/2.0/calendar/caldavprojcal",
-      "DELETE/api/2.0/calendar/todos/%7btodoId%7d",
-      "GET/api/2.0/calendar/%7bcalendarId%7d/sharing",
-      "GET/api/2.0/calendar/%7bcalendarId%7d/caldavurl",
+      "GET/api/2.0/calendar/%7bcalendarid%7d",
+      "GET/api/2.0/calendar/%7bcalendarid%7d/sharing",
+      "GET/api/2.0/calendar/%7bcalendarid%7d/caldavurl",
+      "GET/api/2.0/calendar/calendars/%7bstartdate%7d/%7benddate%7d",
       "GET/api/2.0/calendar/sharing",
-      "GET/api/2.0/calendar/%7bcalendarid%7d/ical/%7bsignature%7d",
-      "GET/api/2.0/calendar/%7bcalendarId%7d/icalurl",
-      "POST/api/2.0/calendar/import",
-      "POST/api/2.0/calendar/%7bcalendarId%7d/import",
-      "POST/api/2.0/calendar/importIcs",
-      "GET/api/2.0/calendar/events/%7beventUid%7d/historybyuid",
-      "GET/api/2.0/calendar/events/%7beventId%7d/historybyid",
-      "POST/api/2.0/calendar/utcoffset",
+      "GET/api/2.0/calendar/%7bcalendarid%7d/icalurl",
       "GET/api/2.0/calendar/subscriptions",
-      "DELETE/api/2.0/calendar/events/%7beventId%7d/unsubscribe",
+      "GET/api/2.0/calendar/%7bcalendarid%7d/ical/%7bsignature%7d",
+      "POST/api/2.0/calendar/utcoffset",
+      "PUT/api/2.0/calendar/%7bcalendarid%7d",
+      "PUT/api/2.0/calendar/%7bcalendarid%7d/view"
+    ],
+    "events": [
+      "POST/api/2.0/calendar/outsideevent",
+      "POST/api/2.0/calendar/event",
+      "POST/api/2.0/calendar/%7bcalendarid%7d/event",
+      "POST/api/2.0/calendar/icsevent",
+      "DELETE/api/2.0/calendar/events/%7beventid%7d/custom",
+      "DELETE/api/2.0/calendar/caldavevent",
+      "DELETE/api/2.0/calendar/events/%7beventid%7d",
+      "GET/api/2.0/calendar/events/%7beventid%7d/historybyid",
+      "GET/api/2.0/calendar/events/%7beventuid%7d/historybyuid",
+      "POST/api/2.0/calendar/import",
+      "POST/api/2.0/calendar/%7bcalendarid%7d/import",
+      "POST/api/2.0/calendar/importics",
+      "DELETE/api/2.0/calendar/events/%7beventid%7d/unsubscribe",
+      "PUT/api/2.0/calendar/%7bcalendarid%7d/%7beventid%7d",
       "PUT/api/2.0/calendar/caldavevent",
-      "PUT/api/2.0/calendar/%7bcalendarId%7d",
-      "PUT/api/2.0/calendar/%7bcalendarId%7d/view",
-      "PUT/api/2.0/calendar/%7bcalendarId%7d/%7beventId%7d",
-      "PUT/api/2.0/calendar/icsevent",
+      "PUT/api/2.0/calendar/icsevent"
+    ],
+    "tasks": [
+      "POST/api/2.0/calendar/icstodo",
+      "DELETE/api/2.0/calendar/todos/%7btodoid%7d",
       "PUT/api/2.0/calendar/icstodo"
     ]
   },
@@ -86,7 +90,7 @@
       "GET/api/2.0/community/bookmark/%40favs",
       "GET/api/2.0/community/bookmark/top/recent",
       "DELETE/api/2.0/community/bookmark/comment/%7bcommentid%7d",
-      "DELETE/api/2.0/community/bookmark/%7bid%7d ",
+      "DELETE/api/2.0/community/bookmark/%7bid%7d",
       "DELETE/api/2.0/community/bookmark/%40favs/%7bid%7d",
       "GET/api/2.0/community/bookmark/%40search/%7bquery%7d",
       "GET/api/2.0/community/bookmark/top/day",
@@ -371,8 +375,7 @@
       "PUT/api/2.0/crm/task/category/%7bid%7d",
       "PUT/api/2.0/crm/task/category/%7bid%7d/icon"
     ],
-
-    "User%20fields": [
+    "Custom%20fields": [
       "POST/api/2.0/crm/%7bentityType%7d/customfield",
       "DELETE/api/2.0/crm/%7bentityType%7d/customfield/%7bfieldid%7d",
       "GET/api/2.0/crm/%7bentityType%7d/customfield/definitions",
@@ -465,9 +468,11 @@
       "PUT/api/2.0/files/fileops/markasread",
       "GET/api/2.0/files/fileops/move",
       "PUT/api/2.0/files/fileops/move",
-      "GET/api/2.0/files/fileops"
+      "GET/api/2.0/files/fileops",
+      "GET/api/2.0/files/%40search/%7bquery%7d"
     ],
     "Settings": [
+      "PUT/api/2.0/files/settings/downloadtargz",
       "PUT/api/2.0/files/docservice",
       "PUT/api/2.0/files/settings/favorites",
       "PUT/api/2.0/files/displayrecent",
@@ -499,9 +504,6 @@
       "POST/api/2.0/files/%7bfolderid%7d/upload",
       "POST/api/2.0/files/%40common/upload",
       "POST/api/2.0/files/%40my/upload"
-    ],
-    "unspecified": [
-      "GET/api/2.0/files/%40search/%7bquery%7d"
     ]
   },
   "group": {
@@ -538,6 +540,9 @@
     "Alerts": [
       "DELETE/api/2.0/mail/alert/%7bid%7d",
       "GET/api/2.0/mail/alert"
+    ],
+    "Autoreply": [
+      "POST/api/2.0/mail/autoreply/update/%7bmailboxId%7d"
     ],
     "Contacts": [
       "POST/api/2.0/mail/contact/add",
@@ -580,7 +585,7 @@
       "DELETE/api/2.0/mail/folders/%7bfolderid%7d/messages",
       "PUT/api/2.0/mail/userfolders/%7bid%7d"
     ],
-    "HelpCenter": [
+    "help%20center": [
       "GET/api/2.0/mail/helpcenter"
     ],
     "Images": [
@@ -589,10 +594,11 @@
       "DELETE/api/2.0/mail/display_images/address"
     ],
     "Messages": [
-      "POST/api/2.0/mail/messages/attachment/add",
       "POST/api/2.0/mail/messages/calendarbody/add",
+      "POST/api/2.0/mail/messages/attachment/add",
       "POST/api/2.0/mail/messages/%7bid%7d/document",
       "DELETE/api/2.0/mail/messages/%7bmessageid%7d/attachments/%7battachmentid%7d",
+      "PUT/api/2.0/mail/messages/attachment/downloadall/%7bmessageid%7d",
       "PUT/api/2.0/mail/messages/attachment/export",
       "PUT/api/2.0/mail/messages/attachments/export",
       "PUT/api/2.0/mail/messages/crm/export",
@@ -608,6 +614,10 @@
       "PUT/api/2.0/mail/messages/send",
       "PUT/api/2.0/mail/messages/mark"
     ],
+    "Operations": [
+      "GET/api/2.0/mail/operations",
+      "GET/api/2.0/mail/operations/%7boperationId%7d"
+    ],
     "Settings": [
       "GET/api/2.0/mail/settings/alwaysDisplayImages",
       "GET/api/2.0/mail/settings/cacheMessagesEnabled",
@@ -621,6 +631,10 @@
       "PUT/api/2.0/mail/settings/goNextAfterMoveEnabled",
       "PUT/api/2.0/mail/settings/replacemessagebody"
     ],
+    "Signature": [
+      "GET/api/2.0/mail/signature/%7bmailbox_id%7d",
+      "POST/api/2.0/mail/signature/update/%7bmailbox_id%7d"
+    ],
     "Tags": [
       "POST/api/2.0/mail/tags",
       "DELETE/api/2.0/mail/tags/%7bid%7d",
@@ -628,31 +642,30 @@
       "PUT/api/2.0/mail/tags/%7bid%7d/unset",
       "PUT/api/2.0/mail/tags/%7bid%7d/set",
       "PUT/api/2.0/mail/tags/%7bid%7d"
-    ],
-    "unspecified": [
-      "PUT/api/2.0/mail/messages/attachment/downloadall/%7bmessageid%7d",
-      "GET/api/2.0/mail/operations",
-      "GET/api/2.0/mail/operations/%7boperationId%7d",
-      "GET/api/2.0/mail/signature/%7bmailbox_id%7d",
-      "POST/api/2.0/mail/autoreply/update/%7bmailboxId%7d",
-      "POST/api/2.0/mail/signature/update/%7bmailbox_id%7d"
     ]
   },
   "mailserver": {
-    "AddressData": [
+    "address%20data": [
       "PUT/api/2.0/mailserver/mailboxes/alias/add"
     ],
-    "DnsRecords": [
+    "dns%20records": [
       "GET/api/2.0/mailserver/freedns/get",
       "GET/api/2.0/mailserver/domains/dns/get"
     ],
-    "Domain": [
+    "Domains": [
       "POST/api/2.0/mailserver/domains/add",
       "GET/api/2.0/mailserver/domains/ownership/check",
       "GET/api/2.0/mailserver/domains/common",
       "GET/api/2.0/mailserver/domains/get",
       "GET/api/2.0/mailserver/domains/exists",
       "DELETE/api/2.0/mailserver/domains/remove/%7bid%7d"
+    ],
+    "mail%20groups": [
+      "PUT/api/2.0/mailserver/groupaddress/address/add",
+      "POST/api/2.0/mailserver/groupaddress/add",
+      "GET/api/2.0/mailserver/groupaddress/get",
+      "DELETE/api/2.0/mailserver/groupaddress/remove/%7bid%7d",
+      "DELETE/api/2.0/mailserver/groupaddress/addresses/remove"
     ],
     "Mailboxes": [
       "PUT/api/2.0/mailserver/mailboxes/changepwd",
@@ -665,13 +678,6 @@
       "PUT/api/2.0/mailserver/mailboxes/alias/remove",
       "PUT/api/2.0/mailserver/mailboxes/update"
     ],
-    "MailGroup": [
-      "PUT/api/2.0/mailserver/groupaddress/address/add",
-      "POST/api/2.0/mailserver/groupaddress/add",
-      "GET/api/2.0/mailserver/groupaddress/get",
-      "DELETE/api/2.0/mailserver/groupaddress/remove/%7bid%7d",
-      "DELETE/api/2.0/mailserver/groupaddress/addresses/remove"
-    ],
     "Notifications": [
       "POST/api/2.0/mailserver/notification/address/add",
       "DELETE/api/2.0/mailserver/notification/address/remove"
@@ -682,6 +688,33 @@
     ]
   },
   "people": {
+    "affiliate%20programm": [
+      "PUT/api/2.0/people/self/joinaffiliate"
+    ],
+    "Contacts": [
+      "DELETE/api/2.0/people/%7buserid%7d/contacts",
+      "POST/api/2.0/people/%7buserid%7d/contacts",
+      "PUT/api/2.0/people/%7buserid%7d/contacts"
+    ],
+    "Photoes": [
+      "POST/api/2.0/people/%7buserid%7d/photo/thumbnails",
+      "DELETE/api/2.0/people/%7buserid%7d/photo",
+      "GET/api/2.0/people/%7buserid%7d/photo",
+      "PUT/api/2.0/people/%7buserid%7d/photo"
+    ],
+    "Profiles": [
+      "POST/api/2.0/people",
+      "DELETE/api/2.0/people/%7buserid%7d",
+      "PUT/api/2.0/people/delete",
+      "GET/api/2.0/people/email",
+      "GET/api/2.0/people/%7busername%7d",
+      "GET/api/2.0/people",
+      "GET/api/2.0/people/%40self",
+      "POST/api/2.0/people/import/save",
+      "PUT/api/2.0/people/invite",
+      "PUT/api/2.0/people/self/delete",
+      "PUT/api/2.0/people/%7buserid%7d"
+    ],
     "Reassign%20user%20data": [
       "GET/api/2.0/people/reassign/progress",
       "POST/api/2.0/people/reassign/start",
@@ -692,34 +725,19 @@
       "POST/api/2.0/people/remove/start",
       "PUT/api/2.0/people/remove/terminate"
     ],
-    "unspecified": [
-      "POST/api/2.0/people/import/save",
-      "POST/api/2.0/people",
-      "GET/api/2.0/people",
-      "POST/api/2.0/people/%7buserid%7d/photo/thumbnails",
-      "DELETE/api/2.0/people/%7buserid%7d",
-      "DELETE/api/2.0/people/%7buserid%7d/contacts",
-      "DELETE/api/2.0/people/%7buserid%7d/photo",
-      "PUT/api/2.0/people/delete",
-      "GET/api/2.0/people/status/%7bstatus%7d  ",
-      "GET/api/2.0/people/import/status  ",
-      "GET/api/2.0/people/%7buserid%7d/photo",
-      "PUT/api/2.0/people/self/joinaffiliate",
-      "GET/api/2.0/people/%40self",
+    "Search": [
       "GET/api/2.0/people/%40search/%7bquery%7d",
-      "PUT/api/2.0/people/invite",
-      "PUT/api/2.0/people/self/delete",
-      "POST/api/2.0/people/%7buserid%7d/contacts",
-      "GET/api/2.0/people/%7busername%7d",
-      "GET/api/2.0/people/email",
-      "PUT/api/2.0/people/%7buserid%7d",
-      "PUT/api/2.0/people/%7buserid%7d/contacts",
-      "PUT/api/2.0/people/%7buserid%7d/photo",
       "GET/api/2.0/people/search",
       "GET/api/2.0/people/filter",
       "GET/api/2.0/people/simple/filter",
-      "GET/api/2.0/people/status/%7bstatus%7d/search",
+      "GET/api/2.0/people/status/%7bstatus%7d/search"
+    ],
+    "user%20status": [
       "PUT/api/2.0/people/status/%7bstatus%7d",
+      "GET/api/2.0/people/import/status",
+      "GET/api/2.0/people/status/%7bstatus%7d  "
+    ],
+    "user%20type": [
       "PUT/api/2.0/people/type/%7btype%7d"
     ]
   },
@@ -742,17 +760,19 @@
       "GET/api/2.0/portal/tariff",
       "GET/api/2.0/portal/usedspace"
     ],
+    "Search": [
+      "GET/api/2.0/portal/search/state",
+      "GET/api/2.0/portal/search",
+      "POST/api/2.0/portal/search/reindex",
+      "POST/api/2.0/portal/search"
+    ],
     "Users": [
       "GET/api/2.0/portal/users/invite/%7bemployeeType%7d",
       "GET/api/2.0/portal/users/%7buserID%7d",
       "GET/api/2.0/portal/userscount"
     ],
     "unspecified": [
-      "GET/api/2.0/portal/search/state",
-      "GET/api/2.0/portal",
-      "GET/api/2.0/portal/search",
-      "POST/api/2.0/portal/search/reindex",
-      "POST/api/2.0/portal/search"
+      "GET/api/2.0/portal"
     ]
   },
   "project": {
@@ -790,90 +810,104 @@
       "DELETE/api/2.0/project/message/%7bmessageid%7d/files",
       "DELETE/api/2.0/project/task/%7btaskid%7d/files",
       "GET/api/2.0/project/%7bentityID%7d/entityfiles",
-      "GET/api/2.0/project/task/%7btaskid%7d/files",
       "GET/api/2.0/project/message/%7bmessageid%7d/files",
+      "GET/api/2.0/project/%7bid%7d/files",
+      "GET/api/2.0/project/task/%7btaskid%7d/files",
       "POST/api/2.0/project/message/%7bmessageid%7d/files",
       "POST/api/2.0/project/task/%7btaskid%7d/files"
     ],
     "Milestones": [
+      "GET/api/2.0/project/task/%7btaskid%7d/files",
       "DELETE/api/2.0/project/milestone/%7bid%7d",
       "DELETE/api/2.0/project/milestone",
       "GET/api/2.0/project/milestone/%7bid%7d",
       "GET/api/2.0/project/milestone/%7bid%7d/task",
-      "GET/api/2.0/project/milestone/filter",
+      "GET/api/2.0/project/milestone",
       "GET/api/2.0/project/milestone/%7byear%7d/%7bmonth%7d/%7bday%7d",
       "GET/api/2.0/project/milestone/%7byear%7d/%7bmonth%7d",
+      "GET/api/2.0/project/milestone/filter",
+      "GET/api/2.0/project/%7bid%7d/milestone",
+      "GET/api/2.0/project/%7bid%7d/milestone/%7bstatus%7d",
       "GET/api/2.0/project/milestone/late",
-      "GET/api/2.0/project/milestone",
       "PUT/api/2.0/project/milestone/%7bid%7d",
       "PUT/api/2.0/project/milestone/%7bid%7d/status"
     ],
     "Projects": [
-      "POST/api/2.0/project/%7bid%7d/milestone",
       "POST/api/2.0/project",
+      "POST/api/2.0/project/withSecurity",
       "DELETE/api/2.0/project/%7bid%7d",
       "DELETE/api/2.0/project",
-      "GET/api/2.0/project/%40follow",
-      "PUT/api/2.0/project/%7bprojectid%7d/follow",
-      "GET/api/2.0/project/%7bid%7d/milestone",
-      "GET/api/2.0/project/%7bid%7d/milestone/%7bstatus%7d",
-      "GET/api/2.0/project/%7bid%7d/time/total ",
-      "GET/api/2.0/project/%40self",
       "GET/api/2.0/project/%7bid%7d",
-      "GET/api/2.0/project/%7bstatus%7d",
-      "GET/api/2.0/project/%7bid%7d/files",
-      "GET/api/2.0/project/%7bid%7d/time",
-      "GET/api/2.0/project",
       "GET/api/2.0/project/filter",
-      "GET/api/2.0/project/%40search/%7bquery%7d",
+      "GET/api/2.0/project/%40follow",
+      "GET/api/2.0/project/%40self",
+      "GET/api/2.0/project",
+      "GET/api/2.0/project/%7bstatus%7d",
+      "PUT/api/2.0/project/%7bprojectid%7d/follow",
       "GET/api/2.0/project/%7bid%7d/%40search/%7bquery%7d",
+      "GET/api/2.0/project/%40search/%7bquery%7d",
       "PUT/api/2.0/project/%7bid%7d",
       "PUT/api/2.0/project/%7bid%7d/status",
+      "PUT/api/2.0/project/%7bid%7d/withSecurityInfo"
+    ],
+    "Report": [
+      "POST/api/2.0/project/report/create",
+      "POST/api/2.0/project/report",
+      "DELETE/api/2.0/project/report/%7breportid%7d",
+      "GET/api/2.0/project/report/status",
+      "GET/api/2.0/project/report/%7breportid%7d",
+      "GET/api/2.0/project/report/files",
+      "DELETE/api/2.0/project/report/files/%7bfileid%7d",
+      "GET/api/2.0/project/report/terminate",
+      "PUT/api/2.0/project/report/%7breportid%7d"
+    ],
+    "Settings": [
+      "GET/api/2.0/project/settings",
+      "PUT/api/2.0/project/settings"
+    ],
+    "Tags": [
+      "POST/api/2.0/project/tag",
+      "GET/api/2.0/project/tag",
+      "GET/api/2.0/project/tag/%7btag%7d",
+      "GET/api/2.0/project/tag/search",
       "PUT/api/2.0/project/%7bid%7d/tag",
       "PUT/api/2.0/project/%7bid%7d/tags"
     ],
-    "Report": [
-      "POST/api/2.0/project/report",
-      "DELETE/api/2.0/project/report/%7breportid%7d",
-      "GET/api/2.0/project/report/%7breportid%7d",
-      "PUT/api/2.0/project/report/%7breportid%7d"
-    ],
-    "Tags": [
-      "GET/api/2.0/project/tag/%7btag%7d",
-      "GET/api/2.0/project/tag",
-      "POST/api/2.0/project/tag",
-      "GET/api/2.0/project/tag/search"
-    ],
     "Tasks": [
-      "POST/api/2.0/project/task/%7bparentTaskId%7d/link",
+      "POST/api/2.0/project/task/%7bparenttaskid%7d/link",
       "POST/api/2.0/project/%7bprojectid%7d/task",
       "POST/api/2.0/project/%7bprojectid%7d/task/%7bmessageid%7d",
       "GET/api/2.0/project/task/%7btaskid%7d/subscribe",
       "POST/api/2.0/project/task/%7btaskid%7d/%7bsubtaskid%7d/copy",
-      "POST/api/2.0/project/task/%7bcopyFrom%7d/copy",
+      "POST/api/2.0/project/task/%7bcopyfrom%7d/copy",
       "POST/api/2.0/project/task/%7btaskid%7d",
+      "POST/api/2.0/project/status",
       "DELETE/api/2.0/project/task/%7btaskid%7d/%7bsubtaskid%7d",
       "DELETE/api/2.0/project/task/%7btaskid%7d",
+      "DELETE/api/2.0/project/status/%7bid%7d",
       "DELETE/api/2.0/project/task",
       "GET/api/2.0/project/task/%7btaskid%7d",
-      "GET/api/2.0/project/task/filter",
-      "GET/api/2.0/project/%7bprojectid%7d/task/%40self/%7bstatus%7d",
       "GET/api/2.0/project/task/%40self",
       "GET/api/2.0/project/task/%40self/%7bstatus%7d",
+      "GET/api/2.0/project/%7bprojectid%7d/task/%40self/%7bstatus%7d",
+      "GET/api/2.0/project/status",
+      "GET/api/2.0/project/%7bprojectid%7d/task",
+      "GET/api/2.0/project/task/filter",
+      "GET/api/2.0/project/%7bprojectid%7d/task/%7bstatus%7d",
       "GET/api/2.0/project/task/%7btaskid%7d/notify",
       "DELETE/api/2.0/project/task/%7btaskid%7d/link",
       "PUT/api/2.0/project/task/%7btaskid%7d/subscribe",
-      "GET/api/2.0/project/%7bprojectid%7d/task",
-      "GET/api/2.0/project/%7bprojectid%7d/task/%7bstatus%7d",
+      "PUT/api/2.0/project/task/milestone",
+      "PUT/api/2.0/project/task/status",
       "PUT/api/2.0/project/task/%7btaskid%7d/%7bsubtaskid%7d",
       "PUT/api/2.0/project/task/%7btaskid%7d/%7bsubtaskid%7d/status",
       "PUT/api/2.0/project/task/%7btaskid%7d",
       "PUT/api/2.0/project/task/%7btaskid%7d/milestone",
+      "PUT/api/2.0/project/status",
       "PUT/api/2.0/project/task/%7btaskid%7d/status",
-      "PUT/api/2.0/project/task/milestone",
-      "PUT/api/2.0/project/task/status"
+      "PUT/api/2.0/project/statuses"
     ],
-    "Team": [
+    "Teams": [
       "POST/api/2.0/project/%7bprojectid%7d/team",
       "GET/api/2.0/project/%7bprojectid%7d/team",
       "GET/api/2.0/project/%7bprojectid%7d/teamExcluded",
@@ -892,88 +926,99 @@
     "Time": [
       "POST/api/2.0/project/task/%7btaskid%7d/time",
       "DELETE/api/2.0/project/time/times/remove",
+      "GET/api/2.0/project/%7bid%7d/time",
       "GET/api/2.0/project/task/%7btaskid%7d/time",
       "GET/api/2.0/project/time/filter",
+      "GET/api/2.0/project/%7bid%7d/time/total",
       "GET/api/2.0/project/time/filter/total",
-      "PUT/api/2.0/project/time/%7btimeid%7d",
-      "PUT/api/2.0/project/time/times/status"
-    ],
-    "unspecified": [
-      "POST/api/2.0/project/report/create",
-      "POST/api/2.0/project/withSecurity",
-      "POST/api/2.0/project/status",
-      "DELETE/api/2.0/project/status/%7bid%7d",
-      "GET/api/2.0/project/report/files",
-      "GET/api/2.0/project/report/status",
-      "GET/api/2.0/project/settings",
-      "GET/api/2.0/project/status",
-      "DELETE/api/2.0/project/report/files/%7bfileid%7d",
-      "GET/api/2.0/project/report/terminate",
-      "PUT/api/2.0/project/%7bid%7d/withSecurityInfo ",
-      "PUT/api/2.0/project/settings",
-      "PUT/api/2.0/project/status",
-      "PUT/api/2.0/project/statuses"
+      "PUT/api/2.0/project/time/times/status",
+      "PUT/api/2.0/project/time/%7btimeid%7d"
     ]
   },
   "settings": {
-    "unspecified": [
-      "GET/api/2.0/settings/checkrecalculatequota",
+    "common%20settings": [
+      "GET/api/2.0/settings/logo",
+      "GET/api/2.0/settings",
+      "GET/api/2.0/settings/socket",
+      "PUT/api/2.0/settings/emailactivation"
+    ],
+    "custom%20navigation": [
       "POST/api/2.0/settings/customnavigation/create",
       "DELETE/api/2.0/settings/customnavigation/delete/%7bid%7d",
-      "GET/api/2.0/settings/storage/backup",
-      "GET/api/2.0/settings/storage/cdn",
-      "GET/api/2.0/settings/storage",
       "GET/api/2.0/settings/customnavigation/get/%7bid%7d",
       "GET/api/2.0/settings/customnavigation/getsample",
-      "GET/api/2.0/settings/customnavigation/getall",
-      "GET/api/2.0/settings/ssov2/default",
+      "GET/api/2.0/settings/customnavigation/getall"
+    ],
+    "ip%20restrictions": [
       "GET/api/2.0/settings/iprestrictions",
+      "PUT/api/2.0/settings/iprestrictions",
+      "PUT/api/2.0/settings/iprestrictions/settings"
+    ],
+    "ldap": [
       "GET/api/2.0/settings/ldap/cron",
       "GET/api/2.0/settings/ldap/default",
       "GET/api/2.0/settings/ldap",
       "GET/api/2.0/settings/ldap/status",
+      "POST/api/2.0/settings/ldap",
+      "POST/api/2.0/settings/ldap/cron",
+      "GET/api/2.0/settings/ldap/sync",
+      "POST/api/2.0/settings/ldap/save/test",
+      "GET/api/2.0/settings/ldap/sync/test"
+
+    ],
+    "quota": [
+      "GET/api/2.0/settings/checkrecalculatequota",
+      "GET/api/2.0/settings/quota",
+      "GET/api/2.0/settings/recalculatequota"
+    ],
+    "security": [
+      "GET/api/2.0/settings/security/administrator",
+      "GET/api/2.0/settings/security/%7bid%7d",
+      "GET/api/2.0/settings/security/password",
       "GET/api/2.0/settings/security/administrator/%7bproductid%7d",
       "GET/api/2.0/settings/security",
+      "PUT/api/2.0/settings/security/access",
+      "PUT/api/2.0/settings/security/administrator",
+      "PUT/api/2.0/settings/security"
+    ],
+    "smtp": [
       "GET/api/2.0/settings/smtp",
       "GET/api/2.0/settings/smtp/test/status",
-      "GET/api/2.0/settings/socket",
-      "GET/api/2.0/settings/statistics/spaceusage/%7bid%7d",
-      "GET/api/2.0/settings/ssov2",
-      "GET/api/2.0/settings/ssov2/constants",
-      "GET/api/2.0/settings/storage/progress",
-      "GET/api/2.0/settings/statistics/visit",
-      "GET/api/2.0/settings/security/%7bid%7d",
-      "GET/api/2.0/settings/security/administrator ",
-      "GET/api/2.0/settings/security/password",
-      "GET/api/2.0/settings/logo",
-      "GET/api/2.0/settings",
-      "GET/api/2.0/settings/recalculatequota",
-      "DELETE/api/2.0/settings/storage/cdn",
       "DELETE/api/2.0/settings/smtp",
-      "DELETE/api/2.0/settings/ssov2",
-      "DELETE/api/2.0/settings/storage",
-      "PUT/api/2.0/settings/iprestrictions",
-      "POST/api/2.0/settings/ldap",
-      "POST/api/2.0/settings/ldap/save/test",
       "POST/api/2.0/settings/smtp",
-      "POST/api/2.0/settings/ssov2",
-      "PUT/api/2.0/settings/security/access",
-      "PUT/api/2.0/settings/security/administrator ",
-      "PUT/api/2.0/settings/security",
-      "POST/api/2.0/settings/ldap/cron",
-      "GET/api/2.0/settings/quota",
-      "GET/api/2.0/settings/ldap/sync",
-      "GET/api/2.0/settings/ldap/sync/test",
-      "DELETE/api/2.0/settings/telegramdisconnect",
-      "GET/api/2.0/settings/telegramisconnected",
-      "GET/api/2.0/settings/smtp/test",
-      "PUT/api/2.0/settings/tfaappnewapp",
-      "PUT/api/2.0/settings/tfaappnewcodes",
-      "PUT/api/2.0/settings/tfaapp",
-      "PUT/api/2.0/settings/storage/cdn",
-      "PUT/api/2.0/settings/emailactivation",
-      "PUT/api/2.0/settings/iprestrictions/settings",
+      "GET/api/2.0/settings/smtp/test"
+    ],
+    "sso": [
+      "GET/api/2.0/settings/ssov2/constants",
+      "GET/api/2.0/settings/ssov2/default",
+      "GET/api/2.0/settings/ssov2",
+      "DELETE/api/2.0/settings/ssov2",
+      "POST/api/2.0/settings/ssov2"
+    ],
+    "statistic": [
+      "GET/api/2.0/settings/statistics/spaceusage/%7bid%7d",
+      "GET/api/2.0/settings/statistics/visit"
+    ],
+    "storage": [
+      "GET/api/2.0/settings/storage",
+      "GET/api/2.0/settings/storage/backup",
+      "GET/api/2.0/settings/storage/cdn",
+      "GET/api/2.0/settings/storage/progress",
+      "DELETE/api/2.0/settings/storage/cdn",
+      "DELETE/api/2.0/settings/storage",
       "PUT/api/2.0/settings/storage",
+      "PUT/api/2.0/settings/storage/cdn"
+    ],
+    "telegram": [
+      "GET/api/2.0/settings/telegramisconnected",
+      "DELETE/api/2.0/settings/telegramdisconnect"
+    ],
+    "tfa%20settings": [
+      "PUT/api/2.0/settings/tfaappnewcodes",
+      "PUT/api/2.0/settings/tfaappnewapp",
+      "PUT/api/2.0/settings/tfaapp"
+    ],
+    "tips": [
       "PUT/api/2.0/settings/tips",
       "PUT/api/2.0/settings/tips/change/subscription"
     ]

@@ -1,20 +1,20 @@
-calendar/DELETE/api/2.0/calendar/%7bcalendarId%7d/Resulting document
+calendar/DELETE/api/2.0/calendar/%7bcalendarid%7d/Resulting document
 calendar/DELETE/api/2.0/calendar/caldavevent/Resulting document
 calendar/DELETE/api/2.0/calendar/caldavprojcal/Resulting document
-calendar/DELETE/api/2.0/calendar/events/%7beventId%7d/unsubscribe/Resulting document
 calendar/DELETE/api/2.0/calendar/events/%7beventid%7d/Resulting document
-calendar/DELETE/api/2.0/calendar/todos/%7btodoId%7d/Resulting document
-calendar/GET/api/2.0/calendar/%7bcalendarId%7d/caldavurl/Resulting document
-calendar/GET/api/2.0/calendar/%7bcalendarId%7d/icalurl/Resulting document
+calendar/DELETE/api/2.0/calendar/events/%7beventid%7d/unsubscribe/Resulting document
+calendar/DELETE/api/2.0/calendar/todos/%7btodoid%7d/Resulting document
+calendar/GET/api/2.0/calendar/%7bcalendarid%7d/caldavurl/Resulting document
 calendar/GET/api/2.0/calendar/%7bcalendarid%7d/ical/%7bsignature%7d/Resulting document
-calendar/POST/api/2.0/calendar/%7bcalendarId%7d/import/Resulting document
+calendar/GET/api/2.0/calendar/%7bcalendarid%7d/icalurl/Resulting document
+calendar/POST/api/2.0/calendar/%7bcalendarid%7d/import/Resulting document
 calendar/POST/api/2.0/calendar/import/Resulting document
-calendar/POST/api/2.0/calendar/importIcs/Resulting document
+calendar/POST/api/2.0/calendar/importics/Resulting document
 calendar/POST/api/2.0/calendar/outsideevent/Resulting document
 calendar/POST/api/2.0/calendar/utcoffset/Resulting document
 calendar/PUT/api/2.0/calendar/caldavevent/Resulting document
 community/DELETE/api/2.0/community/blog/comment/%7bcommentid%7d/Resulting document
-community/DELETE/api/2.0/community/bookmark/%7bid%7d /Resulting document
+community/DELETE/api/2.0/community/bookmark/%7bid%7d/Resulting document
 community/DELETE/api/2.0/community/bookmark/comment/%7bcommentid%7d/Resulting document
 community/DELETE/api/2.0/community/event/comment/%7bcommentid%7d/Resulting document
 community/DELETE/api/2.0/community/wiki/%7bname%7d/Resulting document
@@ -151,6 +151,7 @@ files/PUT/api/2.0/files/displayrecent/Resulting document
 files/PUT/api/2.0/files/docservice/Resulting document
 files/PUT/api/2.0/files/docservice/Resulting document
 files/PUT/api/2.0/files/file/%7bfileId%7d/checkconversion/Resulting document
+files/PUT/api/2.0/files/settings/downloadtargz/Resulting document
 files/PUT/api/2.0/files/settings/favorites/Resulting document
 files/PUT/api/2.0/files/settings/templates/Resulting document
 files/PUT/api/2.0/files/storeoriginal/Resulting document
@@ -275,7 +276,7 @@ mailserver/PUT/api/2.0/mailserver/mailboxes/alias/add/Resulting document
 mailserver/PUT/api/2.0/mailserver/mailboxes/alias/remove/Resulting document
 mailserver/PUT/api/2.0/mailserver/mailboxes/changepwd/Resulting document
 mailserver/PUT/api/2.0/mailserver/mailboxes/update/Resulting document
-people/GET/api/2.0/people/import/status  /Resulting document
+people/GET/api/2.0/people/import/status/Resulting document
 people/GET/api/2.0/people/reassign/progress/Resulting document
 people/GET/api/2.0/people/remove/progress/Resulting document
 people/POST/api/2.0/people/import/save/Resulting document
@@ -312,7 +313,7 @@ project/DELETE/api/2.0/project/comment/%7bcommentid%7d/Resulting document
 project/DELETE/api/2.0/project/report/files/%7bfileid%7d/Resulting document
 project/DELETE/api/2.0/project/status/%7bid%7d/Resulting document
 project/DELETE/api/2.0/project/template/%7bid%7d/Resulting document
-project/GET/api/2.0/project/%7bid%7d/time/total /Resulting document
+project/GET/api/2.0/project/%7bid%7d/time/total/Resulting document
 project/GET/api/2.0/project/%7bprojectid%7d/team/Resulting document
 project/GET/api/2.0/project/%7bprojectid%7d/teamExcluded/Resulting document
 project/GET/api/2.0/project/message/%7bmessageid%7d/Resulting document
@@ -366,7 +367,7 @@ settings/GET/api/2.0/settings/ldap/sync/test/Resulting document
 settings/GET/api/2.0/settings/logo/Resulting document
 settings/GET/api/2.0/settings/recalculatequota/Resulting document
 settings/GET/api/2.0/settings/security/%7bid%7d/Resulting document
-settings/GET/api/2.0/settings/security/administrator /Resulting document
+settings/GET/api/2.0/settings/security/administrator/Resulting document
 settings/GET/api/2.0/settings/security/password/Resulting document
 settings/GET/api/2.0/settings/socket/Resulting document
 settings/GET/api/2.0/settings/ssov2/Resulting document
@@ -384,7 +385,7 @@ settings/POST/api/2.0/settings/ssov2/Resulting document
 settings/PUT/api/2.0/settings/emailactivation/Resulting document
 settings/PUT/api/2.0/settings/iprestrictions/Resulting document
 settings/PUT/api/2.0/settings/iprestrictions/settings/Resulting document
-settings/PUT/api/2.0/settings/security/administrator /Resulting document
+settings/PUT/api/2.0/settings/security/administrator/Resulting document
 settings/PUT/api/2.0/settings/storage/Resulting document
 settings/PUT/api/2.0/settings/storage/cdn/Resulting document
 settings/PUT/api/2.0/settings/tfaapp/Resulting document
