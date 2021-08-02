@@ -696,7 +696,7 @@
       "POST/api/2.0/people/%7buserid%7d/contacts",
       "PUT/api/2.0/people/%7buserid%7d/contacts"
     ],
-    "Photoes": [
+    "Photos": [
       "POST/api/2.0/people/%7buserid%7d/photo/thumbnails",
       "DELETE/api/2.0/people/%7buserid%7d/photo",
       "GET/api/2.0/people/%7buserid%7d/photo",
