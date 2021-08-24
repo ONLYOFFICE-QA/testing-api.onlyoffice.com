@@ -24,7 +24,7 @@ GEM
       faker (>= 1.1.2)
       yml_reader (>= 0.6)
     diff-lcs (1.4.4)
-    faker (2.18.0)
+    faker (2.19.0)
       i18n (>= 1.6, < 2)
     headless (2.3.1)
     httparty (0.18.1)
