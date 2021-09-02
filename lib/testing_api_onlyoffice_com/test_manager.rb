@@ -16,8 +16,8 @@ module TestingApiOnlyfficeCom
     end
 
     def add_result(example)
-      result = @tcm_helper.parse(example)
-      @palladium.set_result(status: result.status.to_s, description: result.result_message, name: result.case_name)
+      # result = @tcm_helper.parse(example)
+      # @palladium.set_result(status: result.status.to_s, description: result.result_message, name: result.case_name)
     end
   end
 end
