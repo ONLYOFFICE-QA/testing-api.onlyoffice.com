@@ -26,8 +26,6 @@
       "CreateStroke",
       "CreateTable",
       "GetDocument",
-      "GetFirstRunInArray",
-      "GetLastRunInArray",
       "GetMailMergeReceptionsCount",
       "GetMailMergeTemplateDocContent",
       "LoadMailMergeData",
@@ -695,13 +693,13 @@
     ],
     "ApiComment": [
       "Delete",
+      "GetClassType",
       "GetText"
     ],
     "ApiDocument": [
       "AddElement",
       "GetElement",
       "GetElementsCount",
-      "Last",
       "Push",
       "RemoveAllElements",
       "RemoveElement"
@@ -800,10 +798,13 @@
     "ApiRange": [
       "AddComment",
       "Clear",
+      "End",
       "ForEach",
       "GetAddress",
+      "GetCells",
       "GetClassType",
       "GetCol",
+      "GetCols",
       "GetColumnWidth",
       "GetComment",
       "GetCount",
@@ -811,6 +812,7 @@
       "GetFillColor",
       "GetFormula",
       "GetHidden",
+      "GetOrientation",
       "GetRow",
       "GetRowHeight",
       "GetRows",
@@ -834,6 +836,7 @@
       "SetItalic",
       "SetNumberFormat",
       "SetOffset",
+      "SetOrientation",
       "SetRowHeight",
       "SetStrikeout",
       "SetUnderline",
@@ -889,8 +892,7 @@
     ],
     "ApiTable": [
       "AddElement",
-      "Copy",
-      "Select"
+      "Copy"
     ],
     "ApiTextPr": [
       "GetClassType",
@@ -1014,7 +1016,6 @@
       "AddElement",
       "GetElement",
       "GetElementsCount",
-      "Last",
       "Push",
       "RemoveAllElements",
       "RemoveElement"
