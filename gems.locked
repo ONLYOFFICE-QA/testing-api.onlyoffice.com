@@ -44,7 +44,7 @@ GEM
     onlyoffice_documentserver_testing_framework (0.6.2)
       onlyoffice_logger_helper (~> 1)
       onlyoffice_webdriver_wrapper (~> 0)
-    onlyoffice_file_helper (0.4.0)
+    onlyoffice_file_helper (0.5.0)
       onlyoffice_logger_helper (~> 1)
       rubyzip (~> 2)
     onlyoffice_logger_helper (1.2.0)
