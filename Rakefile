@@ -13,7 +13,7 @@ task :update_community_server_missing_docs do
       end
     end
   end
-  IO.write("#{__dir__}/spec/data/failed_community_server_tests.list", all_missing_info.sort.join)
+  File.write("#{__dir__}/spec/data/failed_community_server_tests.list", all_missing_info.sort.join)
 end
 
 desc 'Task for actualizing list of missing API info for DocumentBuilder'
@@ -27,5 +27,5 @@ task :update_documentbuilder_missing_docs do
       end
     end
   end
-  IO.write("#{__dir__}/spec/data/failed_docbuilder_tests.list", all_missing_info.sort.join)
+  File.write("#{__dir__}/spec/data/failed_docbuilder_tests.list", all_missing_info.sort.join)
 end
