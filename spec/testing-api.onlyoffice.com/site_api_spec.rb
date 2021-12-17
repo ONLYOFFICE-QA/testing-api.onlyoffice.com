@@ -40,12 +40,6 @@ describe 'site_api_tests' do
       expect(api_document_server_page).to be_try_now_works
     end
 
-    it '[API][DocumentServer] integration examples download links shown and alive' do
-      api_document_server_page.go_to_integration_examples
-      result, failed = api_document_server_page.download_links_ok?
-      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nBad mojo with document server links:\n #{failed}"
-    end
-
     describe '#demo_editors' do
       it '[API][DocumentServer] demo `document` editor works' do
         expect(api_document_server_page).to be_integration_example_work(:document)
