@@ -35,20 +35,23 @@ module TestingApiOnlyfficeCom
       @instance.webdriver.wait_until { generate_document_element.present? }
     end
 
-    def check_download_links
-      checked = {}
-      DOC_BUILDER_EXAMPLES.each do |ex|
-        link = send("#{ex}_element")
-        checked["#{ex}_visibility"] = link.present?
-        checked["#{ex}_downloadable"] = HTTParty.head(link.href).success? if link.present?
-      end
-      checked
+    # @return [Integer] How much there is language examples on page
+    def examples_count
+      @instance.webdriver.get_element_count('//ul[contains(@class, "list-buttons")]/li')
     end
 
-    def download_links_ok?
-      checked = check_download_links
-      failed = checked.find_all { |_key, value| value == false }
-      [failed.empty?, failed]
+    # Check if example download link is visible on page
+    # @param [Symbol] language to check
+    # @return [Boolean] result of check
+    def example_visible?(language)
+      @instance.webdriver.element_visible?(send("#{language}_element"))
+    end
+
+    # Check if example can be download
+    # @param [Symbol] language to check
+    # @return [Boolean] result of check
+    def example_downloadable?(language)
+      HTTParty.head(send("#{language}_element").href).success?
     end
   end
 end
