@@ -10,19 +10,23 @@ module TestingApiOnlyfficeCom
 
     DOC_SERVER_EXAMPLES = %i[
       c_sharp_mvc
-      c_sharp
+      c_sharp_dotnet
       java
+      java_spring
       node_js
       php
+      python
       ruby
     ].freeze
 
     # download links
     link(:c_sharp_mvc, xpath: '//*[contains(@href, "MVC")]')
-    link(:c_sharp, xpath: '//*[not(contains(@href, "MVC")) and contains(@href, ".Net")]')
-    link(:java, xpath: '//*[contains(@href, "Java")]')
+    link(:c_sharp_dotnet, xpath: '//*[contains(@href, "DotNet")]')
+    link(:java, xpath: '//*[contains(@href, "Java Example")]')
+    link(:java_spring, xpath: '//*[contains(@href, "Java Spring")]')
     link(:node_js, xpath: '//*[contains(@href, "Node")]')
     link(:php, xpath: '//*[contains(@href, "PHP")]')
+    link(:python, xpath: '//*[contains(@href, "Python")]')
     link(:ruby, xpath: '//*[contains(@href, "Ruby")]')
 
     link(:try_now, xpath: '//a[contains(@href, "editors/try")]')
