@@ -7,3 +7,18 @@ AllCops:
 # We use `gems.rb` in this project
 Bundler/GemFilename:
   EnforcedStyle: gems.rb
+
+# Totally disable this check
+# since we do not use rspec to
+# test some code in this product
+# but to test another application
+RSpec/DescribeClass:
+  Enabled: false
+
+# Disable this check since we use instance
+# variables in rspec to store webdriver page
+# Not sure if this can be done effectively with `let`
+# So disable this check for now, but may uncomment
+# in future
+RSpec/InstanceVariable:
+  Enabled: false
