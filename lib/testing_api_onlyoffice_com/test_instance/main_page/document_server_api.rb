@@ -8,21 +8,26 @@ module TestingApiOnlyfficeCom
   class DocumentServerAPI
     include PageObject
 
+    # @return [Array<Symbols>] list of languages with examples
     DOC_SERVER_EXAMPLES = %i[
       c_sharp_mvc
-      c_sharp
+      c_sharp_dotnet
       java
+      java_spring
       node_js
       php
+      python
       ruby
     ].freeze
 
     # download links
     link(:c_sharp_mvc, xpath: '//*[contains(@href, "MVC")]')
-    link(:c_sharp, xpath: '//*[not(contains(@href, "MVC")) and contains(@href, ".Net")]')
-    link(:java, xpath: '//*[contains(@href, "Java")]')
+    link(:c_sharp_dotnet, xpath: '//*[contains(@href, "DotNet")]')
+    link(:java, xpath: '//*[contains(@href, "Java Example")]')
+    link(:java_spring, xpath: '//*[contains(@href, "Java Spring")]')
     link(:node_js, xpath: '//*[contains(@href, "Node")]')
     link(:php, xpath: '//*[contains(@href, "PHP")]')
+    link(:python, xpath: '//*[contains(@href, "Python")]')
     link(:ruby, xpath: '//*[contains(@href, "Ruby")]')
 
     link(:try_now, xpath: '//a[contains(@href, "editors/try")]')
@@ -63,6 +68,7 @@ module TestingApiOnlyfficeCom
     def go_to_integration_examples
       integration_examples_element.click
       wait_to_load
+      self
     end
 
     def editor_seems_legit?(editor = :document)
@@ -74,20 +80,23 @@ module TestingApiOnlyfficeCom
       @instance.webdriver.wait_until { editor_seems_legit? editor }
     end
 
-    def check_download_links
-      checked = {}
-      DOC_SERVER_EXAMPLES.each do |ex|
-        link = send("#{ex}_element")
-        checked["#{ex}_visibility"] = link.present?
-        checked["#{ex}_downloadable"] = HTTParty.head(link.href).success? if link.present?
-      end
-      checked
+    # @return [Integer] How much there is language examples on page
+    def examples_count
+      @instance.webdriver.get_element_count('//ul[contains(@class, "list-buttons")]/li')
     end
 
-    def download_links_ok?
-      checked = check_download_links
-      failed = checked.find_all { |_key, value| value == false }
-      [failed.empty?, failed]
+    # Check if example download link is visible on page
+    # @param [Symbol] language to check
+    # @return [Boolean] result of check
+    def example_visible?(language)
+      @instance.webdriver.element_visible?(send("#{language}_element"))
+    end
+
+    # Check if example can be download
+    # @param [Symbol] language to check
+    # @return [Boolean] result of check
+    def example_downloadable?(language)
+      HTTParty.head(send("#{language}_element").href).success?
     end
 
     private
