@@ -7,3 +7,10 @@ AllCops:
 # We use `gems.rb` in this project
 Bundler/GemFilename:
   EnforcedStyle: gems.rb
+
+# Totally disable this check
+# since we do not use rspec to
+# test some code in this product
+# but to test another application
+RSpec/DescribeClass:
+  Enabled: false
