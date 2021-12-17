@@ -14,3 +14,11 @@ Bundler/GemFilename:
 # but to test another application
 RSpec/DescribeClass:
   Enabled: false
+
+# Disable this check since we use instance
+# variables in rspec to store webdriver page
+# Not sure if this can be done effectively with `let`
+# So disable this check for now, but may uncomment
+# in future
+RSpec/InstanceVariable:
+  Enabled: false
