@@ -24,12 +24,6 @@ describe 'site_api_tests' do
       result, file_size = @introduction_page.builder_works?
       expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nFile size: #{file_size}"
     end
-
-    it '[API][DocumentBuilder] Integrating Document Builder download links shown and alive' do
-      integraing_page = @introduction_page.open_integrating_document_builder
-      result, failed = integraing_page.download_links_ok?
-      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nBad mojo with document builder links:\n #{failed}"
-    end
   end
 
   describe '#document_server' do
