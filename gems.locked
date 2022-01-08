@@ -108,7 +108,7 @@ GEM
       rubocop-ast (>= 0.4.0)
     rubocop-rspec (2.7.0)
       rubocop (~> 1.19)
-    ruby-filemagic (0.7.2)
+    ruby-filemagic (0.7.3)
     ruby-progressbar (1.11.0)
     rubyzip (2.3.2)
     selenium-webdriver (3.142.7)
