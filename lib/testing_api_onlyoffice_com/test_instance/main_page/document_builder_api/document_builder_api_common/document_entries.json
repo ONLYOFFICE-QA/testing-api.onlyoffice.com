@@ -2,6 +2,7 @@
   "Text document API": {
     "Api": [
       "AddComment",
+      "ConvertDocument",
       "CreateBlipFill",
       "CreateBlockLvlSdt",
       "CreateBullet",
@@ -130,7 +131,9 @@
       "Search",
       "SearchAndReplace",
       "SetEvenAndOddHdrFtr",
-      "SetTrackRevisions"
+      "SetTrackRevisions",
+      "ToHtml",
+      "ToMarkdown"
     ],
     "ApiDocumentContent": [
       "AddElement",
@@ -368,9 +371,11 @@
       "Copy",
       "Delete",
       "GetClassType",
+      "GetNext",
       "GetParentContentControl",
       "GetParentTable",
       "GetParentTableCell",
+      "GetPrevious",
       "GetRange",
       "GetTextPr",
       "RemoveAllElements",
@@ -655,6 +660,7 @@
       "GetSheets",
       "GetThemesColors",
       "Intersect",
+      "RecalculateAllFormulas",
       "ReplaceTextSmart",
       "Save",
       "SetLocale",
@@ -838,6 +844,7 @@
       "SetOffset",
       "SetOrientation",
       "SetRowHeight",
+      "SetSort",
       "SetStrikeout",
       "SetUnderline",
       "SetValue",
@@ -1108,6 +1115,7 @@
       "GetCurSlideIndex",
       "GetSlideByIndex",
       "ReplaceCurrentImage",
+      "SetLanguage",
       "SetSizes"
     ],
     "ApiPresetColor": [

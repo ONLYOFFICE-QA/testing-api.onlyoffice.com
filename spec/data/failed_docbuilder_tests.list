@@ -20,16 +20,18 @@ Presentation API/ApiHyperlink/GetElementsCount/Example
 Presentation API/ApiHyperlink/GetElementsCount/Resulting document
 Presentation API/ApiPresentation/ReplaceCurrentImage/Example
 Presentation API/ApiPresentation/ReplaceCurrentImage/Resulting document
+Presentation API/ApiPresentation/SetLanguage/Example
+Presentation API/ApiPresentation/SetLanguage/Resulting document
 Presentation API/ApiRun/SetStyle/Example
 Presentation API/ApiRun/SetStyle/Resulting document
-Presentation API/ApiShape/GetContent/Example
-Presentation API/ApiShape/GetContent/Resulting document
 Presentation API/ApiTable/AddElement/Example
 Presentation API/ApiTable/AddElement/Resulting document
 Presentation API/ApiTable/Copy/Example
 Presentation API/ApiTable/Copy/Resulting document
 Presentation API/ApiTable/Select/Example
 Presentation API/ApiTable/Select/Resulting document
+Spreadsheet API/Api/RecalculateAllFormulas/Example
+Spreadsheet API/Api/RecalculateAllFormulas/Resulting document
 Spreadsheet API/ApiDocument/AddElement/Example
 Spreadsheet API/ApiDocument/AddElement/Resulting document
 Spreadsheet API/ApiDocument/GetElement/Example
@@ -50,6 +52,8 @@ Spreadsheet API/ApiHyperlink/GetElementsCount/Example
 Spreadsheet API/ApiHyperlink/GetElementsCount/Resulting document
 Spreadsheet API/ApiParagraph/Copy/Example
 Spreadsheet API/ApiParagraph/Copy/Resulting document
+Spreadsheet API/ApiRange/SetSort/Example
+Spreadsheet API/ApiRange/SetSort/Resulting document
 Spreadsheet API/ApiRun/SetHighlight/Example
 Spreadsheet API/ApiRun/SetHighlight/Resulting document
 Spreadsheet API/ApiRun/SetShd/Example
@@ -58,6 +62,8 @@ Spreadsheet API/ApiRun/SetStyle/Example
 Spreadsheet API/ApiRun/SetStyle/Resulting document
 Spreadsheet API/ApiShape/SetPaddings/Example
 Spreadsheet API/ApiShape/SetPaddings/Resulting document
+Spreadsheet API/ApiShape/GetDocContent/Example
+Spreadsheet API/ApiShape/GetDocContent/Resulting document
 Spreadsheet API/ApiTable/AddElement/Example
 Spreadsheet API/ApiTable/AddElement/Resulting document
 Spreadsheet API/ApiTable/Copy/Example
@@ -76,6 +82,8 @@ Spreadsheet API/ApiWorksheet/SetPrintGridlines/Example
 Spreadsheet API/ApiWorksheet/SetPrintGridlines/Resulting document
 Spreadsheet API/ApiWorksheet/SetPrintHeadings/Example
 Spreadsheet API/ApiWorksheet/SetPrintHeadings/Resulting document
+Text document API/Api/ConvertDocument/Example
+Text document API/Api/ConvertDocument/Resulting document
 Text document API/Api/CreateBullet/Example
 Text document API/Api/CreateBullet/Resulting document
 Text document API/Api/CreateHyperlink/Example
@@ -86,28 +94,24 @@ Text document API/Api/GetFirstRunInArray/Example
 Text document API/Api/GetFirstRunInArray/Resulting document
 Text document API/Api/GetLastRunInArray/Example
 Text document API/Api/GetLastRunInArray/Resulting document
-Text document API/Api/GetMailMergeReceptionsCount/Example
-Text document API/Api/GetMailMergeReceptionsCount/Resulting document
-Text document API/Api/GetMailMergeTemplateDocContent/Example
-Text document API/Api/GetMailMergeTemplateDocContent/Resulting document
-Text document API/Api/LoadMailMergeData/Example
-Text document API/Api/LoadMailMergeData/Resulting document
-Text document API/Api/MailMerge/Example
-Text document API/Api/MailMerge/Resulting document
-Text document API/Api/ReplaceDocumentContent/Example
-Text document API/Api/ReplaceDocumentContent/Resulting document
 Text document API/ApiBlockLvlSdt/Delete/Example
 Text document API/ApiBlockLvlSdt/Delete/Resulting document
-Text document API/ApiBlockLvlSdt/GetAllContentControls/Example
-Text document API/ApiBlockLvlSdt/GetAllContentControls/Resulting document
 Text document API/ApiBullet/GetClassType/Example
 Text document API/ApiBullet/GetClassType/Resulting document
+Text document API/ApiDocument/ToMarkdown/Example
+Text document API/ApiDocument/ToMarkdown/Resulting document
+Text document API/ApiDocument/ToHtml/Example
+Text document API/ApiDocument/ToHtml/Resulting document
 Text document API/ApiParaPr/GetShd/Example
 Text document API/ApiParaPr/GetShd/Resulting document
 Text document API/ApiParaPr/SetBullet/Example
 Text document API/ApiParaPr/SetBullet/Resulting document
 Text document API/ApiParagraph/SetBullet/Example
 Text document API/ApiParagraph/SetBullet/Resulting document
+Text document API/ApiRun/GetNext/Example
+Text document API/ApiRun/GetNext/Resulting document
+Text document API/ApiRun/GetPrevious/Example
+Text document API/ApiRun/GetPrevious/Resulting document
 Text document API/ApiTable/Delete/Example
 Text document API/ApiTable/Delete/Resulting document
 Text document API/ApiTable/GetNext/Example
