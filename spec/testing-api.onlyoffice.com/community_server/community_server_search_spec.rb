@@ -39,6 +39,10 @@ describe 'community_server_search' do
   describe 'xss' do
     let(:xss) { '"><script>alert(1)</script>' }
 
+    before do
+      pending('https://nct.onlyoffice.com/Products/Projects/Tasks.aspx?prjID=124&id=33647')
+    end
+
     it 'Search for xss will will result no entries' do
       result_page = @api_community_server_page.search(xss)
       expect(result_page).to be_no_entries_found
