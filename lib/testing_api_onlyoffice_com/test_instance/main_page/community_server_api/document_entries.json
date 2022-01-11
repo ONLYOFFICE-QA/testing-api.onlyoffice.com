@@ -424,6 +424,7 @@
   "files": {
     "Files": [
       "PUT/api/2.0/files/file/%7bfileId%7d/history",
+      "POST/api/2.0/files/templates",
       "POST/api/2.0/files/%7bfolderid%7d/file",
       "POST/api/2.0/files/%40my/file",
       "GET/api/2.0/files/file/%7bfileid%7d/openedit",
