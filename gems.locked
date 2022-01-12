@@ -1,4 +1,4 @@
-gGIT
+GIT
   remote: https://github.com/ONLYOFFICE-QA/onlyoffice_webdriver_wrapper
   revision: c9f99473092aefb8c929076a2151f8659d8865e1
   branch: feature/webdriver-4
