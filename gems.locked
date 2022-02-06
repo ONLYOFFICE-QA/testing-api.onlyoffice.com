@@ -41,7 +41,7 @@ GEM
     nokogiri (1.13.1)
       mini_portile2 (~> 2.7.0)
       racc (~> 1.4)
-    onlyoffice_documentserver_testing_framework (2.0.0)
+    onlyoffice_documentserver_testing_framework (2.1.0)
       onlyoffice_logger_helper (~> 1)
       onlyoffice_webdriver_wrapper (~> 1)
     onlyoffice_file_helper (0.5.0)
