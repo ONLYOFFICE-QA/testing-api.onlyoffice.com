@@ -30,7 +30,7 @@ module TestingApiOnlyfficeCom
 
     # @return [String] server on which test are performed
     def default_server
-      return 'https://api.onlyoffice.com' if ENV['SPEC_REGION']&.include?('com')
+      return 'https://api.onlyoffice.com' if ENV.fetch('SPEC_REGION', 'unknown').include?('com')
 
       'https://api.teamlab.info'
     end
