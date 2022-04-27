@@ -16,7 +16,7 @@ module TestingApiOnlyfficeCom
     def palladium_token
       return ENV.fetch('PALLADIUM_TOKEN') if ENV.key?('PALLADIUM_TOKEN')
 
-      token_file = "#{Dir.hoome}/.palladium/token"
+      token_file = "#{Dir.home}/.palladium/token"
       return File.read(token_file) if File.exist?(token_file)
 
       raise 'Palladium key not found'
