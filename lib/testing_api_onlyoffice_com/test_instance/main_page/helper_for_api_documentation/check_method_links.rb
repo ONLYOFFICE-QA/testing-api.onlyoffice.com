@@ -12,6 +12,8 @@ module TestingApiOnlyfficeCom
         @instance.webdriver.webdriver_error("Not visible element: #{module_name}") unless checked[module_name]
         documentation_objects[index].click_expend
         section_hash.each do |section_name, methods_array|
+          OnlyofficeLoggerHelper.log("Checking #{documentation_objects[index].name}/#{section_name}")
+
           unless section_name == 'unspecified'
             checked[section_name] = documentation_objects[index][section_name].visible?
             @instance.webdriver.webdriver_error("Not visible element: #{module_name}/#{section_name}") unless checked[section_name]
