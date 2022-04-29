@@ -1,3 +1,5 @@
+Presentation API/Api/CreateMaster/Example
+Presentation API/Api/CreateMaster/Resulting document
 Presentation API/Api/ReplaceTextSmart/Example
 Presentation API/Api/ReplaceTextSmart/Resulting document
 Presentation API/ApiDocument/AddElement/Example
@@ -6,22 +8,20 @@ Presentation API/ApiDocument/GetElement/Example
 Presentation API/ApiDocument/GetElement/Resulting document
 Presentation API/ApiDocument/GetElementsCount/Example
 Presentation API/ApiDocument/GetElementsCount/Resulting document
-Presentation API/ApiDocument/Last/Example
-Presentation API/ApiDocument/Last/Resulting document
 Presentation API/ApiDocument/Push/Example
 Presentation API/ApiDocument/Push/Resulting document
 Presentation API/ApiDocument/RemoveAllElements/Example
 Presentation API/ApiDocument/RemoveAllElements/Resulting document
 Presentation API/ApiDocument/RemoveElement/Example
 Presentation API/ApiDocument/RemoveElement/Resulting document
-Presentation API/ApiHyperlink/GetElement/Example
-Presentation API/ApiHyperlink/GetElement/Resulting document
-Presentation API/ApiHyperlink/GetElementsCount/Example
-Presentation API/ApiHyperlink/GetElementsCount/Resulting document
+Presentation API/ApiPresentation/AddMaster/Example
+Presentation API/ApiPresentation/AddMaster/Resulting document
 Presentation API/ApiPresentation/ReplaceCurrentImage/Example
 Presentation API/ApiPresentation/ReplaceCurrentImage/Resulting document
 Presentation API/ApiRun/SetStyle/Example
 Presentation API/ApiRun/SetStyle/Resulting document
+Presentation API/ApiSlide/FollowMasterBackground/Example
+Presentation API/ApiSlide/FollowMasterBackground/Resulting document
 Presentation API/ApiTable/AddElement/Example
 Presentation API/ApiTable/AddElement/Resulting document
 Presentation API/ApiTable/Copy/Example
@@ -34,18 +34,12 @@ Spreadsheet API/ApiDocument/GetElement/Example
 Spreadsheet API/ApiDocument/GetElement/Resulting document
 Spreadsheet API/ApiDocument/GetElementsCount/Example
 Spreadsheet API/ApiDocument/GetElementsCount/Resulting document
-Spreadsheet API/ApiDocument/Last/Example
-Spreadsheet API/ApiDocument/Last/Resulting document
 Spreadsheet API/ApiDocument/Push/Example
 Spreadsheet API/ApiDocument/Push/Resulting document
 Spreadsheet API/ApiDocument/RemoveAllElements/Example
 Spreadsheet API/ApiDocument/RemoveAllElements/Resulting document
 Spreadsheet API/ApiDocument/RemoveElement/Example
 Spreadsheet API/ApiDocument/RemoveElement/Resulting document
-Spreadsheet API/ApiHyperlink/GetElement/Example
-Spreadsheet API/ApiHyperlink/GetElement/Resulting document
-Spreadsheet API/ApiHyperlink/GetElementsCount/Example
-Spreadsheet API/ApiHyperlink/GetElementsCount/Resulting document
 Spreadsheet API/ApiParagraph/Copy/Example
 Spreadsheet API/ApiParagraph/Copy/Resulting document
 Spreadsheet API/ApiRange/SetSort/Example
@@ -58,12 +52,6 @@ Spreadsheet API/ApiRun/SetStyle/Example
 Spreadsheet API/ApiRun/SetStyle/Resulting document
 Spreadsheet API/ApiShape/SetPaddings/Example
 Spreadsheet API/ApiShape/SetPaddings/Resulting document
-Spreadsheet API/ApiTable/AddElement/Example
-Spreadsheet API/ApiTable/AddElement/Resulting document
-Spreadsheet API/ApiTable/Copy/Example
-Spreadsheet API/ApiTable/Copy/Resulting document
-Spreadsheet API/ApiTable/Select/Example
-Spreadsheet API/ApiTable/Select/Resulting document
 Spreadsheet API/ApiWorksheet/Delete/Example
 Spreadsheet API/ApiWorksheet/Delete/Resulting document
 Spreadsheet API/ApiWorksheet/GetPrintGridlines/Example
@@ -78,18 +66,16 @@ Spreadsheet API/ApiWorksheet/SetPrintHeadings/Example
 Spreadsheet API/ApiWorksheet/SetPrintHeadings/Resulting document
 Text document API/Api/CreateBullet/Example
 Text document API/Api/CreateBullet/Resulting document
-Text document API/Api/CreateHyperlink/Example
-Text document API/Api/CreateHyperlink/Resulting document
-Text document API/Api/CreateRange/Example
-Text document API/Api/CreateRange/Resulting document
-Text document API/Api/GetFirstRunInArray/Example
-Text document API/Api/GetFirstRunInArray/Resulting document
-Text document API/Api/GetLastRunInArray/Example
-Text document API/Api/GetLastRunInArray/Resulting document
 Text document API/ApiBlockLvlSdt/Delete/Example
 Text document API/ApiBlockLvlSdt/Delete/Resulting document
+Text document API/ApiBlockLvlSdt/GetPlaceholderText/Example
+Text document API/ApiBlockLvlSdt/GetPlaceholderText/Resulting document
+Text document API/ApiBlockLvlSdt/SetPlaceholderText/Example
+Text document API/ApiBlockLvlSdt/SetPlaceholderText/Resulting document
 Text document API/ApiBullet/GetClassType/Example
 Text document API/ApiBullet/GetClassType/Resulting document
+Text document API/ApiDocument/GetAllBookmarksNames/Example
+Text document API/ApiDocument/GetAllBookmarksNames/Resulting document
 Text document API/ApiParaPr/GetShd/Example
 Text document API/ApiParaPr/GetShd/Resulting document
 Text document API/ApiParaPr/SetBullet/Example
