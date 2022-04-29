@@ -55,9 +55,6 @@
     ]
   },
   "community": {
-    "Birthday": [
-      "POST/api/2.0/community/birthday"
-    ],
     "Blogs": [
       "POST/api/2.0/community/blog/comment",
       "POST/api/2.0/community/blog/%7bpostid%7d/comment",
@@ -423,21 +420,25 @@
   },
   "files": {
     "Files": [
-      "PUT/api/2.0/files/file/%7bfileId%7d/history",
+      "POST/api/2.0/files/favorites",
       "POST/api/2.0/files/templates",
+      "PUT/api/2.0/files/file/%7bfileid%7d/history",
+      "POST/api/2.0/files/file/%7bfileid%7d/copyas",
       "POST/api/2.0/files/%7bfolderid%7d/file",
       "POST/api/2.0/files/%40my/file",
-      "GET/api/2.0/files/file/%7bfileid%7d/openedit",
-      "PUT/api/2.0/files/file/%7bfileId%7d/saveediting",
-      "POST/api/2.0/files/file/%7bfileId%7d/startedit",
-      "GET/api/2.0/files/file/%7bfileId%7d/trackeditfile",
-      "POST/api/2.0/files/favorites",
       "DELETE/api/2.0/files/favorites",
-      "GET/api/2.0/files/file/%7bfileId%7d",
-      "GET/api/2.0/files/file/%7bfileId%7d/history",
-      "POST/api/2.0/files/templates",
       "DELETE/api/2.0/files/templates",
-      "PUT/api/2.0/files/file/%7bfileId%7d",
+      "GET/api/2.0/files/file/%7bfileid%7d/presigneduri",
+      "GET/api/2.0/files/%7bfileid%7d/properties",
+      "GET/api/2.0/files/file/%7bfileid%7d/history",
+      "GET/api/2.0/files/file/%7bfileid%7d",
+      "GET/api/2.0/files/file/%7bfileid%7d/openedit",
+      "PUT/api/2.0/files/file/%7bfileid%7d/saveediting",
+      "PUT/api/2.0/files/%7bfileid%7d/properties",
+      "PUT/api/2.0/files/batch/properties",
+      "POST/api/2.0/files/file/%7bfileid%7d/startedit",
+      "GET/api/2.0/files/file/%7bfileid%7d/trackeditfile",
+      "PUT/api/2.0/files/file/%7bfileid%7d",
       "PUT/api/2.0/files/%7bfileid%7d/update"
     ],
     "Folders": [
@@ -474,13 +475,16 @@
     ],
     "Settings": [
       "PUT/api/2.0/files/settings/downloadtargz",
+      "PUT/api/2.0/files/settings/dafaultaccessrights",
       "PUT/api/2.0/files/docservice",
       "PUT/api/2.0/files/settings/favorites",
       "PUT/api/2.0/files/displayrecent",
       "PUT/api/2.0/files/settings/templates",
-      "PUT/api/2.0/files/docservice",
+      "GET/api/2.0/files/settings/autocleanup",
+      "GET/api/2.0/files/docservice",
       "PUT/api/2.0/files/storeoriginal",
-      "PUT/api/2.0/files/updateifexist"
+      "PUT/api/2.0/files/updateifexist",
+      "PUT/api/2.0/files/settings/autocleanup"
     ],
     "Sharing": [
       "GET/api/2.0/files/file/%7bfileId%7d/share",
@@ -509,17 +513,18 @@
   },
   "group": {
     "unspecified": [
-      "PUT/api/2.0/group/%7bgroupid%7d/members",
       "POST/api/2.0/group",
-      "GET/api/2.0/group",
+      "PUT/api/2.0/group/%7bgroupid%7d/members",
       "DELETE/api/2.0/group/%7bgroupid%7d",
+      "GET/api/2.0/group/%7bgroupid%7d",
+      "GET/api/2.0/group",
+      "GET/api/2.0/group/search",
+      "GET/api/2.0/group/user/%7buserid%7d",
       "PUT/api/2.0/group/%7bgroupid%7d/members/%7bnewgroupid%7d",
       "DELETE/api/2.0/group/%7bgroupid%7d/members",
       "PUT/api/2.0/group/%7bgroupid%7d/manager",
       "POST/api/2.0/group/%7bgroupid%7d/members",
-      "GET/api/2.0/group/%7bgroupid%7d",
-      "PUT/api/2.0/group/%7bgroupid%7d",
-      "GET/api/2.0/group/user/%7buserid%7d"
+      "PUT/api/2.0/group/%7bgroupid%7d"
     ]
   },
   "mail": {
@@ -689,8 +694,8 @@
     ]
   },
   "people": {
-    "affiliate%20programm": [
-      "PUT/api/2.0/people/self/joinaffiliate"
+    "Birthday": [
+      "POST/api/2.0/people/birthdays/reminder"
     ],
     "Contacts": [
       "DELETE/api/2.0/people/%7buserid%7d/contacts",
@@ -895,6 +900,7 @@
       "GET/api/2.0/project/%7bprojectid%7d/task",
       "GET/api/2.0/project/task/filter",
       "GET/api/2.0/project/%7bprojectid%7d/task/%7bstatus%7d",
+      "PUT/api/2.0/project/task/%7btaskid%7d/%7bsubtaskid%7d/move",
       "GET/api/2.0/project/task/%7btaskid%7d/notify",
       "DELETE/api/2.0/project/task/%7btaskid%7d/link",
       "PUT/api/2.0/project/task/%7btaskid%7d/subscribe",
@@ -938,6 +944,8 @@
   },
   "settings": {
     "common%20settings": [
+      "PUT/api/2.0/settings/closeadminhelper",
+      "PUT/api/2.0/settings/welcome/close",
       "GET/api/2.0/settings/logo",
       "GET/api/2.0/settings",
       "GET/api/2.0/settings/socket",
