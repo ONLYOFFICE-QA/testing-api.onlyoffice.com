@@ -186,7 +186,7 @@
       "PUT/api/2.0/crm/settings",
       "PUT/api/2.0/crm/currency/rates/%7bid%7d"
     ],
-    " Contacts": [
+    "Contacts": [
       "POST/api/2.0/crm/contact/%7bcontactid%7d/addressdata",
       "POST/api/2.0/crm/contact/%7bcontactid%7d/data",
       "POST/api/2.0/crm/contact/%7bcontactid%7d/opportunity/%7bopportunityid%7d",
