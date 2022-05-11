@@ -51,6 +51,7 @@
       "GetParentContentControl",
       "GetParentTable",
       "GetParentTableCell",
+      "GetPlaceholderText",
       "GetRange",
       "GetTag",
       "Push",
@@ -60,6 +61,7 @@
       "SetAlias",
       "SetLabel",
       "SetLock",
+      "SetPlaceholderText",
       "SetTag",
       "SetTextPr"
     ],
@@ -93,17 +95,25 @@
       "SetVertAxisTickLabelPosition"
     ],
     "ApiDocument": [
+      "AcceptAllRevisionChanges",
       "AddComment",
       "AddElement",
+      "ClearAllFields",
+      "ClearAllForms",
       "CreateNewHistoryPoint",
       "CreateNumbering",
       "CreateSection",
       "CreateStyle",
       "DeleteBookmark",
+      "GetAllBookmarksNames",
+      "GetAllCaptionParagraphs",
       "GetAllCharts",
       "GetAllContentControls",
       "GetAllDrawingObjects",
+      "GetAllForms",
+      "GetAllHeadingParagraphs",
       "GetAllImages",
+      "GetAllNumberedParagraphs",
       "GetAllShapes",
       "GetAllTablesOnPage",
       "GetBookmarkRange",
@@ -114,7 +124,9 @@
       "GetDefaultTextPr",
       "GetElement",
       "GetElementsCount",
+      "GetEndNotesFirstParagraphs",
       "GetFinalSection",
+      "GetFootnotesFirstParagraphs",
       "GetRange",
       "GetRangeBySelect",
       "GetReviewReport",
@@ -125,12 +137,14 @@
       "IsTrackRevisions",
       "Last",
       "Push",
+      "RejectAllRevisionChanges",
       "RemoveAllElements",
       "RemoveElement",
       "RemoveSelection",
       "Search",
       "SearchAndReplace",
       "SetEvenAndOddHdrFtr",
+      "SetFormsHighlight",
       "SetTrackRevisions",
       "ToHtml",
       "ToMarkdown"
@@ -196,16 +210,20 @@
       "GetLabel",
       "GetLock",
       "GetParentContentControl",
+      "GetParentParagraph",
       "GetParentTable",
       "GetParentTableCell",
+      "GetPlaceholderText",
       "GetRange",
       "GetTag",
+      "IsForm",
       "Push",
       "RemoveAllElements",
       "RemoveElement",
       "SetAlias",
       "SetLabel",
       "SetLock",
+      "SetPlaceholderText",
       "SetTag",
       "SetTextPr"
     ],
@@ -226,13 +244,19 @@
       "SetTemplateType"
     ],
     "ApiParagraph": [
+      "AddBookmarkCrossRef",
+      "AddCaptionCrossRef",
       "AddColumnBreak",
       "AddComment",
       "AddDrawing",
       "AddElement",
+      "AddEndnoteCrossRef",
+      "AddFootnoteCrossRef",
+      "AddHeadingCrossRef",
       "AddHyperlink",
       "AddInlineLvlSdt",
       "AddLineBreak",
+      "AddNumberedCrossRef",
       "AddPageBreak",
       "AddPageNumber",
       "AddPagesCount",
@@ -472,6 +496,7 @@
       "RemoveRow",
       "Search",
       "Select",
+      "SetBackgroundColor",
       "SetCellSpacing",
       "SetHAlign",
       "SetJc",
@@ -515,6 +540,7 @@
       "RemoveColumn",
       "RemoveRow",
       "Search",
+      "SetBackgroundColor",
       "SetCellBorderBottom",
       "SetCellBorderLeft",
       "SetCellBorderRight",
@@ -524,6 +550,7 @@
       "SetCellMarginRight",
       "SetCellMarginTop",
       "SetCellPr",
+      "SetColumnBackgroundColor",
       "SetNoWrap",
       "SetShd",
       "SetTextDirection",
@@ -582,6 +609,7 @@
       "MergeCells",
       "Remove",
       "Search",
+      "SetBackgroundColor",
       "SetHeight",
       "SetTableHeader",
       "SetTextPr"
@@ -638,6 +666,7 @@
       "CreateColorFromRGB",
       "CreateGradientStop",
       "CreateLinearGradientFill",
+      "CreateNewHistoryPoint",
       "CreateNoFill",
       "CreateNumbering",
       "CreateParagraph",
@@ -730,10 +759,6 @@
     "ApiGradientStop": [
       "GetClassType"
     ],
-    "ApiHyperlink": [
-      "GetElement",
-      "GetElementsCount"
-    ],
     "ApiImage": [
       "GetClassType"
     ],
@@ -803,10 +828,14 @@
     ],
     "ApiRange": [
       "AddComment",
+      "AutoFit",
       "Clear",
+      "Copy",
+      "Delete",
       "End",
       "ForEach",
       "GetAddress",
+      "GetAreas",
       "GetCells",
       "GetClassType",
       "GetCol",
@@ -827,7 +856,9 @@
       "GetValue2",
       "GetWorksheet",
       "GetWrapText",
+      "Insert",
       "Merge",
+      "Paste",
       "Select",
       "SetAlignHorizontal",
       "SetAlignVertical",
@@ -896,10 +927,6 @@
     ],
     "ApiStroke": [
       "GetClassType"
-    ],
-    "ApiTable": [
-      "AddElement",
-      "Copy"
     ],
     "ApiTextPr": [
       "GetClassType",
@@ -973,11 +1000,14 @@
       "CreateGradientStop",
       "CreateGroup",
       "CreateImage",
+      "CreateLayout",
       "CreateLinearGradientFill",
+      "CreateMaster",
       "CreateNoFill",
       "CreateNumbering",
       "CreateParagraph",
       "CreatePatternFill",
+      "CreatePlaceholder",
       "CreatePresetColor",
       "CreateRadialGradientFill",
       "CreateRGBColor",
@@ -988,6 +1018,10 @@
       "CreateSolidFill",
       "CreateStroke",
       "CreateTable",
+      "CreateTheme",
+      "CreateThemeFontScheme",
+      "CreateThemeFormatScheme",
+      "CreateThemeFormatScheme",
       "GetPresentation",
       "ReplaceTextSmart",
       "Save"
@@ -1037,7 +1071,15 @@
       "RemoveElement"
     ],
     "ApiDrawing": [
+      "Copy",
+      "Delete",
       "GetClassType",
+      "GetParent",
+      "GetParentLayout",
+      "GetParentMaster",
+      "GetParentSlide",
+      "GetPlaceholder",
+      "SetPlaceholder",
       "SetPosition",
       "SetSize"
     ],
@@ -1046,10 +1088,6 @@
     ],
     "ApiGradientStop": [
       "GetClassType"
-    ],
-    "ApiHyperlink": [
-      "GetElement",
-      "GetElementsCount"
     ],
     "ApiImage": [
       "GetClassType"
@@ -1108,12 +1146,18 @@
       "SetTabs"
     ],
     "ApiPresentation": [
+      "AddMaster",
       "AddSlide",
+      "ApplyTheme",
       "CreateNewHistoryPoint",
       "GetClassType",
       "GetCurrentSlide",
       "GetCurSlideIndex",
+      "GetMaster",
+      "GetMastersCount",
       "GetSlideByIndex",
+      "GetSlidesCount",
+      "RemoveSlides",
       "ReplaceCurrentImage",
       "SetLanguage",
       "SetSizes"
@@ -1165,10 +1209,27 @@
     ],
     "ApiSlide": [
       "AddObject",
+      "ApplyLayout",
+      "ApplyTheme",
+      "ClearBackground",
+      "Copy",
+      "Delete",
+      "Duplicate",
+      "FollowLayoutBackground",
+      "FollowMasterBackground",
+      "GetAllCharts",
+      "GetAllDrawings",
+      "GetAllImages",
+      "GetAllShapes",
       "GetClassType",
       "GetHeight",
+      "GetLayout",
+      "GetSlideIndex",
+      "GetTheme",
       "GetWidth",
+      "MoveTo",
       "RemoveAllObjects",
+      "RemoveObject",
       "SetBackground"
     ],
     "ApiStroke": [
@@ -1226,6 +1287,14 @@
     ],
     "ApiUniColor": [
       "GetClassType"
+    ]
+  },
+  "Form API": {
+    "Api": [
+      "CreateCheckBoxForm",
+      "CreateComboBoxForm",
+      "CreatePictureForm",
+      "CreateTextForm"
     ]
   }
 }
