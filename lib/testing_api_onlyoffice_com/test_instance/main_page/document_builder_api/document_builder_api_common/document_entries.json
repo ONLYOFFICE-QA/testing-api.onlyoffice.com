@@ -1021,6 +1021,7 @@
       "CreateTheme",
       "CreateThemeFontScheme",
       "CreateThemeFormatScheme",
+      "CreateThemeFormatScheme",
       "GetPresentation",
       "ReplaceTextSmart",
       "Save"
@@ -1286,6 +1287,14 @@
     ],
     "ApiUniColor": [
       "GetClassType"
+    ]
+  },
+  "Form API": {
+    "Api": [
+      "CreateCheckBoxForm",
+      "CreateComboBoxForm",
+      "CreatePictureForm",
+      "CreateTextForm"
     ]
   }
 }
