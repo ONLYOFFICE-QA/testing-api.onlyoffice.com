@@ -1,5 +1,3 @@
-Presentation API/Api/CreateMaster/Example
-Presentation API/Api/CreateMaster/Resulting document
 Presentation API/Api/ReplaceTextSmart/Example
 Presentation API/Api/ReplaceTextSmart/Resulting document
 Presentation API/ApiDocument/AddElement/Example
@@ -14,8 +12,6 @@ Presentation API/ApiDocument/RemoveAllElements/Example
 Presentation API/ApiDocument/RemoveAllElements/Resulting document
 Presentation API/ApiDocument/RemoveElement/Example
 Presentation API/ApiDocument/RemoveElement/Resulting document
-Presentation API/ApiPresentation/AddMaster/Example
-Presentation API/ApiPresentation/AddMaster/Resulting document
 Presentation API/ApiPresentation/ReplaceCurrentImage/Example
 Presentation API/ApiPresentation/ReplaceCurrentImage/Resulting document
 Presentation API/ApiRun/SetStyle/Example
@@ -68,14 +64,8 @@ Text document API/Api/CreateBullet/Example
 Text document API/Api/CreateBullet/Resulting document
 Text document API/ApiBlockLvlSdt/Delete/Example
 Text document API/ApiBlockLvlSdt/Delete/Resulting document
-Text document API/ApiBlockLvlSdt/GetPlaceholderText/Example
-Text document API/ApiBlockLvlSdt/GetPlaceholderText/Resulting document
-Text document API/ApiBlockLvlSdt/SetPlaceholderText/Example
-Text document API/ApiBlockLvlSdt/SetPlaceholderText/Resulting document
 Text document API/ApiBullet/GetClassType/Example
 Text document API/ApiBullet/GetClassType/Resulting document
-Text document API/ApiDocument/GetAllBookmarksNames/Example
-Text document API/ApiDocument/GetAllBookmarksNames/Resulting document
 Text document API/ApiParaPr/GetShd/Example
 Text document API/ApiParaPr/GetShd/Resulting document
 Text document API/ApiParaPr/SetBullet/Example
