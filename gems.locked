@@ -53,7 +53,7 @@ GEM
       onlyoffice_file_helper (~> 0)
     onlyoffice_tcm_helper (0.3.2)
       onlyoffice_file_helper (~> 0)
-    onlyoffice_webdriver_wrapper (1.6.0)
+    onlyoffice_webdriver_wrapper (1.7.0)
       headless (~> 2)
       onlyoffice_file_helper (~> 0)
       onlyoffice_logger_helper (~> 1)
