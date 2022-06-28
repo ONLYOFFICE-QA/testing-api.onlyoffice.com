@@ -24,8 +24,8 @@ module TestingApiOnlyfficeCom
           end
           next if documentation_objects[index][section_name].child_count_on_page == methods_array.length
 
-          @instance.webdriver.webdriver_error("Incorrect child count on page: #{module_name}/#{section_name}\n"\
-                                              "In data: #{methods_array.length}.\n"\
+          @instance.webdriver.webdriver_error("Incorrect child count on page: #{module_name}/#{section_name}\n" \
+                                              "In data: #{methods_array.length}.\n" \
                                               "On page: #{documentation_objects[index][section_name].child_count_on_page}")
         end
       end

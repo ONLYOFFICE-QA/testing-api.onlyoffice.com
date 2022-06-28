@@ -45,7 +45,7 @@ module TestingApiOnlyfficeCom
 
     # @return [String] xpath of search result entry
     def search_result_entry_xpath
-      "//span[text() = 'Search results']/../..//tbody//tr | "\
+      "//span[text() = 'Search results']/../..//tbody//tr | " \
         "//div[contains(@class, 'search-box-result')]//li"
     end
   end
