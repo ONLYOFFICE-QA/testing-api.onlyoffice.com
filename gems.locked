@@ -39,7 +39,7 @@ GEM
     mime-types-data (3.2022.0105)
     mini_portile2 (2.8.0)
     multi_xml (0.6.0)
-    nokogiri (1.13.6)
+    nokogiri (1.13.7)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     onlyoffice_documentserver_testing_framework (2.8.0)
