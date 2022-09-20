@@ -1,9 +1,5 @@
 Presentation API/Api/ReplaceTextSmart/Example
 Presentation API/Api/ReplaceTextSmart/Resulting document
-Presentation API/ApiChart/SetCategoryName/Example
-Presentation API/ApiChart/SetCategoryName/Resulting document
-Presentation API/ApiChart/SetXValues/Example
-Presentation API/ApiChart/SetXValues/Resulting document
 Presentation API/ApiDocument/AddElement/Example
 Presentation API/ApiDocument/AddElement/Resulting document
 Presentation API/ApiDocument/GetElement/Example
@@ -16,18 +12,12 @@ Presentation API/ApiDocument/RemoveAllElements/Example
 Presentation API/ApiDocument/RemoveAllElements/Resulting document
 Presentation API/ApiDocument/RemoveElement/Example
 Presentation API/ApiDocument/RemoveElement/Resulting document
-Presentation API/ApiDrawing/ToJSON/Example
-Presentation API/ApiDrawing/ToJSON/Resulting document
-Presentation API/ApiParagraph/SetHighlight/Example
-Presentation API/ApiParagraph/SetHighlight/Resulting document
 Presentation API/ApiPresentation/GetHeight/Example
 Presentation API/ApiPresentation/GetHeight/Resulting document
 Presentation API/ApiPresentation/GetWidth/Example
 Presentation API/ApiPresentation/GetWidth/Resulting document
 Presentation API/ApiPresentation/ReplaceCurrentImage/Example
 Presentation API/ApiPresentation/ReplaceCurrentImage/Resulting document
-Presentation API/ApiRun/GetFontNames/Example
-Presentation API/ApiRun/GetFontNames/Resulting document
 Presentation API/ApiRun/SetOutLine/Example
 Presentation API/ApiRun/SetOutLine/Resulting document
 Presentation API/ApiRun/SetStyle/Example
@@ -42,8 +32,6 @@ Presentation API/ApiTable/Copy/Example
 Presentation API/ApiTable/Copy/Resulting document
 Presentation API/ApiTable/Select/Example
 Presentation API/ApiTable/Select/Resulting document
-Presentation API/ApiTable/ToJSON/Example
-Presentation API/ApiTable/ToJSON/Resulting document
 Presentation API/ApiTextPr/SetHighlight/Example
 Presentation API/ApiTextPr/SetHighlight/Resulting document
 Presentation API/ApiTextPr/SetOutLine/Example
@@ -106,8 +94,6 @@ Text document API/ApiBlockLvlSdt/Delete/Example
 Text document API/ApiBlockLvlSdt/Delete/Resulting document
 Text document API/ApiBullet/GetClassType/Example
 Text document API/ApiBullet/GetClassType/Resulting document
-Text document API/ApiChart/SetXValues/Example
-Text document API/ApiChart/SetXValues/Resulting document
 Text document API/ApiDocument/GetAllOleObjects/Example
 Text document API/ApiDocument/GetAllOleObjects/Resulting document
 Text document API/ApiDocument/GetContent/Example
