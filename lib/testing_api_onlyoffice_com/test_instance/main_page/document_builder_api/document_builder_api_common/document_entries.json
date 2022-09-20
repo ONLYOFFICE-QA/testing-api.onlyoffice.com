@@ -177,6 +177,7 @@
       "RemoveAllElements",
       "RemoveElement",
       "RemoveSelection",
+      "ReplaceCurrentImage",
       "ReplaceDrawing",
       "Search",
       "SearchAndReplace",
