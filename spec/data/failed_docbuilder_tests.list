@@ -18,12 +18,8 @@ Presentation API/ApiPresentation/GetWidth/Example
 Presentation API/ApiPresentation/GetWidth/Resulting document
 Presentation API/ApiPresentation/ReplaceCurrentImage/Example
 Presentation API/ApiPresentation/ReplaceCurrentImage/Resulting document
-Presentation API/ApiRun/SetOutLine/Example
-Presentation API/ApiRun/SetOutLine/Resulting document
 Presentation API/ApiRun/SetStyle/Example
 Presentation API/ApiRun/SetStyle/Resulting document
-Presentation API/ApiRun/SetTextFill/Example
-Presentation API/ApiRun/SetTextFill/Resulting document
 Presentation API/ApiSlide/FollowMasterBackground/Example
 Presentation API/ApiSlide/FollowMasterBackground/Resulting document
 Presentation API/ApiTable/AddElement/Example
@@ -32,12 +28,6 @@ Presentation API/ApiTable/Copy/Example
 Presentation API/ApiTable/Copy/Resulting document
 Presentation API/ApiTable/Select/Example
 Presentation API/ApiTable/Select/Resulting document
-Presentation API/ApiTextPr/SetHighlight/Example
-Presentation API/ApiTextPr/SetHighlight/Resulting document
-Presentation API/ApiTextPr/SetOutLine/Example
-Presentation API/ApiTextPr/SetOutLine/Resulting document
-Presentation API/ApiTextPr/SetTextFill/Example
-Presentation API/ApiTextPr/SetTextFill/Resulting document
 Spreadsheet API/Api/CreateTextPr/Example
 Spreadsheet API/Api/CreateTextPr/Resulting document
 Spreadsheet API/Api/GetRangeByNumber/Example
@@ -58,26 +48,14 @@ Spreadsheet API/ApiParagraph/Copy/Example
 Spreadsheet API/ApiParagraph/Copy/Resulting document
 Spreadsheet API/ApiRange/SetSort/Example
 Spreadsheet API/ApiRange/SetSort/Resulting document
-Spreadsheet API/ApiRun/GetFontNames/Example
-Spreadsheet API/ApiRun/GetFontNames/Resulting document
 Spreadsheet API/ApiRun/SetHighlight/Example
 Spreadsheet API/ApiRun/SetHighlight/Resulting document
-Spreadsheet API/ApiRun/SetOutLine/Example
-Spreadsheet API/ApiRun/SetOutLine/Resulting document
 Spreadsheet API/ApiRun/SetShd/Example
 Spreadsheet API/ApiRun/SetShd/Resulting document
 Spreadsheet API/ApiRun/SetStyle/Example
 Spreadsheet API/ApiRun/SetStyle/Resulting document
-Spreadsheet API/ApiRun/SetTextFill/Example
-Spreadsheet API/ApiRun/SetTextFill/Resulting document
 Spreadsheet API/ApiShape/SetPaddings/Example
 Spreadsheet API/ApiShape/SetPaddings/Resulting document
-Spreadsheet API/ApiTextPr/SetOutLine/Example
-Spreadsheet API/ApiTextPr/SetOutLine/Resulting document
-Spreadsheet API/ApiTextPr/SetTextFill/Example
-Spreadsheet API/ApiTextPr/SetTextFill/Resulting document
-Spreadsheet API/ApiWorksheet/Delete/Example
-Spreadsheet API/ApiWorksheet/Delete/Resulting document
 Spreadsheet API/ApiWorksheet/GetPrintGridlines/Example
 Spreadsheet API/ApiWorksheet/GetPrintGridlines/Resulting document
 Spreadsheet API/ApiWorksheet/GetPrintHeadings/Example
@@ -92,20 +70,10 @@ Text document API/Api/CreateBullet/Example
 Text document API/Api/CreateBullet/Resulting document
 Text document API/ApiBlockLvlSdt/Delete/Example
 Text document API/ApiBlockLvlSdt/Delete/Resulting document
-Text document API/ApiBullet/GetClassType/Example
-Text document API/ApiBullet/GetClassType/Resulting document
-Text document API/ApiDocument/GetAllOleObjects/Example
-Text document API/ApiDocument/GetAllOleObjects/Resulting document
-Text document API/ApiDocument/GetContent/Example
-Text document API/ApiDocument/GetContent/Resulting document
 Text document API/ApiDocument/GetFormsByTag/Example
 Text document API/ApiDocument/GetFormsByTag/Resulting document
 Text document API/ApiDocument/GetTagsOfAllForms/Example
 Text document API/ApiDocument/GetTagsOfAllForms/Resulting document
-Text document API/ApiDocumentContent/GetContent/Example
-Text document API/ApiDocumentContent/GetContent/Resulting document
-Text document API/ApiParaPr/GetShd/Example
-Text document API/ApiParaPr/GetShd/Resulting document
 Text document API/ApiParaPr/SetBullet/Example
 Text document API/ApiParaPr/SetBullet/Resulting document
 Text document API/ApiParagraph/GetFontNames/Example
@@ -116,26 +84,12 @@ Text document API/ApiRun/SetOutLine/Example
 Text document API/ApiRun/SetOutLine/Resulting document
 Text document API/ApiRun/SetTextFill/Example
 Text document API/ApiRun/SetTextFill/Resulting document
-Text document API/ApiTable/Delete/Example
-Text document API/ApiTable/Delete/Resulting document
 Text document API/ApiTable/GetNext/Example
 Text document API/ApiTable/GetNext/Resulting document
 Text document API/ApiTable/GetPrevious/Example
 Text document API/ApiTable/GetPrevious/Resulting document
-Text document API/ApiTable/GetTableDescription/Example
-Text document API/ApiTable/GetTableDescription/Resulting document
-Text document API/ApiTable/GetTableTitle/Example
-Text document API/ApiTable/GetTableTitle/Resulting document
 Text document API/ApiTable/GetTables/Example
 Text document API/ApiTable/GetTables/Resulting document
-Text document API/ApiTable/SetTableDescription/Example
-Text document API/ApiTable/SetTableDescription/Resulting document
-Text document API/ApiTable/SetTableTitle/Example
-Text document API/ApiTable/SetTableTitle/Resulting document
-Text document API/ApiTableCell/ToJSON/Example
-Text document API/ApiTableCell/ToJSON/Resulting document
-Text document API/ApiTableRow/ToJSON/Example
-Text document API/ApiTableRow/ToJSON/Resulting document
 Text document API/ApiTextPr/SetOutLine/Example
 Text document API/ApiTextPr/SetOutLine/Resulting document
 Text document API/ApiTextPr/SetTextFill/Example
