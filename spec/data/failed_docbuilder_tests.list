@@ -12,6 +12,10 @@ Presentation API/ApiDocument/RemoveAllElements/Example
 Presentation API/ApiDocument/RemoveAllElements/Resulting document
 Presentation API/ApiDocument/RemoveElement/Example
 Presentation API/ApiDocument/RemoveElement/Resulting document
+Presentation API/ApiPresentation/GetHeight/Example
+Presentation API/ApiPresentation/GetHeight/Resulting document
+Presentation API/ApiPresentation/GetWidth/Example
+Presentation API/ApiPresentation/GetWidth/Resulting document
 Presentation API/ApiPresentation/ReplaceCurrentImage/Example
 Presentation API/ApiPresentation/ReplaceCurrentImage/Resulting document
 Presentation API/ApiRun/SetStyle/Example
@@ -24,6 +28,10 @@ Presentation API/ApiTable/Copy/Example
 Presentation API/ApiTable/Copy/Resulting document
 Presentation API/ApiTable/Select/Example
 Presentation API/ApiTable/Select/Resulting document
+Spreadsheet API/Api/CreateTextPr/Example
+Spreadsheet API/Api/CreateTextPr/Resulting document
+Spreadsheet API/Api/GetRangeByNumber/Example
+Spreadsheet API/Api/GetRangeByNumber/Resulting document
 Spreadsheet API/ApiDocument/AddElement/Example
 Spreadsheet API/ApiDocument/AddElement/Resulting document
 Spreadsheet API/ApiDocument/GetElement/Example
@@ -48,8 +56,6 @@ Spreadsheet API/ApiRun/SetStyle/Example
 Spreadsheet API/ApiRun/SetStyle/Resulting document
 Spreadsheet API/ApiShape/SetPaddings/Example
 Spreadsheet API/ApiShape/SetPaddings/Resulting document
-Spreadsheet API/ApiWorksheet/Delete/Example
-Spreadsheet API/ApiWorksheet/Delete/Resulting document
 Spreadsheet API/ApiWorksheet/GetPrintGridlines/Example
 Spreadsheet API/ApiWorksheet/GetPrintGridlines/Resulting document
 Spreadsheet API/ApiWorksheet/GetPrintHeadings/Example
@@ -64,25 +70,29 @@ Text document API/Api/CreateBullet/Example
 Text document API/Api/CreateBullet/Resulting document
 Text document API/ApiBlockLvlSdt/Delete/Example
 Text document API/ApiBlockLvlSdt/Delete/Resulting document
-Text document API/ApiBullet/GetClassType/Example
-Text document API/ApiBullet/GetClassType/Resulting document
-Text document API/ApiParaPr/GetShd/Example
-Text document API/ApiParaPr/GetShd/Resulting document
+Text document API/ApiDocument/GetFormsByTag/Example
+Text document API/ApiDocument/GetFormsByTag/Resulting document
+Text document API/ApiDocument/GetTagsOfAllForms/Example
+Text document API/ApiDocument/GetTagsOfAllForms/Resulting document
 Text document API/ApiParaPr/SetBullet/Example
 Text document API/ApiParaPr/SetBullet/Resulting document
+Text document API/ApiParagraph/GetFontNames/Example
+Text document API/ApiParagraph/GetFontNames/Resulting document
 Text document API/ApiParagraph/SetBullet/Example
 Text document API/ApiParagraph/SetBullet/Resulting document
-Text document API/ApiRun/GetNext/Example
-Text document API/ApiRun/GetNext/Resulting document
-Text document API/ApiRun/GetPrevious/Example
-Text document API/ApiRun/GetPrevious/Resulting document
-Text document API/ApiTable/Delete/Example
-Text document API/ApiTable/Delete/Resulting document
+Text document API/ApiRun/SetOutLine/Example
+Text document API/ApiRun/SetOutLine/Resulting document
+Text document API/ApiRun/SetTextFill/Example
+Text document API/ApiRun/SetTextFill/Resulting document
 Text document API/ApiTable/GetNext/Example
 Text document API/ApiTable/GetNext/Resulting document
 Text document API/ApiTable/GetPrevious/Example
 Text document API/ApiTable/GetPrevious/Resulting document
 Text document API/ApiTable/GetTables/Example
 Text document API/ApiTable/GetTables/Resulting document
+Text document API/ApiTextPr/SetOutLine/Example
+Text document API/ApiTextPr/SetOutLine/Resulting document
+Text document API/ApiTextPr/SetTextFill/Example
+Text document API/ApiTextPr/SetTextFill/Resulting document
 Text document API/ApiUnsupported/GetClassType/Example
 Text document API/ApiUnsupported/GetClassType/Resulting document
