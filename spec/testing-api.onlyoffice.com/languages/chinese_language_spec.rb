@@ -3,7 +3,7 @@
 require 'spec_helper'
 
 describe 'chinese_language' do
-  test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Site Api', plan_name: config.to_s)
+  test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Chinese Language docs', plan_name: config.to_s)
 
   before do
     @instance = TestingApiOnlyfficeCom::TestInstance.new(config)
