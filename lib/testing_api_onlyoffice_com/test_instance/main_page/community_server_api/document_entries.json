@@ -823,18 +823,19 @@
       "POST/api/2.0/project/task/%7btaskid%7d/files"
     ],
     "Milestones": [
-      "GET/api/2.0/project/task/%7btaskid%7d/files",
+      "POST/api/2.0/project/%7bid%7d/milestone",
       "DELETE/api/2.0/project/milestone/%7bid%7d",
       "DELETE/api/2.0/project/milestone",
       "GET/api/2.0/project/milestone/%7bid%7d",
       "GET/api/2.0/project/milestone/%7bid%7d/task",
-      "GET/api/2.0/project/milestone",
+      "GET/api/2.0/project/milestone/upcoming",
       "GET/api/2.0/project/milestone/%7byear%7d/%7bmonth%7d/%7bday%7d",
       "GET/api/2.0/project/milestone/%7byear%7d/%7bmonth%7d",
       "GET/api/2.0/project/milestone/filter",
       "GET/api/2.0/project/%7bid%7d/milestone",
       "GET/api/2.0/project/%7bid%7d/milestone/%7bstatus%7d",
       "GET/api/2.0/project/milestone/late",
+      "GET/api/2.0/project/milestone",
       "PUT/api/2.0/project/milestone/%7bid%7d",
       "PUT/api/2.0/project/milestone/%7bid%7d/status"
     ],
