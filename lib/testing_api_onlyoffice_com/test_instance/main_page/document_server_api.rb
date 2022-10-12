@@ -99,6 +99,11 @@ module TestingApiOnlyfficeCom
       HTTParty.head(send("#{language}_element").href).success?
     end
 
+    # @return [Boolean] is this page have chinese text
+    def with_chinese_text?
+      @instance.webdriver.get_text('//body').include?('基本概念')
+    end
+
     private
 
     # @return [OnlyofficeDocumentserverTestingFramework::TestInstanceDocs] framework of documents

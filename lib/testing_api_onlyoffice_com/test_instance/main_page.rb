@@ -50,5 +50,18 @@ module TestingApiOnlyfficeCom
       document_server_element.click
       DocumentServerAPI.new(@instance)
     end
+
+    # Change language of page
+    # @param [String] language - language to change to
+    # @return [nil]
+    def change_language(language)
+      @instance.webdriver.open("#{@instance.webdriver.current_url}/#{language}")
+      if language == 'zh'
+        # Chinese language docs have only one page
+        DocumentServerAPI.new(@instance)
+      else
+        self
+      end
+    end
   end
 end
