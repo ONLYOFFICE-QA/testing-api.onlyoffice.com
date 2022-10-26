@@ -2,6 +2,7 @@
   "Text document API": {
     "Api": [
       "AddComment",
+      "attachEvent",
       "ConvertDocument",
       "CreateBlipFill",
       "CreateBlockLvlSdt",
@@ -29,6 +30,7 @@
       "CreateTable",
       "CreateTextPr",
       "CreateWordArt",
+      "detachEvent",
       "FromJSON",
       "GetDocument",
       "GetMailMergeReceptionsCount",
@@ -753,6 +755,7 @@
     "Api": [
       "AddDefName",
       "AddSheet",
+      "attachEvent",
       "CreateBlipFill",
       "CreateBullet",
       "CreateColorByName",
@@ -772,6 +775,7 @@
       "CreateSolidFill",
       "CreateStroke",
       "CreateTextPr",
+      "detachEvent",
       "Format",
       "GetActiveSheet",
       "GetDefName",
@@ -788,7 +792,8 @@
       "ReplaceTextSmart",
       "Save",
       "SetLocale",
-      "SetThemeColors"
+      "SetThemeColors",
+      "event-onworksheetchange"
     ],
     "ApiBullet": [
       "GetClassType"
@@ -1124,6 +1129,7 @@
   },
   "Presentation API": {
     "Api": [
+      "attachEvent",
       "CreateBlipFill",
       "CreateBullet",
       "CreateChart",
@@ -1149,11 +1155,13 @@
       "CreateSolidFill",
       "CreateStroke",
       "CreateTable",
+      "CreateTextPr",
       "CreateTheme",
       "CreateThemeColorScheme",
       "CreateThemeFontScheme",
       "CreateThemeFormatScheme",
       "CreateWordArt",
+      "detachEvent",
       "FromJSON",
       "GetPresentation",
       "ReplaceTextSmart",
