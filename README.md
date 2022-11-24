@@ -4,12 +4,12 @@
 
 In order to execute tests use following commands:
 
-Locally
+* Locally
 
 1. `bundle install` Bundler will install all needed gems
 2. `rspec spec/functional/specific_spec_file.rb`
 
-Remotely on wrata
+* Remotely on wrata
 
 1. Login to your [wrata](<https://github.com/ONLYOFFICE/testing-wrata>) instance
 with user `Helpcenter` (Login info stored in secret password file)
