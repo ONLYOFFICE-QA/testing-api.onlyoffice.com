@@ -7,7 +7,8 @@ In order to execute tests use following commands:
 * Locally
 
 1. `bundle install` Bundler will install all needed gems
-2. `rspec spec/functional/specific_spec_file.rb` - replace path to file you want to run
+2. `rspec spec/functional/specific_spec_file.rb` -
+replace path to file you want to run
 
 * Remotely on wrata
 
