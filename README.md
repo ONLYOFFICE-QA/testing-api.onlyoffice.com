@@ -1,5 +1,22 @@
 # testing-api.onlyoffice.com
 
+## How to run tests
+
+In order to execute tests use following commands:
+
+Locally
+
+1. `bundle install` Bundler will install all needed gems
+2. `rspec spec/functional/specific_spec_file.rb`
+
+Remotely on wrata
+
+1. Login to your [wrata](<https://github.com/ONLYOFFICE/testing-wrata>) instance
+with user `Helpcenter` (Login info stored in secret password file)
+2. Go to `wrata-url/clients/api_keys` and locally call command to initialize API
+3. `rake wrata:run_tests` to run tests on api.teamlab.info or
+   `rake wrata:run_tests['com us']` to run tests on api.onlyoffice.com
+
 ## How to check new major version of documentation
 
 ### CommunityServer
