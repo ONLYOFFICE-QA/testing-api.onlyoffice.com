@@ -18,7 +18,7 @@ with user `api.onlyoffice.com` (Login info stored in secret password file)
   command to initialize API  
    ![image](https://user-images.githubusercontent.com/668524/203771978-69fcc09a-1f10-4167-99a1-3dcf7f83bfde.png)
 3. `rake wrata:run_tests` to run tests on api.teamlab.info or
-   `rake wrata:run_tests['com us']` to run tests on api.onlyoffice.com
+   `rake wrata:run_tests_on_production` to run tests on api.onlyoffice.com
 
 ## Test description
 
