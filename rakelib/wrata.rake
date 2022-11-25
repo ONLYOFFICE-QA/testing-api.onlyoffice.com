@@ -44,4 +44,9 @@ namespace(:wrata) do
     sleep(5 * 60)
     Rake::Task['wrata:wrata_turn_on_servers'].execute(count: 2)
   end
+
+  desc 'Run test on production server api.onlyoffice.com'
+  task run_tests_on_production: :ensure_user do
+    Rake::Task['wrata:run_tests'].execute(location: 'com us')
+  end
 end
