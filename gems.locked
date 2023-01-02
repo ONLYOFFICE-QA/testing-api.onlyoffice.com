@@ -120,9 +120,9 @@ GEM
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     unicode-display_width (2.3.0)
-    watir (7.1.0)
+    watir (7.2.1)
       regexp_parser (>= 1.2, < 3)
-      selenium-webdriver (~> 4.0)
+      selenium-webdriver (~> 4.2)
     websocket (1.2.9)
     yml_reader (0.7)
 
