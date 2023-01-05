@@ -34,7 +34,7 @@ GEM
     jmespath (1.6.2)
     json (2.6.3)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.0)
+    mini_portile2 (2.8.1)
     multi_xml (0.6.0)
     nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
