@@ -1,5 +1,38 @@
 # testing-api.onlyoffice.com
 
+## How to run tests
+
+In order to execute tests use following commands:
+
+* Locally
+
+1. `bundle install` Bundler will install all needed gems
+2. `rspec spec/functional/specific_spec_file.rb` -
+replace path to file you want to run
+
+* Remotely on wrata
+
+1. Login to your [wrata](<https://github.com/ONLYOFFICE/testing-wrata>) instance
+with user `api.onlyoffice.com` (Login info stored in secret password file)
+2. Go to `wrata-url/clients/api_keys` and locally call
+  command to initialize API  
+   ![image](https://user-images.githubusercontent.com/668524/203771978-69fcc09a-1f10-4167-99a1-3dcf7f83bfde.png)
+3. `rake wrata:run_tests` to run tests on api.teamlab.info or
+   `rake wrata:run_tests_on_production` to run tests on api.onlyoffice.com
+
+## Test description
+
+All spec files are rather fast to run, around 1 hour all of them except two file:
+
+```bash
+spec/testing-api.onlyoffice.com/community_server/documentat_links_content_spec.rb
+spec/testing-api.onlyoffice.com/document_builder/documentation_links_content_spec.rb
+```
+
+Both those file check a lot of pages for content, so they are slow.
+It took around several hours to run each of them, maybe even more if
+palladium slow downs a bit
+
 ## How to check new major version of documentation
 
 ### CommunityServer

@@ -1,5 +1,9 @@
 Presentation API/Api/ReplaceTextSmart/Example
 Presentation API/Api/ReplaceTextSmart/Resulting document
+Presentation API/Api/attachEvent/Example
+Presentation API/Api/attachEvent/Resulting document
+Presentation API/Api/detachEvent/Example
+Presentation API/Api/detachEvent/Resulting document
 Presentation API/ApiDocument/AddElement/Example
 Presentation API/ApiDocument/AddElement/Resulting document
 Presentation API/ApiDocument/GetElement/Example
@@ -32,6 +36,9 @@ Spreadsheet API/Api/CreateTextPr/Example
 Spreadsheet API/Api/CreateTextPr/Resulting document
 Spreadsheet API/Api/GetRangeByNumber/Example
 Spreadsheet API/Api/GetRangeByNumber/Resulting document
+Spreadsheet API/Api/event-onworksheetchange/Example
+Spreadsheet API/Api/event-onworksheetchange/Returns
+Spreadsheet API/Api/event-onworksheetchange/Resulting document
 Spreadsheet API/ApiDocument/AddElement/Example
 Spreadsheet API/ApiDocument/AddElement/Resulting document
 Spreadsheet API/ApiDocument/GetElement/Example
@@ -68,6 +75,10 @@ Spreadsheet API/ApiWorksheet/SetPrintHeadings/Example
 Spreadsheet API/ApiWorksheet/SetPrintHeadings/Resulting document
 Text document API/Api/CreateBullet/Example
 Text document API/Api/CreateBullet/Resulting document
+Text document API/Api/attachEvent/Example
+Text document API/Api/attachEvent/Resulting document
+Text document API/Api/detachEvent/Example
+Text document API/Api/detachEvent/Resulting document
 Text document API/ApiBlockLvlSdt/Delete/Example
 Text document API/ApiBlockLvlSdt/Delete/Resulting document
 Text document API/ApiDocument/GetFormsByTag/Example
