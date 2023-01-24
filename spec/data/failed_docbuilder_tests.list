@@ -32,6 +32,8 @@ Presentation API/ApiTable/Copy/Example
 Presentation API/ApiTable/Copy/Resulting document
 Presentation API/ApiTable/Select/Example
 Presentation API/ApiTable/Select/Resulting document
+Spreadsheet API/Api/CreateTextPr/Example
+Spreadsheet API/Api/CreateTextPr/Resulting document
 Spreadsheet API/Api/GetRangeByNumber/Example
 Spreadsheet API/Api/GetRangeByNumber/Resulting document
 Spreadsheet API/Api/event-onworksheetchange/Example
