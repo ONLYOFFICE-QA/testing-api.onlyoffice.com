@@ -16,6 +16,18 @@ Presentation API/ApiDocument/RemoveAllElements/Example
 Presentation API/ApiDocument/RemoveAllElements/Resulting document
 Presentation API/ApiDocument/RemoveElement/Example
 Presentation API/ApiDocument/RemoveElement/Resulting document
+Presentation API/ApiLayout/GetAllImages/Example
+Presentation API/ApiLayout/GetAllImages/Resulting document
+Presentation API/ApiLayout/GetAllOleObjects/Example
+Presentation API/ApiLayout/GetAllOleObjects/Resulting document
+Presentation API/ApiMaster/ClearBackground/Example
+Presentation API/ApiMaster/ClearBackground/Resulting document
+Presentation API/ApiMaster/GetAllImages/Example
+Presentation API/ApiMaster/GetAllImages/Resulting document
+Presentation API/ApiMaster/GetAllOleObjects/Example
+Presentation API/ApiMaster/GetAllOleObjects/Resulting document
+Presentation API/ApiMaster/SetBackground/Example
+Presentation API/ApiMaster/SetBackground/Resulting document
 Presentation API/ApiPresentation/GetHeight/Example
 Presentation API/ApiPresentation/GetHeight/Resulting document
 Presentation API/ApiPresentation/GetWidth/Example
@@ -32,13 +44,17 @@ Presentation API/ApiTable/Copy/Example
 Presentation API/ApiTable/Copy/Resulting document
 Presentation API/ApiTable/Select/Example
 Presentation API/ApiTable/Select/Resulting document
-Spreadsheet API/Api/CreateTextPr/Example
-Spreadsheet API/Api/CreateTextPr/Resulting document
+Presentation API/ApiThemeColorScheme/Copy/Example
+Presentation API/ApiThemeColorScheme/Copy/Resulting document
+Presentation API/ApiThemeFontScheme/Copy/Example
+Presentation API/ApiThemeFontScheme/Copy/Resulting document
+Presentation API/ApiThemeFormatScheme/ChangeEffectStyles/Example
+Presentation API/ApiThemeFormatScheme/ChangeEffectStyles/Resulting document
+Spreadsheet API/Api/GetComments/Example
+Spreadsheet API/Api/GetComments/Resulting document
 Spreadsheet API/Api/GetRangeByNumber/Example
 Spreadsheet API/Api/GetRangeByNumber/Resulting document
-Spreadsheet API/Api/event-onworksheetchange/Example
 Spreadsheet API/Api/event-onworksheetchange/Returns
-Spreadsheet API/Api/event-onworksheetchange/Resulting document
 Spreadsheet API/ApiDocument/AddElement/Example
 Spreadsheet API/ApiDocument/AddElement/Resulting document
 Spreadsheet API/ApiDocument/GetElement/Example
@@ -81,16 +97,80 @@ Text document API/Api/detachEvent/Example
 Text document API/Api/detachEvent/Resulting document
 Text document API/ApiBlockLvlSdt/Delete/Example
 Text document API/ApiBlockLvlSdt/Delete/Resulting document
+Text document API/ApiCheckBoxForm/GetText/Example
+Text document API/ApiCheckBoxForm/GetText/Resulting document
+Text document API/ApiCheckBoxForm/GetTextPr/Example
+Text document API/ApiCheckBoxForm/GetTextPr/Resulting document
+Text document API/ApiCheckBoxForm/SetPlaceholderText/Example
+Text document API/ApiCheckBoxForm/SetPlaceholderText/Resulting document
+Text document API/ApiCheckBoxForm/SetTextPr/Example
+Text document API/ApiCheckBoxForm/SetTextPr/Resulting document
+Text document API/ApiComplexForm/Clear/Example
+Text document API/ApiComplexForm/Clear/Resulting document
+Text document API/ApiComplexForm/Copy/Example
+Text document API/ApiComplexForm/Copy/Resulting document
+Text document API/ApiComplexForm/GetClassType/Example
+Text document API/ApiComplexForm/GetClassType/Resulting document
+Text document API/ApiComplexForm/GetFormKey/Example
+Text document API/ApiComplexForm/GetFormKey/Resulting document
+Text document API/ApiComplexForm/GetFormType/Example
+Text document API/ApiComplexForm/GetFormType/Resulting document
+Text document API/ApiComplexForm/GetText/Example
+Text document API/ApiComplexForm/GetText/Resulting document
+Text document API/ApiComplexForm/GetTextPr/Example
+Text document API/ApiComplexForm/GetTextPr/Resulting document
+Text document API/ApiComplexForm/GetTipText/Example
+Text document API/ApiComplexForm/GetTipText/Resulting document
+Text document API/ApiComplexForm/GetWrapperShape/Example
+Text document API/ApiComplexForm/GetWrapperShape/Resulting document
+Text document API/ApiComplexForm/IsFixed/Example
+Text document API/ApiComplexForm/IsFixed/Resulting document
+Text document API/ApiComplexForm/IsRequired/Example
+Text document API/ApiComplexForm/IsRequired/Resulting document
+Text document API/ApiComplexForm/SetBackgroundColor/Example
+Text document API/ApiComplexForm/SetBackgroundColor/Resulting document
+Text document API/ApiComplexForm/SetBorderColor/Example
+Text document API/ApiComplexForm/SetBorderColor/Resulting document
+Text document API/ApiComplexForm/SetFormKey/Example
+Text document API/ApiComplexForm/SetFormKey/Resulting document
+Text document API/ApiComplexForm/SetPlaceholderText/Example
+Text document API/ApiComplexForm/SetPlaceholderText/Resulting document
+Text document API/ApiComplexForm/SetRequired/Example
+Text document API/ApiComplexForm/SetRequired/Resulting document
+Text document API/ApiComplexForm/SetTextPr/Example
+Text document API/ApiComplexForm/SetTextPr/Resulting document
+Text document API/ApiComplexForm/SetTipText/Example
+Text document API/ApiComplexForm/SetTipText/Resulting document
+Text document API/ApiComplexForm/ToFixed/Example
+Text document API/ApiComplexForm/ToFixed/Resulting document
+Text document API/ApiComplexForm/ToInline/Example
+Text document API/ApiComplexForm/ToInline/Resulting document
+Text document API/ApiDocument/GetCommentById/Example
+Text document API/ApiDocument/GetCommentById/Resulting document
 Text document API/ApiDocument/GetFormsByTag/Example
 Text document API/ApiDocument/GetFormsByTag/Resulting document
 Text document API/ApiDocument/GetTagsOfAllForms/Example
 Text document API/ApiDocument/GetTagsOfAllForms/Resulting document
+Text document API/ApiHyperlink/SetDefaultStyle/Example
+Text document API/ApiHyperlink/SetDefaultStyle/Resulting document
 Text document API/ApiParaPr/SetBullet/Example
 Text document API/ApiParaPr/SetBullet/Resulting document
 Text document API/ApiParagraph/GetFontNames/Example
 Text document API/ApiParagraph/GetFontNames/Resulting document
 Text document API/ApiParagraph/SetBullet/Example
 Text document API/ApiParagraph/SetBullet/Resulting document
+Text document API/ApiPictureForm/GetImage/Example
+Text document API/ApiPictureForm/GetImage/Resulting document
+Text document API/ApiPictureForm/GetText/Example
+Text document API/ApiPictureForm/GetText/Resulting document
+Text document API/ApiPictureForm/GetTextPr/Example
+Text document API/ApiPictureForm/GetTextPr/Resulting document
+Text document API/ApiPictureForm/SetPlaceholderText/Example
+Text document API/ApiPictureForm/SetPlaceholderText/Resulting document
+Text document API/ApiPictureForm/SetTextPr/Example
+Text document API/ApiPictureForm/SetTextPr/Resulting document
+Text document API/ApiPictureForm/ToInline/Example
+Text document API/ApiPictureForm/ToInline/Resulting document
 Text document API/ApiRun/SetOutLine/Example
 Text document API/ApiRun/SetOutLine/Resulting document
 Text document API/ApiRun/SetTextFill/Example
