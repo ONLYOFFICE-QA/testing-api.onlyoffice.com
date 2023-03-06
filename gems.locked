@@ -115,7 +115,7 @@ GEM
       rubocop (~> 1.33)
       rubocop-capybara (~> 2.17)
     ruby-ole (1.2.12.2)
-    ruby-progressbar (1.11.0)
+    ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
     selenium-webdriver (4.8.0)
       rexml (~> 3.2, >= 3.2.5)
