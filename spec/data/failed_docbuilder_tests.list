@@ -16,16 +16,8 @@ Presentation API/ApiDocument/RemoveAllElements/Example
 Presentation API/ApiDocument/RemoveAllElements/Resulting document
 Presentation API/ApiDocument/RemoveElement/Example
 Presentation API/ApiDocument/RemoveElement/Resulting document
-Presentation API/ApiLayout/GetAllImages/Example
-Presentation API/ApiLayout/GetAllImages/Resulting document
-Presentation API/ApiLayout/GetAllOleObjects/Example
-Presentation API/ApiLayout/GetAllOleObjects/Resulting document
 Presentation API/ApiMaster/ClearBackground/Example
 Presentation API/ApiMaster/ClearBackground/Resulting document
-Presentation API/ApiMaster/GetAllImages/Example
-Presentation API/ApiMaster/GetAllImages/Resulting document
-Presentation API/ApiMaster/GetAllOleObjects/Example
-Presentation API/ApiMaster/GetAllOleObjects/Resulting document
 Presentation API/ApiMaster/SetBackground/Example
 Presentation API/ApiMaster/SetBackground/Resulting document
 Presentation API/ApiPresentation/GetHeight/Example
@@ -44,10 +36,6 @@ Presentation API/ApiTable/Copy/Example
 Presentation API/ApiTable/Copy/Resulting document
 Presentation API/ApiTable/Select/Example
 Presentation API/ApiTable/Select/Resulting document
-Presentation API/ApiThemeColorScheme/Copy/Example
-Presentation API/ApiThemeColorScheme/Copy/Resulting document
-Presentation API/ApiThemeFontScheme/Copy/Example
-Presentation API/ApiThemeFontScheme/Copy/Resulting document
 Presentation API/ApiThemeFormatScheme/ChangeEffectStyles/Example
 Presentation API/ApiThemeFormatScheme/ChangeEffectStyles/Resulting document
 Spreadsheet API/Api/GetComments/Example
@@ -145,14 +133,6 @@ Text document API/ApiComplexForm/ToFixed/Example
 Text document API/ApiComplexForm/ToFixed/Resulting document
 Text document API/ApiComplexForm/ToInline/Example
 Text document API/ApiComplexForm/ToInline/Resulting document
-Text document API/ApiDocument/GetCommentById/Example
-Text document API/ApiDocument/GetCommentById/Resulting document
-Text document API/ApiDocument/GetFormsByTag/Example
-Text document API/ApiDocument/GetFormsByTag/Resulting document
-Text document API/ApiDocument/GetTagsOfAllForms/Example
-Text document API/ApiDocument/GetTagsOfAllForms/Resulting document
-Text document API/ApiHyperlink/SetDefaultStyle/Example
-Text document API/ApiHyperlink/SetDefaultStyle/Resulting document
 Text document API/ApiParaPr/SetBullet/Example
 Text document API/ApiParaPr/SetBullet/Resulting document
 Text document API/ApiParagraph/GetFontNames/Example
@@ -187,3 +167,19 @@ Text document API/ApiTextPr/SetTextFill/Example
 Text document API/ApiTextPr/SetTextFill/Resulting document
 Text document API/ApiUnsupported/GetClassType/Example
 Text document API/ApiUnsupported/GetClassType/Resulting document
+Text document API/apidocument/GetAllParagraphs/Example
+Text document API/apidocument/GetAllParagraphs/Resulting document
+Text document API/apidocument/GetAllTables/Example
+Text document API/apidocument/GetAllTables/Resulting document
+Text document API/apidocument/GetCommentById/Example
+Text document API/apidocument/GetCommentById/Resulting document
+Text document API/apidocument/GetFormsByTag/Example
+Text document API/apidocument/GetFormsByTag/Resulting document
+Text document API/apidocument/GetPageCount/Example
+Text document API/apidocument/GetPageCount/Resulting document
+Text document API/apidocument/GetTagsOfAllForms/Example
+Text document API/apidocument/GetTagsOfAllForms/Resulting document
+Text document API/apidocumentcontent/GetAllParagraphs/Example
+Text document API/apidocumentcontent/GetAllParagraphs/Resulting document
+Text document API/apidocumentcontent/GetAllTables/Example
+Text document API/apidocumentcontent/GetAllTables/Resulting document

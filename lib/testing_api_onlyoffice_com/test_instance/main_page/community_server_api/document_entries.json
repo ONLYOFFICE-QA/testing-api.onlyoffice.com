@@ -8,7 +8,7 @@
     ]
   },
   "calendar": {
-    "calendars%20and%20subscriptions": [
+    "Calendars%20and%20subscriptions": [
       "POST/api/2.0/calendar",
       "POST/api/2.0/calendar/calendarurl",
       "DELETE/api/2.0/calendar/%7bcalendarid%7d",
@@ -16,6 +16,7 @@
       "GET/api/2.0/calendar/%7bcalendarid%7d",
       "GET/api/2.0/calendar/%7bcalendarid%7d/sharing",
       "GET/api/2.0/calendar/%7bcalendarid%7d/caldavurl",
+      "GET/api/2.0/calendar/calendar/%7bcalendarid%7d/%7bstartdate%7d/%7benddate%7d",
       "GET/api/2.0/calendar/calendars/%7bstartdate%7d/%7benddate%7d",
       "GET/api/2.0/calendar/sharing",
       "GET/api/2.0/calendar/%7bcalendarid%7d/icalurl",
@@ -417,7 +418,6 @@
       "GET/api/2.0/files/%7bfileid%7d/properties",
       "GET/api/2.0/files/file/%7bfileid%7d/history",
       "GET/api/2.0/files/file/%7bfileid%7d",
-      "GET/api/2.0/files/file/%7bfileid%7d/openedit",
       "PUT/api/2.0/files/file/%7bfileid%7d/saveediting",
       "PUT/api/2.0/files/%7bfileid%7d/properties",
       "PUT/api/2.0/files/batch/properties",
@@ -428,6 +428,7 @@
     ],
     "Folders": [
       "POST/api/2.0/files/folder/%7bfolderid%7d",
+      "POST/api/2.0/files/folders/%7bfolderid%7d",
       "DELETE/api/2.0/files/folder/%7bfolderid%7d",
       "GET/api/2.0/files/%7bfolderid%7d",
       "GET/api/2.0/files/%40root",
@@ -480,12 +481,15 @@
       "PUT/api/2.0/files/settings/autocleanup"
     ],
     "Sharing": [
-      "GET/api/2.0/files/file/%7bfileId%7d/share",
-      "GET/api/2.0/files/folder/%7bfolderId%7d/share",
+      "POST/api/2.0/files/%7bfileid%7d/sharedlink/%7blinkid%7d/password",
+      "GET/api/2.0/files/file/%7bfileid%7d/share",
+      "GET/api/2.0/files/folder/%7bfolderid%7d/share",
+      "PUT/api/2.0/files/%7bfileid%7d/sharedlink",
+      "GET/api/2.0/files/%7bfileid%7d/sharedlink/template",
       "DELETE/api/2.0/files/share",
-      "PUT/api/2.0/files/file/%7bfileId%7d/share",
-      "PUT/api/2.0/files/folder/%7bfolderId%7d/share",
-      "PUT/api/2.0/files/%7bfileid%7d/sharedlink"
+      "POST/api/2.0/files/sharedlink/password",
+      "PUT/api/2.0/files/file/%7bfileid%7d/share",
+      "PUT/api/2.0/files/folder/%7bfolderid%7d/share"
     ],
     "Third-Party%20Integration": [
       "GET/api/2.0/files/thirdparty/capabilities",
@@ -946,10 +950,11 @@
       "GET/api/2.0/security/audit/settings/lifetime",
       "POST/api/2.0/security/audit/settings/lifetime"
     ],
-    "Login%20history": [
+    "login%20history": [
       "POST/api/2.0/security/audit/login/report",
       "GET/api/2.0/security/audit/login/filter",
-      "GET/api/2.0/security/audit/login/last"
+      "GET/api/2.0/security/audit/login/last",
+      "PUT/api/2.0/security/loginsettings"
     ]
   },
   "settings": {
@@ -1000,9 +1005,10 @@
       "GET/api/2.0/settings/security/password",
       "GET/api/2.0/settings/security/administrator/%7bproductid%7d",
       "GET/api/2.0/settings/security",
-      "PUT/api/2.0/settings/security/access",
+      "PUT/api/2.0/settings/security",
+      "PUT/api/2.0/settings/security/password",
       "PUT/api/2.0/settings/security/administrator",
-      "PUT/api/2.0/settings/security"
+      "PUT/api/2.0/settings/security/access"
     ],
     "smtp": [
       "GET/api/2.0/settings/smtp",
@@ -1023,6 +1029,7 @@
       "GET/api/2.0/settings/statistics/visit"
     ],
     "storage": [
+      "GET/api/2.0/settings/storage/s3/regions",
       "GET/api/2.0/settings/storage",
       "GET/api/2.0/settings/storage/backup",
       "GET/api/2.0/settings/storage/cdn",
@@ -1036,7 +1043,8 @@
       "GET/api/2.0/settings/telegramisconnected",
       "DELETE/api/2.0/settings/telegramdisconnect"
     ],
-    "Tfa%20settings": [
+    "tfa%20settings": [
+      "GET/api/2.0/settings/tfaapp",
       "PUT/api/2.0/settings/tfaappnewcodes",
       "PUT/api/2.0/settings/tfaappnewapp",
       "PUT/api/2.0/settings/tfaapp"
