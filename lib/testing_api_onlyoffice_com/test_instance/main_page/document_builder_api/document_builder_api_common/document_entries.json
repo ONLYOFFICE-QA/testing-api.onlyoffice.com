@@ -202,7 +202,7 @@
       "ToFixed",
       "ToInline"
     ],
-    "ApiDocument": [
+    "apidocument": [
       "AcceptAllRevisionChanges",
       "AddComment",
       "AddElement",
@@ -227,7 +227,9 @@
       "GetAllImages",
       "GetAllNumberedParagraphs",
       "GetAllOleObjects",
+      "GetAllParagraphs",
       "GetAllShapes",
+      "GetAllTables",
       "GetAllTablesOnPage",
       "GetBookmarkRange",
       "GetClassType",
@@ -244,6 +246,7 @@
       "GetFinalSection",
       "GetFootnotesFirstParagraphs",
       "GetFormsByTag",
+      "GetPageCount",
       "GetRange",
       "GetRangeBySelect",
       "GetReviewReport",
@@ -276,13 +279,15 @@
       "UpdateAllTOC",
       "UpdateAllTOF"
     ],
-    "ApiDocumentContent": [
+    "apidocumentcontent": [
       "AddElement",
       "GetAllCharts",
       "GetAllDrawingObjects",
       "GetAllImages",
       "GetAllOleObjects",
+      "GetAllParagraphs",
       "GetAllShapes",
+      "GetAllTables",
       "GetClassType",
       "GetContent",
       "GetElement",

@@ -89,6 +89,7 @@ files/DELETE/api/2.0/files/templates/Resulting document
 files/DELETE/api/2.0/files/thirdparty/%7bproviderId%7d/Resulting document
 files/GET/api/2.0/files/%40root/Resulting document
 files/GET/api/2.0/files/%7bfileid%7d/properties/Resulting document
+files/GET/api/2.0/files/%7bfileid%7d/sharedlink/template/Resulting document
 files/GET/api/2.0/files/docservice/Resulting document
 files/GET/api/2.0/files/file/%7bfileid%7d/presigneduri/Resulting document
 files/GET/api/2.0/files/file/%7bfileid%7d/trackeditfile/Resulting document
@@ -96,11 +97,14 @@ files/GET/api/2.0/files/settings/autocleanup/Resulting document
 files/GET/api/2.0/files/thirdparty/capabilities/Resulting document
 files/POST/api/2.0/files/%40common/upload/Resulting document
 files/POST/api/2.0/files/%40my/upload/Resulting document
+files/POST/api/2.0/files/%7bfileid%7d/sharedlink/%7blinkid%7d/password/Resulting document
 files/POST/api/2.0/files/%7bfolderid%7d/upload/Resulting document
 files/POST/api/2.0/files/%7bfolderid%7d/upload/create_session/Resulting document
 files/POST/api/2.0/files/favorites/Resulting document
 files/POST/api/2.0/files/file/%7bfileid%7d/copyas/Resulting document
 files/POST/api/2.0/files/file/%7bfileid%7d/startedit/Resulting document
+files/POST/api/2.0/files/folders/%7bfolderid%7d/Resulting document
+files/POST/api/2.0/files/sharedlink/password/Resulting document
 files/POST/api/2.0/files/templates/Resulting document
 files/PUT/api/2.0/files/%7bfileid%7d/properties/Resulting document
 files/PUT/api/2.0/files/%7bfileid%7d/sharedlink/Resulting document
@@ -214,6 +218,7 @@ security/PUT/api/2.0/security/activeconnections/logout/%7blogineventid%7d/Result
 security/PUT/api/2.0/security/activeconnections/logoutall/%7buserid%7d/Resulting document
 security/PUT/api/2.0/security/activeconnections/logoutallchangepassword/Resulting document
 security/PUT/api/2.0/security/activeconnections/logoutallexceptthis/Resulting document
+security/PUT/api/2.0/security/loginsettings/Resulting document
 settings/DELETE/api/2.0/settings/customnavigation/delete/%7bid%7d/Resulting document
 settings/DELETE/api/2.0/settings/storage/Resulting document
 settings/DELETE/api/2.0/settings/storage/cdn/Resulting document
@@ -228,7 +233,9 @@ settings/GET/api/2.0/settings/security/password/Resulting document
 settings/GET/api/2.0/settings/socket/Resulting document
 settings/GET/api/2.0/settings/ssov2/constants/Resulting document
 settings/GET/api/2.0/settings/storage/progress/Resulting document
+settings/GET/api/2.0/settings/storage/s3/regions/Resulting document
 settings/GET/api/2.0/settings/telegramisconnected/Resulting document
+settings/GET/api/2.0/settings/tfaapp/Resulting document
 settings/POST/api/2.0/settings/ldap/cron/Resulting document
 settings/POST/api/2.0/settings/push/docregisterdevice/Resulting document
 settings/POST/api/2.0/settings/push/projregisterdevice/Resulting document
@@ -236,6 +243,7 @@ settings/POST/api/2.0/settings/ssov2/Resulting document
 settings/PUT/api/2.0/settings/closeadminhelper/Resulting document
 settings/PUT/api/2.0/settings/iprestrictions/Resulting document
 settings/PUT/api/2.0/settings/security/administrator/Resulting document
+settings/PUT/api/2.0/settings/security/password/Resulting document
 settings/PUT/api/2.0/settings/tfaapp/Resulting document
 settings/PUT/api/2.0/settings/tfaappnewapp/Resulting document
 settings/PUT/api/2.0/settings/tfaappnewcodes/Resulting document
