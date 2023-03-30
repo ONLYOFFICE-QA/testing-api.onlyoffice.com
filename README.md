@@ -7,10 +7,8 @@ In order to execute tests use following commands:
 ## Locally
 
 1. Bundler will install all needed gems
-  
-    ```bash
-      bundle install
-    ```
+
+   `bundle install`
 
 2. Replace path to file you want to run
   
@@ -30,17 +28,13 @@ with user `api.onlyoffice.com` (Login info stored in secret password file)
 
 3. run tests on **api.teamlab.info**
 
-    ```bash
-      rake wrata:run_tests
-    ```
+    `rake wrata:run_tests`
 
     or
 
    run tests on **api.onlyoffice.com**
 
-    ```bash
-      rake wrata:run_tests_on_production
-    ```
+    `rake wrata:run_tests_on_production`
 
 ## Test description
 
@@ -62,13 +56,9 @@ palladium slow downs a bit
 
 ### CommunityServer
 
-1. Run locally.
+1. Run locally. It *will fail* if some new methods was added to list of API Methods.
 
-    ```bash
-      rspec spec/testing-api.onlyoffice.com/community_server/documentation_links_spec.rb
-    ```
-
-    It will fail if some new methods was added to list of API Methods
+    `rspec spec/testing-api.onlyoffice.com/community_server/documentation_links_spec.rb`
 
 2. Manually edit to correctly add new methods to list of API Methods
 
@@ -78,30 +68,22 @@ palladium slow downs a bit
 
 3. Run to actualize list of missing docs.  
 
-      ```bash
-        rake update_community_server_missing_docs
-      ```
+      `rake update_community_server_missing_docs`
 
       It will produce new `spec/data/failed_community_server_tests.list`.  
       Check with **developers**, that it's ok to miss those links
 
 4. Run to check that all data is the same as in `failed_community_server_tests.list`
 
-      ```bash
-        rspec spec/testing-api.onlyoffice.com/community_server/documentat_links_content_spec.rb
-      ```
+      `rspec spec/testing-api.onlyoffice.com/community_server/documentation_links_content_spec.rb`
   
 ### DocumentBuilder
 
-1. Run locally.
+1. Run locally. It *will fail* if some new methods was added to list of API Methods.
 
-    ```bash
-    rspec spec/testing-api.onlyoffice.com/document_builder/documentation_links_spec.rb
-    ```
+    `rspec spec/testing-api.onlyoffice.com/document_builder/documentation_links_spec.rb`
 
-    It will fail if some new methods was added to list of API Methods
-
-2. Manually edit to correctly add new methods to list of API Methods
+2. Manually edit to correctly add new methods to list of **API Methods**
 
     ```bash
       lib/testing_api_onlyoffice_com/test_instance/main_page/document_builder_api/document_builder_api_common/document_entries.json
@@ -109,15 +91,16 @@ palladium slow downs a bit
 
 3. Run to actualize **list of missing** docs.
 
-    ```bash
-    rake update_documentbuilder_missing_docs
-    ```
+    `rake update_documentbuilder_missing_docs`
 
-    It will produce new `spec/data/failed_docbuilder_tests.list`.  
+    It will produce new
+
+   ```bash
+   spec/data/failed_docbuilder_tests.list
+   ```
+
     Check with *developers*, that it's ok to miss those links
 
-4. Run   to check that all data is the same as in `failed_community_server_tests.list`
+4. Run to check that all data is the same as in.
 
-    ```bash
-      rspec spec/testing-api.onlyoffice.com/document_builder/documentation_links_content_spec.rb
-    ```
+    `rspec spec/testing-api.onlyoffice.com/document_builder/documentation_links_content_spec.rb`
