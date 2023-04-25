@@ -22,6 +22,7 @@ calendar/POST/api/2.0/calendar/importics/Resulting document
 calendar/POST/api/2.0/calendar/outsideevent/Resulting document
 calendar/POST/api/2.0/calendar/utcoffset/Resulting document
 calendar/PUT/api/2.0/calendar/caldavevent/Resulting document
+calendar/UPDATE/api/2.0/calendar/refreshcaldavcalendar/Resulting document
 community/DELETE/api/2.0/community/blog/comment/%7bcommentid%7d/Resulting document
 community/DELETE/api/2.0/community/bookmark/%7bid%7d/Resulting document
 community/DELETE/api/2.0/community/bookmark/comment/%7bcommentid%7d/Resulting document
@@ -244,6 +245,8 @@ settings/PUT/api/2.0/settings/closeadminhelper/Resulting document
 settings/PUT/api/2.0/settings/iprestrictions/Resulting document
 settings/PUT/api/2.0/settings/security/administrator/Resulting document
 settings/PUT/api/2.0/settings/security/password/Resulting document
+settings/PUT/api/2.0/settings/storage/Resulting document
+settings/PUT/api/2.0/settings/storage/cdn/Resulting document
 settings/PUT/api/2.0/settings/tfaapp/Resulting document
 settings/PUT/api/2.0/settings/tfaappnewapp/Resulting document
 settings/PUT/api/2.0/settings/tfaappnewcodes/Resulting document

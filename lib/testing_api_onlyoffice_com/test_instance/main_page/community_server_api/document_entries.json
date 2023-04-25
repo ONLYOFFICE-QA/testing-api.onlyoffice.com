@@ -8,7 +8,7 @@
     ]
   },
   "calendar": {
-    "Calendars%20and%20subscriptions": [
+    "calendars%20and%20subscriptions": [
       "POST/api/2.0/calendar",
       "POST/api/2.0/calendar/calendarurl",
       "DELETE/api/2.0/calendar/%7bcalendarid%7d",
@@ -47,6 +47,7 @@
     "tasks": [
       "POST/api/2.0/calendar/icstodo",
       "DELETE/api/2.0/calendar/todos/%7btodoid%7d",
+      "UPDATE/api/2.0/calendar/refreshcaldavcalendar",
       "PUT/api/2.0/calendar/icstodo"
     ]
   },
@@ -406,7 +407,7 @@
     ]
   },
   "files": {
-    "Files": [
+    "files": [
       "POST/api/2.0/files/templates",
       "PUT/api/2.0/files/file/%7bfileid%7d/history",
       "POST/api/2.0/files/file/%7bfileid%7d/copyas",
@@ -418,6 +419,7 @@
       "GET/api/2.0/files/%7bfileid%7d/properties",
       "GET/api/2.0/files/file/%7bfileid%7d/history",
       "GET/api/2.0/files/file/%7bfileid%7d",
+      "GET/api/2.0/files/file/%7bfileid%7d/openedit",
       "PUT/api/2.0/files/file/%7bfileid%7d/saveediting",
       "PUT/api/2.0/files/%7bfileid%7d/properties",
       "PUT/api/2.0/files/batch/properties",
@@ -764,13 +766,13 @@
       "POST/api/2.0/portal/search/reindex",
       "POST/api/2.0/portal/search"
     ],
+    "settings": [
+      "GET/api/2.0/portal"
+    ],
     "Users": [
       "GET/api/2.0/portal/users/invite/%7bemployeeType%7d",
       "GET/api/2.0/portal/users/%7buserID%7d",
       "GET/api/2.0/portal/userscount"
-    ],
-    "unspecified": [
-      "GET/api/2.0/portal"
     ]
   },
   "project": {
