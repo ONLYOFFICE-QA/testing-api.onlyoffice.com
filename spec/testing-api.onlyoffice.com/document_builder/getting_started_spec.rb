@@ -14,25 +14,14 @@ describe 'document_builder_getting_started' do
     @instance.webdriver.quit
   end
 
-  describe 'download_libraries' do
+  describe 'checked_getting_started_links' do
     before do
       introduction_page = @api_page.go_to_document_builder_introduction
       @getting_started_page = introduction_page.open_getting_started
     end
 
-    it 'download library for LINUXx64 works' do
-      result, file_size_linux_x64 = @getting_started_page.download_library_linux_x64_works?
-      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nFile size: #{file_size_linux_x64}"
-    end
-
-    it 'download library for WINDOWSx64 works' do
-      result, file_size_windows_x64 = @getting_started_page.download_library_windows_x64_works?
-      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nFile size: #{file_size_windows_x64}"
-    end
-
-    it 'download library for WINDOWSx86 works' do
-      result, file_size_windows_x86 = @getting_started_page.download_library_windows_x86_works?
-      expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nFile size: #{file_size_windows_x86}"
+    it 'external_docbuilder_links_succeeded?' do
+      expect(@getting_started_page.external_links_succeeded?).to be_truthy, 'Links not available'
     end
   end
 end

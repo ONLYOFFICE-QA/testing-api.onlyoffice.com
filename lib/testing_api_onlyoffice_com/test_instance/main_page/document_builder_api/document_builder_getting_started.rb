@@ -2,13 +2,11 @@
 
 require_relative 'document_builder_api_common/builder_page'
 module TestingApiOnlyfficeCom
-  # https://user-images.githubusercontent.com/40513035/55968227-48e64600-5c84-11e9-8ca6-90d1057918cd.png
+  # https://user-images.githubusercontent.com/60688343/234644612-b4cd4a13-0f80-4de6-a7da-f5dcc3e3e051.jpg
   # /docbuilder/gettingstarted
   class DocumentBuilderGettingStarted < BuilderPage
-    # actions
-    link(:linux_x64, xpath: '//a[contains(@href, "documentbuilder-x64.tar.gz")]')
-    link(:windows_x64, xpath: '//a[contains(@href, "documentbuilder-x64.zip")]')
-    link(:windows_x86, xpath: '//a[contains(@href, "documentbuilder-x86.zip")]')
+    # External link to docbuilder lib sources
+    elements(:links_native_documentbuidler, xpath: '//a[contains(@href, "builder.aspx")]')
 
     def initialize(instance)
       @instance = instance
@@ -17,31 +15,19 @@ module TestingApiOnlyfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until { windows_x86_element.present? }
+      @instance.webdriver.wait_until { links_native_documentbuidler_elements[0].present? }
     end
 
-    def download_library_linux_x64_works?
-      linux_x64_element.click
-      path_to_downloaded_library_linux_x64 = "#{@instance.webdriver.download_directory}/#{TestData::DEFAULT_LIBRARY_LINUX_X64_NAME}"
-      OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_library_linux_x64)
-      file_size_linux_x64 = File.size(path_to_downloaded_library_linux_x64)
-      [file_size_linux_x64 > 10_000, file_size_linux_x64]
-    end
-
-    def download_library_windows_x64_works?
-      windows_x64_element.click
-      path_to_downloaded_library_windows_x64 = "#{@instance.webdriver.download_directory}/#{TestData::DEFAULT_LIBRARY_WINDOWS_X64_NAME}"
-      OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_library_windows_x64)
-      file_size_windows_x64 = File.size(path_to_downloaded_library_windows_x64)
-      [file_size_windows_x64 > 10_000, file_size_windows_x64]
-    end
-
-    def download_library_windows_x86_works?
-      windows_x86_element.click
-      path_to_downloaded_library_windows_x86 = "#{@instance.webdriver.download_directory}/#{TestData::DEFAULT_LIBRARY_WINDOWS_X86_NAME}"
-      OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_library_windows_x86)
-      file_size_windows_x86 = File.size(path_to_downloaded_library_windows_x86)
-      [file_size_windows_x86 > 10_000, file_size_windows_x86]
+    def external_links_succeeded?
+      result = []
+      links_native_documentbuidler_elements.each do |element|
+        result.push element.visible?
+        @instance.webdriver.webdriver_error('Not visible element for external link') unless result[-1]
+        uri = URI(element.href)
+        res = Net::HTTP.get_response(uri)
+        result.push res.code.include? '200'
+      end
+      result.all?
     end
   end
 end
