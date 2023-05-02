@@ -239,6 +239,29 @@
       "PUT/api/2.0/crm/settings/webformkey/change",
       "PUT/api/2.0/crm/contact/%7bcontactid%7d/avatar"
     ],
+    "currencies": [
+      "POST/api/2.0/crm/currency/addrates",
+      "GET/api/2.0/crm/settings/currency/convert",
+      "POST/api/2.0/crm/currency/rates",
+      "DELETE/api/2.0/crm/currency/rates/%7bid%7d",
+      "GET/api/2.0/crm/currency/rates/%7bfromcurrency%7d/%7btocurrency%7d",
+      "GET/api/2.0/crm/currency/rates/%7bid%7d",
+      "GET/api/2.0/crm/settings/currency",
+      "GET/api/2.0/crm/currency/rates",
+      "GET/api/2.0/crm/settings/currency/summarytable",
+      "POST/api/2.0/crm/currency/setrates",
+      "PUT/api/2.0/crm/settings/currency",
+      "PUT/api/2.0/crm/currency/rates/%7bid%7d"
+    ],
+    "custom%20fields": [
+      "POST/api/2.0/crm/%7bentitytype%7d/customfield",
+      "DELETE/api/2.0/crm/%7bentitytype%7d/customfield/%7bfieldid%7d",
+      "GET/api/2.0/crm/%7bentitytype%7d/customfield/definitions",
+      "GET/api/2.0/crm/%7bentitytype%7d/%7bentityid%7d/customfield",
+      "POST/api/2.0/crm/%7bentitytype%7d/%7bentityid%7d/customfield/%7bfieldid%7d",
+      "PUT/api/2.0/crm/%7bentitytype%7d/customfield/%7bid%7d",
+      "PUT/api/2.0/crm/%7bentitytype%7d/customfield/reorder"
+    ],
     "Files": [
       "POST/api/2.0/crm/%7bentityType%7d/%7bentityid%7d/files",
       "POST/api/2.0/crm/%7bentityType%7d/%7bentityid%7d/files/text",
@@ -359,15 +382,6 @@
       "PUT/api/2.0/crm/task/category/reorder",
       "PUT/api/2.0/crm/task/category/%7bid%7d",
       "PUT/api/2.0/crm/task/category/%7bid%7d/icon"
-    ],
-    "Custom%20fields": [
-      "POST/api/2.0/crm/%7bentityType%7d/customfield",
-      "DELETE/api/2.0/crm/%7bentityType%7d/customfield/%7bfieldid%7d",
-      "GET/api/2.0/crm/%7bentityType%7d/customfield/definitions",
-      "GET/api/2.0/crm/%7bentityType%7d/%7bentityid%7d/customfield",
-      "POST/api/2.0/crm/%7bentityType%7d/%7bentityid%7d/customfield/%7bfieldid%7d",
-      "PUT/api/2.0/crm/%7bentityType%7d/customfield/reorder",
-      "PUT/api/2.0/crm/%7bentityType%7d/customfield/%7bid%7d"
     ],
     "Voip": [
       "PUT/api/2.0/crm/voip/numbers/%7bnumberId%7d/oper",
@@ -951,6 +965,13 @@
       "GET/api/2.0/security/audit/events/filter",
       "GET/api/2.0/security/audit/settings/lifetime",
       "POST/api/2.0/security/audit/settings/lifetime"
+    ],
+    "impersonation": [
+      "GET/api/2.0/security/impersonate/%7buserid%7d",
+      "GET/api/2.0/security/impersonate/settings",
+      "POST/api/2.0/security/impersonate/%7buserid%7d",
+      "PUT/api/2.0/security/impersonate/logout",
+      "PUT/api/2.0/security/impersonate/settings"
     ],
     "login%20history": [
       "POST/api/2.0/security/audit/login/report",

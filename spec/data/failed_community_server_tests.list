@@ -53,6 +53,7 @@ crm/GET/api/2.0/crm/files/root/Resulting document
 crm/GET/api/2.0/crm/invoice/bynumber/exist/Resulting document
 crm/GET/api/2.0/crm/invoice/jsondata/%7binvoiceid%7d/Resulting document
 crm/GET/api/2.0/crm/report/terminate/Resulting document
+crm/GET/api/2.0/crm/settings/currency/convert/Resulting document
 crm/GET/api/2.0/crm/settings/organisation/logo/Resulting document
 crm/GET/api/2.0/crm/voip/numbers/%7bnumberId%7d/oper/Resulting document
 crm/GET/api/2.0/crm/voip/numbers/settings/Resulting document
@@ -212,13 +213,18 @@ security/GET/api/2.0/security/audit/login/last/Resulting document
 security/GET/api/2.0/security/audit/mappers/Resulting document
 security/GET/api/2.0/security/audit/settings/lifetime/Resulting document
 security/GET/api/2.0/security/audit/types/Resulting document
+security/GET/api/2.0/security/impersonate/%7buserid%7d/Resulting document
+security/GET/api/2.0/security/impersonate/settings/Resulting document
 security/POST/api/2.0/security/audit/events/report/Resulting document
 security/POST/api/2.0/security/audit/login/report/Resulting document
 security/POST/api/2.0/security/audit/settings/lifetime/Resulting document
+security/POST/api/2.0/security/impersonate/%7buserid%7d/Resulting document
 security/PUT/api/2.0/security/activeconnections/logout/%7blogineventid%7d/Resulting document
 security/PUT/api/2.0/security/activeconnections/logoutall/%7buserid%7d/Resulting document
 security/PUT/api/2.0/security/activeconnections/logoutallchangepassword/Resulting document
 security/PUT/api/2.0/security/activeconnections/logoutallexceptthis/Resulting document
+security/PUT/api/2.0/security/impersonate/logout/Resulting document
+security/PUT/api/2.0/security/impersonate/settings/Resulting document
 security/PUT/api/2.0/security/loginsettings/Resulting document
 settings/DELETE/api/2.0/settings/customnavigation/delete/%7bid%7d/Resulting document
 settings/DELETE/api/2.0/settings/storage/Resulting document
