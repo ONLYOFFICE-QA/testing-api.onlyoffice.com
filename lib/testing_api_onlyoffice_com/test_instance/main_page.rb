@@ -3,6 +3,7 @@
 require_relative 'main_page/community_server_api'
 require_relative 'main_page/document_builder_api'
 require_relative 'main_page/document_server_api'
+require_relative 'main_page/docspace_api'
 
 module TestingApiOnlyfficeCom
   # Main page of api.onlyoffice.com
@@ -14,6 +15,7 @@ module TestingApiOnlyfficeCom
     link(:portals, xpath: "#{ROOT_XPATH}//a[@href='/portals/basic']")
     link(:document_builder, xpath: "#{ROOT_XPATH}//a[@href='/docbuilder/basic']")
     link(:document_server, xpath: "#{ROOT_XPATH}//a[@href='/editors/basic']")
+    link(:docspace, xpath: "#{ROOT_XPATH}//a[@href='/docspace/basic']")
     div(:sidebar, xpath: "//div[contains(@class,'layout-side')]")
 
     def initialize(instance)
@@ -49,6 +51,11 @@ module TestingApiOnlyfficeCom
     def go_to_document_server_api
       document_server_element.click
       DocumentServerAPI.new(@instance)
+    end
+
+    def go_to_docspace_api
+      docspace_element.click
+      DocSpaceAPI.new(@instance)
     end
 
     # Change language of page
