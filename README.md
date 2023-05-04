@@ -1,5 +1,20 @@
 # testing-api.onlyoffice.com
 
+## Getting start
+
+For local startup in developer mode,
+recommended installing a local `bundle config` file.
+
+```shell
+  bundle config set --local with development
+```
+
+Afterwards install the dependencies with the bundle.
+
+```shell
+  bundle install
+```
+
 ## How to run tests
 
 In order to execute tests use following commands:
