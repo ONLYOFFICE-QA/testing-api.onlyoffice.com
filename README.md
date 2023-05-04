@@ -63,7 +63,7 @@ palladium slow downs a bit
 2. Manually edit to correctly add new methods to list of API Methods
 
     ```bash
-      lib/testing_api_onlyoffice_com/test_instance/main_page/community_server/document_entries.json
+      templates/community_server/api_backend.json
     ```
 
 3. Run to actualize list of missing docs.  
@@ -86,7 +86,7 @@ palladium slow downs a bit
 2. Manually edit to correctly add new methods to list of **API Methods**
 
     ```bash
-      lib/testing_api_onlyoffice_com/test_instance/main_page/document_builder/document_builder_api_common/document_entries.json
+      templates/document_builder/usage_api.json
     ```
 
 3. Run to actualize **list of missing** docs.
@@ -96,7 +96,7 @@ palladium slow downs a bit
     It will produce new
 
    ```bash
-   spec/data/failed_docbuilder_tests.list
+      spec/data/failed_docbuilder_tests.list
    ```
 
     Check with *developers*, that it's ok to miss those links

@@ -47,7 +47,7 @@ module TestingApiOnlyOfficeCom
     end
 
     def self.parsed_document_entries
-      @parsed_document_entries ||= JSON.parse(File.read("#{__dir__}/community_server/document_entries.json"))
+      @parsed_document_entries ||= JSON.parse(TestData.community_server_api_backend)
     end
 
     # Go to FAQ page
