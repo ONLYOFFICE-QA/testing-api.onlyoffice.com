@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'helper_for_api_documentation/check_method_links'
+require_relative '../documentation_helper/check_method_links'
 require_relative 'community_server/community_server_faq_page'
 require_relative 'community_server/community_server_method_page'
 module TestingApiOnlyOfficeCom

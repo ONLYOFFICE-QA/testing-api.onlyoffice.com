@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'helper_for_api_documentation/check_method_links'
+require_relative '../documentation_helper/check_method_links'
 module TestingApiOnlyOfficeCom
   # https://user-images.githubusercontent.com/60688343/235715854-b9eb8eec-b9a1-4c01-b619-4aea8928ecda.png
   # http://api.onlyoffice.com/docspace/basic
