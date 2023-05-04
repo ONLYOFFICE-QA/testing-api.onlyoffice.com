@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   # module for initialise palladium object
   module PalladiumHelper
     def init_palladium(tcm_helper)

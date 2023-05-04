@@ -2,11 +2,11 @@
 
 require 'bundler/setup'
 require_relative '../lib/testing_api_onlyoffice_com'
-include TestingApiOnlyfficeCom
+include TestingApiOnlyOfficeCom
 
-# @return [TestingApiOnlyfficeCom::Config] config of test run
+# @return [TestingApiOnlyOfficeCom::Config] config of test run
 def config
-  @config ||= TestingApiOnlyfficeCom::Config.new
+  @config ||= TestingApiOnlyOfficeCom::Config.new
 end
 
 shared_examples_for 'page_content_exist' do |path, documentation_page|

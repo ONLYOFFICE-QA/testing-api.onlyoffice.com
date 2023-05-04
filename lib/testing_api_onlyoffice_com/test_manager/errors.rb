@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   # class wraps StandardError for site stubs
   class SiteStubsError < StandardError
   end

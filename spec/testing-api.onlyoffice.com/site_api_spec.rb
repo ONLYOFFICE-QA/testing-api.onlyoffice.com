@@ -3,10 +3,10 @@
 require 'spec_helper'
 
 describe 'site_api_tests' do
-  test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Site Api', plan_name: config.to_s)
+  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'Site Api', plan_name: config.to_s)
 
   before do
-    @instance = TestingApiOnlyfficeCom::TestInstance.new(config)
+    @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @api_page = @instance.go_to_main_page
   end
 

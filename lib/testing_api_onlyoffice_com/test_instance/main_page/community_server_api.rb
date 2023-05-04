@@ -3,7 +3,7 @@
 require_relative 'helper_for_api_documentation/check_method_links'
 require_relative 'community_server_api/community_server_faq_page'
 require_relative 'community_server_api/community_server_method_page'
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   # https://user-images.githubusercontent.com/18173785/37903128-7b1dcf28-30ff-11e8-828b-c3849e7a758c.png
   # http://api.onlyoffice.com/portals/basic http://api.teamlab.info/portals/basic
   class CommunityServerAPI

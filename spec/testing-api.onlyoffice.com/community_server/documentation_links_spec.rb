@@ -2,10 +2,10 @@
 
 require 'spec_helper'
 describe 'community_server_documentation' do
-  test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Community Server Documentation Links', plan_name: config.to_s)
+  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'Community Server Documentation Links', plan_name: config.to_s)
 
   before do
-    @instance = TestingApiOnlyfficeCom::TestInstance.new(config)
+    @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @api_page = @instance.go_to_main_page
   end
 

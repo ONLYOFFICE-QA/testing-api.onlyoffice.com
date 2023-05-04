@@ -3,10 +3,10 @@
 require 'spec_helper'
 
 describe 'language_specific_examples' do
-  test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'DocumentServer Language Specific Examples', plan_name: config.to_s)
+  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'DocumentServer Language Specific Examples', plan_name: config.to_s)
 
   before do
-    @instance = TestingApiOnlyfficeCom::TestInstance.new(config)
+    @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @examples_page = @instance.go_to_main_page
                               .go_to_document_server_api
                               .go_to_integration_examples

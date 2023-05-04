@@ -2,7 +2,7 @@
 
 require 'onlyoffice_tcm_helper'
 require_relative 'test_manager/palladium_helper'
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   # this class help to init palladium and test case manager helper
   class TestManager
     include PalladiumHelper

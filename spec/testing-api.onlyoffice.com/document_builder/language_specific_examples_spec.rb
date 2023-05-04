@@ -3,10 +3,10 @@
 require 'spec_helper'
 
 describe 'DocBuilder Integration Examples' do
-  test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'DocBuilder Integration Examples', plan_name: config.to_s)
+  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'DocBuilder Integration Examples', plan_name: config.to_s)
 
   before do
-    @instance = TestingApiOnlyfficeCom::TestInstance.new(config)
+    @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @examples_page = @instance.go_to_main_page
                               .go_to_document_builder_introduction
                               .open_integrating_document_builder

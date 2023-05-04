@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   class TestData
     # document builder/generated file name
     DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'
