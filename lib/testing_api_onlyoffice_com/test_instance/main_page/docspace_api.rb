@@ -17,7 +17,7 @@ module TestingApiOnlyOfficeCom
     def initialize(instance)
       @instance = instance
       super(@instance.webdriver.driver)
-      @document_entries_json = JSON.parse(File.read("#{__dir__}/docspace_api/document_entries.json"))
+      @document_entries_json = JSON.parse(File.read("#{__dir__}/docspace/document_entries.json"))
       wait_to_load
     end
 
