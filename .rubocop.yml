@@ -4,10 +4,6 @@ inherit_from: .rubocop_todo.yml
 AllCops:
   NewCops: enable
 
-# We use `gems.rb` in this project
-Bundler/GemFilename:
-  EnforcedStyle: gems.rb
-
 # Totally disable this check
 # since we do not use rspec to
 # test some code in this product
