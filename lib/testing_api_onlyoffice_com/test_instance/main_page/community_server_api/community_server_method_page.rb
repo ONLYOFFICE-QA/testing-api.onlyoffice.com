@@ -11,6 +11,8 @@ module TestingApiOnlyfficeCom
       @method = method
       @link = "#{Config.new.server}/portals/method/#{ClassNameHelper.cleanup_name(current_module)}/#{ClassNameHelper.cleanup_name(method)}"
       @page = Nokogiri::HTML(URI.parse(@link).open)
+      raise(SiteStubsError, 'Method Not Found page') if @page.xpath("//*[@class='layout-content']").text.include?('Method Not Found')
+
       @params_exist ||= !@page.xpath('//div[@id="methodParams"]').empty?
       @example_exist ||= !@page.xpath('//div[@id="methodExample"]/pre').empty?
       @return_exist ||= !@page.xpath('//div[@id="methodReturns"]/p/text()').empty?
