@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'class_name_helper'
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   # https://user-images.githubusercontent.com/40513035/56642044-4c63cf00-667f-11e9-935f-0d275d601876.png
   # /docbuilder/basic
   class DocumentEntry

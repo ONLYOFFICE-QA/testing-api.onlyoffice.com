@@ -3,10 +3,10 @@
 require 'spec_helper'
 
 describe 'chinese_language' do
-  test_manager = TestingApiOnlyfficeCom::TestManager.new(suite_name: 'Chinese Language docs', plan_name: config.to_s)
+  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'Chinese Language docs', plan_name: config.to_s)
 
   before do
-    @instance = TestingApiOnlyfficeCom::TestInstance.new(config)
+    @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @api_page = @instance.go_to_main_page
     @chinese_page = @api_page.change_language('zh')
   end
@@ -17,7 +17,7 @@ describe 'chinese_language' do
   end
 
   it 'Chinese language page should load onlyo editors basic page' do
-    expect(@chinese_page).to be_a(TestingApiOnlyfficeCom::DocumentServerAPI)
+    expect(@chinese_page).to be_a(TestingApiOnlyOfficeCom::DocumentServerAPI)
   end
 
   it 'Chinese language page should have some chinese text' do

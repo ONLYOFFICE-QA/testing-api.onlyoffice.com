@@ -2,7 +2,7 @@
 
 require_relative 'test_instance/common_pages'
 require_relative 'test_instance/main_page'
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   # Instance of browser to perform actions
   class TestInstance
     attr_reader :webdriver

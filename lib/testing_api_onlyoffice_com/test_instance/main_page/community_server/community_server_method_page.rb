@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   # https://user-images.githubusercontent.com/40513035/57924882-0e894d80-78af-11e9-9ce3-d3f5eb9a2b23.png
   # portals/basic
   class CommunityServerMethodPage

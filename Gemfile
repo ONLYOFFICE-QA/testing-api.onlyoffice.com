@@ -13,7 +13,10 @@ gem 'palladium'
 gem 'rake'
 gem 'rspec'
 gem 'rspec_passed_time_formatter'
-gem 'rubocop', require: false
-gem 'rubocop-performance', require: false
-gem 'rubocop-rspec', require: false
 gem 'wrata_api'
+
+group :development do
+  gem 'rubocop', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rspec', require: false
+end

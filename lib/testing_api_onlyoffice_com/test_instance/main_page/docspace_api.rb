@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require_relative 'helper_for_api_documentation/check_method_links'
-module TestingApiOnlyfficeCom
+require_relative '../documentation_helper/check_method_links'
+module TestingApiOnlyOfficeCom
   # https://user-images.githubusercontent.com/60688343/235715854-b9eb8eec-b9a1-4c01-b619-4aea8928ecda.png
   # http://api.onlyoffice.com/docspace/basic
   # http://api.teamlab.info/docspace/basic
@@ -17,7 +17,7 @@ module TestingApiOnlyfficeCom
     def initialize(instance)
       @instance = instance
       super(@instance.webdriver.driver)
-      @document_entries_json = JSON.parse(File.read("#{__dir__}/docspace_api/document_entries.json"))
+      @document_entries_json = JSON.parse(TestData.docspace_api_backend)
       wait_to_load
     end
 

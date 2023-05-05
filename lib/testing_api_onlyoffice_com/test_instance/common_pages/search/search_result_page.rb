@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   # https://user-images.githubusercontent.com/668524/116047440-c1a67800-a67c-11eb-9ab2-527ac3547f2c.png
   # https://api.teamlab.info/portals/search?query=mysearch
   class SearchResultPage

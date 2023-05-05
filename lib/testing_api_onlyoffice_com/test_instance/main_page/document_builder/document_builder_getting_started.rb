@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'document_builder_api_common/builder_page'
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   # https://user-images.githubusercontent.com/60688343/234644612-b4cd4a13-0f80-4de6-a7da-f5dcc3e3e051.jpg
   # /docbuilder/gettingstarted
   class DocumentBuilderGettingStarted < BuilderPage

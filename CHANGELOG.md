@@ -4,6 +4,8 @@
 
 ### New Features
 
+* Global refactoring
+* Add docspace link tests
 * Add `markdownlint` support in CI
 * Add `yamllint` support in CI
 

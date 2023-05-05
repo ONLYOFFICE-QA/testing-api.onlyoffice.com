@@ -1,5 +1,20 @@
 # testing-api.onlyoffice.com
 
+## Getting start
+
+For local startup in developer mode,
+recommended installing a local `bundle config` file.
+
+```shell
+  bundle config set --local with development
+```
+
+Afterwards install the dependencies with the bundle.
+
+```shell
+  bundle install
+```
+
 ## How to run tests
 
 In order to execute tests use following commands:
@@ -63,7 +78,7 @@ palladium slow downs a bit
 2. Manually edit to correctly add new methods to list of API Methods
 
     ```bash
-      lib/testing_api_onlyoffice_com/test_instance/main_page/community_server_api/document_entries.json
+      templates/community_server/api_backend.json
     ```
 
 3. Run to actualize list of missing docs.  
@@ -86,7 +101,7 @@ palladium slow downs a bit
 2. Manually edit to correctly add new methods to list of **API Methods**
 
     ```bash
-      lib/testing_api_onlyoffice_com/test_instance/main_page/document_builder_api/document_builder_api_common/document_entries.json
+      templates/document_builder/usage_api.json
     ```
 
 3. Run to actualize **list of missing** docs.
@@ -96,7 +111,7 @@ palladium slow downs a bit
     It will produce new
 
    ```bash
-   spec/data/failed_docbuilder_tests.list
+      spec/data/failed_docbuilder_tests.list
    ```
 
     Check with *developers*, that it's ok to miss those links

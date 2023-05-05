@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   # https://user-images.githubusercontent.com/668524/146583286-eddeaf82-a560-4e56-a79c-d87c1ccf043c.png
   # Class for `https://api.onlyoffice.com/portals/faq` page
   class CommunityServerFaqPage

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   # Module with methods to handle DocBuilder method params
   module DocBuilderMethodParams
     # @return [True, false] is method has no params

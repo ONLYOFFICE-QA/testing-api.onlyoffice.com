@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module TestingApiOnlyfficeCom
+module TestingApiOnlyOfficeCom
   # Module for search left sidebar
   module SearchSidebar
     # @return [String] xpath for search input
