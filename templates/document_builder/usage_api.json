@@ -1,6 +1,6 @@
 {
   "Text document API": {
-    "Api": [
+    "api": [
       "AddComment",
       "attachEvent",
       "ConvertDocument",
@@ -33,6 +33,7 @@
       "detachEvent",
       "FromJSON",
       "GetDocument",
+      "GetFullName",
       "GetMailMergeReceptionsCount",
       "GetMailMergeTemplateDocContent",
       "LoadMailMergeData",
@@ -41,7 +42,8 @@
       "ReplaceTextSmart",
       "Save"
     ],
-    "ApiBlockLvlSdt": [
+    "apiblocklvlsdt": [
+      "AddCaption",
       "AddComment",
       "AddElement",
       "AddText",
@@ -229,6 +231,7 @@
       "GetAllOleObjects",
       "GetAllParagraphs",
       "GetAllShapes",
+      "GetAllStyles",
       "GetAllTables",
       "GetAllTablesOnPage",
       "GetBookmarkRange",
@@ -436,7 +439,7 @@
       "SetApplicationId",
       "SetData"
     ],
-    "ApiParagraph": [
+    "apiparagraph": [
       "AddBookmarkCrossRef",
       "AddCaption",
       "AddCaptionCrossRef",
@@ -483,6 +486,7 @@
       "GetPosInParent",
       "GetPrevious",
       "GetRange",
+      "GetSection",
       "GetShd",
       "GetSpacingAfter",
       "GetSpacingBefore",
@@ -524,6 +528,7 @@
       "SetPageBreakBefore",
       "SetPosition",
       "SetRightBorder",
+      "SetSection",
       "SetShd",
       "SetSmallCaps",
       "SetSpacing",
@@ -650,7 +655,7 @@
       "GetClassType",
       "ToJSON"
     ],
-    "ApiRun": [
+    "apirun": [
       "AddColumnBreak",
       "AddComment",
       "AddDrawing",
@@ -668,6 +673,7 @@
       "GetParentTable",
       "GetParentTableCell",
       "GetRange",
+      "GetText",
       "GetTextPr",
       "RemoveAllElements",
       "Select",
@@ -744,7 +750,8 @@
       "SetName",
       "ToJSON"
     ],
-    "ApiTable": [
+    "apitable": [
+      "AddCaption",
       "AddColumn",
       "AddColumns",
       "AddComment",
@@ -985,7 +992,7 @@
     ]
   },
   "Spreadsheet API": {
-    "Api": [
+    "api": [
       "AddDefName",
       "AddSheet",
       "attachEvent",
@@ -1013,6 +1020,7 @@
       "GetActiveSheet",
       "GetComments",
       "GetDefName",
+      "GetFullName",
       "GetLocale",
       "GetMailMergeData",
       "GetRange",
@@ -1195,17 +1203,21 @@
     "ApiPresetColor": [
       "GetClassType"
     ],
-    "ApiRange": [
+    "apirange": [
       "AddComment",
       "AutoFit",
       "Clear",
       "Copy",
       "Delete",
       "End",
+      "Find",
+      "FindNext",
+      "FindPrevious",
       "ForEach",
       "GetAddress",
       "GetAreas",
       "GetCells",
+      "GetCharacters",
       "GetClassType",
       "GetCol",
       "GetCols",
@@ -1216,6 +1228,7 @@
       "GetFillColor",
       "GetFormula",
       "GetHidden",
+      "GetNumberFormat",
       "GetOrientation",
       "GetRow",
       "GetRowHeight",
@@ -1228,6 +1241,7 @@
       "Insert",
       "Merge",
       "Paste",
+      "Replace",
       "Select",
       "SetAlignHorizontal",
       "SetAlignVertical",
@@ -1320,7 +1334,7 @@
     "ApiUniColor": [
       "GetClassType"
     ],
-    "ApiWorksheet": [
+    "apiworksheet": [
       "AddChart",
       "AddDefName",
       "AddImage",
@@ -1355,6 +1369,7 @@
       "GetTopMargin",
       "GetUsedRange",
       "GetVisible",
+      "Move",
       "ReplaceCurrentImage",
       "SetActive",
       "SetBottomMargin",
@@ -1374,7 +1389,7 @@
     ]
   },
   "Presentation API": {
-    "Api": [
+    "api": [
       "attachEvent",
       "CreateBlipFill",
       "CreateBullet",
@@ -1409,6 +1424,7 @@
       "CreateWordArt",
       "detachEvent",
       "FromJSON",
+      "GetFullName",
       "GetPresentation",
       "ReplaceTextSmart",
       "Save"
