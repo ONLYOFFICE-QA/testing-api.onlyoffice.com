@@ -1,9 +1,3 @@
-Presentation API/Api/ReplaceTextSmart/Example
-Presentation API/Api/ReplaceTextSmart/Resulting document
-Presentation API/Api/attachEvent/Example
-Presentation API/Api/attachEvent/Resulting document
-Presentation API/Api/detachEvent/Example
-Presentation API/Api/detachEvent/Resulting document
 Presentation API/ApiDocument/AddElement/Example
 Presentation API/ApiDocument/AddElement/Resulting document
 Presentation API/ApiDocument/GetElement/Example
@@ -38,11 +32,12 @@ Presentation API/ApiTable/Select/Example
 Presentation API/ApiTable/Select/Resulting document
 Presentation API/ApiThemeFormatScheme/ChangeEffectStyles/Example
 Presentation API/ApiThemeFormatScheme/ChangeEffectStyles/Resulting document
-Spreadsheet API/Api/GetComments/Example
-Spreadsheet API/Api/GetComments/Resulting document
-Spreadsheet API/Api/GetRangeByNumber/Example
-Spreadsheet API/Api/GetRangeByNumber/Resulting document
-Spreadsheet API/Api/event-onworksheetchange/Returns
+Presentation API/api/ReplaceTextSmart/Example
+Presentation API/api/ReplaceTextSmart/Resulting document
+Presentation API/api/attachEvent/Example
+Presentation API/api/attachEvent/Resulting document
+Presentation API/api/detachEvent/Example
+Presentation API/api/detachEvent/Resulting document
 Spreadsheet API/ApiDocument/AddElement/Example
 Spreadsheet API/ApiDocument/AddElement/Resulting document
 Spreadsheet API/ApiDocument/GetElement/Example
@@ -57,8 +52,6 @@ Spreadsheet API/ApiDocument/RemoveElement/Example
 Spreadsheet API/ApiDocument/RemoveElement/Resulting document
 Spreadsheet API/ApiParagraph/Copy/Example
 Spreadsheet API/ApiParagraph/Copy/Resulting document
-Spreadsheet API/ApiRange/SetSort/Example
-Spreadsheet API/ApiRange/SetSort/Resulting document
 Spreadsheet API/ApiRun/SetHighlight/Example
 Spreadsheet API/ApiRun/SetHighlight/Resulting document
 Spreadsheet API/ApiRun/SetShd/Example
@@ -67,24 +60,15 @@ Spreadsheet API/ApiRun/SetStyle/Example
 Spreadsheet API/ApiRun/SetStyle/Resulting document
 Spreadsheet API/ApiShape/SetPaddings/Example
 Spreadsheet API/ApiShape/SetPaddings/Resulting document
-Spreadsheet API/ApiWorksheet/GetPrintGridlines/Example
-Spreadsheet API/ApiWorksheet/GetPrintGridlines/Resulting document
-Spreadsheet API/ApiWorksheet/GetPrintHeadings/Example
-Spreadsheet API/ApiWorksheet/GetPrintHeadings/Resulting document
-Spreadsheet API/ApiWorksheet/ReplaceCurrentImage/Example
-Spreadsheet API/ApiWorksheet/ReplaceCurrentImage/Resulting document
-Spreadsheet API/ApiWorksheet/SetPrintGridlines/Example
-Spreadsheet API/ApiWorksheet/SetPrintGridlines/Resulting document
-Spreadsheet API/ApiWorksheet/SetPrintHeadings/Example
-Spreadsheet API/ApiWorksheet/SetPrintHeadings/Resulting document
-Text document API/Api/CreateBullet/Example
-Text document API/Api/CreateBullet/Resulting document
-Text document API/Api/attachEvent/Example
-Text document API/Api/attachEvent/Resulting document
-Text document API/Api/detachEvent/Example
-Text document API/Api/detachEvent/Resulting document
-Text document API/ApiBlockLvlSdt/Delete/Example
-Text document API/ApiBlockLvlSdt/Delete/Resulting document
+Spreadsheet API/api/GetComments/Example
+Spreadsheet API/api/GetComments/Resulting document
+Spreadsheet API/api/GetRangeByNumber/Example
+Spreadsheet API/api/GetRangeByNumber/Resulting document
+Spreadsheet API/api/event-onworksheetchange/Returns
+Spreadsheet API/apirange/SetSort/Example
+Spreadsheet API/apirange/SetSort/Resulting document
+Spreadsheet API/apiworksheet/ReplaceCurrentImage/Example
+Spreadsheet API/apiworksheet/ReplaceCurrentImage/Resulting document
 Text document API/ApiCheckBoxForm/GetText/Example
 Text document API/ApiCheckBoxForm/GetText/Resulting document
 Text document API/ApiCheckBoxForm/GetTextPr/Example
@@ -135,10 +119,6 @@ Text document API/ApiComplexForm/ToInline/Example
 Text document API/ApiComplexForm/ToInline/Resulting document
 Text document API/ApiParaPr/SetBullet/Example
 Text document API/ApiParaPr/SetBullet/Resulting document
-Text document API/ApiParagraph/GetFontNames/Example
-Text document API/ApiParagraph/GetFontNames/Resulting document
-Text document API/ApiParagraph/SetBullet/Example
-Text document API/ApiParagraph/SetBullet/Resulting document
 Text document API/ApiPictureForm/GetImage/Example
 Text document API/ApiPictureForm/GetImage/Resulting document
 Text document API/ApiPictureForm/GetText/Example
@@ -151,22 +131,20 @@ Text document API/ApiPictureForm/SetTextPr/Example
 Text document API/ApiPictureForm/SetTextPr/Resulting document
 Text document API/ApiPictureForm/ToInline/Example
 Text document API/ApiPictureForm/ToInline/Resulting document
-Text document API/ApiRun/SetOutLine/Example
-Text document API/ApiRun/SetOutLine/Resulting document
-Text document API/ApiRun/SetTextFill/Example
-Text document API/ApiRun/SetTextFill/Resulting document
-Text document API/ApiTable/GetNext/Example
-Text document API/ApiTable/GetNext/Resulting document
-Text document API/ApiTable/GetPrevious/Example
-Text document API/ApiTable/GetPrevious/Resulting document
-Text document API/ApiTable/GetTables/Example
-Text document API/ApiTable/GetTables/Resulting document
 Text document API/ApiTextPr/SetOutLine/Example
 Text document API/ApiTextPr/SetOutLine/Resulting document
 Text document API/ApiTextPr/SetTextFill/Example
 Text document API/ApiTextPr/SetTextFill/Resulting document
 Text document API/ApiUnsupported/GetClassType/Example
 Text document API/ApiUnsupported/GetClassType/Resulting document
+Text document API/api/CreateBullet/Example
+Text document API/api/CreateBullet/Resulting document
+Text document API/api/attachEvent/Example
+Text document API/api/attachEvent/Resulting document
+Text document API/api/detachEvent/Example
+Text document API/api/detachEvent/Resulting document
+Text document API/apiblocklvlsdt/Delete/Example
+Text document API/apiblocklvlsdt/Delete/Resulting document
 Text document API/apidocument/GetAllParagraphs/Example
 Text document API/apidocument/GetAllParagraphs/Resulting document
 Text document API/apidocument/GetAllTables/Example
@@ -175,11 +153,23 @@ Text document API/apidocument/GetCommentById/Example
 Text document API/apidocument/GetCommentById/Resulting document
 Text document API/apidocument/GetFormsByTag/Example
 Text document API/apidocument/GetFormsByTag/Resulting document
-Text document API/apidocument/GetPageCount/Example
-Text document API/apidocument/GetPageCount/Resulting document
 Text document API/apidocument/GetTagsOfAllForms/Example
 Text document API/apidocument/GetTagsOfAllForms/Resulting document
 Text document API/apidocumentcontent/GetAllParagraphs/Example
 Text document API/apidocumentcontent/GetAllParagraphs/Resulting document
 Text document API/apidocumentcontent/GetAllTables/Example
 Text document API/apidocumentcontent/GetAllTables/Resulting document
+Text document API/apiparagraph/GetFontNames/Example
+Text document API/apiparagraph/GetFontNames/Resulting document
+Text document API/apiparagraph/SetBullet/Example
+Text document API/apiparagraph/SetBullet/Resulting document
+Text document API/apirun/SetOutLine/Example
+Text document API/apirun/SetOutLine/Resulting document
+Text document API/apirun/SetTextFill/Example
+Text document API/apirun/SetTextFill/Resulting document
+Text document API/apitable/GetNext/Example
+Text document API/apitable/GetNext/Resulting document
+Text document API/apitable/GetPrevious/Example
+Text document API/apitable/GetPrevious/Resulting document
+Text document API/apitable/GetTables/Example
+Text document API/apitable/GetTables/Resulting document
