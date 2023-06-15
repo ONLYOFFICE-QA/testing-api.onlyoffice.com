@@ -145,20 +145,10 @@ Text document API/api/detachEvent/Example
 Text document API/api/detachEvent/Resulting document
 Text document API/apiblocklvlsdt/Delete/Example
 Text document API/apiblocklvlsdt/Delete/Resulting document
-Text document API/apidocument/GetAllParagraphs/Example
-Text document API/apidocument/GetAllParagraphs/Resulting document
-Text document API/apidocument/GetAllTables/Example
-Text document API/apidocument/GetAllTables/Resulting document
-Text document API/apidocument/GetCommentById/Example
-Text document API/apidocument/GetCommentById/Resulting document
 Text document API/apidocument/GetFormsByTag/Example
 Text document API/apidocument/GetFormsByTag/Resulting document
 Text document API/apidocument/GetTagsOfAllForms/Example
 Text document API/apidocument/GetTagsOfAllForms/Resulting document
-Text document API/apidocumentcontent/GetAllParagraphs/Example
-Text document API/apidocumentcontent/GetAllParagraphs/Resulting document
-Text document API/apidocumentcontent/GetAllTables/Example
-Text document API/apidocumentcontent/GetAllTables/Resulting document
 Text document API/apiparagraph/GetFontNames/Example
 Text document API/apiparagraph/GetFontNames/Resulting document
 Text document API/apiparagraph/SetBullet/Example
