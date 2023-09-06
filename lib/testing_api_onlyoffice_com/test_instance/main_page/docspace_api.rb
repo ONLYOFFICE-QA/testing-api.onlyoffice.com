@@ -12,7 +12,7 @@ module TestingApiOnlyOfficeCom
     attr_accessor :instance
     attr_reader :document_entries_json
 
-    link(:identification, xpath: '//a[@href="/docspace/auth"]')
+    link(:identification, xpath: '//a[@href="/docspace/basic"]')
 
     def initialize(instance)
       @instance = instance

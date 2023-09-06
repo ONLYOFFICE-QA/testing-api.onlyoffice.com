@@ -11,12 +11,12 @@ module TestingApiOnlyOfficeCom
   class MainPage
     include PageObject
 
-    ROOT_XPATH = '//td[contains(@class, "layout-table-content")]'
+    ROOT_XPATH = '//ul[contains(@class, "top-nav all-menu-items")]//li[contains(@class, "pushy-submenu")]'
     link(:portals, xpath: "#{ROOT_XPATH}//a[@href='/portals/basic']")
     link(:document_builder, xpath: "#{ROOT_XPATH}//a[@href='/docbuilder/basic']")
     link(:document_server, xpath: "#{ROOT_XPATH}//a[@href='/editors/basic']")
     link(:docspace, xpath: "#{ROOT_XPATH}//a[@href='/docspace/basic']")
-    div(:sidebar, xpath: "//div[contains(@class,'layout-side')]")
+    div(:sidebar, xpath: "//div[contains(@class,'layout-table-footer')]")
 
     def initialize(instance)
       @instance = instance
