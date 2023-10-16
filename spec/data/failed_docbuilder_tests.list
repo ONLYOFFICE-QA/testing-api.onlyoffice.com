@@ -22,8 +22,6 @@ Presentation API/ApiPresentation/ReplaceCurrentImage/Example
 Presentation API/ApiPresentation/ReplaceCurrentImage/Resulting document
 Presentation API/ApiRun/SetStyle/Example
 Presentation API/ApiRun/SetStyle/Resulting document
-Presentation API/ApiSlide/FollowMasterBackground/Example
-Presentation API/ApiSlide/FollowMasterBackground/Resulting document
 Presentation API/ApiTable/AddElement/Example
 Presentation API/ApiTable/AddElement/Resulting document
 Presentation API/ApiTable/Copy/Example
@@ -38,6 +36,8 @@ Presentation API/api/attachEvent/Example
 Presentation API/api/attachEvent/Resulting document
 Presentation API/api/detachEvent/Example
 Presentation API/api/detachEvent/Resulting document
+Presentation API/apislide/FollowMasterBackground/Example
+Presentation API/apislide/FollowMasterBackground/Resulting document
 Spreadsheet API/ApiDocument/AddElement/Example
 Spreadsheet API/ApiDocument/AddElement/Resulting document
 Spreadsheet API/ApiDocument/GetElement/Example
@@ -145,6 +145,8 @@ Text document API/api/detachEvent/Example
 Text document API/api/detachEvent/Resulting document
 Text document API/apiblocklvlsdt/Delete/Example
 Text document API/apiblocklvlsdt/Delete/Resulting document
+Text document API/apiblocklvlsdt/GetDropdownList/Example
+Text document API/apiblocklvlsdt/GetDropdownList/Resulting document
 Text document API/apidocument/GetFormsByTag/Example
 Text document API/apidocument/GetFormsByTag/Resulting document
 Text document API/apidocument/GetTagsOfAllForms/Example
