@@ -55,6 +55,7 @@
       "GetAllTablesOnPage",
       "GetClassType",
       "GetContent",
+      "GetDropdownList",
       "GetLabel",
       "GetLock",
       "GetParentContentControl",
@@ -204,6 +205,29 @@
       "ToFixed",
       "ToInline"
     ],
+    "apicontentcontrollist": [
+      "Add",
+      "Clear",
+      "GetAllItems",
+      "GetClassType",
+      "GetElementsCount",
+      "GetItem",
+      "GetParent"
+    ],
+    "apicontentcontrollistentry": [
+      "Delete",
+      "GetClassType",
+      "GetIndex",
+      "GetParent",
+      "GetText",
+      "GetValue",
+      "MoveDown",
+      "MoveUp",
+      "Select",
+      "SetIndex",
+      "SetText",
+      "SetValue"
+    ],
     "apidocument": [
       "AcceptAllRevisionChanges",
       "AddComment",
@@ -259,6 +283,7 @@
       "GetStyle",
       "GetTagsOfAllContentControls",
       "GetTagsOfAllForms",
+      "GetWatermarkSettings",
       "InsertContent",
       "InsertWatermark",
       "IsTrackRevisions",
@@ -268,6 +293,7 @@
       "RemoveAllElements",
       "RemoveElement",
       "RemoveSelection",
+      "RemoveWatermark",
       "ReplaceCurrentImage",
       "ReplaceDrawing",
       "Search",
@@ -276,6 +302,7 @@
       "SetEvenAndOddHdrFtr",
       "SetFormsHighlight",
       "SetTrackRevisions",
+      "SetWatermarkSettings",
       "ToHtml",
       "ToJSON",
       "ToMarkdown",
@@ -384,7 +411,7 @@
       "GetNextImage",
       "GetPrevImage"
     ],
-    "ApiInlineLvlSdt": [
+    "apiinlinelvlsdt": [
       "AddComment",
       "AddElement",
       "AddText",
@@ -392,6 +419,7 @@
       "Delete",
       "GetAlias",
       "GetClassType",
+      "GetDropdownList",
       "GetElement",
       "GetElementsCount",
       "GetLabel",
@@ -989,6 +1017,24 @@
     ],
     "ApiUnsupported": [
       "GetClassType"
+    ],
+    "apiwatermarksettings": [
+      "GetClassType",
+      "GetDirection",
+      "GetImageHeight",
+      "GetImageURL",
+      "GetImageWidth",
+      "GetOpacity",
+      "GetText",
+      "GetTextPr",
+      "GetType",
+      "SetDirection",
+      "SetImageSize",
+      "SetImageURL",
+      "SetOpacity",
+      "SetText",
+      "SetTextPr",
+      "SetType"
     ]
   },
   "Spreadsheet API": {
@@ -1697,7 +1743,7 @@
       "GetDocContent",
       "SetVerticalTextAlign"
     ],
-    "ApiSlide": [
+    "apislide": [
       "AddObject",
       "ApplyLayout",
       "ApplyTheme",
@@ -1717,11 +1763,13 @@
       "GetLayout",
       "GetSlideIndex",
       "GetTheme",
+      "GetVisible",
       "GetWidth",
       "MoveTo",
       "RemoveAllObjects",
       "RemoveObject",
       "SetBackground",
+      "SetVisible",
       "ToJSON"
     ],
     "ApiStroke": [
