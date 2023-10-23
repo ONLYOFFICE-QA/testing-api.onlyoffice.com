@@ -27,7 +27,7 @@ In order to execute tests use following commands:
 
 2. Replace path to file you want to run
   
-    ```bash
+    ```shell
       rspec spec/functional/specific_spec_file.rb
     ```
 
@@ -55,11 +55,11 @@ with user `api.onlyoffice.com` (Login info stored in secret password file)
 
 All spec files are rather fast to run, around **1 hour** all of them except two file:
 
-  ```bash
+  ```shell
     spec/testing-api.onlyoffice.com/community_server/documentat_links_content_spec.rb
   ```
 
-  ```bash
+  ```shell
     spec/testing-api.onlyoffice.com/document_builder/documentation_links_content_spec.rb
   ```
 
@@ -73,17 +73,21 @@ palladium slow downs a bit
 
 1. Run locally. It *will fail* if some new methods was added to list of API Methods.
 
-    `rspec spec/testing-api.onlyoffice.com/community_server/documentation_links_spec.rb`
+   ```shell
+     rake run_communityserver_actualizer 
+   ```
 
 2. Manually edit to correctly add new methods to list of API Methods
 
-    ```bash
+    ```shell
       templates/community_server/api_backend.json
     ```
 
 3. Run to actualize list of missing docs.  
 
-      `rake update_community_server_missing_docs`
+   ```shell
+     rake update_community_server_missing_docs
+   ```
 
       It will produce new `spec/data/failed_community_server_tests.list`.  
       Check with **developers**, that it's ok to miss those links
@@ -96,21 +100,25 @@ palladium slow downs a bit
 
 1. Run locally. It *will fail* if some new methods was added to list of API Methods.
 
-    `rspec spec/testing-api.onlyoffice.com/document_builder/documentation_links_spec.rb`
+   ```shell
+     rake run_documentserver_actualizer
+   ```
 
 2. Manually edit to correctly add new methods to list of **API Methods**
 
-    ```bash
+    ```shell
       templates/document_builder/usage_api.json
     ```
 
 3. Run to actualize **list of missing** docs.
 
-    `rake update_documentbuilder_missing_docs`
+   ```shell
+      rake update_documentbuilder_missing_docs
+   ```
 
     It will produce new
 
-   ```bash
+   ```shell
       spec/data/failed_docbuilder_tests.list
    ```
 

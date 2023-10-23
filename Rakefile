@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'rspec/core/rake_task'
 require_relative 'lib/testing_api_onlyoffice_com'
 
 desc 'Task for actualizing list of missing API info for CommunityServer'
@@ -28,4 +29,20 @@ task :update_documentbuilder_missing_docs do
     end
   end
   File.write("#{__dir__}/spec/data/failed_docbuilder_tests.list", all_missing_info.sort.join)
+end
+
+desc 'Task actualize all methods CommunityServer'
+task :run_communityserver_actualizer do
+  RSpec::Core::RakeTask.new(:spec) do |task|
+    task.pattern = 'spec/*/community_server/documentation_links_spec.rb'
+  end
+  Rake::Task['spec'].execute
+end
+
+desc 'Task actualize all methods DocumentBuilder'
+task :run_documentserver_actualizer do
+  RSpec::Core::RakeTask.new(:spec) do |task|
+    task.pattern = 'spec/*/document_builder/documentation_links_spec.rb'
+  end
+  Rake::Task['spec'].execute
 end
