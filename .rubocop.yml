@@ -3,6 +3,7 @@ inherit_from: .rubocop_todo.yml
 
 AllCops:
   NewCops: enable
+  TargetRubyVersion: 3.0
 
 # Totally disable this check
 # since we do not use rspec to
