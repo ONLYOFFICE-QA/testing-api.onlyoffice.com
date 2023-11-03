@@ -1,17 +1,26 @@
 name: Ruby
 on: [push]
 jobs:
-  build:
+  run_sanity:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby: ['3.1', '3.2']
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Ruby 3.2
+      - name: Set up Ruby ${{ matrix.ruby }}
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2
+          ruby-version: ${{ matrix.ruby }}
       - name: Install dependencies
         run: |
           gem install bundler
           bundle install --jobs 4 --retry 3
-      - name: Check source files using `rubocop`
-        run: rubocop
+      - name: Update to current stable google-chrome
+        run: |
+          echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get -y update
+          sudo apt-get -y install google-chrome-stable
+      - name: Run single browser spec to check sanity
+        run: |
+          rspec spec/testing-api.onlyoffice.com/languages/chinese_language_spec.rb
