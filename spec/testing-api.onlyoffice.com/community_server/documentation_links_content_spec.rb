@@ -9,7 +9,7 @@ describe 'community_server_documentation_content' do
       method_array.each do |method|
         path = "#{module_name}/#{method}"
         context path do
-          it_behaves_like 'page_content_exist', path, (-> { TestingApiOnlyOfficeCom::CommunityServerMethodPage.new(module_name, method) })
+          it_behaves_like 'page_content_exist', path, -> { TestingApiOnlyOfficeCom::CommunityServerMethodPage.new(module_name, method) }
         end
       end
     end
