@@ -65,6 +65,7 @@
       "GET/api/2.0/files/file/%7bfileid%7d/history",
       "POST/api/2.0/files/file/referencedata",
       "GET/api/2.0/files/file/app-%7bfileid%7d",
+      "GET/api/2.0/files/file/%7bfileid%7d/protectusers",
       "GET/api/2.0/files/file/%7bfileid%7d/edit/history",
       "PUT/api/2.0/files/file/%7bfileid%7d/lock",
       "GET/api/2.0/files/file/%7bfileid%7d/openedit",
@@ -125,8 +126,10 @@
       "POST/api/2.0/files/tags",
       "POST/api/2.0/files/rooms/thirdparty/%7bid%7d",
       "DELETE/api/2.0/files/tags",
+      "GET/api/2.0/files/rooms/%7bid%7d/link",
       "GET/api/2.0/files/rooms/%7bid%7d/share",
       "GET/api/2.0/files/rooms/%7bid%7d",
+      "GET/api/2.0/files/rooms/%7bid%7d/links",
       "GET/api/2.0/files/rooms",
       "GET/api/2.0/files/tags",
       "PUT/api/2.0/files/rooms/%7bid%7d/pin",
@@ -161,9 +164,11 @@
       "PUT/api/2.0/files/settings/autocleanup"
     ],
     "sharing": [
+      "POST/api/2.0/files/share/%7bkey%7d/password",
       "POST/api/2.0/files/owner",
       "GET/api/2.0/files/file/%7bfileid%7d/publickeys",
       "GET/api/2.0/files/file/%7bfileid%7d/sharedusers",
+      "GET/api/2.0/files/share/%7bkey%7d",
       "PUT/api/2.0/files/%7bfileid%7d/sharedlinkasync",
       "POST/api/2.0/files/file/%7bfileid%7d/sendeditornotify",
       "PUT/api/2.0/files/%7bfileid%7d/setacelink"
@@ -502,12 +507,10 @@
       "PUT/api/2.0/settings/webhook/%7bid%7d",
       "GET/api/2.0/settings/webhooks/log",
       "GET/api/2.0/settings/webhooks",
-      "GET/api/2.0/settings/webhook/ssl",
       "GET/api/2.0/settings/webhook",
       "DELETE/api/2.0/settings/webhook",
       "PUT/api/2.0/settings/webhook/%7bid%7d/retry",
       "PUT/api/2.0/settings/webhook/retry",
-      "POST/api/2.0/settings/webhook/ssl/%7bisenabled%7d",
       "PUT/api/2.0/settings/webhook"
     ]
   },
