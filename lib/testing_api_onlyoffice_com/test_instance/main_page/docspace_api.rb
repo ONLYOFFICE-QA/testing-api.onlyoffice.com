@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative '../documentation_helper/check_method_links'
+require_relative 'docspace/docspace_method_page'
 module TestingApiOnlyOfficeCom
   # https://user-images.githubusercontent.com/60688343/235715854-b9eb8eec-b9a1-4c01-b619-4aea8928ecda.png
   # http://api.onlyoffice.com/docspace/basic
@@ -17,7 +18,7 @@ module TestingApiOnlyOfficeCom
     def initialize(instance)
       @instance = instance
       super(@instance.webdriver.driver)
-      @document_entries_json = JSON.parse(TestData.docspace_api_backend)
+      @document_entries_json = TestData.docspace_api_backend
       wait_to_load
     end
 

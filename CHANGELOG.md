@@ -4,6 +4,7 @@
 
 ### New Features
 
+* nokogiri parse & check docspace methods page
 * Global refactoring
 * Add docspace link tests
 * Add `markdownlint` support in CI

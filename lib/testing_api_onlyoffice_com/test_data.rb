@@ -24,7 +24,7 @@ module TestingApiOnlyOfficeCom
     end
 
     def self.docspace_api_backend
-      File.read("#{Dir.pwd}/templates/docspace/api_backend.json")
+      JSON.parse(File.read("#{Dir.pwd}/templates/docspace/api_backend.json"))
     end
   end
 end
