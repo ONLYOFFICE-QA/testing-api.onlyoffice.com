@@ -29,29 +29,17 @@
       "GET/api/2.0/capabilities"
     ]
   },
-  "feed": {
-    "unspecified": [
-      "GET/api/2.0/feed/newfeedscount",
-      "GET/api/2.0/feed/filter",
-      "GET/api/2.0/modules",
-      "GET/api/2.0/modules/info",
-      "PUT/api/2.0/feed/read"
-    ]
-  },
   "files": {
     "files": [
-      "POST/api/2.0/files/file/%7bfileid%7d/recent",
       "POST/api/2.0/files/templates",
       "PUT/api/2.0/files/file/%7bfileid%7d/history",
       "POST/api/2.0/files/masterform/%7bfileid%7d/checkfillformdraft",
       "POST/api/2.0/files/file/%7bfileid%7d/copyas",
       "POST/api/2.0/files/%7bfolderid%7d/file",
       "POST/api/2.0/files/%40my/file",
-      "POST/api/2.0/files/%40common/text",
       "POST/api/2.0/files/%40my/text",
       "POST/api/2.0/files/%7bfolderid%7d/text",
       "POST/api/2.0/files/%7bfolderid%7d/html",
-      "POST/api/2.0/files/%40common/html",
       "POST/api/2.0/files/%40my/html",
       "POST/api/2.0/files/file/%7bfileid%7d/edit_session",
       "POST/api/2.0/files/thumbnails",
@@ -70,6 +58,7 @@
       "PUT/api/2.0/files/file/%7bfileid%7d/lock",
       "GET/api/2.0/files/file/%7bfileid%7d/openedit",
       "GET/api/2.0/files/file/%7bfileid%7d/restoreversion",
+      "GET/api/2.0/files/file/%7bid%7d/link",
       "PUT/api/2.0/files/file/%7bfileid%7d/saveediting",
       "PUT/api/2.0/files/%7bfileid%7d/properties",
       "PUT/api/2.0/files/batch/properties",
@@ -77,7 +66,7 @@
       "GET/api/2.0/files/file/%7bfileid%7d/trackeditfile",
       "PUT/api/2.0/files/file/%7bfileid%7d"
     ],
-    "folders": [
+"folders": [
       "POST/api/2.0/files/folder/%7bfolderid%7d",
       "DELETE/api/2.0/files/folder/%7bfolderid%7d",
       "GET/api/2.0/files/%7bfolderid%7d",
@@ -85,21 +74,14 @@
       "GET/api/2.0/files/folder/%7bfolderid%7d",
       "GET/api/2.0/files/%7bfolderid%7d/news",
       "GET/api/2.0/files/%7bfolderid%7d/subfolders",
-      "GET/api/2.0/files/%40common",
-      "GET/api/2.0/files/%40projects",
       "GET/api/2.0/files/%40my",
       "GET/api/2.0/files/%40privacy",
-      "GET/api/2.0/files/%40recent",
-      "GET/api/2.0/files/%40share",
-      "GET/api/2.0/files/%40templates",
       "GET/api/2.0/files/%40trash",
       "GET/api/2.0/files/folder/%7bfolderid%7d/path",
       "POST/api/2.0/files/%7bfolderid%7d/insert",
-      "POST/api/2.0/files/%40common/insert",
       "POST/api/2.0/files/%40my/insert",
       "PUT/api/2.0/files/folder/%7bfolderid%7d",
       "POST/api/2.0/files/%7bfolderid%7d/upload",
-      "POST/api/2.0/files/%40common/upload",
       "POST/api/2.0/files/%40my/upload"
     ],
     "operations": [
@@ -109,7 +91,7 @@
       "PUT/api/2.0/files/fileops/copy",
       "PUT/api/2.0/files/fileops/delete",
       "PUT/api/2.0/files/fileops/emptytrash",
-      "PUT/api/2.0/files/fileops/terminate",
+      "PUT/api/2.0/files/fileops/terminate/%7bid%7d",
       "GET/api/2.0/files/fileops",
       "GET/api/2.0/files/file/%7bfileid%7d/checkconversion",
       "PUT/api/2.0/files/fileops/markasread",
@@ -144,35 +126,6 @@
       "PUT/api/2.0/files/rooms/%7bid%7d/unpin",
       "POST/api/2.0/files/logos"
     ],
-    "settings": [
-      "PUT/api/2.0/files/keepnewfilename",
-      "PUT/api/2.0/files/storeforcesave",
-      "PUT/api/2.0/files/storeoriginal",
-      "PUT/api/2.0/files/settings/downloadtargz",
-      "PUT/api/2.0/files/settings/dafaultaccessrights",
-      "PUT/api/2.0/files/settings/external",
-      "PUT/api/2.0/files/settings/externalsocialmedia",
-      "PUT/api/2.0/files/forcesave",
-      "PUT/api/2.0/files/thirdparty",
-      "PUT/api/2.0/files/docservice",
-      "GET/api/2.0/files/%40privacy/available",
-      "PUT/api/2.0/files/changedeleteconfrim",
-      "GET/api/2.0/files/settings",
-      "GET/api/2.0/files/settings/autocleanup",
-      "GET/api/2.0/files/info",
-      "PUT/api/2.0/files/updateifexist",
-      "PUT/api/2.0/files/settings/autocleanup"
-    ],
-    "sharing": [
-      "POST/api/2.0/files/share/%7bkey%7d/password",
-      "POST/api/2.0/files/owner",
-      "GET/api/2.0/files/file/%7bfileid%7d/publickeys",
-      "GET/api/2.0/files/file/%7bfileid%7d/sharedusers",
-      "GET/api/2.0/files/share/%7bkey%7d",
-      "PUT/api/2.0/files/%7bfileid%7d/sharedlinkasync",
-      "POST/api/2.0/files/file/%7bfileid%7d/sendeditornotify",
-      "PUT/api/2.0/files/%7bfileid%7d/setacelink"
-    ],
     "third-party%20integration": [
       "GET/api/2.0/files/thirdparty/backup",
       "GET/api/2.0/files/thirdparty/common",
@@ -182,23 +135,6 @@
       "DELETE/api/2.0/files/thirdparty/%7bproviderid%7d",
       "POST/api/2.0/files/thirdparty",
       "POST/api/2.0/files/thirdparty/backup"
-    ]
-  },
-  "group": {
-    "unspecified": [
-      "POST/api/2.0/group",
-      "PUT/api/2.0/group/%7bgroupid%7d/members",
-      "DELETE/api/2.0/group/%7bgroupid%7d",
-      "GET/api/2.0/group/%7bgroupid%7d",
-      "GET/api/2.0/group",
-      "GET/api/2.0/group/search",
-      "GET/api/2.0/group/full",
-      "GET/api/2.0/group/user/%7buserid%7d",
-      "PUT/api/2.0/group/%7bgroupid%7d/members/%7bnewgroupid%7d",
-      "DELETE/api/2.0/group/%7bgroupid%7d/members",
-      "POST/api/2.0/group/%7bgroupid%7d/members",
-      "PUT/api/2.0/group/%7bgroupid%7d/manager",
-      "PUT/api/2.0/group/%7bgroupid%7d"
     ]
   },
   "people": {
@@ -236,11 +172,6 @@
       "PUT/api/2.0/people/%7buserid%7d",
       "PUT/api/2.0/people/%7buserid%7d/culture"
     ],
-    "quota": [
-      "PUT/api/2.0/people/quota",
-      "GET/api/2.0/people/checkrecalculatequota",
-      "GET/api/2.0/people/recalculatequota"
-    ],
     "search": [
       "GET/api/2.0/people/%40search/%7bquery%7d",
       "GET/api/2.0/people/search",
@@ -259,8 +190,8 @@
       "DELETE/api/2.0/people/thirdparty/unlinkaccount"
     ],
     "user%20data": [
-      "GET/api/2.0/people/remove/progress",
-      "GET/api/2.0/people/reassign/progress",
+      "GET/api/2.0/people/remove/progress/%7buserid%7d",
+      "GET/api/2.0/people/reassign/progress/%7buserid%7d",
       "POST/api/2.0/people/remove/start",
       "POST/api/2.0/people/reassign/start",
       "PUT/api/2.0/people/remove/terminate",
@@ -276,20 +207,9 @@
     ]
   },
   "portal": {
-    "payment": [
-      "GET/api/2.0/portal/payment/currencies",
-      "GET/api/2.0/portal/payment/prices",
-      "GET/api/2.0/portal/payment/quota",
-      "GET/api/2.0/portal/payment/account",
-      "PUT/api/2.0/portal/payment/url",
-      "POST/api/2.0/portal/payment/request",
-      "PUT/api/2.0/portal/payment/update"
-    ],
     "quota": [
       "GET/api/2.0/portal/quota",
       "GET/api/2.0/portal/tariff",
-      "GET/api/2.0/portal/tenantextra",
-      "GET/api/2.0/portal/payment/quotas",
       "GET/api/2.0/portal/quota/right",
       "GET/api/2.0/portal/usedspace"
     ],
@@ -297,11 +217,9 @@
       "PUT/api/2.0/portal/suspend",
       "DELETE/api/2.0/portal/delete",
       "DELETE/api/2.0/portal/deleteportalimmediately",
-      "GET/api/2.0/portal/thumb",
       "GET/api/2.0/portal/path",
       "GET/api/2.0/portal",
       "PUT/api/2.0/portal/getshortenlink",
-      "POST/api/2.0/portal/mobile/registration",
       "PUT/api/2.0/portal/continue",
       "POST/api/2.0/portal/delete",
       "POST/api/2.0/portal/suspend"
@@ -395,17 +313,6 @@
       "PUT/api/2.0/settings/iprestrictions",
       "PUT/api/2.0/settings/iprestrictions/settings"
     ],
-    "ldap": [
-      "GET/api/2.0/settings/ldap/cron",
-      "GET/api/2.0/settings/ldap/default",
-      "GET/api/2.0/settings/ldap",
-      "GET/api/2.0/settings/ldap/status",
-      "POST/api/2.0/settings/ldap",
-      "POST/api/2.0/settings/ldap/cron",
-      "GET/api/2.0/settings/ldap/sync",
-      "POST/api/2.0/settings/ldap/save/test",
-      "GET/api/2.0/settings/ldap/sync/test"
-    ],
     "license": [
       "POST/api/2.0/settings/license/accept",
       "GET/api/2.0/settings/license/refresh",
@@ -430,12 +337,6 @@
     "owner": [
       "POST/api/2.0/settings/owner",
       "PUT/api/2.0/settings/owner"
-    ],
-    "quota": [
-      "GET/api/2.0/settings/checkrecalculatequota",
-      "GET/api/2.0/settings/quota",
-      "GET/api/2.0/settings/recalculatequota",
-      "POST/api/2.0/settings/userquotasettings"
     ],
     "security": [
       "GET/api/2.0/settings/security/administrator",
@@ -477,10 +378,6 @@
       "GET/api/2.0/settings/customschemas",
       "POST/api/2.0/settings/customschemas"
     ],
-    "telegram": [
-      "GET/api/2.0/settings/telegramisconnected",
-      "DELETE/api/2.0/settings/telegramdisconnect"
-    ],
     "tfa%20settings": [
       "GET/api/2.0/settings/tfaapp/setup",
       "GET/api/2.0/settings/tfaapp/confirm",
@@ -497,11 +394,6 @@
       "PUT/api/2.0/settings/tips",
       "PUT/api/2.0/settings/tips/change/subscription"
     ],
-    "versions": [
-      "PUT/api/2.0/settings/version",
-      "GET/api/2.0/settings/version/build",
-      "GET/api/2.0/settings/version"
-    ],
     "webhooks": [
       "POST/api/2.0/settings/webhook",
       "PUT/api/2.0/settings/webhook/%7bid%7d",
@@ -512,12 +404,6 @@
       "PUT/api/2.0/settings/webhook/%7bid%7d/retry",
       "PUT/api/2.0/settings/webhook/retry",
       "PUT/api/2.0/settings/webhook"
-    ]
-  },
-  "thirdparty": {
-    "unspecified": [
-      "GET/api/2.0/thirdparty/%7bprovider%7d",
-      "GET/api/2.0/thirdparty/%7bprovider%7d/code"
     ]
   }
 }
