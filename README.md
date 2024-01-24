@@ -74,7 +74,7 @@ palladium slow downs a bit
 1. Run locally. It *will fail* if some new methods was added to list of API Methods.
 
    ```shell
-    rake run_communityserver_actualizer 
+    rake actualize_communityserver
    ```
 
 2. Manually edit to correctly add new methods to list of API Methods
@@ -86,7 +86,7 @@ palladium slow downs a bit
 3. Run to actualize list of missing docs.  
 
    ```shell
-    rake update_community_server_missing_docs
+    rake update:community_server_api_backend
    ```
 
    >It will produce new `spec/data/failed_community_server_tests.list`.  
@@ -103,7 +103,7 @@ palladium slow downs a bit
 1. Run locally. It *will fail* if some new methods was added to list of API Methods.
 
    ```shell
-    rake run_documentserver_actualizer
+    rake actualize_documentbuilder
    ```
 
 2. Manually edit to correctly add new methods to list of **API Methods**
@@ -115,7 +115,7 @@ palladium slow downs a bit
 3. Run to actualize **list of missing** docs.
 
    ```shell
-    rake update_documentbuilder_missing_docs
+    rake update:documentbuilder_builder_api
    ```
 
    >It will produce new `spec/data/failed_docbuilder_tests.list`
@@ -132,7 +132,7 @@ palladium slow downs a bit
 1. Run locally. It *will fail* if some new methods was added to list of API Methods.
 
    ```shell
-    rake run_docspace_actualizer
+    rake actualize_docspace
    ```
 
 2. Manually edit to correctly add new methods to list of **API Methods**
@@ -144,7 +144,7 @@ palladium slow downs a bit
 3. Run to actualize **list of missing** docs.
 
    ```shell
-    rake update_docspace_missing_docs
+    rake update:docspace_api_backend
    ```
 
    >It will produce new `spec/data/failed_docbuilder_tests.list`

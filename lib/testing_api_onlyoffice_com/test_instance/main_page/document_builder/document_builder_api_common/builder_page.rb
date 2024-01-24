@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative '../../../documentation_helper/document_entry'
+
 module TestingApiOnlyOfficeCom
   # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
   # /docbuilder/basic
@@ -68,10 +69,6 @@ module TestingApiOnlyOfficeCom
     def document_builder_links_ok?
       failed = check_documentation_links(navigation_objects, BuilderPage.parsed_document_entries)
       [failed.empty?, failed]
-    end
-
-    def self.parsed_document_entries
-      @parsed_document_entries ||= JSON.parse(TestData.document_builder_usage_api)
     end
   end
 end

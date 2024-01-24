@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 require_relative 'document_builder_api_common/builder_page'
+
 module TestingApiOnlyOfficeCom
-  # https://user-images.githubusercontent.com/60688343/234644612-b4cd4a13-0f80-4de6-a7da-f5dcc3e3e051.jpg
+  # https://github.com/ONLYOFFICE-QA/testing-api.onlyoffice.com/assets/60688343/9bb5c42a-2bde-4bb3-97c6-cd70d7fcfdd9
   # /docbuilder/gettingstarted
   class DocumentBuilderGettingStarted < BuilderPage
     # External link to docbuilder lib sources

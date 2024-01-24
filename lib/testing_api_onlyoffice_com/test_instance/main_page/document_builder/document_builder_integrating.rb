@@ -2,8 +2,9 @@
 
 require_relative 'document_builder_api_common/document_builder'
 require_relative 'document_builder_api_common/builder_page'
+
 module TestingApiOnlyOfficeCom
-  # https://user-images.githubusercontent.com/40513035/55968370-8945c400-5c84-11e9-9dda-4e2402268a00.png
+  # https://github.com/ONLYOFFICE-QA/testing-api.onlyoffice.com/assets/60688343/72680e2f-dfad-4404-9f26-ee72c0c7a8cd
   # /docbuilder/integratingdocumentbuilder
   class DocumentBuilderIntegrating < BuilderPage
     include DocumentBuilder

@@ -16,11 +16,11 @@ module TestingApiOnlyOfficeCom
     CUSTOM_POSITION = 'QA Engineer'
 
     def self.community_server_api_backend
-      File.read("#{Dir.pwd}/templates/community_server/api_backend.json")
+      JSON.parse(File.read("#{Dir.pwd}/templates/community_server/api_backend.json"))
     end
 
     def self.document_builder_usage_api
-      File.read("#{Dir.pwd}/templates/document_builder/usage_api.json")
+      JSON.parse(File.read("#{Dir.pwd}/templates/document_builder/usage_api.json"))
     end
 
     def self.docspace_api_backend

@@ -4,7 +4,7 @@ require 'spec_helper'
 describe 'community_server_documentation_content' do
   test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'Community Server Documentation Links Content', plan_name: config.to_s)
 
-  TestingApiOnlyOfficeCom::CommunityServerAPI.parsed_document_entries.each_pair do |module_name, class_hash|
+  TestingApiOnlyOfficeCom::TestData.community_server_api_backend.each_pair do |module_name, class_hash|
     class_hash.each_pair do |_current_class, method_array|
       method_array.each do |method|
         path = "#{module_name}/#{method}"

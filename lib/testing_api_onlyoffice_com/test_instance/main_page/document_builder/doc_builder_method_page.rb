@@ -3,8 +3,7 @@
 require_relative 'doc_builder_method_page/doc_builder_method_params'
 
 module TestingApiOnlyOfficeCom
-  # https://user-images.githubusercontent.com/40513035/57924882-0e894d80-78af-11e9-9ce3-d3f5eb9a2b23.png
-  # /docbuilder/basic
+  # https://github.com/ONLYOFFICE-QA/testing-api.onlyoffice.com/assets/60688343/a813f7c8-09f3-4d12-8b36-5c9d5dfd01cc
   class DocBuilderMethodPage
     include DocBuilderMethodParams
 

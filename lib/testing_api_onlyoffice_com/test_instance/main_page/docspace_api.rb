@@ -3,9 +3,8 @@
 require_relative '../documentation_helper/check_method_links'
 require_relative 'docspace/docspace_method_page'
 module TestingApiOnlyOfficeCom
-  # https://user-images.githubusercontent.com/60688343/235715854-b9eb8eec-b9a1-4c01-b619-4aea8928ecda.png
-  # http://api.onlyoffice.com/docspace/basic
-  # http://api.teamlab.info/docspace/basic
+  # https://github.com/ONLYOFFICE-QA/testing-api.onlyoffice.com/assets/60688343/dc2900eb-905f-4de9-987a-cd407e315868
+  # http://api.onlyoffice.com/docspace/basic http://api.teamlab.info/docspace/basic
   class DocSpaceAPI
     include PageObject
     include CheckMethodLinks
