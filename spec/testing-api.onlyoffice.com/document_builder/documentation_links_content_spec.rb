@@ -4,7 +4,7 @@ require 'spec_helper'
 describe 'document_builder_documentation_content' do
   test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'Document Builder Documentation Links Content', plan_name: config.to_s)
 
-  TestingApiOnlyOfficeCom::BuilderPage.parsed_document_entries.each_pair do |editor, class_hash|
+  TestingApiOnlyOfficeCom::TestData.document_builder_usage_api.each_pair do |editor, class_hash|
     class_hash.each_pair do |current_class, method_array|
       method_array.each do |method|
         path = "#{editor}/#{current_class}/#{method}"

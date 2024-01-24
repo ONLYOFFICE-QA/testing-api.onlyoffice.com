@@ -27,7 +27,7 @@ module TestingApiOnlyOfficeCom
       return @navigation_objects if @navigation_objects
 
       @navigation_objects = []
-      CommunityServerAPI.parsed_document_entries.each_pair do |module_name, sections_hash|
+      TestData.community_server_api_backend.each_pair do |module_name, sections_hash|
         entry = DocumentEntry.new(@instance, "section/#{module_name}", module_name)
         sections_hash.each_pair do |section_name, methods_array|
           entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{section_name}", section_name)
@@ -42,12 +42,8 @@ module TestingApiOnlyOfficeCom
     end
 
     def community_server_links_ok?
-      failed = check_documentation_links(navigation_objects, CommunityServerAPI.parsed_document_entries)
+      failed = check_documentation_links(navigation_objects, TestData.community_server_api_backend)
       [failed.empty?, failed]
-    end
-
-    def self.parsed_document_entries
-      @parsed_document_entries ||= JSON.parse(TestData.community_server_api_backend)
     end
 
     # Go to FAQ page

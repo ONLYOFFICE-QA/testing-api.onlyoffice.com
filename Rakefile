@@ -6,7 +6,7 @@ require_relative 'lib/testing_api_onlyoffice_com'
 desc 'Task for actualizing list of missing API info for CommunityServer'
 task :update_community_server_missing_docs do
   all_missing_info = []
-  TestingApiOnlyOfficeCom::CommunityServerAPI.parsed_document_entries.each_pair do |module_name, class_hash|
+  TestingApiOnlyOfficeCom::TestData.community_server_api_backend.each_pair do |module_name, class_hash|
     class_hash.each_pair do |_current_class, method_array|
       method_array.each do |method|
         page = TestingApiOnlyOfficeCom::CommunityServerMethodPage.new(module_name, method)
@@ -20,7 +20,7 @@ end
 desc 'Task for actualizing list of missing API info for DocumentBuilder'
 task :update_documentbuilder_missing_docs do
   all_missing_info = []
-  TestingApiOnlyOfficeCom::BuilderPage.parsed_document_entries.each_pair do |editor, class_hash|
+  TestingApiOnlyOfficeCom::TestData.document_builder_usage_api.each_pair do |editor, class_hash|
     class_hash.each_pair do |current_class, method_array|
       method_array.each do |method|
         page = TestingApiOnlyOfficeCom::DocBuilderMethodPage.new(editor, current_class, method)

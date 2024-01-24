@@ -69,9 +69,5 @@ module TestingApiOnlyOfficeCom
       failed = check_documentation_links(navigation_objects, BuilderPage.parsed_document_entries)
       [failed.empty?, failed]
     end
-
-    def self.parsed_document_entries
-      @parsed_document_entries ||= JSON.parse(TestData.document_builder_usage_api)
-    end
   end
 end
