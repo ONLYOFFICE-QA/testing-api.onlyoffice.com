@@ -5,15 +5,15 @@
 For local startup in developer mode,
 recommended installing a local `bundle config` file.
 
-```shell
-  bundle config set --local with development
-```
+   ```shell
+    bundle config set --local with development
+   ```
 
 Afterwards install the dependencies with the bundle.
 
-```shell
-  bundle install
-```
+   ```shell
+    bundle install
+   ```
 
 ## How to run tests
 
@@ -27,9 +27,9 @@ In order to execute tests use following commands:
 
 2. Replace path to file you want to run
   
-    ```shell
-      rspec spec/functional/specific_spec_file.rb
-    ```
+   ```shell
+    rspec spec/[functional]/[specific_spec_file.rb]
+   ```
 
 ## Remotely on `wrata`
 
@@ -55,13 +55,13 @@ with user `api.onlyoffice.com` (Login info stored in secret password file)
 
 All spec files are rather fast to run, around **1 hour** all of them except two file:
 
-  ```shell
+   ```shell
     spec/testing-api.onlyoffice.com/community_server/documentat_links_content_spec.rb
-  ```
+   ```
 
-  ```shell
+   ```shell
     spec/testing-api.onlyoffice.com/document_builder/documentation_links_content_spec.rb
-  ```
+   ```
 
 Both those file check a lot of pages for content, so they are *slow*.
 It took around **several hours** to run each of them, maybe even more if
@@ -74,56 +74,84 @@ palladium slow downs a bit
 1. Run locally. It *will fail* if some new methods was added to list of API Methods.
 
    ```shell
-     rake run_communityserver_actualizer 
+    rake run_communityserver_actualizer 
    ```
 
 2. Manually edit to correctly add new methods to list of API Methods
 
-    ```shell
-      templates/community_server/api_backend.json
-    ```
+   ```shell
+    templates/community_server/api_backend.json
+   ```
 
 3. Run to actualize list of missing docs.  
 
    ```shell
-     rake update_community_server_missing_docs
+    rake update_community_server_missing_docs
    ```
 
-      It will produce new `spec/data/failed_community_server_tests.list`.  
-      Check with **developers**, that it's ok to miss those links
+   >It will produce new `spec/data/failed_community_server_tests.list`.  
+   Check with **developers**, that it's ok to miss those links
 
 4. Run to check that all data is the same as in `failed_community_server_tests.list`
 
-      `rspec spec/testing-api.onlyoffice.com/community_server/documentation_links_content_spec.rb`
-  
+   ```shell
+    rspec spec/testing-api.onlyoffice.com/community_server/documentation_links_content_spec.rb`
+   ```
+
 ### DocumentBuilder
 
 1. Run locally. It *will fail* if some new methods was added to list of API Methods.
 
    ```shell
-     rake run_documentserver_actualizer
+    rake run_documentserver_actualizer
    ```
 
 2. Manually edit to correctly add new methods to list of **API Methods**
 
-    ```shell
-      templates/document_builder/usage_api.json
-    ```
+   ```shell
+    templates/document_builder/usage_api.json
+   ```
 
 3. Run to actualize **list of missing** docs.
 
    ```shell
-      rake update_documentbuilder_missing_docs
+    rake update_documentbuilder_missing_docs
    ```
 
-    It will produce new
-
-   ```shell
-      spec/data/failed_docbuilder_tests.list
-   ```
-
+   >It will produce new `spec/data/failed_docbuilder_tests.list`
     Check with *developers*, that it's ok to miss those links
 
 4. Run to check that all data is the same as in.
 
-    `rspec spec/testing-api.onlyoffice.com/document_builder/documentation_links_content_spec.rb`
+   ```shell
+    rspec spec/testing-api.onlyoffice.com/document_builder/documentation_links_content_spec.rb
+   ```
+
+### DocSpace
+
+1. Run locally. It *will fail* if some new methods was added to list of API Methods.
+
+   ```shell
+    rake run_docspace_actualizer
+   ```
+
+2. Manually edit to correctly add new methods to list of **API Methods**
+
+   ```shell
+    templates/docspace/api_backend.json
+   ```
+
+3. Run to actualize **list of missing** docs.
+
+   ```shell
+    rake update_docspace_missing_docs
+   ```
+
+   >It will produce new `spec/data/failed_docbuilder_tests.list`
+   Check with *developers*, that it's ok to miss those links
+
+4. Run to check that all data is the same as in.
+
+   ```shell
+    rspec spec/testing-api.onlyoffice.com/docspace/docspace_links_content_spec.rb
+   ```
