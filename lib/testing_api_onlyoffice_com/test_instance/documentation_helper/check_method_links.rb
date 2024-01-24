@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
 module TestingApiOnlyOfficeCom
-  # class for editing class names
-  # https://user-images.githubusercontent.com/40513035/57938547-0fcb7200-78d1-11e9-800f-e685243246d2.png
-  # /docbuilder/basic
+  # The class contains methods for recursive traversal of nested objects
   module CheckMethodLinks
     # TODO: simplify the method
+    # Method hooked on traversal with and verification by webdriver
+    # @param [Object] objects: test entity
+    # @param [Object] parsed_json object of the entity under test
     def check_documentation_links(objects, parsed_json)
       checked = {}
       parsed_json.each_with_index do |(module_name, section_hash), index|

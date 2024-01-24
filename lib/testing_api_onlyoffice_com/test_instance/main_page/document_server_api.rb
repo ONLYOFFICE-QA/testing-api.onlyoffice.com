@@ -3,7 +3,7 @@
 require 'onlyoffice_documentserver_testing_framework'
 
 module TestingApiOnlyOfficeCom
-  # https://user-images.githubusercontent.com/18173785/37903128-7b1dcf28-30ff-11e8-828b-c3849e7a758c.png
+  # https://github.com/ONLYOFFICE-QA/testing-api.onlyoffice.com/assets/60688343/cce080d7-e765-4b69-98d7-6f1aadf9eddf
   # /editors/basic
   class DocumentServerAPI
     include PageObject

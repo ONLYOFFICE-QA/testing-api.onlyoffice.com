@@ -2,8 +2,7 @@
 
 require_relative 'class_name_helper'
 module TestingApiOnlyOfficeCom
-  # https://user-images.githubusercontent.com/40513035/56642044-4c63cf00-667f-11e9-935f-0d275d601876.png
-  # /docbuilder/basic
+  # Class containing html list traversal logic
   class DocumentEntry
     attr_accessor :link, :xpath, :xpath_expend, :children
     attr_reader :name
