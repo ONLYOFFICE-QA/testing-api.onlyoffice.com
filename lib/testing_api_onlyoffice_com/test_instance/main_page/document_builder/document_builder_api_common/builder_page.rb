@@ -52,7 +52,7 @@ module TestingApiOnlyOfficeCom
       return @navigation_objects if @navigation_objects
 
       @navigation_objects = []
-      BuilderPage.parsed_document_entries.each_pair do |editor_name, classes_array|
+      TestData.document_builder_usage_api.each_pair do |editor_name, classes_array|
         entry = DocumentEntry.new(@instance, editor_name, editor_name)
         classes_array.each_pair do |class_name, methods_array|
           entry_class = DocumentEntry.new(@instance, "#{entry.link}/#{class_name}", class_name)
@@ -67,7 +67,7 @@ module TestingApiOnlyOfficeCom
     end
 
     def document_builder_links_ok?
-      failed = check_documentation_links(navigation_objects, BuilderPage.parsed_document_entries)
+      failed = check_documentation_links(navigation_objects, TestData.document_builder_usage_api)
       [failed.empty?, failed]
     end
   end
