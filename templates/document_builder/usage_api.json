@@ -76,8 +76,6 @@
       "SetTextPr",
       "ToJSON"
     ],
-    "ApiBullet": [
-    ],
     "ApiChart": [
       "ApplyChartStyle",
       "GetClassType",
@@ -365,6 +363,7 @@
       "Fill",
       "GetClassType",
       "GetHeight",
+      "GetLockValue",
       "GetNextDrawing",
       "GetParentContentControl",
       "GetParentParagraph",
@@ -382,6 +381,7 @@
       "SetHorAlign",
       "SetHorFlip",
       "SetHorPosition",
+      "SetLockValue",
       "SetOutLine",
       "SetSize",
       "SetVerAlign",
@@ -1229,7 +1229,9 @@
     "apidrawing": [
       "GetClassType",
       "GetHeight",
+      "GetLockValue",
       "GetWidth",
+      "SetLockValue",
       "SetPosition",
       "SetSize"
     ],
@@ -1562,6 +1564,7 @@
       "CreateThemeFormatScheme",
       "CreateWordArt",
       "detachEvent",
+      "FromJSON",
       "GetFullName",
       "GetPresentation",
       "ReplaceTextSmart",
@@ -1967,7 +1970,7 @@
       "CreateTextForm"
     ],
     "apidocument": [
-      "InsertTextForm"
+      "inserttextform"
     ]
   }
 }
