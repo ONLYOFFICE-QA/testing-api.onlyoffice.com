@@ -12,7 +12,7 @@ namespace(:update) do
         end
       end
     end
-    File.write("#{__dir__}/spec/data/failed_community_server_tests.list", all_missing_info.sort.join)
+    File.write("#{Dir.pwd}/spec/data/failed_community_server_tests.list", all_missing_info.sort.join)
   end
 
   desc 'DocumentBuilder BUILDER.API'
@@ -26,7 +26,7 @@ namespace(:update) do
         end
       end
     end
-    File.write("#{__dir__}/spec/data/failed_docbuilder_tests.list", all_missing_info.sort.join)
+    File.write("#{Dir.pwd}/spec/data/failed_docbuilder_tests.list", all_missing_info.sort.join)
   end
 
   desc 'DocSpace API BACKEND'
@@ -40,6 +40,6 @@ namespace(:update) do
         end
       end
     end
-    File.write("#{__dir__}/spec/data/failed_docspace_tests.list", all_missing_info.sort.join)
+    File.write("#{Dir.pwd}/spec/data/failed_docspace_tests.list", all_missing_info.sort.join)
   end
 end
