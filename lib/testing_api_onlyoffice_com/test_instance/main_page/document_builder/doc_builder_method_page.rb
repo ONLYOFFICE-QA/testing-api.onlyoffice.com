@@ -21,7 +21,7 @@ module TestingApiOnlyOfficeCom
       @return_exist ||= !@page.xpath('//*[@class="param-type"]').empty?
       @example_exist ||= !@page.xpath('//pre').empty?
       @document_exist ||= sample_document_exists?
-      OnlyofficeLoggerHelper.log("Got info about #{full_page_name} page")
+      OnlyofficeLoggerHelper.log("Got info #{full_page_name}")
     end
 
     # @return [String] method signature fetched from page

@@ -18,7 +18,7 @@ module TestingApiOnlyOfficeCom
       @example_exist ||= !@page.xpath('//div[@id="methodExample"]/pre').empty?
       @return_exist ||= !@page.xpath('//div[@id="methodReturns"]/p/text()').empty?
       @document_exist ||= !@page.xpath('//div[@id="methodResponse"]/pre').empty?
-      OnlyofficeLoggerHelper.log("Got info about #{full_page_name} page")
+      OnlyofficeLoggerHelper.log("Got info #{full_page_name}")
     end
 
     # @return [String] full page name
