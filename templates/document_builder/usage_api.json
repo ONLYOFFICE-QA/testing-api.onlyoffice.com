@@ -1106,7 +1106,7 @@
       "SetFreezePanesType",
       "SetLocale",
       "SetThemeColors",
-      "onWorksheetChange"
+      "event-onworksheetchange"
     ],
     "ApiAreas": [
       "GetCount",
