@@ -8,6 +8,8 @@ module TestingApiOnlyOfficeCom
 
     # actions
     button(:generate_document, xpath: '//button[@id="generateButton"]')
+
+    list_item(:browser_tab_create_document, xpath: '//li[text()="Create a document with your data"]')
     button(:create_document, xpath: '//button[@id="createDocx"]')
     button(:create_spreadsheet, xpath: '//button[@id="createXlsx"]')
 
@@ -31,6 +33,7 @@ module TestingApiOnlyOfficeCom
 
     # @return [String] path to docx file created from a sample data
     def create_docx_from_sample_data
+      browser_tab_create_document_element.click
       create_document_element.click
       path_to_downloaded_docx_file = "#{@instance.webdriver.download_directory}/#{TestData::DEFAULT_BUILDER_DOCX_FILE_NAME}"
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_docx_file)
@@ -39,6 +42,7 @@ module TestingApiOnlyOfficeCom
 
     # @return [String] path to xlsx file created from a sample data
     def create_xlsx_from_sample_data
+      browser_tab_create_document_element.click
       create_spreadsheet_element.click
       path_to_downloaded_xlsx_file = "#{@instance.webdriver.download_directory}/#{TestData::DEFAULT_BUILDER_XLSX_FILE_NAME}"
       OnlyofficeFileHelper::FileHelper.wait_file_to_download(path_to_downloaded_xlsx_file)
@@ -46,6 +50,7 @@ module TestingApiOnlyOfficeCom
     end
 
     def input_name_company_position(params = {})
+      browser_tab_create_document_element.click
       self.name_field = params.fetch(:name, TestData::CUSTOM_NAME)
       self.company_field = params.fetch(:company, TestData::CUSTOM_COMPANY)
       self.position_field = params.fetch(:position, TestData::CUSTOM_POSITION)
