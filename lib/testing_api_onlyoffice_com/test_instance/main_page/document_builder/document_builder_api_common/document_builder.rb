@@ -8,6 +8,7 @@ module TestingApiOnlyOfficeCom
 
     # actions
     button(:generate_document, xpath: '//button[@id="generateButton"]')
+    link(:download, xpath: '//a[contains(text(), "Download")]')
 
     list_item(:browser_tab_create_document, xpath: '//li[text()="Create a document with your data"]')
     button(:create_document, xpath: '//button[@id="createDocx"]')

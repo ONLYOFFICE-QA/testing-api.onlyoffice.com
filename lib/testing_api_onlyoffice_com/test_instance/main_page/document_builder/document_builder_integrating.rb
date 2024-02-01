@@ -33,7 +33,7 @@ module TestingApiOnlyOfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until { generate_document_element.present? }
+      @instance.webdriver.wait_until { download_element.present? }
     end
 
     # @return [Integer] How much there is language examples on page
