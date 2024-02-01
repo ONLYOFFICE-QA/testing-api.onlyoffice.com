@@ -20,11 +20,11 @@ module TestingApiOnlyOfficeCom
     ].freeze
 
     # download links
-    link(:c_sharp_mvc, xpath: '//*[contains(@href, "MVC")]')
-    link(:c_sharp, xpath: '//*[not(contains(@href, "MVC")) and contains(@href, ".Net")]')
-    link(:node_js, xpath: '//*[contains(@href, "Node")]')
-    link(:php, xpath: '//*[contains(@href, "PHP")]')
-    link(:ruby, xpath: '//*[contains(@href, "Ruby")]')
+    link(:c_sharp_mvc, xpath: '//li/a[contains(@href, "DotNet.Csharp.MVC.Example")]')
+    link(:c_sharp, xpath: '//li/a[contains(@href, "DotNet.Csharp.Example")]')
+    link(:node_js, xpath: '//li/a[contains(@href, "Node.js.Example")]')
+    link(:php, xpath: '//li/a[contains(@href, "PHP.Example")]')
+    link(:ruby, xpath: '//li/a[contains(@href, "Ruby.Example")]')
 
     def initialize(instance)
       @instance = instance
