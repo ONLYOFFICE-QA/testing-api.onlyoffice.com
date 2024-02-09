@@ -9,6 +9,7 @@
 * Add docspace link tests
 * Add `markdownlint` support in CI
 * Add `yamllint` support in CI
+* Add `dependabot check` for `GitHub Actions`
 
 ### Changes
 
