@@ -95,7 +95,7 @@ palladium slow downs a bit
 4. Run to check that all data is the same as in `failed_community_server_tests.list`
 
    ```shell
-    rspec spec/testing-api.onlyoffice.com/community_server/documentation_links_content_spec.rb`
+    rspec spec/testing-api.onlyoffice.com/community_server/documentation_links_content_spec.rb
    ```
 
 ### DocumentBuilder
