@@ -58,67 +58,7 @@ Spreadsheet API/ApiRun/SetStyle/Example
 Spreadsheet API/ApiRun/SetStyle/Resulting document
 Spreadsheet API/ApiShape/SetPaddings/Example
 Spreadsheet API/ApiShape/SetPaddings/Resulting document
-Spreadsheet API/api/AddComment/Example
-Spreadsheet API/api/AddComment/Resulting document
-Spreadsheet API/api/GetCommentById/Example
-Spreadsheet API/api/GetCommentById/Resulting document
-Spreadsheet API/api/GetComments/Example
-Spreadsheet API/api/GetComments/Resulting document
 Spreadsheet API/api/event-onworksheetchange/Returns
-Spreadsheet API/apicomment/AddReply/Example
-Spreadsheet API/apicomment/AddReply/Resulting document
-Spreadsheet API/apicomment/GetAuthorName/Example
-Spreadsheet API/apicomment/GetAuthorName/Resulting document
-Spreadsheet API/apicomment/GetQuoteText/Example
-Spreadsheet API/apicomment/GetQuoteText/Resulting document
-Spreadsheet API/apicomment/GetRepliesCount/Example
-Spreadsheet API/apicomment/GetRepliesCount/Resulting document
-Spreadsheet API/apicomment/GetReply/Example
-Spreadsheet API/apicomment/GetReply/Resulting document
-Spreadsheet API/apicomment/GetTime/Example
-Spreadsheet API/apicomment/GetTime/Resulting document
-Spreadsheet API/apicomment/GetTimeUTC/Example
-Spreadsheet API/apicomment/GetTimeUTC/Resulting document
-Spreadsheet API/apicomment/GetUserId/Example
-Spreadsheet API/apicomment/GetUserId/Resulting document
-Spreadsheet API/apicomment/IsSolved/Example
-Spreadsheet API/apicomment/IsSolved/Resulting document
-Spreadsheet API/apicomment/RemoveReplies/Example
-Spreadsheet API/apicomment/RemoveReplies/Resulting document
-Spreadsheet API/apicomment/SetAuthorName/Example
-Spreadsheet API/apicomment/SetAuthorName/Resulting document
-Spreadsheet API/apicomment/SetSolved/Example
-Spreadsheet API/apicomment/SetSolved/Resulting document
-Spreadsheet API/apicomment/SetText/Example
-Spreadsheet API/apicomment/SetText/Resulting document
-Spreadsheet API/apicomment/SetTime/Example
-Spreadsheet API/apicomment/SetTime/Resulting document
-Spreadsheet API/apicomment/SetTimeUTC/Example
-Spreadsheet API/apicomment/SetTimeUTC/Resulting document
-Spreadsheet API/apicomment/SetUserId/Example
-Spreadsheet API/apicomment/SetUserId/Resulting document
-Spreadsheet API/apicommentreply/GetAuthorName/Example
-Spreadsheet API/apicommentreply/GetAuthorName/Resulting document
-Spreadsheet API/apicommentreply/GetClassType/Example
-Spreadsheet API/apicommentreply/GetClassType/Resulting document
-Spreadsheet API/apicommentreply/GetText/Example
-Spreadsheet API/apicommentreply/GetText/Resulting document
-Spreadsheet API/apicommentreply/GetTime/Example
-Spreadsheet API/apicommentreply/GetTime/Resulting document
-Spreadsheet API/apicommentreply/GetTimeUTC/Example
-Spreadsheet API/apicommentreply/GetTimeUTC/Resulting document
-Spreadsheet API/apicommentreply/GetUserId/Example
-Spreadsheet API/apicommentreply/GetUserId/Resulting document
-Spreadsheet API/apicommentreply/SetAuthorName/Example
-Spreadsheet API/apicommentreply/SetAuthorName/Resulting document
-Spreadsheet API/apicommentreply/SetText/Example
-Spreadsheet API/apicommentreply/SetText/Resulting document
-Spreadsheet API/apicommentreply/SetTime/Example
-Spreadsheet API/apicommentreply/SetTime/Resulting document
-Spreadsheet API/apicommentreply/SetTimeUTC/Example
-Spreadsheet API/apicommentreply/SetTimeUTC/Resulting document
-Spreadsheet API/apicommentreply/SetUserId/Example
-Spreadsheet API/apicommentreply/SetUserId/Resulting document
 Spreadsheet API/apirange/SetSort/Example
 Spreadsheet API/apirange/SetSort/Resulting document
 Spreadsheet API/apiworksheet/ReplaceCurrentImage/Example

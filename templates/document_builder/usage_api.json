@@ -1774,6 +1774,7 @@
       "AddSlide",
       "ApplyTheme",
       "CreateNewHistoryPoint",
+      "GetAllComments",
       "GetClassType",
       "GetCurrentSlide",
       "GetCurSlideIndex",

@@ -172,7 +172,7 @@
       "PUT/api/2.0/crm/case/filter/access",
       "PUT/api/2.0/crm/case/%7bcaseid%7d"
     ],
-    "Contacts": [
+    "contacts": [
       "POST/api/2.0/crm/contact/%7bcontactid%7d/opportunity/%7bopportunityid%7d",
       "POST/api/2.0/crm/contact/company/%7bcompanyid%7d/person",
       "POST/api/2.0/crm/contact/%7bcontactid%7d/addressdata",
@@ -204,15 +204,11 @@
       "GET/api/2.0/crm/contact/%7bcontactid%7d/data/%7bid%7d",
       "GET/api/2.0/crm/contact/%7bcontactid%7d/data/%7binfotype%7d",
       "GET/api/2.0/crm/contact/data/infotype",
-      "GET/api/2.0/crm/contact/%7bcontactid%7d/socialmediaavatar",
-      "POST/api/2.0/crm/contact/socialmediaavatar",
       "GET/api/2.0/crm/contact/status",
       "GET/api/2.0/crm/contact/type",
       "GET/api/2.0/crm/contact/bycontactinfo",
       "GET/api/2.0/crm/contact/project/%7bprojectid%7d",
       "GET/api/2.0/crm/contact/filter",
-      "GET/api/2.0/crm/contact/twitterprofile",
-      "GET/api/2.0/crm/contact/%7bcontactid%7d/tweets",
       "POST/api/2.0/crm/contact/%7bcontactid%7d/project/%7bprojectid%7d",
       "POST/api/2.0/crm/contact/project/%7bprojectid%7d",
       "PUT/api/2.0/crm/contact/merge",
@@ -236,8 +232,7 @@
       "PUT/api/2.0/crm/contact/type/reorder",
       "PUT/api/2.0/crm/contact/tag/settings",
       "PUT/api/2.0/crm/contact/mailtohistory/settings",
-      "PUT/api/2.0/crm/settings/webformkey/change",
-      "PUT/api/2.0/crm/contact/%7bcontactid%7d/avatar"
+      "PUT/api/2.0/crm/settings/webformkey/change"
     ],
     "currencies": [
       "POST/api/2.0/crm/currency/addrates",
