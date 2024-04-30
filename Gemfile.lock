@@ -20,6 +20,7 @@ GEM
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
     concurrent-ruby (1.2.3)
+    csv (3.3.0)
     data_magic (1.2)
       faker (>= 1.1.2)
       yml_reader (>= 0.6)
@@ -27,7 +28,8 @@ GEM
     faker (3.3.1)
       i18n (>= 1.8.11, < 2)
     headless (2.3.1)
-    httparty (0.21.0)
+    httparty (0.22.0)
+      csv
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     i18n (1.14.4)
