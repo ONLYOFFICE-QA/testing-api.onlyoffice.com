@@ -1087,6 +1087,7 @@
       "detachEvent",
       "Format",
       "GetActiveSheet",
+      "GetAllComments",
       "GetCommentById",
       "GetComments",
       "GetDefName",
@@ -1106,7 +1107,7 @@
       "SetFreezePanesType",
       "SetLocale",
       "SetThemeColors",
-      "event-onworksheetchange"
+      "onWorksheetChange"
     ],
     "ApiAreas": [
       "GetCount",
