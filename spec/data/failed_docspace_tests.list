@@ -11,6 +11,7 @@ backup/GET/api/2.0/backup/getrestoreprogress/Resulting document
 backup/POST/api/2.0/backup/createbackupschedule/Resulting document
 backup/POST/api/2.0/backup/startbackup/Resulting document
 backup/POST/api/2.0/backup/startrestore/Resulting document
+files/DELETE/api/2.0/files/recent/Resulting document
 files/DELETE/api/2.0/files/tags/Resulting document
 files/DELETE/api/2.0/files/templates/Resulting document
 files/DELETE/api/2.0/files/thirdparty/%7bproviderid%7d/Resulting document
@@ -32,6 +33,7 @@ files/POST/api/2.0/files/templates/Resulting document
 files/POST/api/2.0/files/thumbnails/Resulting document
 files/PUT/api/2.0/files/file/%7bfileid%7d/comment/Resulting document
 files/PUT/api/2.0/files/fileops/delete/Resulting document
+group/DELETE/api/2.0/groups/%7bid%7d/Resulting document
 people/DELETE/api/2.0/people/%7buserid%7d/contacts/Resulting document
 people/DELETE/api/2.0/people/thirdparty/unlinkaccount/Resulting document
 people/GET/api/2.0/people/reassign/progress/%7buserid%7d/Resulting document
@@ -42,7 +44,6 @@ people/POST/api/2.0/people/email/Resulting document
 people/POST/api/2.0/people/password/Resulting document
 people/POST/api/2.0/people/phone/Resulting document
 people/POST/api/2.0/people/reassign/start/Resulting document
-people/POST/api/2.0/people/register/Resulting document
 people/POST/api/2.0/people/remove/start/Resulting document
 people/POST/api/2.0/people/thirdparty/signup/Resulting document
 people/PUT/api/2.0/people/%7buserid%7d/contacts/Resulting document
