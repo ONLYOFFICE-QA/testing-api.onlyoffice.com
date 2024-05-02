@@ -9,6 +9,8 @@ module TestingApiOnlyOfficeCom
   class DocumentBuilderIntegrating < BuilderPage
     include DocumentBuilder
 
+    link(:button_get_docbuilder, xpath: '//li/a[contains(@href, "download-builder.aspx?from=api")]')
+
     DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'
 
     DOC_BUILDER_EXAMPLES = %i[
@@ -33,7 +35,7 @@ module TestingApiOnlyOfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until { download_element.present? }
+      @instance.webdriver.wait_until { button_get_docbuilder_element.present? }
     end
 
     # @return [Integer] How much there is language examples on page
