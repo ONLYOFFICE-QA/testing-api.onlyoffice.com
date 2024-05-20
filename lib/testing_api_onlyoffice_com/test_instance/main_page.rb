@@ -12,7 +12,8 @@ module TestingApiOnlyOfficeCom
     include PageObject
 
     ROOT_XPATH = '//ul[contains(@class, "top-nav all-menu-items")]//li[contains(@class, "pushy-submenu")]'
-    link(:portals, xpath: "#{ROOT_XPATH}//a[@href='/portals/basic']")
+    link(:portals, xpath: "#{ROOT_XPATH}//a[@href='/portals']")
+    link(:workspaceapi, xpath: "#{ROOT_XPATH}//a[@href='/portals/workspaceapi']")
     link(:document_builder, xpath: "#{ROOT_XPATH}//a[@href='/docbuilder/basic']")
     link(:document_server, xpath: "#{ROOT_XPATH}//a[@href='/editors/basic']")
     link(:docspace, xpath: "#{ROOT_XPATH}//a[@href='/docspace/basic']")
@@ -38,8 +39,9 @@ module TestingApiOnlyOfficeCom
       portals_element.present?
     end
 
-    def go_to_community_server_api
-      portals_element.click
+    def go_to_workspace_api
+      action_move_to(portals_element.element.selector[:xpath])
+      workspaceapi_element.click
       CommunityServerAPI.new(@instance)
     end
 
@@ -69,6 +71,14 @@ module TestingApiOnlyOfficeCom
       else
         self
       end
+    end
+
+    # @param [Object] xpath
+    # @return [Object]
+    def action_move_to(xpath)
+      workspaceapi = @instance.webdriver.driver.find_element(:xpath, xpath)
+      action = @instance.webdriver.driver.action
+      action.move_to(workspaceapi).perform
     end
   end
 end

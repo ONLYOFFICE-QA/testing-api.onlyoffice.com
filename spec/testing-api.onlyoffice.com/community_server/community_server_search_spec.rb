@@ -7,7 +7,7 @@ describe 'community_server_search' do
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     api_page = @instance.go_to_main_page
-    @api_community_server_page = api_page.go_to_community_server_api
+    @api_community_server_page = api_page.go_to_workspace_api
   end
 
   after do |example|

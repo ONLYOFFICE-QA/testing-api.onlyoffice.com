@@ -11,7 +11,7 @@ module TestingApiOnlyOfficeCom
     include CheckMethodLinks
     include SearchSidebar
 
-    link(:identification, xpath: '//a[@href="/portals/auth"]')
+    link(:identification, xpath: '//a[@href="/portals/workspaceapi/auth"]')
 
     def initialize(instance)
       @instance = instance
