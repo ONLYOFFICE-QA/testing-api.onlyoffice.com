@@ -10,7 +10,7 @@ describe 'document_builder_getting_started' do
   end
 
   after do |example|
-    # test_manager.add_result(example)
+    test_manager.add_result(example)
     @instance.webdriver.quit
   end
 
