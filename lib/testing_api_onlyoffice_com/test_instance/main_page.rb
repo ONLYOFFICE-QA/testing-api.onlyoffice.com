@@ -16,7 +16,8 @@ module TestingApiOnlyOfficeCom
     link(:workspaceapi, xpath: "#{ROOT_XPATH}//a[@href='/portals/workspaceapi']")
     link(:document_builder, xpath: "#{ROOT_XPATH}//a[@href='/docbuilder/basic']")
     link(:document_server, xpath: "#{ROOT_XPATH}//a[@href='/editors/basic']")
-    link(:docspace, xpath: "#{ROOT_XPATH}//a[@href='/docspace/basic']")
+    link(:docspace, xpath: "#{ROOT_XPATH}//a[@href='/docspace']")
+    link(:docspace_backend, xpath: "#{ROOT_XPATH}//a[@href='/docspace/backend']")
     div(:sidebar, xpath: "//div[contains(@class,'layout-table-footer')]")
 
     def initialize(instance)
@@ -55,8 +56,9 @@ module TestingApiOnlyOfficeCom
       DocumentServerAPI.new(@instance)
     end
 
-    def go_to_docspace_api
-      docspace_element.click
+    def go_to_docspace_backend
+      action_move_to(docspace_element.element.selector[:xpath])
+      docspace_backend_element.click
       DocSpaceAPI.new(@instance)
     end
 

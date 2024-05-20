@@ -11,7 +11,7 @@ describe 'docspace_documentation' do
 
   describe 'docspace_documentation_links' do
     before do
-      @api_docspace_page = @api_page.go_to_docspace_api
+      @api_docspace_page = @api_page.go_to_docspace_backend
     end
 
     after do |example|
@@ -20,7 +20,7 @@ describe 'docspace_documentation' do
     end
 
     it 'check API BACKEND in documentation are visible' do
-      result, failed = @api_docspace_page.api_backend_links_ok?
+      result, failed = @api_docspace_page.backend_links_ok?
       expect(result).to be_truthy, "Page #{@instance.webdriver.driver.current_url}\n\nNot found api links: #{failed}"
     end
   end
