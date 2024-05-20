@@ -12,11 +12,14 @@ module TestingApiOnlyOfficeCom
     include PageObject
 
     ROOT_XPATH = '//ul[contains(@class, "top-nav all-menu-items")]//li[contains(@class, "pushy-submenu")]'
+    # menu items
+    link(:docspace, xpath: "#{ROOT_XPATH}//a[@href='/docspace']")
+    link(:docs, xpath: "#{ROOT_XPATH}//a[@href='/docs']")
     link(:portals, xpath: "#{ROOT_XPATH}//a[@href='/portals']")
+    # submenu items
     link(:workspaceapi, xpath: "#{ROOT_XPATH}//a[@href='/portals/workspaceapi']")
     link(:document_builder, xpath: "#{ROOT_XPATH}//a[@href='/docbuilder/basic']")
     link(:document_server, xpath: "#{ROOT_XPATH}//a[@href='/editors/basic']")
-    link(:docspace, xpath: "#{ROOT_XPATH}//a[@href='/docspace']")
     link(:docspace_backend, xpath: "#{ROOT_XPATH}//a[@href='/docspace/backend']")
     div(:sidebar, xpath: "//div[contains(@class,'layout-table-footer')]")
 
@@ -47,11 +50,13 @@ module TestingApiOnlyOfficeCom
     end
 
     def go_to_document_builder_introduction
+      action_move_to(docs_element.element.selector[:xpath])
       document_builder_element.click
       DocumentBuilderIntroduction.new(@instance)
     end
 
     def go_to_document_server_api
+      action_move_to(docs_element.element.selector[:xpath])
       document_server_element.click
       DocumentServerAPI.new(@instance)
     end
