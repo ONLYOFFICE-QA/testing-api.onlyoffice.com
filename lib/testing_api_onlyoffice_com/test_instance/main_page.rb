@@ -12,10 +12,15 @@ module TestingApiOnlyOfficeCom
     include PageObject
 
     ROOT_XPATH = '//ul[contains(@class, "top-nav all-menu-items")]//li[contains(@class, "pushy-submenu")]'
-    link(:portals, xpath: "#{ROOT_XPATH}//a[@href='/portals/basic']")
+    # menu items
+    link(:docspace, xpath: "#{ROOT_XPATH}//a[@href='/docspace']")
+    link(:docs, xpath: "#{ROOT_XPATH}//a[@href='/docs']")
+    link(:portals, xpath: "#{ROOT_XPATH}//a[@href='/portals']")
+    # submenu items
+    link(:workspaceapi, xpath: "#{ROOT_XPATH}//a[@href='/portals/workspaceapi']")
     link(:document_builder, xpath: "#{ROOT_XPATH}//a[@href='/docbuilder/basic']")
     link(:document_server, xpath: "#{ROOT_XPATH}//a[@href='/editors/basic']")
-    link(:docspace, xpath: "#{ROOT_XPATH}//a[@href='/docspace/basic']")
+    link(:docspace_backend, xpath: "#{ROOT_XPATH}//a[@href='/docspace/backend']")
     div(:sidebar, xpath: "//div[contains(@class,'layout-table-footer')]")
 
     def initialize(instance)
@@ -38,23 +43,27 @@ module TestingApiOnlyOfficeCom
       portals_element.present?
     end
 
-    def go_to_community_server_api
-      portals_element.click
+    def go_to_workspace_api
+      action_move_to(portals_element.element.selector[:xpath])
+      workspaceapi_element.click
       CommunityServerAPI.new(@instance)
     end
 
     def go_to_document_builder_introduction
+      action_move_to(docs_element.element.selector[:xpath])
       document_builder_element.click
       DocumentBuilderIntroduction.new(@instance)
     end
 
     def go_to_document_server_api
+      action_move_to(docs_element.element.selector[:xpath])
       document_server_element.click
       DocumentServerAPI.new(@instance)
     end
 
-    def go_to_docspace_api
-      docspace_element.click
+    def go_to_docspace_backend
+      action_move_to(docspace_element.element.selector[:xpath])
+      docspace_backend_element.click
       DocSpaceAPI.new(@instance)
     end
 
@@ -69,6 +78,14 @@ module TestingApiOnlyOfficeCom
       else
         self
       end
+    end
+
+    # @param [Object] xpath
+    # @return [Object]
+    def action_move_to(xpath)
+      workspaceapi = @instance.webdriver.driver.find_element(:xpath, xpath)
+      action = @instance.webdriver.driver.action
+      action.move_to(workspaceapi).perform
     end
   end
 end

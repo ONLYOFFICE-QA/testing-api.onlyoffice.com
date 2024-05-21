@@ -99,6 +99,10 @@
       "PUT/api/2.0/files/file/%7bfileid%7d/checkconversion",
       "PUT/api/2.0/files/file/%7bfileid%7d/comment"
     ],
+    "quota": [
+      "PUT/api/2.0/files/rooms/roomquota",
+      "PUT/api/2.0/files/rooms/resetquota"
+    ],
     "rooms": [
       "POST/api/2.0/files/rooms/accept",
       "PUT/api/2.0/files/rooms/%7bid%7d/tags",
@@ -125,6 +129,25 @@
       "PUT/api/2.0/files/rooms/%7bid%7d/unarchive",
       "PUT/api/2.0/files/rooms/%7bid%7d/unpin",
       "POST/api/2.0/files/logos"
+    ],
+    "settings": [
+      "PUT/api/2.0/files/keepnewfilename",
+      "PUT/api/2.0/files/storeforcesave",
+      "PUT/api/2.0/files/storeoriginal",
+      "PUT/api/2.0/files/settings/downloadtargz",
+      "PUT/api/2.0/files/settings/dafaultaccessrights",
+      "PUT/api/2.0/files/settings/external",
+      "PUT/api/2.0/files/settings/externalsocialmedia",
+      "PUT/api/2.0/files/forcesave",
+      "PUT/api/2.0/files/thirdparty",
+      "PUT/api/2.0/files/docservice",
+      "GET/api/2.0/files/%40privacy/available",
+      "PUT/api/2.0/files/changedeleteconfim",
+      "GET/api/2.0/files/settings",
+      "GET/api/2.0/files/info",
+      "GET/api/2.0/files/settings/autocleanup",
+      "PUT/api/2.0/files/updateifexist",
+      "PUT/api/2.0/files/settings/autocleanup"
     ],
     "third-party%20integration": [
       "GET/api/2.0/files/thirdparty/backup",
@@ -184,6 +207,10 @@
       "PUT/api/2.0/people/self/delete",
       "PUT/api/2.0/people/%7buserid%7d",
       "PUT/api/2.0/people/%7buserid%7d/culture"
+    ],
+    "quota": [
+      "PUT/api/2.0/people/userquota",
+      "PUT/api/2.0/people/resetquota"
     ],
     "search": [
       "GET/api/2.0/people/%40search/%7bquery%7d",

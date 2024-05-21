@@ -7,7 +7,7 @@ describe 'CommunityServer FAQ page' do
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     api_page = @instance.go_to_main_page
-    @faq_page = api_page.go_to_community_server_api.go_to_faq
+    @faq_page = api_page.go_to_workspace_api.go_to_faq
   end
 
   after do |example|

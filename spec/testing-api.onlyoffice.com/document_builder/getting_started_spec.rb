@@ -20,8 +20,16 @@ describe 'document_builder_getting_started' do
       @getting_started_page = introduction_page.open_getting_started
     end
 
-    it 'external_docbuilder_links_succeeded?' do
-      expect(@getting_started_page.external_links_succeeded?).to be_truthy, 'Links not available'
+    it 'layout_table_footer_links_element_visible?' do
+      @getting_started_page.footer_links.each do |key, value|
+        expect(value).to be_truthy, "#{key}: non visible"
+      end
+    end
+
+    it 'layout_table_footer_links_succeeded?' do
+      @getting_started_page.survey_of_external_links.each do |key, value|
+        expect(value.to_i < 400).to be_truthy, "#{key}: have client error responses code"
+      end
     end
   end
 end

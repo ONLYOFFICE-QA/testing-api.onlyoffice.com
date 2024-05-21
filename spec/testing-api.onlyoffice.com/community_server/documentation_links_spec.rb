@@ -11,7 +11,7 @@ describe 'community_server_documentation' do
 
   describe 'document_builder_documentation_links' do
     before do
-      @api_community_server_page = @api_page.go_to_community_server_api
+      @api_community_server_page = @api_page.go_to_workspace_api
     end
 
     after do |example|

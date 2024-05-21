@@ -12,7 +12,7 @@ module TestingApiOnlyOfficeCom
     attr_accessor :instance
     attr_reader :document_entries_json
 
-    link(:identification, xpath: '//a[@href="/docspace/basic"]')
+    link(:identification, xpath: '//a[@href="/docspace/backend/"]')
 
     def initialize(instance)
       @instance = instance
@@ -25,7 +25,7 @@ module TestingApiOnlyOfficeCom
       @instance.webdriver.wait_until { identification_element.present? }
     end
 
-    def api_backend_links_ok?
+    def backend_links_ok?
       init_navigation_object
       failed = check_documentation_links(@navigation_object, @document_entries_json)
       [failed.empty?, failed]
