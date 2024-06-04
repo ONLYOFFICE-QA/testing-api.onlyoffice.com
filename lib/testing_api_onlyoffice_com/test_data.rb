@@ -3,6 +3,27 @@
 module TestingApiOnlyOfficeCom
   # module define test data
   module TestData
+    # @return [Array<Symbols>]
+    DOC_BUILDER_EXAMPLES = %i[
+      c_sharp_mvc
+      c_sharp
+      node_js
+      php
+      ruby
+    ].freeze
+
+    # @return [Array<Symbols>] list of languages with examples
+    DOC_SERVER_EXAMPLES = %i[
+      c_sharp_mvc
+      c_sharp_dotnet
+      java
+      java_spring
+      node_js
+      php
+      python
+      ruby
+    ].freeze
+
     # document builder/generated file name
     DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'
     DEFAULT_BUILDER_DOCX_FILE_NAME = 'Sample.docx'
