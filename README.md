@@ -98,12 +98,12 @@ palladium slow downs a bit
     rspec spec/testing-api.onlyoffice.com/community_server/documentation_links_content_spec.rb
    ```
 
-### DocumentBuilder
+### Docs
 
 1. Run locally. It *will fail* if some new methods was added to list of API Methods.
 
    ```shell
-    rake actualize_documentbuilder
+    rake actualize_office_api_methods
    ```
 
 2. Manually edit to correctly add new methods to list of **API Methods**
@@ -115,7 +115,7 @@ palladium slow downs a bit
 3. Run to actualize **list of missing** docs.
 
    ```shell
-    rake update:documentbuilder_builder_api
+    rake update:documentbuilder_office_api
    ```
 
    >It will produce new `spec/data/failed_docbuilder_tests.list`
@@ -124,7 +124,7 @@ palladium slow downs a bit
 4. Run to check that all data is the same as in.
 
    ```shell
-    rspec spec/testing-api.onlyoffice.com/document_builder/documentation_links_content_spec.rb
+    rspec spec/testing-api.onlyoffice.com/docs/office_api/office_api_method_links_spec.rb
    ```
 
 ### DocSpace
