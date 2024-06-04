@@ -15,8 +15,8 @@ namespace(:update) do
     File.write("#{Dir.pwd}/spec/data/failed_community_server_tests.list", all_missing_info.sort.join)
   end
 
-  desc 'DocumentBuilder BUILDER.API'
-  task :documentbuilder_builder_api do
+  desc 'DocumentBuilder OFFICE.API'
+  task :documentbuilder_office_api do
     all_missing_info = []
     TestingApiOnlyOfficeCom::TestData.document_builder_usage_api.each_pair do |editor, class_hash|
       class_hash.each_pair do |current_class, method_array|
