@@ -16,8 +16,8 @@ describe 'chinese_language' do
     @instance.webdriver.quit
   end
 
-  it 'Chinese language page should load onlyo editors basic page' do
-    expect(@chinese_page).to be_a(TestingApiOnlyOfficeCom::DocumentServerAPI)
+  it 'Chinese language page should load onlyoffice editors basic page' do
+    expect(@chinese_page).to be_a(TestingApiOnlyOfficeCom::DocsApiPage)
   end
 
   it 'Chinese language page should have some chinese text' do
