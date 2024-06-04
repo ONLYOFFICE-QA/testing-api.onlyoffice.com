@@ -6,7 +6,6 @@ module TestingApiOnlyOfficeCom
   # TODO: screen
   # /docbuilder/integratingdocumentbuilder
   class DocumentBuilderIntegrating < DocumentBuilderPage
-
     link(:button_get_docbuilder, xpath: '//li/a[contains(@href, "download-builder.aspx?from=api")]')
 
     # download links
