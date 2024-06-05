@@ -3,28 +3,16 @@
 require 'onlyoffice_documentserver_testing_framework'
 
 module TestingApiOnlyOfficeCom
-  # https://github.com/ONLYOFFICE-QA/testing-api.onlyoffice.com/assets/60688343/cce080d7-e765-4b69-98d7-6f1aadf9eddf
+  # TODO: screen
   # /editors/basic
-  class DocumentServerAPI
+  class DocsApiPage
     include PageObject
-
-    # @return [Array<Symbols>] list of languages with examples
-    DOC_SERVER_EXAMPLES = %i[
-      c_sharp_mvc
-      c_sharp_dotnet
-      java
-      java_spring
-      node_js
-      php
-      python
-      ruby
-    ].freeze
 
     # download links
     link(:c_sharp_mvc, xpath: '//*[contains(@href, "MVC")]')
     link(:c_sharp_dotnet, xpath: '//*[contains(@href, "DotNet")]')
-    link(:java, xpath: '//*[contains(@href, "Java Example")]')
-    link(:java_spring, xpath: '//*[contains(@href, "Java Spring")]')
+    link(:java, xpath: '//*[contains(@href, "Java")][text()="Java.Example"]')
+    link(:java_spring, xpath: '//*[contains(@href, "Java")][text()="Java.Spring.Example"]')
     link(:node_js, xpath: '//*[contains(@href, "Node")]')
     link(:php, xpath: '//*[contains(@href, "PHP")]')
     link(:python, xpath: '//*[contains(@href, "Python")]')
@@ -33,7 +21,10 @@ module TestingApiOnlyOfficeCom
     link(:try_now, xpath: '//a[contains(@href, "editors/try")]')
     link(:try_now_docx_editor, xpath: '//*[contains(@href, "editors/editor?method=docxEditor")]')
 
-    link(:integration_examples, xpath: '//*[contains(@href, "editors/demopreview")]')
+    link(:search_bar, xpath: '//div[@class="search-input"]')
+    link(:search_button, xpath: '//div[@class="layout-side"]//a[@class="btn"]')
+
+    link(:language_specific_examples, xpath: '//*[contains(@href, "editors/demopreview")]')
 
     # switchers
     link(:document_editor_demo, xpath: '//*[contains(@class,"demo-tab-panel")]//a[contains(@href,"type=text")]')
@@ -60,13 +51,13 @@ module TestingApiOnlyOfficeCom
     end
 
     def integration_example_work?(editor = :document)
-      go_to_integration_examples
+      go_to_language_specific_examples
       wait_to_load
       demo_editor_switch_seems_legit? editor
     end
 
-    def go_to_integration_examples
-      integration_examples_element.click
+    def go_to_language_specific_examples
+      language_specific_examples_element.click
       wait_to_load
       self
     end

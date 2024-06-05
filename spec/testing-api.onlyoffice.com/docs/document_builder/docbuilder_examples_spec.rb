@@ -2,14 +2,14 @@
 
 require 'spec_helper'
 
-describe 'language_specific_examples' do
-  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'DocumentServer Language Specific Examples', plan_name: config.to_s)
+describe 'DocBuilder Integration Examples' do
+  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'DocBuilder Integration Examples', plan_name: config.to_s)
 
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @examples_page = @instance.go_to_main_page
-                              .go_to_document_server_api
-                              .go_to_integration_examples
+                              .go_to_document_builder
+                              .move_to_builder_server_section
   end
 
   after do |example|
@@ -18,11 +18,11 @@ describe 'language_specific_examples' do
   end
 
   it 'Examples count is the same as stored in data' do
-    expect(@examples_page.examples_count).to eq(DocumentServerAPI::DOC_SERVER_EXAMPLES.count)
+    expect(@examples_page.examples_count).to eq(TestData::DOC_BUILDER_EXAMPLES.count)
   end
 
   describe 'Check all examples' do
-    DocumentServerAPI::DOC_SERVER_EXAMPLES.each do |language|
+    TestData::DOC_BUILDER_EXAMPLES.each do |language|
       it "#{language} example visibility" do
         expect(@examples_page).to be_example_visible(language)
       end

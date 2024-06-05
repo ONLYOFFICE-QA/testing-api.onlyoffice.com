@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 module TestingApiOnlyOfficeCom
-  # https://user-images.githubusercontent.com/18173785/37905775-9964ebb6-3108-11e8-8f98-480cbb1c2906.png
-  # /docbuilder/basic
-  module DocumentBuilder
+  # Dedicated logic for working with web docbuilder form
+  module DocumentBuilderInActionLogic
     include PageObject
 
     # actions
