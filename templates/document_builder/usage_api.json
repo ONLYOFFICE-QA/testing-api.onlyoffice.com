@@ -1619,6 +1619,33 @@
       "SetVertAxisTickLabelPosition",
       "SetXValues"
     ],
+    "apicomment": [
+      "AddReply",
+      "Delete",
+      "GetAuthorName",
+      "GetClassType",
+      "GetQuoteText",
+      "GetRepliesCount",
+      "GetText",
+      "GetTime",
+      "GetTimeUTC",
+      "IsSolved",
+      "RemoveReplies",
+      "SetAuthorName",
+      "SetSolved",
+      "SetText",
+      "SetTime",
+      "SetTimeUTC",
+      "SetUserId"
+    ],
+    "apicommentreply": [
+      "GetAuthorName",
+      "GetClassType",
+      "GetText",
+      "SetAuthorName",
+      "SetText",
+      "SetUserId"
+    ],
     "ApiDocument": [
       "AddElement",
       "GetElement",
