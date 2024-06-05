@@ -1,26 +1,31 @@
 # frozen_string_literal: true
 
+require_relative '../test_instance'
+require_relative 'main_page/docs_page_requires'
 require_relative 'main_page/community_server_api'
-require_relative 'main_page/document_builder_api'
-require_relative 'main_page/document_server_api'
 require_relative 'main_page/docspace_api'
 
 module TestingApiOnlyOfficeCom
   # Main page of api.onlyoffice.com
-  # https://user-images.githubusercontent.com/668524/47566467-85232580-d934-11e8-9c93-1e2fce0b4bfd.png
+  # TODO: screen
   class MainPage
     include PageObject
 
-    ROOT_XPATH = '//ul[contains(@class, "top-nav all-menu-items")]//li[contains(@class, "pushy-submenu")]'
+    SUBMENU = '//ul[contains(@class, "top-nav all-menu-items")]//li[contains(@class, "pushy-submenu")]'
     # menu items
-    link(:docspace, xpath: "#{ROOT_XPATH}//a[@href='/docspace']")
-    link(:docs, xpath: "#{ROOT_XPATH}//a[@href='/docs']")
-    link(:portals, xpath: "#{ROOT_XPATH}//a[@href='/portals']")
-    # submenu items
-    link(:workspaceapi, xpath: "#{ROOT_XPATH}//a[@href='/portals/workspaceapi']")
-    link(:document_builder, xpath: "#{ROOT_XPATH}//a[@href='/docbuilder/basic']")
-    link(:document_server, xpath: "#{ROOT_XPATH}//a[@href='/editors/basic']")
-    link(:docspace_backend, xpath: "#{ROOT_XPATH}//a[@href='/docspace/backend']")
+    link(:docspace, xpath: "#{SUBMENU}//a[@href='/docspace']")
+    link(:docs, xpath: "#{SUBMENU}//a[@href='/docs']")
+    link(:portals, xpath: "#{SUBMENU}//a[@href='/portals']")
+    # docspace
+    link(:workspaceapi, xpath: "#{SUBMENU}//a[@href='/portals/workspaceapi']")
+    # docs
+    link(:docs_api, xpath: "#{SUBMENU}//a[@href='/editors/basic']")
+    link(:office_api, xpath: "#{SUBMENU}//a[@href='/officeapi/basic']")
+    link(:document_builder, xpath: "#{SUBMENU}//a[@href='/docbuilder/basic']")
+    # workspace
+    link(:docspace_backend, xpath: "#{SUBMENU}//a[@href='/docspace/backend']")
+
+    # pages_els
     div(:sidebar, xpath: "//div[contains(@class,'layout-table-footer')]")
 
     def initialize(instance)
@@ -35,36 +40,41 @@ module TestingApiOnlyOfficeCom
       end
     end
 
-    def sidebar_visible?
-      sidebar_element.present?
-    end
-
-    def portals_api_visible?
-      portals_element.present?
-    end
-
     def go_to_workspace_api
       action_move_to(portals_element.element.selector[:xpath])
       workspaceapi_element.click
       CommunityServerAPI.new(@instance)
     end
 
-    def go_to_document_builder_introduction
-      action_move_to(docs_element.element.selector[:xpath])
-      document_builder_element.click
-      DocumentBuilderIntroduction.new(@instance)
+    def go_to_docs
+      docs_element.click
+      DocsPage.new(@instance)
     end
 
-    def go_to_document_server_api
+    def go_to_document_builder
       action_move_to(docs_element.element.selector[:xpath])
-      document_server_element.click
-      DocumentServerAPI.new(@instance)
+      document_builder_element.click
+      DocumentBuilderPage.new(@instance)
+    end
+
+    def go_to_docs_api
+      action_move_to(docs_element.element.selector[:xpath])
+      docs_api_element.click
+      DocsApiPage.new(@instance)
     end
 
     def go_to_docspace_backend
       action_move_to(docspace_element.element.selector[:xpath])
       docspace_backend_element.click
       DocSpaceAPI.new(@instance)
+    end
+
+    def sidebar_visible?
+      sidebar_element.present?
+    end
+
+    def portals_api_visible?
+      portals_element.present?
     end
 
     # Change language of page
@@ -74,12 +84,13 @@ module TestingApiOnlyOfficeCom
       @instance.webdriver.open("#{@instance.webdriver.current_url}/#{language}")
       if language == 'zh'
         # Chinese language docs have only one page
-        DocumentServerAPI.new(@instance)
+        DocsApiPage.new(@instance)
       else
         self
       end
     end
 
+    # TODO: put it in a separate module
     # @param [Object] xpath
     # @return [Object]
     def action_move_to(xpath)

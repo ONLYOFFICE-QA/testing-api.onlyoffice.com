@@ -1,25 +1,12 @@
 # frozen_string_literal: true
 
-require_relative 'document_builder_api_common/document_builder'
-require_relative 'document_builder_api_common/builder_page'
+require_relative '../document_builder_page'
 
 module TestingApiOnlyOfficeCom
-  # https://github.com/ONLYOFFICE-QA/testing-api.onlyoffice.com/assets/60688343/72680e2f-dfad-4404-9f26-ee72c0c7a8cd
+  # TODO: screen
   # /docbuilder/integratingdocumentbuilder
-  class DocumentBuilderIntegrating < BuilderPage
-    include DocumentBuilder
-
+  class DocumentBuilderIntegrating < DocumentBuilderPage
     link(:button_get_docbuilder, xpath: '//li/a[contains(@href, "download-builder.aspx?from=api")]')
-
-    DEFAULT_BUILDER_FILE_NAME = 'SampleText.docx'
-
-    DOC_BUILDER_EXAMPLES = %i[
-      c_sharp_mvc
-      c_sharp
-      node_js
-      php
-      ruby
-    ].freeze
 
     # download links
     link(:c_sharp_mvc, xpath: '//li/a[contains(@href, "DotNet.Csharp.MVC.Example")]')

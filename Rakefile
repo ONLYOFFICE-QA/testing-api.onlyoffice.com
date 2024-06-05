@@ -11,10 +11,10 @@ task :actualize_communityserver do
   Rake::Task['spec'].execute
 end
 
-desc 'DocumentBuilder'
-task :actualize_documentbuilder do
+desc 'OfficeApi methods'
+task :actualize_office_api_methods do
   RSpec::Core::RakeTask.new(:spec) do |task|
-    task.pattern = 'spec/*/document_builder/documentation_links_spec.rb'
+    task.pattern = 'spec/*/docs/office_api/office_api_method_links_spec.rb'
   end
   Rake::Task['spec'].execute
 end

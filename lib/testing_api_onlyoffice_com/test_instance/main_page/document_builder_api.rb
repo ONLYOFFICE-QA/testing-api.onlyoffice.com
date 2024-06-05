@@ -1,6 +1,0 @@
-# frozen_string_literal: true
-
-require_relative 'document_builder/document_builder_getting_started'
-require_relative 'document_builder/document_builder_integrating'
-require_relative 'document_builder/document_builder_introduction'
-require_relative 'document_builder/doc_builder_method_page'

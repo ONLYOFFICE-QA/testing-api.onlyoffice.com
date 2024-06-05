@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
+
 describe 'document_builder_documentation_content' do
   test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'Document Builder Documentation Links Content', plan_name: config.to_s)
 

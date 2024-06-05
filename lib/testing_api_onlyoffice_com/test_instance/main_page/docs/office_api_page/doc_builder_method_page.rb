@@ -3,7 +3,8 @@
 require_relative 'doc_builder_method_page/doc_builder_method_params'
 
 module TestingApiOnlyOfficeCom
-  # https://github.com/ONLYOFFICE-QA/testing-api.onlyoffice.com/assets/60688343/a813f7c8-09f3-4d12-8b36-5c9d5dfd01cc
+  # TODO: screen
+  # /officeapi/textdocumentapi/api/addcomment
   class DocBuilderMethodPage
     include DocBuilderMethodParams
 
@@ -13,7 +14,7 @@ module TestingApiOnlyOfficeCom
       @editor = editor
       @current_class = current_class
       @method = method
-      @link = "#{Config.new.server}/docbuilder/#{ClassNameHelper.cleanup_name(editor)}/#{ClassNameHelper.cleanup_name(current_class)}/#{ClassNameHelper.cleanup_name(method)}"
+      @link = "#{Config.new.server}/officeapi/#{ClassNameHelper.cleanup_name(editor)}/#{ClassNameHelper.cleanup_name(current_class)}/#{ClassNameHelper.cleanup_name(method)}"
       @page = Nokogiri::HTML(URI.parse(@link).open)
       raise(SiteStubsError, 'Method Not Found page') if @page.xpath("//*[@class='layout-content']").text.include?('Method Not Found')
 
