@@ -116,6 +116,8 @@ GEM
     rubocop-performance (1.21.0)
       rubocop (>= 1.48.1, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
+    rubocop-rake (0.6.0)
+      rubocop (~> 1.0)
     rubocop-rspec (3.0.1)
       rubocop (~> 1.61)
     ruby-ole (1.2.13.1)
@@ -152,6 +154,7 @@ DEPENDENCIES
   rspec_passed_time_formatter
   rubocop
   rubocop-performance
+  rubocop-rake
   rubocop-rspec
   wrata_api
 
