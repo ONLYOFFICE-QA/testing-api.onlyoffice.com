@@ -69,33 +69,33 @@ palladium slow downs a bit
 
 ## How to check new `major` version of documentation
 
-### CommunityServer
+### Workspace
 
 1. Run locally. It *will fail* if some new methods was added to list of API Methods.
 
    ```shell
-    rake actualize_communityserver
+    rake actualize_workspace
    ```
 
 2. Manually edit to correctly add new methods to list of API Methods
 
    ```shell
-    templates/community_server/api_backend.json
+    templates/workspace/api_backend.json
    ```
 
 3. Run to actualize list of missing docs.  
 
    ```shell
-    rake update:community_server_api_backend
+    rake update:workspace_api_backend
    ```
 
-   >It will produce new `spec/data/failed_community_server_tests.list`.  
+   >It will produce new `spec/data/failed_workspace_tests.list`.  
    Check with **developers**, that it's ok to miss those links
 
-4. Run to check that all data is the same as in `failed_community_server_tests.list`
+4. Run to check that all data is the same as in `failed_workspace_tests.list`
 
    ```shell
-    rspec spec/testing-api.onlyoffice.com/community_server/documentation_links_content_spec.rb
+    rspec spec/testing-api.onlyoffice.com/workspace/documentation_links_content_spec.rb
    ```
 
 ### Docs

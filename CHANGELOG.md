@@ -4,6 +4,7 @@
 
 ### New Features
 
+* Refactoring `workspace`
 * nokogiri parse & check docspace methods page
 * Global refactoring
 * Add docspace link tests

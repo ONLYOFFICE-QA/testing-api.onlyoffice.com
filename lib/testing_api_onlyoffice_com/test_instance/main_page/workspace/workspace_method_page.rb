@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 module TestingApiOnlyOfficeCom
-  # https://user-images.githubusercontent.com/40513035/57924882-0e894d80-78af-11e9-9ce3-d3f5eb9a2b23.png
-  # portals/basic
-  class CommunityServerMethodPage
+  # https://github.com/ONLYOFFICE-QA/testing-api.onlyoffice.com/assets/60688343/e98daf8b-5a9d-4d7f-b648-0cbc13f59075
+  # Class for method page 'https://api.teamlab.info/portals/method/authentication/post/api/2.0/authentication'
+  class WorkspaceMethodPage
     attr_reader :link, :page, :params_exist, :return_exist, :example_exist, :document_exist
 
     def initialize(current_module, method)

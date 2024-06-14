@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-describe 'CommunityServer FAQ page' do
-  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'CommunityServer FAQ page', plan_name: config.to_s)
+describe 'workspace_faq_page' do
+  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'Workspace FAQ page', plan_name: config.to_s)
 
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
@@ -16,6 +16,6 @@ describe 'CommunityServer FAQ page' do
   end
 
   it 'FAQ page correctly opened' do
-    expect(@faq_page).to be_a(TestingApiOnlyOfficeCom::CommunityServerFaqPage)
+    expect(@faq_page).to be_a(TestingApiOnlyOfficeCom::WorkspaceFaqPage)
   end
 end

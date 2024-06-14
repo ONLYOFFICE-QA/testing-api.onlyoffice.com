@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 namespace(:update) do
-  desc 'CommunityServer API BACKEND'
-  task :community_server_api_backend do
+  desc 'Workspace API BACKEND'
+  task :workspace_api_backend do
     all_missing_info = []
-    TestingApiOnlyOfficeCom::TestData.community_server_api_backend.each_pair do |module_name, class_hash|
+    TestingApiOnlyOfficeCom::TestData.workspace_api_backend.each_pair do |module_name, class_hash|
       class_hash.each_pair do |_current_class, method_array|
         method_array.each do |method|
           page = TestingApiOnlyOfficeCom::CommunityServerMethodPage.new(module_name, method)
@@ -12,7 +12,7 @@ namespace(:update) do
         end
       end
     end
-    File.write("#{Dir.pwd}/spec/data/failed_community_server_tests.list", all_missing_info.sort.join)
+    File.write("#{Dir.pwd}/spec/data/failed_workspace_tests.list", all_missing_info.sort.join)
   end
 
   desc 'DocumentBuilder OFFICE.API'

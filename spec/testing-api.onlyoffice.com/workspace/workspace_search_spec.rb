@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-describe 'community_server_search' do
-  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'Community Server Search', plan_name: config.to_s)
+describe 'workspace_search' do
+  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'Workspace Search', plan_name: config.to_s)
 
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     api_page = @instance.go_to_main_page
-    @api_community_server_page = api_page.go_to_workspace_api
+    @workspace_api_page = api_page.go_to_workspace_api
   end
 
   after do |example|
@@ -16,23 +16,23 @@ describe 'community_server_search' do
   end
 
   it 'Non-existing word result in No found search message' do
-    result_page = @api_community_server_page.search('Fakeword')
+    result_page = @workspace_api_page.search('Fakeword')
     expect(result_page).to be_no_entries_found
   end
 
   it 'Non-existing word result in zero found results' do
-    result_page = @api_community_server_page.search('Fakeword')
+    result_page = @workspace_api_page.search('Fakeword')
     expect(result_page.search_result_count).to eq(0)
   end
 
   it 'Search for existing method result several results' do
-    result_page = @api_community_server_page.search('auth')
+    result_page = @workspace_api_page.search('auth')
     expect(result_page.search_result_count).to be > 0
   end
 
   it 'Search input contains search string' do
     search_string = 'auth'
-    result_page = @api_community_server_page.search(search_string)
+    result_page = @workspace_api_page.search(search_string)
     expect(result_page.search_input_value).to eq(search_string)
   end
 
@@ -44,12 +44,12 @@ describe 'community_server_search' do
     end
 
     it 'Search for xss will will result no entries' do
-      result_page = @api_community_server_page.search(xss)
+      result_page = @workspace_api_page.search(xss)
       expect(result_page).to be_no_entries_found
     end
 
     it 'Search for xss save value in input field' do
-      result_page = @api_community_server_page.search(xss)
+      result_page = @workspace_api_page.search(xss)
       expect(result_page.search_input_value).to eq(xss)
     end
   end
