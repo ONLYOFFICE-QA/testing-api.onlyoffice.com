@@ -6,7 +6,7 @@ require_relative 'lib/testing_api_onlyoffice_com'
 desc 'Workspace'
 task :actualize_workspace do
   RSpec::Core::RakeTask.new(:spec) do |task|
-    task.pattern = 'spec/*/community_server/documentation_links_spec.rb'
+    task.pattern = 'spec/*/workspace/documentation_links_spec.rb'
   end
   Rake::Task['spec'].execute
 end
