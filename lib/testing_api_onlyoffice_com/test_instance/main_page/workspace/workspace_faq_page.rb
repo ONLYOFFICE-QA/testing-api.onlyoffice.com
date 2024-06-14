@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module TestingApiOnlyOfficeCom
-  # TODO: screen
+  # https://github.com/ONLYOFFICE-QA/testing-api.onlyoffice.com/assets/60688343/28a0e03f-5001-40e9-9b49-e3892e7d19cf
   # Class for `https://api.teamlab.info/portals/workspaceapi/faq`
   class WorkspaceFaqPage
     def initialize(instance)
