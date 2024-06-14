@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 module TestingApiOnlyOfficeCom
-  # https://user-images.githubusercontent.com/668524/146583286-eddeaf82-a560-4e56-a79c-d87c1ccf043c.png
-  # Class for `https://api.onlyoffice.com/portals/faq` page
-  class CommunityServerFaqPage
+  # TODO: screen
+  # Class for `https://api.teamlab.info/portals/workspaceapi/faq`
+  class WorkspaceFaqPage
     def initialize(instance)
       @instance = instance
       wait_to_load

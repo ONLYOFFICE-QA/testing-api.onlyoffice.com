@@ -2,7 +2,7 @@
 
 require_relative '../test_instance'
 require_relative 'main_page/docs_page_requires'
-require_relative 'main_page/community_server_api'
+require_relative 'main_page/workspace_api'
 require_relative 'main_page/docspace_api'
 
 module TestingApiOnlyOfficeCom
@@ -43,7 +43,7 @@ module TestingApiOnlyOfficeCom
     def go_to_workspace_api
       action_move_to(portals_element.element.selector[:xpath])
       workspaceapi_element.click
-      CommunityServerAPI.new(@instance)
+      WorkspaceAPI.new(@instance)
     end
 
     def go_to_docs

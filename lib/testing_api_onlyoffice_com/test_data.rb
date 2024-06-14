@@ -36,8 +36,8 @@ module TestingApiOnlyOfficeCom
     CUSTOM_COMPANY = 'Heartwell'
     CUSTOM_POSITION = 'QA Engineer'
 
-    def self.community_server_api_backend
-      JSON.parse(File.read("#{Dir.pwd}/templates/community_server/api_backend.json"))
+    def self.workspace_api_backend
+      JSON.parse(File.read("#{Dir.pwd}/templates/workspace/api_backend.json"))
     end
 
     def self.document_builder_usage_api
