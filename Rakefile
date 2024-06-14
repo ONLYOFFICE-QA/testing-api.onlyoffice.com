@@ -3,8 +3,8 @@
 require 'rspec/core/rake_task'
 require_relative 'lib/testing_api_onlyoffice_com'
 
-desc 'CommunityServer'
-task :actualize_communityserver do
+desc 'Workspace'
+task :actualize_workspace do
   RSpec::Core::RakeTask.new(:spec) do |task|
     task.pattern = 'spec/*/community_server/documentation_links_spec.rb'
   end
