@@ -10,7 +10,9 @@ describe 'document_builder_documentation_content' do
       method_array.each do |method|
         path = "#{editor}/#{current_class}/#{method}"
         context path do
-          it_behaves_like 'page_content_exist', path, -> { TestingApiOnlyOfficeCom::DocBuilderMethodPage.new(editor, current_class, method) }
+          it_behaves_like 'page_docbuilder_content_exist',
+                          path,
+                          -> { TestingApiOnlyOfficeCom::DocBuilderMethodPage.new(editor, current_class, method) }
         end
       end
     end

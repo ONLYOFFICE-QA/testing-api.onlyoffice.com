@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
+
 describe 'workspace_documentation_content' do
   test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: 'Workspace Documentation Links Content', plan_name: config.to_s)
 
@@ -9,7 +10,9 @@ describe 'workspace_documentation_content' do
       method_array.each do |method|
         path = "#{module_name}/#{method}"
         context path do
-          it_behaves_like 'page_content_exist', path, -> { TestingApiOnlyOfficeCom::WorkspaceMethodPage.new(module_name, method) }
+          it_behaves_like 'page_workspace_content_exist',
+                          path,
+                          -> { TestingApiOnlyOfficeCom::WorkspaceMethodPage.new(module_name, method) }
         end
       end
     end
