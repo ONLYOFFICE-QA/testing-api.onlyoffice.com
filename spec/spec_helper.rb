@@ -2,57 +2,13 @@
 
 require 'bundler/setup'
 require_relative '../lib/testing_api_onlyoffice_com'
+require_relative 'shared_examples_for_docspace_spec'
+require_relative 'shared_examples_for_workspace_spec'
+require_relative 'shared_examples_for_docbuilder_spec'
+
 include TestingApiOnlyOfficeCom
 
 # @return [TestingApiOnlyOfficeCom::Config] config of test run
 def config
   @config ||= TestingApiOnlyOfficeCom::Config.new
-end
-
-shared_examples_for 'page_content_exist' do |path, documentation_page|
-  describe 'element_include?' do
-    before :all do
-      @documentation_page = documentation_page.call
-    end
-
-    it "#{path}/Parameters" do
-      pending('https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/49') if failed_docbuilder_tests.include?("#{path}/Parameters")
-      pending('https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/54') if failed_community_server_tests.include?("#{path}/Parameters")
-      pending('https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/576') if failed_docspace_tests.include?("#{path}/Parameters")
-      expect(@documentation_page.params_exist).to be_truthy
-    end
-
-    it "#{path}/Returns" do
-      pending 'https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/49' if failed_docbuilder_tests.include?("#{path}/Returns")
-      pending 'https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/54' if failed_community_server_tests.include?("#{path}/Returns")
-      pending('https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/576') if failed_docspace_tests.include?("#{path}/Returns")
-      expect(@documentation_page.return_exist).to be_truthy
-    end
-
-    it "#{path}/Example" do
-      pending 'https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/49' if failed_docbuilder_tests.include?("#{path}/Example")
-      pending 'https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/54' if failed_community_server_tests.include?("#{path}/Example")
-      pending('https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/576') if failed_docspace_tests.include?("#{path}/Example")
-      expect(@documentation_page.example_exist).to be_truthy
-    end
-
-    it "#{path}/Resulting document" do
-      pending 'https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/49' if failed_docbuilder_tests.include?("#{path}/Resulting document")
-      pending 'https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/54' if failed_community_server_tests.include?("#{path}/Resulting document")
-      pending('https://github.com/ONLYOFFICE/api.onlyoffice.com/issues/576') if failed_docspace_tests.include?("#{path}/Resulting document")
-      expect(@documentation_page.document_exist).to be_truthy
-    end
-  end
-end
-
-def failed_docbuilder_tests
-  @failed_docbuilder_tests ||= File.read("#{__dir__}/data/failed_docbuilder_tests.list").split("\n")
-end
-
-def failed_community_server_tests
-  @failed_community_server_tests ||= File.read("#{__dir__}/data/failed_community_server_tests.list").split("\n")
-end
-
-def failed_docspace_tests
-  @failed_docspace_tests ||= File.read("#{__dir__}/data/failed_docspace_tests.list").split("\n")
 end
