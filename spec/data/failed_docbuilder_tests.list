@@ -12,8 +12,6 @@ Presentation API/ApiDocument/RemoveElement/Example
 Presentation API/ApiDocument/RemoveElement/Resulting document
 Presentation API/ApiPresentation/ReplaceCurrentImage/Example
 Presentation API/ApiPresentation/ReplaceCurrentImage/Resulting document
-Presentation API/ApiRun/SetStyle/Example
-Presentation API/ApiRun/SetStyle/Resulting document
 Presentation API/ApiTable/AddElement/Example
 Presentation API/ApiTable/AddElement/Resulting document
 Presentation API/ApiThemeFormatScheme/ChangeEffectStyles/Example
@@ -22,6 +20,36 @@ Presentation API/api/ReplaceTextSmart/Example
 Presentation API/api/ReplaceTextSmart/Resulting document
 Presentation API/apicomment/IsSolved/Example
 Presentation API/apicomment/IsSolved/Resulting document
+Presentation API/apirun/GetBold/Example
+Presentation API/apirun/GetBold/Resulting document
+Presentation API/apirun/GetCaps/Example
+Presentation API/apirun/GetCaps/Resulting document
+Presentation API/apirun/GetDoubleStrikeout/Example
+Presentation API/apirun/GetDoubleStrikeout/Resulting document
+Presentation API/apirun/GetFill/Example
+Presentation API/apirun/GetFill/Resulting document
+Presentation API/apirun/GetFontFamily/Example
+Presentation API/apirun/GetFontFamily/Resulting document
+Presentation API/apirun/GetFontSize/Example
+Presentation API/apirun/GetFontSize/Resulting document
+Presentation API/apirun/GetHighlight/Example
+Presentation API/apirun/GetHighlight/Resulting document
+Presentation API/apirun/GetItalic/Example
+Presentation API/apirun/GetItalic/Resulting document
+Presentation API/apirun/GetOutLine/Example
+Presentation API/apirun/GetOutLine/Resulting document
+Presentation API/apirun/GetSmallCaps/Example
+Presentation API/apirun/GetSmallCaps/Resulting document
+Presentation API/apirun/GetSpacing/Example
+Presentation API/apirun/GetSpacing/Resulting document
+Presentation API/apirun/GetStrikeout/Example
+Presentation API/apirun/GetStrikeout/Resulting document
+Presentation API/apirun/GetTextFill/Example
+Presentation API/apirun/GetTextFill/Resulting document
+Presentation API/apirun/GetUnderline/Example
+Presentation API/apirun/GetUnderline/Resulting document
+Presentation API/apirun/SetStyle/Example
+Presentation API/apirun/SetStyle/Resulting document
 Spreadsheet API/ApiDocument/AddElement/Example
 Spreadsheet API/ApiDocument/AddElement/Resulting document
 Spreadsheet API/ApiDocument/GetElement/Example
@@ -34,70 +62,138 @@ Spreadsheet API/ApiDocument/RemoveAllElements/Example
 Spreadsheet API/ApiDocument/RemoveAllElements/Resulting document
 Spreadsheet API/ApiDocument/RemoveElement/Example
 Spreadsheet API/ApiDocument/RemoveElement/Resulting document
-Spreadsheet API/ApiRun/SetStyle/Example
-Spreadsheet API/ApiRun/SetStyle/Resulting document
 Spreadsheet API/ApiShape/SetPaddings/Example
 Spreadsheet API/ApiShape/SetPaddings/Resulting document
 Spreadsheet API/api/event-onworksheetchange/Returns
+Spreadsheet API/apirun/GetBold/Example
+Spreadsheet API/apirun/GetBold/Resulting document
+Spreadsheet API/apirun/GetCaps/Example
+Spreadsheet API/apirun/GetCaps/Resulting document
+Spreadsheet API/apirun/GetDoubleStrikeout/Example
+Spreadsheet API/apirun/GetDoubleStrikeout/Resulting document
+Spreadsheet API/apirun/GetFill/Example
+Spreadsheet API/apirun/GetFill/Resulting document
+Spreadsheet API/apirun/GetFontFamily/Example
+Spreadsheet API/apirun/GetFontFamily/Resulting document
+Spreadsheet API/apirun/GetFontSize/Example
+Spreadsheet API/apirun/GetFontSize/Resulting document
+Spreadsheet API/apirun/GetItalic/Example
+Spreadsheet API/apirun/GetItalic/Resulting document
+Spreadsheet API/apirun/GetOutLine/Example
+Spreadsheet API/apirun/GetOutLine/Resulting document
+Spreadsheet API/apirun/GetSmallCaps/Example
+Spreadsheet API/apirun/GetSmallCaps/Resulting document
+Spreadsheet API/apirun/GetSpacing/Example
+Spreadsheet API/apirun/GetSpacing/Resulting document
+Spreadsheet API/apirun/GetStrikeout/Example
+Spreadsheet API/apirun/GetStrikeout/Resulting document
+Spreadsheet API/apirun/GetTextFill/Example
+Spreadsheet API/apirun/GetTextFill/Resulting document
+Spreadsheet API/apirun/GetUnderline/Example
+Spreadsheet API/apirun/GetUnderline/Resulting document
+Spreadsheet API/apirun/SetStyle/Example
+Spreadsheet API/apirun/SetStyle/Resulting document
 Spreadsheet API/apiworksheet/ReplaceCurrentImage/Example
 Spreadsheet API/apiworksheet/ReplaceCurrentImage/Resulting document
-Text document API/ApiCheckBoxForm/SetPlaceholderText/Example
-Text document API/ApiCheckBoxForm/SetPlaceholderText/Resulting document
-Text document API/ApiComplexForm/Clear/Example
-Text document API/ApiComplexForm/Clear/Resulting document
-Text document API/ApiComplexForm/Copy/Example
-Text document API/ApiComplexForm/Copy/Resulting document
-Text document API/ApiComplexForm/GetClassType/Example
-Text document API/ApiComplexForm/GetClassType/Resulting document
-Text document API/ApiComplexForm/GetFormKey/Example
-Text document API/ApiComplexForm/GetFormKey/Resulting document
-Text document API/ApiComplexForm/GetFormType/Example
-Text document API/ApiComplexForm/GetFormType/Resulting document
-Text document API/ApiComplexForm/GetText/Example
-Text document API/ApiComplexForm/GetText/Resulting document
-Text document API/ApiComplexForm/GetTextPr/Example
-Text document API/ApiComplexForm/GetTextPr/Resulting document
-Text document API/ApiComplexForm/GetTipText/Example
-Text document API/ApiComplexForm/GetTipText/Resulting document
-Text document API/ApiComplexForm/GetWrapperShape/Example
-Text document API/ApiComplexForm/GetWrapperShape/Resulting document
-Text document API/ApiComplexForm/IsFixed/Example
-Text document API/ApiComplexForm/IsFixed/Resulting document
-Text document API/ApiComplexForm/IsRequired/Example
-Text document API/ApiComplexForm/IsRequired/Resulting document
-Text document API/ApiComplexForm/SetBackgroundColor/Example
-Text document API/ApiComplexForm/SetBackgroundColor/Resulting document
-Text document API/ApiComplexForm/SetBorderColor/Example
-Text document API/ApiComplexForm/SetBorderColor/Resulting document
-Text document API/ApiComplexForm/SetFormKey/Example
-Text document API/ApiComplexForm/SetFormKey/Resulting document
-Text document API/ApiComplexForm/SetPlaceholderText/Example
-Text document API/ApiComplexForm/SetPlaceholderText/Resulting document
-Text document API/ApiComplexForm/SetRequired/Example
-Text document API/ApiComplexForm/SetRequired/Resulting document
-Text document API/ApiComplexForm/SetTextPr/Example
-Text document API/ApiComplexForm/SetTextPr/Resulting document
-Text document API/ApiComplexForm/SetTipText/Example
-Text document API/ApiComplexForm/SetTipText/Resulting document
-Text document API/ApiComplexForm/ToFixed/Example
-Text document API/ApiComplexForm/ToFixed/Resulting document
-Text document API/ApiComplexForm/ToInline/Example
-Text document API/ApiComplexForm/ToInline/Resulting document
-Text document API/ApiPictureForm/GetText/Example
-Text document API/ApiPictureForm/GetText/Resulting document
-Text document API/ApiPictureForm/GetTextPr/Example
-Text document API/ApiPictureForm/GetTextPr/Resulting document
-Text document API/ApiPictureForm/SetTextPr/Example
-Text document API/ApiPictureForm/SetTextPr/Resulting document
-Text document API/ApiPictureForm/ToInline/Example
-Text document API/ApiPictureForm/ToInline/Resulting document
 Text document API/ApiUnsupported/GetClassType/Example
 Text document API/ApiUnsupported/GetClassType/Resulting document
 Text document API/apiblocklvlsdt/GetDropdownList/Example
 Text document API/apiblocklvlsdt/GetDropdownList/Resulting document
+Text document API/apicheckboxform/MoveCursorOutside/Example
+Text document API/apicheckboxform/MoveCursorOutside/Resulting document
+Text document API/apicheckboxform/SetPlaceholderText/Example
+Text document API/apicheckboxform/SetPlaceholderText/Resulting document
+Text document API/apicomboboxform/MoveCursorOutside/Example
+Text document API/apicomboboxform/MoveCursorOutside/Resulting document
+Text document API/apicomplexform/Clear/Example
+Text document API/apicomplexform/Clear/Resulting document
+Text document API/apicomplexform/Copy/Example
+Text document API/apicomplexform/Copy/Resulting document
+Text document API/apicomplexform/GetClassType/Example
+Text document API/apicomplexform/GetClassType/Resulting document
+Text document API/apicomplexform/GetFormKey/Example
+Text document API/apicomplexform/GetFormKey/Resulting document
+Text document API/apicomplexform/GetFormType/Example
+Text document API/apicomplexform/GetFormType/Resulting document
+Text document API/apicomplexform/GetText/Example
+Text document API/apicomplexform/GetText/Resulting document
+Text document API/apicomplexform/GetTextPr/Example
+Text document API/apicomplexform/GetTextPr/Resulting document
+Text document API/apicomplexform/GetTipText/Example
+Text document API/apicomplexform/GetTipText/Resulting document
+Text document API/apicomplexform/GetWrapperShape/Example
+Text document API/apicomplexform/GetWrapperShape/Resulting document
+Text document API/apicomplexform/IsFixed/Example
+Text document API/apicomplexform/IsFixed/Resulting document
+Text document API/apicomplexform/IsRequired/Example
+Text document API/apicomplexform/IsRequired/Resulting document
+Text document API/apicomplexform/MoveCursorOutside/Example
+Text document API/apicomplexform/MoveCursorOutside/Resulting document
+Text document API/apicomplexform/SetBackgroundColor/Example
+Text document API/apicomplexform/SetBackgroundColor/Resulting document
+Text document API/apicomplexform/SetBorderColor/Example
+Text document API/apicomplexform/SetBorderColor/Resulting document
+Text document API/apicomplexform/SetFormKey/Example
+Text document API/apicomplexform/SetFormKey/Resulting document
+Text document API/apicomplexform/SetPlaceholderText/Example
+Text document API/apicomplexform/SetPlaceholderText/Resulting document
+Text document API/apicomplexform/SetRequired/Example
+Text document API/apicomplexform/SetRequired/Resulting document
+Text document API/apicomplexform/SetTextPr/Example
+Text document API/apicomplexform/SetTextPr/Resulting document
+Text document API/apicomplexform/SetTipText/Example
+Text document API/apicomplexform/SetTipText/Resulting document
+Text document API/apicomplexform/ToFixed/Example
+Text document API/apicomplexform/ToFixed/Resulting document
+Text document API/apicomplexform/ToInline/Example
+Text document API/apicomplexform/ToInline/Resulting document
 Text document API/apidocument/GetFormsByTag/Example
 Text document API/apidocument/GetFormsByTag/Resulting document
 Text document API/apidocument/GetTagsOfAllForms/Example
 Text document API/apidocument/GetTagsOfAllForms/Resulting document
+Text document API/apipictureform/GetText/Example
+Text document API/apipictureform/GetText/Resulting document
+Text document API/apipictureform/GetTextPr/Example
+Text document API/apipictureform/GetTextPr/Resulting document
+Text document API/apipictureform/MoveCursorOutside/Example
+Text document API/apipictureform/MoveCursorOutside/Resulting document
+Text document API/apipictureform/SetTextPr/Example
+Text document API/apipictureform/SetTextPr/Resulting document
+Text document API/apipictureform/ToInline/Example
+Text document API/apipictureform/ToInline/Resulting document
+Text document API/apirun/GetBold/Example
+Text document API/apirun/GetBold/Resulting document
+Text document API/apirun/GetCaps/Example
+Text document API/apirun/GetCaps/Resulting document
+Text document API/apirun/GetColor/Example
+Text document API/apirun/GetColor/Resulting document
+Text document API/apirun/GetDoubleStrikeout/Example
+Text document API/apirun/GetDoubleStrikeout/Resulting document
+Text document API/apirun/GetFontFamily/Example
+Text document API/apirun/GetFontFamily/Resulting document
+Text document API/apirun/GetFontSize/Example
+Text document API/apirun/GetFontSize/Resulting document
+Text document API/apirun/GetHighlight/Example
+Text document API/apirun/GetHighlight/Resulting document
+Text document API/apirun/GetItalic/Example
+Text document API/apirun/GetItalic/Resulting document
+Text document API/apirun/GetLanguage/Example
+Text document API/apirun/GetLanguage/Resulting document
+Text document API/apirun/GetPosition/Example
+Text document API/apirun/GetPosition/Resulting document
+Text document API/apirun/GetShd/Example
+Text document API/apirun/GetShd/Resulting document
+Text document API/apirun/GetSmallCaps/Example
+Text document API/apirun/GetSmallCaps/Resulting document
+Text document API/apirun/GetSpacing/Example
+Text document API/apirun/GetSpacing/Resulting document
+Text document API/apirun/GetStrikeout/Example
+Text document API/apirun/GetStrikeout/Resulting document
+Text document API/apirun/GetStyle/Example
+Text document API/apirun/GetStyle/Resulting document
+Text document API/apirun/GetUnderline/Example
+Text document API/apirun/GetUnderline/Resulting document
+Text document API/apirun/GetVertAlign/Example
+Text document API/apirun/GetVertAlign/Resulting document
 Text document API/apitable/GetTables/Example
 Text document API/apitable/GetTables/Resulting document
