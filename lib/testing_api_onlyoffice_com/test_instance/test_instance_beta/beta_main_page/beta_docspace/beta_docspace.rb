@@ -5,7 +5,7 @@ require_relative '../../beta_main_page'
 module TestingApiOnlyOfficeCom
   # TODO: image & description
   # class
-  class BetaDocSpaceMainPage
+  class BetaDocSpace
     include PageObject
 
     attr_accessor :instance
