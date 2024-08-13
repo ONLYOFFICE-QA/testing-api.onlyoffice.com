@@ -5,6 +5,7 @@ require_relative 'beta_main_page/beta_docspace_main'
 require_relative 'beta_main_page/beta_javascript_sdk'
 require_relative 'beta_main_page/beta_plugins_sdk'
 require_relative 'beta_main_page/beta_api_backend'
+require_relative 'beta_main_page/beta_for_hosting_providers'
 
 module TestingApiOnlyOfficeCom
   # Main page of BETA api.onlyoffice.com
@@ -66,6 +67,12 @@ module TestingApiOnlyOfficeCom
       action_move_to(docspace_element.element.selector[:xpath])
       api_backend_element.when_visible.click
       BetaApiBackend.new(@instance)
+    end
+
+    def go_to_beta_for_hosting_providers
+      action_move_to(docspace_element.element.selector[:xpath])
+      for_hosting_providers_element.when_visible.click
+      BetaForHostingProviders.new(@instance)
     end
 
     # @return [Object]
