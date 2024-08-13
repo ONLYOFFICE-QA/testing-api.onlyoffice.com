@@ -23,7 +23,13 @@ module TestingApiOnlyOfficeCom
     link(:desktop_editors, xpath: "*//div[contains(@class, 'part__chapter')]/*/a[contains(@href, 'desktop-editors')]")
 
     def wait_to_load
-      docs_api_element.present? and office_api_element.present? and plugin_and_macros_element.present? and document_builder_element.present? and desktop_editors_element.present?
+      @instance.webdriver.wait_until do
+        docs_api_element.present? and
+          office_api_element.present? and
+          plugin_and_macros_element.present? and
+          document_builder_element.present? and
+          desktop_editors_element.present?
+      end
     end
   end
 end
