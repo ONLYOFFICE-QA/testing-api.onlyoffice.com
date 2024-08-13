@@ -3,7 +3,6 @@
 require 'spec_helper'
 
 describe 'beta_docspace_main_page' do
-
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @beta_docspace = @instance.go_to_main_page
