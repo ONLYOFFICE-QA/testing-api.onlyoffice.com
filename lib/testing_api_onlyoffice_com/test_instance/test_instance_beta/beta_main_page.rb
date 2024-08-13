@@ -8,6 +8,7 @@ require_relative 'beta_main_page/beta_docspace/beta_api_backend'
 require_relative 'beta_main_page/beta_docspace/beta_for_hosting_providers'
 require_relative 'beta_main_page/beta_docs/beta_docs'
 require_relative 'beta_main_page/beta_docspace'
+require_relative 'beta_main_page/beta_docs/beta_docs'
 
 module TestingApiOnlyOfficeCom
   # Main page of BETA api.onlyoffice.com
