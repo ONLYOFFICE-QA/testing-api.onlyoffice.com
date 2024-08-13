@@ -19,13 +19,9 @@ module TestingApiOnlyOfficeCom
     end
 
     form(:search, xpath: "*//form[contains(@id, 'search')]")
-    link(:b_old_version, xpath: "*//div[contains(@class, 'page-header__legacy')]/legacy-container/a[contains(text(), 'Old version')]")
     link(:docspace, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docspace')]")
     link(:docs, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docs/')]")
-    link(:javascript_sdk, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'javascript-sdk')]")
-    link(:plugins_sdk, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'plugins-sdk')]")
-    link(:api_backend, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'api-backend')]")
-    link(:for_hosting_providers, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'for-hosting-providers')]")
+    link(:b_old_version, xpath: "*//div[contains(@class, 'page-header__legacy')]/legacy-container/a[contains(text(), 'Old version')]")
 
     def wait_to_load
       @instance.webdriver.wait_until do
@@ -46,30 +42,6 @@ module TestingApiOnlyOfficeCom
     def go_to_beta_docs
       docs_element.when_visible.click
       BetaDocs.new(@instance)
-    end
-
-    def go_to_beta_javascript_sdk
-      action_move_to(docspace_element.element.selector[:xpath])
-      javascript_sdk_element.when_visible.click
-      BetaJavaScriptSDK.new(@instance)
-    end
-
-    def go_to_beta_plugins_sdk
-      action_move_to(docspace_element.element.selector[:xpath])
-      plugins_sdk_element.when_visible.click
-      BetaPluginsSDK.new(@instance)
-    end
-
-    def go_to_beta_api_backend
-      action_move_to(docspace_element.element.selector[:xpath])
-      api_backend_element.when_visible.click
-      BetaApiBackend.new(@instance)
-    end
-
-    def go_to_beta_for_hosting_providers
-      action_move_to(docspace_element.element.selector[:xpath])
-      for_hosting_providers_element.when_visible.click
-      BetaForHostingProviders.new(@instance)
     end
 
     # @return [Object]
