@@ -30,6 +30,7 @@ module TestingApiOnlyOfficeCom
     link(:plugins_sdk, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'plugins-sdk')]")
     link(:api_backend, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'api-backend')]")
     link(:for_hosting_providers, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'for-hosting-providers')]")
+    link(:b_old_version, xpath: "*//div[contains(@class, 'page-header__legacy')]/legacy-container/a[contains(text(), 'Old version')]")
 
     def wait_to_load
       @instance.webdriver.wait_until do
@@ -44,7 +45,7 @@ module TestingApiOnlyOfficeCom
 
     def go_to_beta_docspace
       docspace_element.when_visible.click
-      BetaDocSpace.new(@instance)
+      BetaDocSpaceMainPage.new(@instance)
     end
 
     def go_to_beta_docs
