@@ -13,11 +13,6 @@ describe 'beta_javascript-sdk' do
                                .go_to_beta_javascript_sdk
   end
 
-  after do |example|
-    test_manager.add_result(example)
-    @instance.webdriver.quit
-  end
-
   it 'class has been created' do
     expect(Object.const_defined?('BetaJavaScriptSDK')).to be(true)
     expect(Object.const_get('BetaJavaScriptSDK')).to be_a(Class)
