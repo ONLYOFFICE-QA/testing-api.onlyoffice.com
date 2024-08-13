@@ -6,6 +6,7 @@ require_relative 'beta_main_page/beta_docspace/beta_javascript_sdk'
 require_relative 'beta_main_page/beta_docspace/beta_plugins_sdk'
 require_relative 'beta_main_page/beta_docspace/beta_api_backend'
 require_relative 'beta_main_page/beta_docspace/beta_for_hosting_providers'
+require_relative 'beta_main_page/beta_docs/beta_docs'
 
 module TestingApiOnlyOfficeCom
   # Main page of BETA api.onlyoffice.com
@@ -24,6 +25,7 @@ module TestingApiOnlyOfficeCom
     form(:search, xpath: "*//form[contains(@id, 'search')]")
     link(:b_old_version, xpath: "*//div[contains(@class, 'page-header__legacy')]/legacy-container/a[contains(text(), 'Old version')]")
     link(:docspace, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docspace')]")
+    link(:docs, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docs/')]")
     link(:javascript_sdk, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'javascript-sdk')]")
     link(:plugins_sdk, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'plugins-sdk')]")
     link(:api_backend, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'api-backend')]")
@@ -43,6 +45,11 @@ module TestingApiOnlyOfficeCom
     def go_to_beta_docspace
       docspace_element.when_visible.click
       BetaDocSpaceMainPage.new(@instance)
+    end
+
+    def go_to_beta_docs
+      docs_element.when_visible.click
+      BetaDocs.new(@instance)
     end
 
     def go_to_beta_javascript_sdk
