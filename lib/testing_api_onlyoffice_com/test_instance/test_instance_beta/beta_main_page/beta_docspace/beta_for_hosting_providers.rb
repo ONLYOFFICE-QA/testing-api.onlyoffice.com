@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../beta_main_page'
+require_relative '../beta_docspace'
 
 module TestingApiOnlyOfficeCom
   # TODO: image & description
@@ -20,7 +20,9 @@ module TestingApiOnlyOfficeCom
     div(:content, xpath: "*//div[contains(data-search-container-hidable,'')]/div[contains(@class,'content')]")
 
     def wait_to_load
-      breadcrump_element.present? and content_element.present?
+      @instance.webdriver.wait_until do
+        breadcrump_element.present? and content_element.present?
+      end
     end
   end
 end
