@@ -45,7 +45,7 @@ module TestingApiOnlyOfficeCom
 
     def go_to_beta_docspace
       docspace_element.when_visible.click
-      BetaDocSpaceMainPage.new(@instance)
+      BetaDocSpace.new(@instance)
     end
 
     def go_to_beta_docs
