@@ -3,6 +3,7 @@
 require_relative '../main_page'
 require_relative 'beta_main_page/beta_docspace_main'
 require_relative 'beta_main_page/beta_javascript_sdk'
+require_relative 'beta_main_page/beta_plugins_sdk'
 
 module TestingApiOnlyOfficeCom
   # Main page of BETA api.onlyoffice.com
@@ -52,6 +53,12 @@ module TestingApiOnlyOfficeCom
       action_move_to(docspace_element.element.selector[:xpath])
       javascript_sdk_element.when_visible.click
       BetaJavaScriptSDK.new(@instance)
+    end
+
+    def go_to_beta_plugins_sdk
+      action_move_to(docspace_element.element.selector[:xpath])
+      plugins_sdk_element.when_visible.click
+      BetaPluginsSDK.new(@instance)
     end
 
     # @return [Object]
