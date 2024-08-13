@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../beta_main_page'
+require_relative '../beta_docspace'
 
 module TestingApiOnlyOfficeCom
   # TODO: img & description
@@ -17,10 +17,11 @@ module TestingApiOnlyOfficeCom
     end
 
     nav(:breadcrump, xpath: "*//nav[contains(@class, 'breadcrumb')]")
-    link(:pre_html, xpath: "*//code[contains(@class, 'language-html')]")
 
     def wait_to_load
-      pre_html_element.present? and breadcrump_element.present?
+      @instance.webdriver.wait_until do
+        breadcrump_element.present?
+      end
     end
   end
 end
