@@ -3,7 +3,6 @@
 require 'spec_helper'
 
 describe 'beta_api_for_hosting_providers' do
-
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @pliginssdk = @instance.go_to_main_page

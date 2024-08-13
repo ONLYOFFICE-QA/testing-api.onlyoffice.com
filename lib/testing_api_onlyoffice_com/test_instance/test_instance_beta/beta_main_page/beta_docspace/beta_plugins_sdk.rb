@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require_relative '../beta_main_page'
+require_relative '../../beta_main_page'
 
 module TestingApiOnlyOfficeCom
-  # TODO: image & description
+  # TODO: img & describe
   # class
-  class BetaForHostingProviders
+  class BetaPluginsSDK
     include PageObject
 
     attr_accessor :instance
@@ -20,7 +20,9 @@ module TestingApiOnlyOfficeCom
     div(:content, xpath: "*//div[contains(data-search-container-hidable,'')]/div[contains(@class,'content')]")
 
     def wait_to_load
-      breadcrump_element.present? and content_element.present?
+      @instance.webdriver.wait_until do
+        content_element.present? and breadcrump_element.present?
+      end
     end
   end
 end
