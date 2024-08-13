@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
 require_relative '../main_page'
+require_relative 'beta_main_page/beta_docspace_main'
 
 module TestingApiOnlyOfficeCom
   # Main page of BETA api.onlyoffice.com
-  # https://github.com/user-attachments/assets/eb2385e5-fec6-4b02-8435-d7b99090ec32
+  # TODO: screen
   class BetaMainPage
     include PageObject
 
@@ -17,13 +18,13 @@ module TestingApiOnlyOfficeCom
     end
 
     form(:search, xpath: "*//form[contains(@id, 'search')]")
+    link(:b_old_version, xpath: "*//div[contains(@class, 'page-header__legacy')]/legacy-container/a[contains(text(), 'Old version')]")
     link(:docspace, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docspace')]")
     link(:docs, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docs/')]")
     link(:javascript_sdk, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'javascript-sdk')]")
     link(:plugins_sdk, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'plugins-sdk')]")
     link(:api_backend, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'api-backend')]")
     link(:for_hosting_providers, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'for-hosting-providers')]")
-    link(:b_old_version, xpath: "*//div[contains(@class, 'page-header__legacy')]/legacy-container/a[contains(text(), 'Old version')]")
 
     def wait_to_load
       @instance.webdriver.wait_until do
