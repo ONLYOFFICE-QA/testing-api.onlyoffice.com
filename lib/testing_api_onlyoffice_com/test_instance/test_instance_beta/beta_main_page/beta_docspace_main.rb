@@ -22,11 +22,5 @@ module TestingApiOnlyOfficeCom
     def wait_to_load
       h3_javascript_sdk_element.present? and javascript_sdk_element.present?
     end
-
-    def action_move_to(xpath)
-      element = @instance.webdriver.driver.find_element(:xpath, xpath)
-      action = @instance.webdriver.driver.action
-      action.move_to(element).perform
-    end
   end
 end
