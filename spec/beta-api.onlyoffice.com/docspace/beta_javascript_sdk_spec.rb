@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-describe 'javascript-sdk' do
+describe 'beta_javascript-sdk' do
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @javascript_sdk = @instance.go_to_main_page
