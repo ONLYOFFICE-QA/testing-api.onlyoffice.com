@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../beta_main_page'
+require_relative '../../beta_main_page'
 
 module TestingApiOnlyOfficeCom
   # TODO: image & description
