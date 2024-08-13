@@ -11,7 +11,7 @@ describe 'beta_docspace_main_page' do
   end
 
   it 'class has been created' do
-    expect(Object.const_defined?('BetaDocSpaceMainPage')).to be(true)
-    expect(Object.const_get('BetaDocSpaceMainPage')).to be_a(Class)
+    expect(Object.const_defined?('BetaDocSpace')).to be(true)
+    expect(Object.const_get('BetaDocSpace')).to be_a(Class)
   end
 end
