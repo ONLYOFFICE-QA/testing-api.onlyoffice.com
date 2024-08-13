@@ -53,13 +53,7 @@ module TestingApiOnlyOfficeCom
     end
 
     def wait_to_load
-      @instance.webdriver.wait_until do
-        docs_api_element.present? and
-          office_api_element.present? and
-          plugin_and_macros_element.present? and
-          document_builder_element.present? and
-          desktop_editors_element.present?
-      end
+      docs_api_element.present? and office_api_element.present? and plugin_and_macros_element.present? and document_builder_element.present? and desktop_editors_element.present?
     end
   end
 end
