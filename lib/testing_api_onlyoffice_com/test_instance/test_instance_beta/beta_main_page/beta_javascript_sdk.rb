@@ -16,10 +16,11 @@ module TestingApiOnlyOfficeCom
       wait_to_load
     end
 
+    nav(:breadcrump, xpath: "*//nav[contains(@class, 'breadcrumb')]")
     link(:pre_html, xpath: "*//code[contains(@class, 'language-html')]")
 
     def wait_to_load
-      pre_html_element.present?
+      pre_html_element.present? and breadcrump_element.present?
     end
   end
 end
