@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require_relative '../main_page'
-require_relative 'beta_main_page/beta_docspace/beta_docspace_main'
+require_relative 'beta_main_page/beta_docspace/beta_docspace'
 require_relative 'beta_main_page/beta_docspace/beta_javascript_sdk'
 require_relative 'beta_main_page/beta_docspace/beta_plugins_sdk'
 require_relative 'beta_main_page/beta_docspace/beta_api_backend'
@@ -45,7 +45,7 @@ module TestingApiOnlyOfficeCom
 
     def go_to_beta_docspace
       docspace_element.when_visible.click
-      BetaDocSpaceMainPage.new(@instance)
+      BetaDocSpace.new(@instance)
     end
 
     def go_to_beta_docs
