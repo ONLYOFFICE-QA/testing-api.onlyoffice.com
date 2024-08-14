@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative '../beta_main_page'
+require_relative 'beta_docs/beta_docs_api'
 
 module TestingApiOnlyOfficeCom
   # TODO: image & description
@@ -21,6 +22,11 @@ module TestingApiOnlyOfficeCom
     link(:plugin_and_macros, xpath: "*//div[contains(@class, 'part__chapter')]/*/a[contains(@href, 'plugin-and-macros')]")
     link(:document_builder, xpath: "*//div[contains(@class, 'part__chapter')]/*/a[contains(@href, 'document-builder')]")
     link(:desktop_editors, xpath: "*//div[contains(@class, 'part__chapter')]/*/a[contains(@href, 'desktop-editors')]")
+
+    def go_to_beta_docs_api
+      docs_api_element.when_visible.click
+      BetaDocsApi.new(@instance)
+    end
 
     def wait_to_load
       @instance.webdriver.wait_until do
