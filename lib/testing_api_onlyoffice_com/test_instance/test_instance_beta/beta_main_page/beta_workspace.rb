@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative '../beta_main_page'
+require_relative 'beta_workspace/beta_api_backend'
 
 module TestingApiOnlyOfficeCom
   # TODO: image & description
@@ -24,6 +25,11 @@ module TestingApiOnlyOfficeCom
         api_backend_element.present? and
           for_hosting_providers_element.present?
       end
+    end
+
+    def go_to_beta_api_backend
+      api_backend_element.when_visible.click
+      BetaApiBackend.new(@instance)
     end
   end
 end
