@@ -22,7 +22,7 @@ module TestingApiOnlyOfficeCom
     form(:search, xpath: "*//form[contains(@id, 'search')]")
     link(:docspace, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docspace')]")
     link(:docs, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docs/')]")
-    link(:docs, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'workspace/')]")
+    link(:workspace, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'workspace/')]")
     link(:b_old_version, xpath: "*//div[contains(@class, 'page-header__legacy')]/legacy-container/a[contains(text(), 'Old version')]")
 
     def wait_to_load
@@ -47,7 +47,7 @@ module TestingApiOnlyOfficeCom
     end
 
     def go_to_beta_workspace
-      docs_element.when_visible.click
+      workspace_element.when_visible.click
       BetaWorkspace.new(@instance)
     end
 
