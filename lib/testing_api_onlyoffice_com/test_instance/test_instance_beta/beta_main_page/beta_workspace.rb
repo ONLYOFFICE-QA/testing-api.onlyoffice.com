@@ -2,6 +2,7 @@
 
 require_relative '../beta_main_page'
 require_relative 'beta_workspace/beta_api_backend'
+require_relative 'beta_workspace/beta_for_hosting_providers'
 
 module TestingApiOnlyOfficeCom
   # TODO: image & description
@@ -30,6 +31,11 @@ module TestingApiOnlyOfficeCom
     def go_to_beta_api_backend
       api_backend_element.when_visible.click
       BetaApiBackend.new(@instance)
+    end
+
+    def go_to_beta_for_hosting_providers
+      api_backend_element.when_visible.click
+      BetaForHostingProviders.new(@instance)
     end
   end
 end
