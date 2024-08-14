@@ -24,6 +24,7 @@ module TestingApiOnlyOfficeCom
     link(:b_old_version, xpath: "*//div[contains(@class, 'page-header__legacy')]/legacy-container/a[contains(text(), 'Old version')]")
     link(:docspace, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docspace')]")
     link(:docs, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docs/')]")
+    link(:workspace, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'workspace/')]")
     link(:b_old_version, xpath: "*//div[contains(@class, 'page-header__legacy')]/legacy-container/a[contains(text(), 'Old version')]")
 
     def wait_to_load
@@ -45,6 +46,11 @@ module TestingApiOnlyOfficeCom
     def go_to_beta_docs
       docs_element.when_visible.click
       BetaDocs.new(@instance)
+    end
+
+    def go_to_beta_workspace
+      workspace_element.when_visible.click
+      BetaWorkspace.new(@instance)
     end
 
     # @return [Object]
