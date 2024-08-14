@@ -5,6 +5,7 @@ require_relative 'beta_docs/beta_docs_api'
 require_relative 'beta_docs/beta_office_api'
 require_relative 'beta_docs/beta_plugin_and_macros'
 require_relative 'beta_docs/beta_document_builder'
+require_relative 'beta_docs/beta_desktop_editors'
 
 module TestingApiOnlyOfficeCom
   # TODO: image & description
@@ -44,6 +45,11 @@ module TestingApiOnlyOfficeCom
     def go_to_beta_document_builder
       document_builder_element.when_visible.click
       BetaDocumentBuilder.new(@instance)
+    end
+
+    def go_to_beta_desktop_editors
+      desktop_editors_element.when_visible.click
+      BetaDesktopEditor.new(@instance)
     end
 
     def wait_to_load
