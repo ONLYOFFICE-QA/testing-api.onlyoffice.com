@@ -2,6 +2,7 @@
 
 require_relative '../beta_main_page'
 require_relative 'beta_docs/beta_docs_api'
+require_relative 'beta_docs/beta_office_api'
 
 module TestingApiOnlyOfficeCom
   # TODO: image & description
@@ -26,6 +27,11 @@ module TestingApiOnlyOfficeCom
     def go_to_beta_docs_api
       docs_api_element.when_visible.click
       BetaDocsApi.new(@instance)
+    end
+
+    def go_to_beta_office_api
+      office_api_element.when_visible.click
+      BetaOfficeApi.new(@instance)
     end
 
     def wait_to_load
