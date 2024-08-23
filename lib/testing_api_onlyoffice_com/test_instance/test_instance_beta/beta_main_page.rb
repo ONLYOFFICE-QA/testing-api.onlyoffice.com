@@ -3,7 +3,7 @@
 require_relative '../main_page'
 require_relative 'beta_main_page/beta_docs'
 require_relative 'beta_main_page/beta_docspace'
-require_relative 'beta_main_page/beta_docs/beta_docs'
+require_relative 'beta_main_page/beta_workspace'
 
 module TestingApiOnlyOfficeCom
   # Main page of BETA api.onlyoffice.com
