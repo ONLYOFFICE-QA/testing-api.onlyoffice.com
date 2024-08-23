@@ -3,10 +3,17 @@
 require 'spec_helper'
 
 describe 'beta_main_page' do
+  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] main page', plan_name: config.to_s)
+
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @beta = @instance.go_to_main_page
                      .go_to_beta
+  end
+
+  after do |example|
+    test_manager.add_result(example)
+    @instance.webdriver.quit
   end
 
   it 'there and back' do
