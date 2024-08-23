@@ -1,11 +1,8 @@
 # frozen_string_literal: true
 
 require_relative '../main_page'
-require_relative 'beta_main_page/beta_docspace_main'
-require_relative 'beta_main_page/beta_javascript_sdk'
-require_relative 'beta_main_page/beta_plugins_sdk'
-require_relative 'beta_main_page/beta_api_backend'
-require_relative 'beta_main_page/beta_for_hosting_providers'
+require_relative 'beta_main_page/beta_docs'
+require_relative 'beta_main_page/beta_docspace'
 
 module TestingApiOnlyOfficeCom
   # Main page of BETA api.onlyoffice.com
