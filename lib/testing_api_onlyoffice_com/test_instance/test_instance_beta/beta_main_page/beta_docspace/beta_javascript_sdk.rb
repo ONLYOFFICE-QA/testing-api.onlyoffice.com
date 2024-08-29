@@ -3,8 +3,8 @@
 require_relative '../beta_docspace'
 
 module TestingApiOnlyOfficeCom
-  # TODO: img & description
-  # class
+  # JavaScriptSDK page
+  # https://github.com/user-attachments/assets/44620e8b-64ba-4285-82ef-daa64490d633
   class BetaJavaScriptSDK
     include PageObject
 

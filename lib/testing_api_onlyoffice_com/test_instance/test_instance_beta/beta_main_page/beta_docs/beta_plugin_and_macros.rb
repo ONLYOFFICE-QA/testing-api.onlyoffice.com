@@ -3,8 +3,8 @@
 require_relative '../beta_docs'
 
 module TestingApiOnlyOfficeCom
-  # TODO: img & describe
-  # class
+  # Plugin and Macros page
+  # https://github.com/user-attachments/assets/bc1f9c3c-d3ea-41b8-be0a-dd61a6d93c44
   class BetaPluginAndMacros
     include PageObject
 

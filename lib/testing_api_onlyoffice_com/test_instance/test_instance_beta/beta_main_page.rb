@@ -6,7 +6,7 @@ require_relative 'beta_main_page/beta_docspace'
 
 module TestingApiOnlyOfficeCom
   # Main page of BETA api.onlyoffice.com
-  # TODO: screen
+  # https://github.com/user-attachments/assets/eb2385e5-fec6-4b02-8435-d7b99090ec32
   class BetaMainPage
     include PageObject
 

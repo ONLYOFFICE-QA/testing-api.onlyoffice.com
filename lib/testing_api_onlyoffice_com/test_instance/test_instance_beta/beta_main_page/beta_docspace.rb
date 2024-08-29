@@ -7,8 +7,8 @@ require_relative 'beta_docspace/beta_api_backend'
 require_relative 'beta_docspace/beta_for_hosting_providers'
 
 module TestingApiOnlyOfficeCom
-  # TODO: image & description
-  # class
+  # DocSpace preview page
+  # https://github.com/user-attachments/assets/ef024c2e-b1ba-4195-b5df-3d438e395bc7
   class BetaDocSpace
     include PageObject
 

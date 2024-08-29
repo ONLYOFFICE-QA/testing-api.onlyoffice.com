@@ -3,8 +3,8 @@
 require_relative '../beta_docspace'
 
 module TestingApiOnlyOfficeCom
-  # TODO: img & describe
-  # class
+  # Api Backend page
+  # https://github.com/user-attachments/assets/26d9ed97-c76c-4159-8424-b6bfb1d87cd4
   class BetaApiBackend
     include PageObject
 

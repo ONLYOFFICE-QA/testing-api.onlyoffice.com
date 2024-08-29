@@ -8,8 +8,8 @@ require_relative 'beta_docs/beta_document_builder'
 require_relative 'beta_docs/beta_desktop_editors'
 
 module TestingApiOnlyOfficeCom
-  # TODO: image & description
-  # class
+  # Docs preview page
+  # https://github.com/user-attachments/assets/2c3b27eb-f2e9-4201-8044-4b1e8edccf54
   class BetaDocs
     include PageObject
 
