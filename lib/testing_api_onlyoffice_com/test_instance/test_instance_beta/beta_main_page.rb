@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative '../main_page'
+require_relative 'beta_main_page/beta_docspace'
 
 module TestingApiOnlyOfficeCom
   # Main page of BETA api.onlyoffice.com
@@ -17,6 +18,7 @@ module TestingApiOnlyOfficeCom
     end
 
     form(:search, xpath: "*//form[contains(@id, 'search')]")
+    link(:docspace, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docspace')]")
     link(:b_old_version, xpath: "*//div[contains(@class, 'page-header__legacy')]/legacy-container/a[contains(text(), 'Old version')]")
 
     def wait_to_load
@@ -30,11 +32,22 @@ module TestingApiOnlyOfficeCom
       @instance.webdriver.driver.navigate.refresh
     end
 
+    def go_to_beta_docspace
+      docspace_element.when_visible.click
+      BetaDocSpace.new(@instance)
+    end
+
     # @return [Object]
     def all_cookies
       @instance.webdriver
                .driver
                .manage.all_cookies
+    end
+
+    def action_move_to(xpath)
+      element = @instance.webdriver.driver.find_element(:xpath, xpath)
+      action = @instance.webdriver.driver.action
+      action.move_to(element).perform
     end
   end
 end
