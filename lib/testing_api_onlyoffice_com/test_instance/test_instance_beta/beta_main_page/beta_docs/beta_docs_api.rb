@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require_relative '../beta_docspace'
+require_relative '../beta_docs'
 
 module TestingApiOnlyOfficeCom
-  # JavaScriptSDK page
-  # https://github.com/user-attachments/assets/44620e8b-64ba-4285-82ef-daa64490d633
-  class BetaJavaScriptSDK
+  # Docs API page
+  # https://github.com/user-attachments/assets/46453c92-7d09-4018-869b-dba6848aaf6c
+  class BetaDocsApi
     include PageObject
 
     attr_accessor :instance
@@ -17,10 +17,11 @@ module TestingApiOnlyOfficeCom
     end
 
     nav(:breadcrump, xpath: "*//nav[contains(@class, 'breadcrumb')]")
+    div(:content, xpath: "*//div[contains(data-search-container-hidable,'')]/div[contains(@class,'content')]")
 
     def wait_to_load
       @instance.webdriver.wait_until do
-        breadcrump_element.present?
+        content_element.present? and breadcrump_element.present?
       end
     end
   end
