@@ -4,6 +4,7 @@ require_relative '../test_instance'
 require_relative 'main_page/docs_page_requires'
 require_relative 'main_page/workspace_api'
 require_relative 'main_page/docspace_api'
+require_relative 'test_instance_beta/beta_main_page'
 
 module TestingApiOnlyOfficeCom
   # Main page of api.onlyoffice.com
@@ -27,6 +28,8 @@ module TestingApiOnlyOfficeCom
 
     # pages_els
     div(:sidebar, xpath: "//div[contains(@class,'layout-table-footer')]")
+
+    link(:b_try_new, xpath: "*//a[contains(@id, 'tryNew')]")
 
     def initialize(instance)
       @instance = instance
@@ -67,6 +70,11 @@ module TestingApiOnlyOfficeCom
       action_move_to(docspace_element.element.selector[:xpath])
       docspace_backend_element.click
       DocSpaceAPI.new(@instance)
+    end
+
+    def go_to_beta
+      b_try_new_element.when_visible.click
+      BetaMainPage.new(@instance)
     end
 
     def sidebar_visible?
