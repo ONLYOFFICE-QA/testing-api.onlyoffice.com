@@ -3,8 +3,8 @@
 require_relative '../beta_workspace'
 
 module TestingApiOnlyOfficeCom
-  # TODO: img & describe
-  # class
+  # For hosting providers page
+  # https://github.com/user-attachments/assets/62240fd6-a2d6-4ffd-bf65-83f44a4074f9
   class BetaForHostingProviders
     include PageObject
 

@@ -5,8 +5,8 @@ require_relative 'beta_workspace/beta_api_backend'
 require_relative 'beta_workspace/beta_for_hosting_providers'
 
 module TestingApiOnlyOfficeCom
-  # TODO: image & description
-  # class
+  # Workspace preview page
+  # https://github.com/user-attachments/assets/e7c7ad89-1eda-4e69-8a9a-86a0275f18da
   class BetaWorkspace
     include PageObject
 
