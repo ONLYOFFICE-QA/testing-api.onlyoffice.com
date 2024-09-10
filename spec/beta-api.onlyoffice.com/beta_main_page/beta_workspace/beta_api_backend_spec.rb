@@ -2,14 +2,15 @@
 
 require 'spec_helper'
 
-describe 'beta_docspace' do
+describe 'beta_api_backend' do
   test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] docspace', plan_name: config.to_s)
 
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @beta_docspace = @instance.go_to_main_page
                               .go_to_beta
-                              .go_to_beta_docspace
+                              .go_to_beta_workspace
+                              .go_to_beta_api_backend
   end
 
   after do |example|
@@ -17,8 +18,8 @@ describe 'beta_docspace' do
     @instance.webdriver.quit
   end
 
-  it 'BetaDocSpace class has been created' do
-    expect(Object.const_defined?('BetaDocSpace')).to be(true)
-    expect(Object.const_get('BetaDocSpace')).to be_a(Class)
+  it 'BetaApiBackend class has been created' do
+    expect(Object.const_defined?('BetaApiBackend')).to be(true)
+    expect(Object.const_get('BetaApiBackend')).to be_a(Class)
   end
 end

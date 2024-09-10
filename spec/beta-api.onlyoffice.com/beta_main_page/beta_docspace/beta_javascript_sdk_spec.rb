@@ -18,7 +18,7 @@ describe 'beta_javascript-sdk' do
     @instance.webdriver.quit
   end
 
-  it 'class has been created' do
+  it 'BetaJavaScriptSDK class has been created' do
     expect(Object.const_defined?('BetaJavaScriptSDK')).to be(true)
     expect(Object.const_get('BetaJavaScriptSDK')).to be_a(Class)
   end

@@ -18,7 +18,7 @@ describe 'beta_api_backend' do
     @instance.webdriver.quit
   end
 
-  it 'class has been created' do
+  it 'BetaApiBackend class has been created' do
     expect(Object.const_defined?('BetaApiBackend')).to be(true)
     expect(Object.const_get('BetaApiBackend')).to be_a(Class)
   end
