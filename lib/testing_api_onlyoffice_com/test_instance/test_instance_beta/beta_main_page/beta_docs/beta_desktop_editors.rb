@@ -3,8 +3,8 @@
 require_relative '../beta_docs'
 
 module TestingApiOnlyOfficeCom
-  # TODO: img & describe
-  # class
+  # Desktop editors page
+  # https://github.com/user-attachments/assets/32fd77db-6837-4d57-9dd2-6fd772040477
   class BetaDesktopEditor
     include PageObject
 

@@ -3,8 +3,8 @@
 require_relative '../beta_docs'
 
 module TestingApiOnlyOfficeCom
-  # TODO: img & describe
-  # class
+  # Office API page
+  # https://github.com/user-attachments/assets/bdbdc51d-47bd-4f93-a472-acdf4709484c
   class BetaOfficeApi
     include PageObject
 

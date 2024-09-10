@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 require_relative '../beta_main_page'
+require_relative 'beta_docs/beta_docs_api'
+require_relative 'beta_docs/beta_office_api'
+require_relative 'beta_docs/beta_plugin_and_macros'
+require_relative 'beta_docs/beta_document_builder'
+require_relative 'beta_docs/beta_desktop_editors'
 
 module TestingApiOnlyOfficeCom
   # Docs preview page
