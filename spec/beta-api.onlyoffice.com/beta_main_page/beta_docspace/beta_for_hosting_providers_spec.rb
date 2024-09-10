@@ -18,7 +18,7 @@ describe 'beta_api_for_hosting_providers' do
     @instance.webdriver.quit
   end
 
-  it 'class has been created' do
+  it 'BetaForHostingProviders class has been created' do
     expect(Object.const_defined?('BetaForHostingProviders')).to be(true)
     expect(Object.const_get('BetaForHostingProviders')).to be_a(Class)
   end

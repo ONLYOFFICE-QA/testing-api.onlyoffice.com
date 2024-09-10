@@ -2,6 +2,7 @@
 
 require_relative '../documentation_helper/check_method_links'
 require_relative 'docspace/docspace_method_page'
+
 module TestingApiOnlyOfficeCom
   # https://github.com/ONLYOFFICE-QA/testing-api.onlyoffice.com/assets/60688343/dc2900eb-905f-4de9-987a-cd407e315868
   # http://api.onlyoffice.com/docspace/basic http://api.teamlab.info/docspace/basic

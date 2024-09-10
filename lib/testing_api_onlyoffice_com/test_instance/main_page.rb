@@ -2,8 +2,6 @@
 
 require_relative '../test_instance'
 require_relative 'main_page/docs_page_requires'
-require_relative 'main_page/workspace_api'
-require_relative 'main_page/docspace_api'
 require_relative 'test_instance_beta/beta_main_page'
 
 module TestingApiOnlyOfficeCom
