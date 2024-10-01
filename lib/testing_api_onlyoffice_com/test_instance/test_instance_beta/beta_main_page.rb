@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative '../main_page'
+require_relative 'parser_modules/chapter_nav_parser'
 require_relative 'beta_main_page/beta_docs'
 require_relative 'beta_main_page/beta_docspace'
 require_relative 'beta_main_page/beta_workspace'
