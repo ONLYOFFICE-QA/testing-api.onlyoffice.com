@@ -7,11 +7,15 @@ module TestingApiOnlyOfficeCom
   # class
   class BetaDesktopEditor
     include PageObject
+    include ChapterNavParser
 
     attr_accessor :instance
 
     def initialize(instance)
       @instance = instance
+      @link = @instance.webdriver.driver.current_url
+      @page_source = @instance.webdriver.driver.page_source
+      @xpath_chapter_nav = "*//chapter-navigation[@class='tree']"
       super(@instance.webdriver.driver)
       wait_to_load
     end
