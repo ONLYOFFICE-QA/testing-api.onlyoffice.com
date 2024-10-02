@@ -42,7 +42,9 @@ module TestingApiOnlyOfficeCom
       # Find all image elements
       images = @instance.webdriver.driver.find_elements(:tag_name, 'img')
 
-      result = []
+      # literal [] is overloaded
+      result = Array.new
+
       # Iterate through each image and check its status
       images.each do |image|
         src = image.attribute('src')
@@ -102,6 +104,8 @@ module TestingApiOnlyOfficeCom
         end
       when Numeric
         @children[var]
+      else
+        StandardError 'No children found'
       end
     end
   end
