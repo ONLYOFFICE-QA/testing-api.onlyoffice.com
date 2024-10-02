@@ -32,12 +32,10 @@ module TestingApiOnlyOfficeCom
 
     # Method to check if an element exists
     def parent_element_exists?(element, by, locator)
-      begin
-        element.find_element(by, locator)
-        true
-      rescue Selenium::WebDriver::Error::NoSuchElementError
-        false
-      end
+      element.find_element(by, locator)
+      true
+    rescue Selenium::WebDriver::Error::NoSuchElementError
+      false
     end
 
     def all_img_exists?
