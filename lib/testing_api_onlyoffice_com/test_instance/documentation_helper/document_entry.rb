@@ -64,7 +64,7 @@ module TestingApiOnlyOfficeCom
               result.push(false)
             end
           rescue CheckImageError => e
-            putsOnlyofficeLoggerHelper.log "Error checking image: #{src}. Error: #{e.message}"
+            OnlyofficeLoggerHelper.log "Error checking image: #{src}. Error: #{e.message}"
             result.push(false)
           end
         else
