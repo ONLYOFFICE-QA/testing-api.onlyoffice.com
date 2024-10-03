@@ -7,6 +7,7 @@ module TestingApiOnlyOfficeCom
   # https://github.com/user-attachments/assets/bc1f9c3c-d3ea-41b8-be0a-dd61a6d93c44
   class BetaPluginAndMacros
     include PageObject
+    include ChapterNavParser
 
     attr_accessor :instance
 
