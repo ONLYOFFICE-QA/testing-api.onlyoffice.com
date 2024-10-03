@@ -7,6 +7,7 @@ module TestingApiOnlyOfficeCom
   # https://github.com/user-attachments/assets/8831e397-80f1-4741-bc36-9a34c3ba20de
   class BetaForHostingProviders
     include PageObject
+    include ChapterNavParser
 
     attr_accessor :instance
 
