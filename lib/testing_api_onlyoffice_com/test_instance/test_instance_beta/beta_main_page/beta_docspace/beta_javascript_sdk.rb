@@ -7,6 +7,7 @@ module TestingApiOnlyOfficeCom
   # https://github.com/user-attachments/assets/44620e8b-64ba-4285-82ef-daa64490d633
   class BetaJavaScriptSDK
     include PageObject
+    include ChapterNavParser
 
     attr_accessor :instance
 
