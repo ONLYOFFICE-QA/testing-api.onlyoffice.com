@@ -8,7 +8,7 @@ describe 'beta_docs_api' do
 
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
-    @beta_docspace = @instance.go_to_main_page
+    @beta_docs_api = @instance.go_to_main_page
                               .go_to_beta
                               .go_to_beta_docs
                               .go_to_beta_docs_api
@@ -25,7 +25,7 @@ describe 'beta_docs_api' do
   end
 
   it 'check all img' do
-    hrefs = @beta_docspace.chapter_nav_hrefs(@instance.webdriver.driver.page_source,
+    hrefs = @beta_docs_api.chapter_nav_hrefs(@instance.webdriver.driver.page_source,
                                              element_chapter_nav_root)
 
     # TODO: skip try-docs because hide nav

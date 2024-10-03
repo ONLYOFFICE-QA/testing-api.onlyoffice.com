@@ -8,10 +8,10 @@ describe 'beta_for_hosting_providers' do
 
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
-    @beta_docspace = @instance.go_to_main_page
-                              .go_to_beta
-                              .go_to_beta_workspace
-                              .go_to_beta_for_hosting_providers
+    @beta_for_hosting_providers = @instance.go_to_main_page
+                                           .go_to_beta
+                                           .go_to_beta_workspace
+                                           .go_to_beta_for_hosting_providers
   end
 
   after do |example|
@@ -25,8 +25,8 @@ describe 'beta_for_hosting_providers' do
   end
 
   it 'check all img' do
-    hrefs = @beta_docspace.chapter_nav_hrefs(@instance.webdriver.driver.page_source,
-                                             element_chapter_nav_root)
+    hrefs = @beta_for_hosting_providers.chapter_nav_hrefs(@instance.webdriver.driver.page_source,
+                                                          element_chapter_nav_root)
 
     hrefs.each do |href|
       expect(DocumentEntry.new(@instance, href, href)
