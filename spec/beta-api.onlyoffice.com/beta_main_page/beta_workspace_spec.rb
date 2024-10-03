@@ -8,8 +8,8 @@ describe 'beta_workspace' do
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @beta_workspace = @instance.go_to_main_page
-                              .go_to_beta
-                              .go_to_beta_workspace
+                               .go_to_beta
+                               .go_to_beta_workspace
   end
 
   after do |example|
