@@ -16,14 +16,14 @@ module TestingApiOnlyOfficeCom
       @name = ClassNameHelper.cleanup_name(current_object)
     end
 
+    # Make sure that the element has the expected ancestor and if there is a drop-down list, then tear it off
+    # @param [String (frozen)] arg
+    # @return [TestingApiOnlyOfficeCom::DocumentEntry]
     def click_by_a_via_href(arg = '')
       xpath = "//a[@href='#{@link}' #{arg}]"
       element = @instance.webdriver.get_element(xpath)
-      if xpath.include?('constructor')
-        button = element.find_element(:xpath, './../../../../div/button')
-        @instance.webdriver.click(button)
-      elsif parent_element_exists?(element, :xpath, './../../../../div/span') &&
-            parent_element_exists?(element, :xpath, "./../../../../div[contains(@class, 'tree__twig_closed')]")
+      if parent_element_exists?(element, :xpath, './../../../../div/span') &&
+         parent_element_exists?(element, :xpath, "./../../../../div[contains(@class, 'tree__twig_closed')]")
         element.find_element(:xpath, './../../../../div/button').click
       end
       @instance.webdriver.click(element)
@@ -31,6 +31,10 @@ module TestingApiOnlyOfficeCom
     end
 
     # Method to check if an element exists
+    # @param [Object] element
+    # @param [Object] by
+    # @param [String] locator
+    # @return [TrueClass, FalseClass]
     def parent_element_exists?(element, by, locator)
       element.find_element(by, locator)
       true
@@ -38,6 +42,7 @@ module TestingApiOnlyOfficeCom
       false
     end
 
+    # @return [Array]
     def all_img_exists?
       # Find all image elements
       images = @instance.webdriver.driver.find_elements(:tag_name, 'img')
