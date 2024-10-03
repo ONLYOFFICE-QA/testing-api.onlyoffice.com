@@ -25,7 +25,7 @@ describe 'beta_docs_api' do
   end
 
   it 'check all img' do
-    hrefs = @beta_desktop_editors.chapter_nav_hrefs(@beta_desktop_editors.instance.webdriver.driver.page_source,
+    hrefs = @beta_desktop_editors.chapter_nav_hrefs(@instance.webdriver.driver.page_source,
                                                     element_chapter_nav_root)
 
     hrefs.each do |href|
