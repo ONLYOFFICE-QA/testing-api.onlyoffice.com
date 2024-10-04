@@ -3,7 +3,7 @@
 require 'spec_helper'
 
 describe 'beta_office_api' do
-  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] docspace main', plan_name: config.to_s)
+  let(:test_manager) { TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] docs', plan_name: config.to_s) }
   let(:element_chapter_nav_root) { "*//chapter-navigation[@class='tree']" }
 
   before do
@@ -24,7 +24,7 @@ describe 'beta_office_api' do
     expect(Object.const_get('BetaOfficeApi')).to be_a(Class)
   end
 
-  it 'check all img' do
+  it 'office_api check all img' do
     hrefs = @beta_beta_office_api.chapter_nav_hrefs(@instance.webdriver.driver.page_source,
                                                     element_chapter_nav_root)
 

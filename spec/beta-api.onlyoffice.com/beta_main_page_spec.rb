@@ -3,7 +3,7 @@
 require 'spec_helper'
 
 describe 'beta_main_page' do
-  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] main page', plan_name: config.to_s)
+  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] main', plan_name: config.to_s)
 
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)

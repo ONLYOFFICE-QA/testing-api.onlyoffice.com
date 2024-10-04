@@ -3,7 +3,7 @@
 require 'spec_helper'
 
 describe 'beta_workspace' do
-  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] docspace', plan_name: config.to_s)
+  let(:test_manager) { TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] workspace', plan_name: config.to_s) }
 
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)

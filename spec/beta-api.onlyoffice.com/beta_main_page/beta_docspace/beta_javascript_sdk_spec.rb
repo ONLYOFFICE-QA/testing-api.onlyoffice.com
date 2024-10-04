@@ -3,7 +3,7 @@
 require 'spec_helper'
 
 describe 'beta_javascript-sdk' do
-  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] javascript sdk', plan_name: config.to_s)
+  let(:test_manager) { TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] docspace', plan_name: config.to_s) }
   let(:element_chapter_nav_root) { "*//chapter-navigation[@class='tree']" }
 
   before do
@@ -24,7 +24,7 @@ describe 'beta_javascript-sdk' do
     expect(Object.const_get('BetaJavaScriptSDK')).to be_a(Class)
   end
 
-  it 'check all img' do
+  it 'javascript_sdk check all img' do
     hrefs = @javascript_sdk.chapter_nav_hrefs(@instance.webdriver.driver.page_source,
                                               element_chapter_nav_root)
 

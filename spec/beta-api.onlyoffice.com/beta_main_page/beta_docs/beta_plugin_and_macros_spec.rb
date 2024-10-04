@@ -3,15 +3,15 @@
 require 'spec_helper'
 
 describe 'beta_plugin_and_macros_api' do
-  let(:test_manager) { TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] docspace main', plan_name: config.to_s) }
+  let(:test_manager) { TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] docs', plan_name: config.to_s) }
   let(:element_chapter_nav_root) { "*//chapter-navigation[@class='tree']" }
 
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @beta_plugin_and_macros = @instance.go_to_main_page
-                                            .go_to_beta
-                                            .go_to_beta_docs
-                                            .go_to_beta_plugin_and_macros
+                                       .go_to_beta
+                                       .go_to_beta_docs
+                                       .go_to_beta_plugin_and_macros
   end
 
   after do |example|
@@ -24,7 +24,7 @@ describe 'beta_plugin_and_macros_api' do
     expect(Object.const_get('BetaPluginAndMacros')).to be_a(Class)
   end
 
-  it 'check all img' do
+  it 'plugin_and_macros check all img' do
     hrefs = @beta_plugin_and_macros.chapter_nav_hrefs(@instance.webdriver.driver.page_source,
                                                       element_chapter_nav_root)
 
