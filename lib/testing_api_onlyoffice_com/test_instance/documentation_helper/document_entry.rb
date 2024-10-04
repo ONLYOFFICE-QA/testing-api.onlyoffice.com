@@ -16,6 +16,70 @@ module TestingApiOnlyOfficeCom
       @name = ClassNameHelper.cleanup_name(current_object)
     end
 
+    # Make sure that the element has the expected ancestor and if there is a drop-down list, then tear it off
+    # @param [String (frozen)] arg
+    # @return [TestingApiOnlyOfficeCom::DocumentEntry]
+    def click_by_a_via_href(arg = '')
+      xpath = "//a[@href='#{@link}' #{arg}]"
+      element = @instance.webdriver.get_element(xpath)
+      if parent_element_exists?(element, :xpath, './../../../../div/span') &&
+         parent_element_exists?(element, :xpath, "./../../../../div[contains(@class, 'tree__twig_closed')]")
+        element.find_element(:xpath, './../../../../div/button').click
+      end
+      @instance.webdriver.click(element)
+      self
+    end
+
+    # Method to check if an element exists
+    # @param [Object] element
+    # @param [Object] by
+    # @param [String] locator
+    # @return [TrueClass, FalseClass]
+    def parent_element_exists?(element, by, locator)
+      element.find_element(by, locator)
+      true
+    rescue Selenium::WebDriver::Error::NoSuchElementError
+      false
+    end
+
+    # @return [Array]
+    def all_img_exists?
+      # Find all image elements
+      images = @instance.webdriver.driver.find_elements(:tag_name, 'img')
+
+      # literal [] is overloaded
+      result = Array.new
+
+      # Iterate through each image and check its status
+      images.each do |image|
+        src = image.attribute('src')
+
+        if src
+          begin
+            # Make an HTTP request to the image URL
+            uri = URI.parse(src)
+            response = Net::HTTP.get_response(uri)
+
+            # Print the status of each image
+            if response.code.to_i == 200
+              OnlyofficeLoggerHelper.log "Image loaded successfully: #{src}"
+              result.push(true)
+            else
+              OnlyofficeLoggerHelper.log "Image failed to load (status code: #{response.code}): #{src}"
+              result.push(false)
+            end
+          rescue CheckImageError => e
+            OnlyofficeLoggerHelper.log "Error checking image: #{src}. Error: #{e.message}"
+            result.push(false)
+          end
+        else
+          OnlyofficeLoggerHelper.log 'Image element without a source.'
+          result.push(false)
+        end
+      end
+      result
+    end
+
     def click_expend
       element = @instance.webdriver.get_element(@xpath_expend)
       @instance.webdriver.click(element)
@@ -45,6 +109,8 @@ module TestingApiOnlyOfficeCom
         end
       when Numeric
         @children[var]
+      else
+        StandardError 'No children found'
       end
     end
   end

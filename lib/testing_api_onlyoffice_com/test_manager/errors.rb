@@ -2,6 +2,7 @@
 
 module TestingApiOnlyOfficeCom
   # class wraps StandardError for site stubs
-  class SiteStubsError < StandardError
-  end
+  class SiteStubsError < StandardError; end
+
+  class CheckImageError < StandardError; end
 end

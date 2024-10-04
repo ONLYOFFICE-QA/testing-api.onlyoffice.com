@@ -7,6 +7,7 @@ module TestingApiOnlyOfficeCom
   # https://github.com/user-attachments/assets/32fd77db-6837-4d57-9dd2-6fd772040477
   class BetaDesktopEditor
     include PageObject
+    include ChapterNavParser
 
     attr_accessor :instance
 

@@ -3,13 +3,13 @@
 require 'spec_helper'
 
 describe 'beta_docs' do
-  test_manager = TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] docspace main', plan_name: config.to_s)
+  let(:test_manager) { TestingApiOnlyOfficeCom::TestManager.new(suite_name: '[beta] docs', plan_name: config.to_s) }
 
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
-    @beta_docspace = @instance.go_to_main_page
-                              .go_to_beta
-                              .go_to_beta_docs
+    @beta_docs = @instance.go_to_main_page
+                          .go_to_beta
+                          .go_to_beta_docs
   end
 
   after do |example|
