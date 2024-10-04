@@ -8,7 +8,7 @@ describe 'beta_plugin_and_macros_api' do
 
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
-    @beta_beta_plugin_and_macros = @instance.go_to_main_page
+    @beta_plugin_and_macros = @instance.go_to_main_page
                                             .go_to_beta
                                             .go_to_beta_docs
                                             .go_to_beta_plugin_and_macros
