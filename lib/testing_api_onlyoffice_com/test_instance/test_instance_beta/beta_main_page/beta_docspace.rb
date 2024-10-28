@@ -21,11 +21,11 @@ module TestingApiOnlyOfficeCom
     end
 
     link(:h3_javascript_sdk, xpath: "*//h3/a[contains(@href, 'javascript-sdk')]")
-    link(:docspace, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docspace')]")
-    link(:javascript_sdk, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'javascript-sdk')]")
-    link(:plugins_sdk, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'plugins-sdk')]")
-    link(:api_backend, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'api-backend')]")
-    link(:for_hosting_providers, xpath: "*//a[contains(@class, 'global-navigation__submenu-link') and contains(@href, 'docspace') and contains(@href, 'for-hosting-providers')]")
+    link(:docspace, xpath: "*//a[contains(@class, 'menubar__menu-link') and contains(@href, 'docspace')]")
+    link(:javascript_sdk, xpath: "*//a[contains(@class, 'menubar__submenu-link') and contains(@href, 'docspace') and contains(@href, 'javascript-sdk')]")
+    link(:plugins_sdk, xpath: "*//a[contains(@class, 'menubar__submenu-link') and contains(@href, 'docspace') and contains(@href, 'plugins-sdk')]")
+    link(:api_backend, xpath: "*//a[contains(@class, 'menubar__submenu-link') and contains(@href, 'docspace') and contains(@href, 'api-backend')]")
+    link(:for_hosting_providers, xpath: "*//a[contains(@class, 'menubar__submenu-link') and contains(@href, 'docspace') and contains(@href, 'for-hosting-providers')]")
 
     def go_to_beta_javascript_sdk
       action_move_to(docspace_element.element.selector[:xpath])

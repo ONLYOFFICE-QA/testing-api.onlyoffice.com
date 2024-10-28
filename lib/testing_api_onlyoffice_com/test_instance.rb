@@ -2,6 +2,7 @@
 
 require_relative 'test_instance/common_pages'
 require_relative 'test_instance/main_page'
+require_relative 'test_instance/test_instance_beta/beta_main_page'
 
 module TestingApiOnlyOfficeCom
   # Instance of browser to perform actions
@@ -14,10 +15,10 @@ module TestingApiOnlyOfficeCom
       @webdriver = OnlyofficeWebdriverWrapper::WebDriver.new(@config.browser)
     end
 
-    # @return [MainPage] main page to operate
+    # @return [BetaMainPage] main page to operate
     def go_to_main_page
       webdriver.open(@config.server)
-      MainPage.new(self)
+      BetaMainPage.new(self)
     end
   end
 end
