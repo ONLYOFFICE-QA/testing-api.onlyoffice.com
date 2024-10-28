@@ -9,7 +9,6 @@ describe 'beta_plugins-sdk' do
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @pligins_sdk = @instance.go_to_main_page
-                            .go_to_beta
                             .go_to_beta_docspace
                             .go_to_beta_plugins_sdk
   end
