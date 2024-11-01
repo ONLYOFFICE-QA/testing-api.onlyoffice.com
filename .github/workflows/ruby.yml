@@ -23,6 +23,6 @@ jobs:
           sudo apt-get -y install google-chrome-stable
       - name: Run single browser spec to check sanity
         env:
-          SPEC_REGION: 'api.onlyoffice.com'
+          SPEC_REGION: 'com'
         run: |
           rspec spec/testing-api.onlyoffice.com/languages/chinese_language_spec.rb
