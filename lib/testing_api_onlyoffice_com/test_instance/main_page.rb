@@ -2,7 +2,6 @@
 
 require_relative '../test_instance'
 require_relative 'main_page/docs_page_requires'
-require_relative 'test_instance_beta/beta_main_page'
 
 module TestingApiOnlyOfficeCom
   # Main page of api.onlyoffice.com

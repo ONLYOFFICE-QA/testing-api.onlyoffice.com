@@ -9,7 +9,6 @@ describe 'beta_api_for_hosting_providers' do
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @beta_for_hosting_providers = @instance.go_to_main_page
-                                           .go_to_beta
                                            .go_to_beta_docspace
                                            .go_to_beta_for_hosting_providers
   end
