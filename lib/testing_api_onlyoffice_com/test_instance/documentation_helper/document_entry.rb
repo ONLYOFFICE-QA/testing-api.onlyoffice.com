@@ -47,12 +47,17 @@ module TestingApiOnlyOfficeCom
       # Find all image elements
       images = @instance.webdriver.driver.find_elements(:tag_name, 'img')
 
+      # Return empty array if images not found
+      return images if images.empty?
+
       # literal [] is overloaded
       result = Array.new
 
       # Iterate through each image and check its status
       images.each do |image|
         src = image.attribute('src')
+
+        next if blacklisted?(src)
 
         if src
           begin
@@ -112,6 +117,15 @@ module TestingApiOnlyOfficeCom
       else
         StandardError 'No children found'
       end
+    end
+
+    # @param [String] suspect added to blacklist
+    # @return [Boolean]
+    def blacklisted?(suspect)
+      TestData.img_src_blacklist.each do |baned_img|
+        return suspect.include?(baned_img) if suspect.include?(baned_img)
+      end
+      false
     end
   end
 end
