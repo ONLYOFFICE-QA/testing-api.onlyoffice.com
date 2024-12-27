@@ -11,6 +11,7 @@
 * Add `markdownlint` support in CI
 * Add `yamllint` support in CI
 * Add `dependabot check` for `GitHub Actions`
+* Add `ruby-3.4` to CI
 
 ### Changes
 
