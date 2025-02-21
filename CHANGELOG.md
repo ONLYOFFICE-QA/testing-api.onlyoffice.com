@@ -18,3 +18,7 @@
 * Remove 'codeclimate` config, since we don't use any more
 * Check `dependabot` at 8:00 Moscow time daily
 * Run browser CI check on production `https://legacy-api.onlyoffice.com`
+
+### Fixes
+
+* Run `rubocop` in CI through `bundle exec`
