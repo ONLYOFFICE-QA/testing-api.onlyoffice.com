@@ -47,5 +47,10 @@ module TestingApiOnlyOfficeCom
     def self.docspace_api_backend
       JSON.parse(File.read("#{Dir.pwd}/templates/docspace/api_backend.json"))
     end
+
+    # @return [Array<String>]
+    def self.img_src_blacklist
+      File.read("#{Dir.pwd}/templates/blacklists/img_src_blacklist.csv").split("\n")
+    end
   end
 end

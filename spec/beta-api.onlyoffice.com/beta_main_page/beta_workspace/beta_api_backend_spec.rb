@@ -9,7 +9,6 @@ describe 'beta_api_backend' do
   before do
     @instance = TestingApiOnlyOfficeCom::TestInstance.new(config)
     @api_backend = @instance.go_to_main_page
-                            .go_to_beta
                             .go_to_beta_workspace
                             .go_to_beta_api_backend
   end

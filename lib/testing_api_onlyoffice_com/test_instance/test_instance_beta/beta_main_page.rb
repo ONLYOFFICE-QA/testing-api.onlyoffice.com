@@ -21,12 +21,9 @@ module TestingApiOnlyOfficeCom
     end
 
     form(:search, xpath: "*//form[contains(@id, 'search')]")
-    link(:docspace, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docspace')]")
-    link(:b_old_version, xpath: "*//div[contains(@class, 'page-header__legacy')]/legacy-container/a[contains(text(), 'Old version')]")
-    link(:docspace, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docspace')]")
-    link(:docs, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'docs/')]")
-    link(:workspace, xpath: "*//a[contains(@class, 'global-navigation__menu-link') and contains(@href, 'workspace/')]")
-    link(:b_old_version, xpath: "*//div[contains(@class, 'page-header__legacy')]/legacy-container/a[contains(text(), 'Old version')]")
+    link(:docspace, xpath: "*//a[contains(@class, 'menubar__menu-link') and contains(@href, 'docspace')]")
+    link(:docs, xpath: "*//a[contains(@class, 'menubar__menu-link') and contains(@href, 'docs/')]")
+    link(:workspace, xpath: "*//a[contains(@class, 'menubar__menu-link') and contains(@href, 'workspace/')]")
 
     def wait_to_load
       @instance.webdriver.wait_until do
